@@ -1,0 +1,103 @@
+@use "../foundation"as *;
+
+html {
+	height: -webkit-fill-available;
+	-webkit-text-size-adjust: 100%;
+	// font-size: 62.5%;
+}
+
+body {
+	position: relative;
+	// overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-feature-settings: "palt";
+	min-height: -webkit-fill-available;
+	color: $color-white;
+	line-height: 1.6;
+	
+    font-family: $zen, "line-r", "Hiragino Sans", Meiryo, "sans-serif";
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	-webkit-text-size-adjust: 100%;
+	// background: #ddd;
+	// background: #170f2a;
+	// background: #1b1b1b;
+	// background: #04011b;
+	background: rgba($color: #000000, $alpha: 1);
+
+	background-position: center;
+
+}
+
+
+a {
+	text-decoration: none
+}
+
+
+@font-face {
+	/*フォントの名前*/
+	font-family: "line-r";
+	/*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
+	src: url("../../assets/font/LINESeedJP_OTF_Rg.woff") format("woff"),
+}
+
+@font-face {
+	/*フォントの名前*/
+	font-family: "line-b";
+	/*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
+	src: url("../../assets/font/LINESeedJP_OTF_Bd.woff") format("woff"),
+}
+
+
+.u-dp-pc {
+	display: block;
+
+	@include mq(md) {
+		display: none;
+	}
+
+	&--sm {
+		display: block;
+
+		@include mq(sm) {
+			display: none;
+		}
+	}
+}
+
+
+.u-dp-sp {
+	display: none;
+
+	@include mq(md) {
+		display: block;
+	}
+
+	&--sm {
+		display: none;
+
+		@include mq(sm) {
+			display: block;
+		}
+	}
+}
+
+
+.u-flexbox {
+	display: flex;
+}
+
+.u-flexbox-wrap {
+	flex-wrap: wrap;
+}
+
+.u-font-large {
+	filter: drop-shadow(2px 2px 2px #000);
+}
+
+
+.mfp-bg, .mfp-wrap {
+    z-index: 60007;
+}

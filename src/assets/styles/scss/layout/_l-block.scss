@@ -1,0 +1,126 @@
+@use "../foundation" as *;
+
+.l-main {
+  overflow: hidden;
+  height: 3000px;
+  // max-width: 1120px;
+  margin: auto;
+}
+
+.l-content {
+  padding-top: 60px;
+  // max-width: 1420px;
+  width: 94vw;
+  // width: min(vwpc(640px), 1600px);
+  // width: 90%;
+  margin: 0 auto;
+  @include mq-target(sm) {
+    max-width: 1040px;
+  }
+  &__inner {
+    margin-top: 40px;
+    // padding: 0 2vw;
+    @include mq-target(sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__empty {
+    // display: none;
+    // width: min(vwpc(100px),200px) !important;
+    display: none;
+    @include mq-target(lg) {
+      display: block;
+    }
+  }
+}
+
+
+
+.l-side {
+  position: relative;
+  z-index: 50;
+  
+  @include mq-target(sm) {
+    width: min(vwpc(170px),270px);
+  }
+  // background: #000;
+
+  &__inner {
+    // background: url(../images/sys_bg.png) repeat center bottom;
+    background: url(../images/sys_bg.png) no-repeat center center/100% 100%;
+    border: none;
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-top: -16px;
+    display: flex;
+    justify-content: space-between;
+    @include mq-target(sm) {
+      display: block;
+    }
+  }
+
+  &__item {
+    width: 32%;
+      // padding-top: 16px;
+
+      // &:first-child {
+      //     padding-top: 0;
+      // }
+      @include mq-target(sm) {
+        width: 100%;
+      }
+  }
+
+  &__link {
+        &::after {
+      content: "";
+      @include absAll;
+      opacity: 0;
+  }
+  }
+
+  &__img {
+
+
+
+    picture {
+      padding-top: 54.25%;
+  }
+  }
+
+
+  &-cont {
+    &__bot {
+      text-align: left;
+    }
+  
+    &__ttl {
+      margin-top: 8px;
+      font-size: min(vwpc(12px),14px);
+    }
+  }
+}
+
+
+
+.IEblock {
+  display: none;
+}
+
+
+.bg_particles {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+
+  canvas {
+    filter: blur(1px);
+  }
+}

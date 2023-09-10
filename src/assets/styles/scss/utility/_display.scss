@@ -1,0 +1,50 @@
+@use "../foundation" as *;
+
+
+
+.u-dp-sp {
+    display: block;
+    @include mq-target(sm) {
+        display: none;
+    }
+}
+
+.u-dp-pc {
+    display: none;
+    @include mq-target(sm) {
+        display: block;
+    }
+}
+
+
+.u-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    img {
+        width: 49%;
+    }
+}
+
+.col-sm-3 {
+    @include flex($align:center,$justify:space-between);
+    flex-wrap: wrap;
+
+    img {
+        width: 49%;
+
+        @include mq-target(sm) {
+            width: 32%;
+        }
+    }
+}
+
+.col-sm-2 {
+    @include flex($align:center,$justify:space-between);
+    flex-wrap: wrap;
+
+    img {
+        width: 49.4%;
+    }
+}
