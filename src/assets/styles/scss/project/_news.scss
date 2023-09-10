@@ -24,7 +24,7 @@
     // width: 90vw;
     // padding-left: 1.4vw;
     @include mq-target(sm) {
-        width: min(vwpc(520px), 750px);
+        width: min(vwpc(520px), 780px);
         margin: 0;
     }
     &__inner {
@@ -82,7 +82,7 @@
             // margin-top: 8px;
             margin-top: 4px;
             // margin-top: min(vwpc(2px),4px);
-            font-size: min(vwpc(14px),16px);
+            font-size: min(vwpc(14px),18px);
         }
     }
 }

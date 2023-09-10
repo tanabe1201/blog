@@ -26,9 +26,10 @@ if (elmIndexSwiper.length > 0) {
     var swiper = new Swiper('.js-index-slider' + i, {
       slidesPerView: 'auto',
       // loop: "true",
+      paginationClickable: false,
       grabCursor: true,
       freeMode: true,
-      touchEventsTarget: true,
+      // touchEventsTarget: true,
       // navigation: {
       //   prevEl: '.js-slider-btnPrev' + i,
       //   nextEl: '.js-slider-btnNext' + i
