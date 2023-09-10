@@ -75,14 +75,20 @@
     a {
       display: flex;
       align-items: center;
+
+      &:hover {
+        transition: opacity .2s ease;
+        opacity: 0.75;
+      }
     }
 
-    svg {
+    .i-next {
       margin-left: 4px;
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       color: $color-red;
     }
+
   }
 
   &__ttl {
@@ -110,7 +116,7 @@
       font-size: min(vwsp(32px),46px);
       
       @include mq-target(sm) {
-        font-size: min(vwpc(38px),52px);
+        font-size: min(vwpc(38px),48px);
       }
     }
 
@@ -130,7 +136,7 @@
     color: #fff;
     font-family: "Shippori Mincho B1";
     // filter: drop-shadow(1px 1px 1px #000);
-    filter: drop-shadow(0 0 0.625vw rgba(254, 233, 46, .95));
+    filter: drop-shadow(0 0 0.625vw rgba(254, 233, 46, .75));
     font-size: min(vwsp(12px),16px);
     @include mq-target(sm) {
       font-size: min(vwpc(14px),18px);
@@ -143,10 +149,12 @@
 
   &__item {
     position: relative;
-    padding: min(vwsp(10px),14px)  0 min(vwsp(10px),14px);
+    margin: min(vwsp(10px),14px) 0 0;
+    padding: 0  0 min(vwsp(10px),14px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     @include mq-target(sm) {
-      padding: min(vwpc(12px),14px)  0 min(vwpc(12px),14px);
+      margin: min(vwpc(12px),14px) 0 0;
+      padding: 0  0 min(vwpc(12px),14px);
     }
   // &::after {
   //     content: "";
@@ -160,11 +168,8 @@
   // }
 
   &:last-child {
-    border: navajowhite;
+    border: none;
       padding-bottom: 0;
-      &::after {
-          opacity: 0;
-      }
   }
   }
 
