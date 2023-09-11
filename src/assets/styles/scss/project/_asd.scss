@@ -62,9 +62,9 @@
             display: block;
             filter: drop-shadow(0 0 0.115vw black);
 
-            &:hover {
-                transform: translate3d(0, 0.2rem, 0);
-            }
+            // &:hover {
+            //     transform: translate3d(0, 0.2rem, 0);
+            // }
 
 
         }
@@ -87,7 +87,7 @@
             // }
 
             picture {
-                padding-top: 54.25%;
+                padding-top: 58.25%;
             }
 
         }

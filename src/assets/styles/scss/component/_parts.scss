@@ -10,7 +10,7 @@
     // transform: scale(1);
 
     picture {
-      padding-top: 62.25%;
+      padding-top: 68.25%;
       display: block;
       overflow: hidden;
       position: relative;
@@ -114,7 +114,7 @@
       -webkit-background-clip: text;
       color: transparent;
       font-weight: 600;
-      font-size: min(vwsp(32px),46px);
+      font-size: min(vwsp(36px),46px);
       
       @include mq-target(sm) {
         font-size: min(vwpc(38px),48px);
@@ -178,7 +178,7 @@
     position: relative;
     overflow: hidden;
     display: block;
-    // filter: drop-shadow(0 0 0.115vw black);
+    filter: drop-shadow(0 0 0.115vw black);
     // &::after {
     //     content: "";
     //     @include mq-target(sm) {
@@ -231,9 +231,7 @@
       span {
           font-weight:900;
           position: relative;
-          z-index: 1;
           font-size: min(vwsp(10px),14px);
-          color: $color-red;
           background-image: linear-gradient(to bottom, #fd5842, #352e2c);
           -webkit-background-clip: text;
           color: transparent;
@@ -285,8 +283,8 @@
     text-align: left;
     line-height: 1.4;
     display: -webkit-box;
-    // -webkit-box-orient: vertical;
-    // overflow: hidden;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     -webkit-line-clamp: 5;
     color: #4997f0;
   }

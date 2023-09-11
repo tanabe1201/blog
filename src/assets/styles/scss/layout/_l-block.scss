@@ -43,7 +43,7 @@
   z-index: 50;
   
   @include mq-target(sm) {
-    width: min(vwpc(180px),260px);
+    width: min(vwpc(180px),270px);
   }
   // background: #000;
 
@@ -101,7 +101,7 @@
       width: 1.5em;
       position: absolute;
       left: .1em;
-      top: .1em;
+      top: .2em;
       z-index: 2;
     }
 
