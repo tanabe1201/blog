@@ -24,7 +24,7 @@
     // width: 90vw;
     // padding-left: 1.4vw;
     @include mq-target(sm) {
-        width: min(vwpc(520px), 780px);
+        width: min(vwpc(520px), 760px);
         margin: 0;
     }
     &__inner {
@@ -57,10 +57,10 @@
     &-cont {
         &__head {
             width: 100%;
-            width: min(vwsp(140px), 200px);
+            width: min(vwsp(130px), 200px);
             @include mq-target(sm) {
-                width: 250px;
-                // width: min(vwpc(230px), 240px);
+                // width: 240px;
+                width: min(vwpc(160px), 220px);
             }
         }
     
@@ -68,21 +68,21 @@
             position: relative;
             text-align: left;
             flex: 1;
-            margin-left: min(vwsp(8px),16px);
+            margin-left: min(vwsp(12px),16px);
             @include mq-target(sm) {
-                margin-left: min(3.0208333333vw, 16px);
+                margin-left: min(vwpc(14px), 20px);
             }
         }
     }
 
     &__ttl {
-        font-size: min(vwsp(14px),16px);
-        margin-top: 2px;
+        font-size: min(vwsp(10px),16px);
+        margin-top: 4px;
         @include mq-target(sm) {
             // margin-top: 8px;
-            margin-top: 4px;
+            margin-top: min(vwpc(4px),6px);
             // margin-top: min(vwpc(2px),4px);
-            font-size: min(vwpc(14px),18px);
+            font-size: min(vwpc(14px),16px);
         }
     }
 }

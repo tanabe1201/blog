@@ -78,13 +78,13 @@
             position: relative;
             overflow: hidden;
 
-            &::after {
-                content: "";
-                @include absAll;
-                display: block;
-                background: url(../../assets/images/frame.png) no-repeat center top/contain;
-                background-size: 100% 100%;
-            }
+            // &::after {
+            //     content: "";
+            //     @include absAll;
+            //     display: block;
+            //     background: url(../../assets/images/frame.png) no-repeat center top/contain;
+            //     background-size: 100% 100%;
+            // }
 
             picture {
                 padding-top: 54.25%;
@@ -134,6 +134,7 @@
             }
 
             .date {
+                display: none;
                 line-height: 1;
                 font-family: "teko";
                 position: relative;
@@ -159,7 +160,7 @@
         }
 
         &__ttl {
-            margin-top: 0 !important;
+            margin-top: 10px !important;
         }
 
     }

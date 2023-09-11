@@ -6,7 +6,7 @@
     // padding-left: 1.4vw;
 
     @include mq-target(sm) {
-        width: min(vwpc(520px), 780px);
+        width: min(vwpc(520px), 760px);
         margin: 0;
     }
 
@@ -52,7 +52,6 @@
             padding: 16px 0 10px;
         }
         & .-en {
-            line-height: 1.3;
             font-size: min(vwsp(22px),26px);
             @include mq-target(sm) {
                 font-size: min(vwpc(20px),28px);
