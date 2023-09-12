@@ -179,16 +179,16 @@
     overflow: hidden;
     display: block;
     filter: drop-shadow(0 0 0.115vw black);
-    // &::after {
-    //     content: "";
-    //     @include mq-target(sm) {
+    &::after {
+        content: "";
+        @include mq-target(sm) {
           
-    //       @include absAll;
-    //       // background: url(../images/frame.png) no-repeat center top/contain;
-    //       background-size: 100% 100%;
+          @include absAll;
+          background: url(../images/frame.png) no-repeat center top/contain;
+          background-size: 100% 100%;
           
-    //     }
-    // }
+        }
+    }
   }
 
   &-tag {
@@ -244,7 +244,7 @@
   }
 
   &__time {
-    margin-top: min(vwsp(4px),8px);
+    // margin-top: min(vwsp(4px),8px);
     // position: absolute;
     // bottom: 0;
     // left: 0;
@@ -255,7 +255,7 @@
     z-index: 1;
     font-weight: 300;
     @include mq-target(sm) {
-      margin-top: min(vwpc(4px),8px);
+      // margin-top: min(vwpc(10px),12px);
     }
     // font-family: "Shippori Mincho B1";
 
