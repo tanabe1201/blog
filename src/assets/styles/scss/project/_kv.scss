@@ -1,22 +1,44 @@
 @use "../foundation"as *;
 
 .single {
-    margin-top: 40px;
-    // width: 90vw;
-    // padding-left: 1.4vw;
 
+    // margin-top: 40px;
     @include mq-target(sm) {
-        width: min(vwpc(520px), 750px);
-        margin: 0;
+        width: min(vwpc(520px), 748px);
+        // margin: 0;
+    }
+
+    &__bg {
+
     }
 
     &__inner {
-        background: rgba($color: #000000, $alpha: 0.85);
+
+
+        // background: rgba($color: #4c4c4c, $alpha: 0.65);
+
         // padding: min(vwsp(16px),30px) min(vwsp(10px),20px);
         // padding: vwsp(40px) vwsp(28px);
         @include mq-target(sm) {
             // padding: min(vwpc(20px),30px) min(vwpc(10px),30px);
-            padding: min(vwpc(20px),30px) min(vwpc(20px),30px) min(vwpc(30px),50px);
+            padding: min(vwpc(20px), 30px) min(vwpc(20px), 30px) min(vwpc(30px), 50px);
+            padding-bottom: 60px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 20px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #191919;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #ddd;
+            border-radius: 100px;
+            width: 100px;
         }
     }
 
@@ -24,8 +46,9 @@
         display: flex;
         letter-spacing: .08em;
         line-height: 1.34;
-        font-size: min(vwsp(12px),14px);
+        font-size: min(vwsp(12px), 14px);
         color: #999;
+
         @include mq-target(sm) {
             font-size: 14px;
         }
@@ -39,6 +62,7 @@
 
     &__img {
         filter: drop-shadow(0 0 8px rgba(38, 99, 213, 0.25));
+
         picture {
             padding-top: 52.25%;
             width: 100%;
@@ -47,14 +71,17 @@
 
     &__ttl {
         font-family: "teko";
-        padding: min(vwsp(8px),16px) 0 min(vwsp(24px),32px);
+        padding: min(vwsp(8px), 16px) 0 min(vwsp(24px), 32px);
+
         @include mq-target(sm) {
             padding: 16px 0 10px;
         }
+
         & .-en {
-            font-size: min(vwsp(22px),26px);
+            font-size: min(vwsp(22px), 26px);
+
             @include mq-target(sm) {
-                font-size: min(vwpc(22px),32px);
+                font-size: min(vwpc(22px), 32px);
             }
         }
     }
@@ -64,14 +91,16 @@
 .single__entry {
     text-align: left;
 }
+
 .single__entry h2 {
     position: relative;
     font-family: "teko";
-    background-image: linear-gradient(to bottom,#fd1e00,#dc1b6f);
+    background-image: linear-gradient(to bottom, #fd1e00, #dc1b6f);
     -webkit-background-clip: text;
     color: transparent;
     margin: 48px 0 8px;
     padding-bottom: 4px;
+
     &::after {
         content: "";
         position: absolute;
@@ -86,7 +115,7 @@
 
 .single__entry h3 {
     font-family: "teko";
-    font-size: min(vwpc(16px),24px);
+    font-size: min(vwpc(16px), 24px);
     letter-spacing: .08em;
     line-height: 1.5;
     border-left: 2px solid #000;
@@ -101,7 +130,7 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background-image: linear-gradient(to bottom,#fd1e00,#dc1b6f);
+        background-image: linear-gradient(to bottom, #fd1e00, #dc1b6f);
         -webkit-background-clip: text;
         color: transparent;
     }
@@ -111,9 +140,10 @@
 .single__entry p {
     margin: 24px 0;
     letter-spacing: 0.07em;
-    font-size: min(vwsp(14px),16px);
+    font-size: min(vwsp(14px), 16px);
+
     @include mq-target(sm) {
-        font-size: min(vwpc(14px),16px);
+        font-size: min(vwpc(14px), 16px);
     }
 }
 
@@ -142,7 +172,7 @@ html.notouch .single__entry a:hover {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 100% 1px;
-    background-image: linear-gradient(#000,#000);
+    background-image: linear-gradient(#000, #000);
     padding: 0 2.6rem .9rem 0;
     margin: 4rem 0 0
 }

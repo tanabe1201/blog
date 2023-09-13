@@ -14,7 +14,7 @@
       display: block;
       overflow: hidden;
       position: relative;
-      width: 99%;
+      width:100%;
 
       @include mq-target(sm) {
         padding-top: 58%;
@@ -22,7 +22,8 @@
       }
 
       @include mq-target(md) {
-        padding-top: 60%;
+        // padding-top: 62%;
+        padding-top: 58%;
         // padding-top: 58.25%;
       }
 
@@ -50,25 +51,26 @@
     position: relative;
     z-index: 100;
     margin: auto;
-    // box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: 2px solid #1c1e22;
-    // border-radius: clamp(12px,2.1vw,24px);
+    border-radius: clamp(8px,2.1vw,16px);
     // background: url(../images/charaBg04.jpg) repeat center bottom;
-    background: rgba($color: #000000, $alpha: 0.85);
+    // background: rgba($color: #000000, $alpha: 0.75);
+    background: rgba($color: #1b1b1b, $alpha: 0.55);
     background-size: 100% auto;
     overflow: hidden;
 
     padding: min(vwsp(16px),30px) min(vwsp(8px),20px);
     // padding: vwsp(40px) vwsp(28px);
     @include mq-target(sm) {
-      padding: min(vwpc(20px),30px) min(vwpc(10px),20px);
+      padding: min(vwpc(10px),20px) min(vwpc(10px),20px);
     }
   }
 
   &__header {
     margin: auto;
     text-align: left;
-    margin-bottom: 4px;
+    padding-bottom: 10px;
     @include mq-target(sm) {
       // text-align: center;
     }
@@ -76,6 +78,7 @@
     a {
       display: flex;
       align-items: center;
+      justify-content: space-between;
 
       &:hover {
         transition: opacity .2s ease;
@@ -114,10 +117,10 @@
       -webkit-background-clip: text;
       color: transparent;
       font-weight: 600;
-      font-size: min(vwsp(36px),46px);
+      font-size: min(vwsp(36px),42px);
       
       @include mq-target(sm) {
-        font-size: min(vwpc(38px),48px);
+        font-size: min(vwpc(42px),52px);
       }
     }
 
@@ -136,8 +139,8 @@
     // font-weight: 600;
     color: #fff;
     // font-family: "Shippori Mincho B1";
-    // filter: drop-shadow(1px 1px 1px #000);
-    filter: drop-shadow(0 0 0.625vw rgba(254, 233, 46, .75));
+    filter: drop-shadow(1px 1px 1px #000);
+    // filter: drop-shadow(0 0 0.425vw rgba(254, 233, 46, .75));
     font-size: min(vwsp(12px),16px);
     @include mq-target(sm) {
       font-size: min(vwpc(14px),18px);
@@ -157,6 +160,13 @@
       margin: min(vwpc(12px),14px) 0 0;
       padding: 0  0 min(vwpc(12px),14px);
     }
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: min(vwpc(12px),14px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
   // &::after {
   //     content: "";
   //     position: absolute;
@@ -175,6 +185,8 @@
   }
 
   &__link {
+    border-radius: 2px;
+    overflow: hidden;
     position: relative;
     overflow: hidden;
     display: block;
@@ -182,7 +194,7 @@
     &::after {
         content: "";
         @include mq-target(sm) {
-          
+
           @include absAll;
           background: url(../images/frame.png) no-repeat center top/contain;
           background-size: 100% 100%;
@@ -235,7 +247,7 @@
           background-image: linear-gradient(to bottom, #fd5842, #352e2c);
           -webkit-background-clip: text;
           color: transparent;
-          filter: drop-shadow(0 0 12px rgba(254, 233, 46, .55));
+          filter: drop-shadow(0 0 4px rgba(254, 233, 46, .45));
           @include mq-target(sm) {
             font-size: min(vwpc(10px),12px);
           }

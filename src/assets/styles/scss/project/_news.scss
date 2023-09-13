@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     background-image: url(../../assets/images/charaBg_sp.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     filter: blur(4px);
@@ -20,22 +20,34 @@
 }
 
 .p-news {
+
     margin-top: 40px;
 
     // width: 90vw;
     // padding-left: 1.4vw;
     @include mq-target(sm) {
-        width: min(vwpc(520px), 750px);
+        // width: min(vwpc(520px), 600px);
+        width: min(vwpc(400px), 748px);
         margin: 0;
     }
 
-    &__inner {}
+    &__bg {
+        // height: max-content;
+        // position: sticky;
+        // top: 0;
+    }
+
+    &__inner {
+        // background: rgba($color: #1b1b1b, $alpha: 0.65);
+        // overflow-y: auto;
+        // overscroll-behavior-y: auto;
+    }
 
     &__list {
-        margin-top: -20px;
+        // margin-top: -20px;
 
         @include mq-target(sm) {
-            margin-top: -16px;
+            // margin-top: -16px;
         }
     }
 
@@ -65,7 +77,7 @@
 
             @include mq-target(sm) {
                 // width: 240px;
-                width: min(vwpc(160px), 220px);
+                width: min(vwpc(140px), 200px);
             }
         }
 
@@ -82,6 +94,7 @@
     }
 
     &__ttl {
+        font-weight: 400;
         font-size: min(vwsp(12px), 16px);
         margin-top: 4px;
 
@@ -114,13 +127,13 @@
         font-family: "Shippori Mincho B1";
         cursor: pointer;
         width: 100px;
-        height: 46px;
+        height: 36px;
         line-height: 1;
         opacity: 0.75;
         width: 8.3521229868vw;
         // height: 3.2439238653vw;
         @include flex($align:center, $justify:center);
-
+        display: none;
         div {
             display: block;
             position: absolute;
@@ -147,9 +160,8 @@
         span {
             font-weight: 900;
             color: $color-white;
-            // position: relative;
-            // top: -0.15625vw;
-            line-height: 50px;
+            position: relative;
+            top: -1px;
             font-size: 12px;
             // font-size: .8333333333vw;
         }

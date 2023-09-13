@@ -130,5 +130,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 $(function () {
   $('.p-movie-slider__wrap li .p-movie-content__cap h3').matchHeight();
-});
+}); // // ブラウザ高さを取得し
+// var windowHeight = document.documentElement.clientHeight;
+// // ターゲット要素の高さを合わせる (box-sizing: border-box)
+// $('.l-side__list--scroll').height(windowHeight)
+// // ターゲット要素が、box-sizing: content-box の場合はこちら
+// $('.l-side__list--scroll').outerHeight(windowHeight)
+// var $target = $('.l-side__list--scroll');
+// // リサイズインベントで更新
+// $(window).resize(function() {
+//   $target.height( document.documentElement.clientHeight );
+// });
+// $(function(){
+//     //.sampleをクリックしてajax通信を行う
+//     $('.c-cont__link').click(function(){
+//         $.ajax({
+//             url: 'localhost:3000',
+//             /* 自サイトのドメインであれば、https://kinocolog.com/ajax/test.html というURL指定も可 */
+//             type: 'GET',
+//             dataType: 'html'
+//         }).done(function(data){
+//             /* 通信成功時 */
+//             $('.single').html(data); //取得したHTMLを.resultに反映
+//         }).fail(function(data){
+//             /* 通信失敗時 */
+//             alert('通信失敗！');
+//         });
+//     });
+// });
 //# sourceMappingURL=main.js.map
