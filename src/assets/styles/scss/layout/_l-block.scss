@@ -1,16 +1,17 @@
 @use "../foundation" as *;
 
 .l-main {
+  // margin-top: 20px;
   overflow: hidden;
   // height: 3000px;
   // max-width: 1120px;
-  margin: auto;
+
 }
 
 .l-content {
-  padding-top: 40px;
+  // padding-top: 40px;
   // max-width: 1420px;
-  width: 94vw;
+  width: 96vw;
   // width: min(vwpc(640px), 1600px);
   // width: 90%;
   margin: 0 auto;
@@ -18,7 +19,7 @@
     max-width: 1060px;
   }
   &__inner {
-    margin-top: 40px;
+    // margin-top: 40px;
     // padding: 0 2vw;
     @include mq-target(sm) {
       display: flex;
@@ -47,27 +48,22 @@
   }
   // background: #000;
 
-  &__bg {
-    position: sticky;
-    max-height: auto;
-    top: 0;
+  &-tab {
+    &__item {
+      cursor: pointer;
+      width: 33%;
+    }
   }
 
   &__scroll {
-    width: min(vwpc(180px),300px);
+    width: min(vwpc(200px),280px);
   }
 
   &__inner {
-    // background: url(../images/sys_bg.png) repeat center bottom;
-    // background: url(../images/sys_bg.png) no-repeat center center/100% 100%;
-    // overflow: hidden;
-    
-    &--scroll {
-      padding-right: 14px !important;
-      // border: none;
-      // background: url(../images/sys_bg.png) no-repeat center center/100% 100%;
-
-
+    // background: rgba($color: #000, $alpha: 0.45);
+    // background: rgba($color: #1b1b1b, $alpha: 0.25);
+    &:not(:first-child) {
+      margin-top: 10px;
     }
   }
 
@@ -78,39 +74,13 @@
     justify-content: space-between;
     @include mq-target(sm) {
       display: block;
-    }
-    
-
-    &--scroll {
-      // overflow-y: auto;
-      // overscroll-behavior-y: auto;
-      // height: 500px;
-
-
-
-      &::-webkit-scrollbar {
-        width: 10px;
-        height: 20px;
-      }
-  
-      &::-webkit-scrollbar-track {
-        background-color:#191919;
-        border-radius: 100px;
-      }
-      
-      &::-webkit-scrollbar-thumb {
-        background-color: #ddd;
-        border-radius: 100px;
-        width: 100px;
-      }
-
-    }
-  
+    }  
   }
 
 
   &__item {
-    
+    background-position: center;
+    // @include flex($align:center,$justify:center);
     width: 32%;
       // padding-top: 16px;
 
@@ -120,68 +90,143 @@
       @include mq-target(sm) {
         width: 100%;
       }
+      counter-increment: rank;
+      position: relative;
+      overflow: hidden;
+
+      .l-side__rank {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        a {
+          border-radius: 0px !important;
+          figure { 
+            padding: 0 !important;
+            picture {
+              border-radius: 0;
+            }
+          }
+        }
+
+        &::before {
+          border-radius: 6px;
+          content: "";
+          background: rgba($color: #e31818, $alpha: 0.85);
+          // background: rgba($color: #2837bb, $alpha: 1.0);
+          filter: drop-shadow(0 0 4px rgba(254, 233, 46, .25));
+          display: block;
+          width: 100%;
+          height: 32px;
+          transform: rotate(-45deg);
+          position: absolute;
+          left: -50%;
+          top: 0;
+          z-index: 1;
+        }
+        &::after {
+          font-style: italic;
+          content: counter(rank);
+          color: white;
+          font-size: 14px;
+          font-weight: italic;
+          line-height: initial;
+          text-align: center;
+          width: 1.4em;
+          position: absolute;
+          left: .1em;
+          top: .2em;
+          z-index: 2;
+        }
+    
+      }
+
   }
 
+
+  &__img {
+    padding: 0 !important;
+    margin-bottom: 4px;
+    picture {
+      height: 74px !important;
+      padding: initial !important;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+
+
+
   &__rank {
-    counter-increment: rank;
-    position: relative;
-    overflow: hidden;
-    // &::before {
-    //   content: "";
-    //   // background: rgba($color: #1d3a8c, $alpha: 0.85);
-    //   background: rgba($color: $color-red, $alpha: 0.85);
-    //   filter: drop-shadow(0 0 4px rgba(254, 233, 46, .45));
-    //   display: block;
-    //   width: 100%;
-    //   height: 2rem;
-    //   transform: rotate(-45deg);
-    //   position: absolute;
-    //   left: -50%;
-    //   top: 0;
-    //   z-index: 1;
-    // }
-    // &::after {
-    //   content: counter(rank);
-    //   color: white;
-    //   font-size: 14px;
-    //   font-weight: italic;
-    //   line-height: initial;
-    //   text-align: center;
-    //   width: 1.5em;
-    //   position: absolute;
-    //   left: .1em;
-    //   top: .2em;
-    //   z-index: 2;
-    // }
 
     // &:first-child::before {
     //   background: $color-blue;
     // }
   }
 
-  &__link {
-        &::after {
-      content: "";
-      @include absAll;
-      opacity: 0;
-  }
-  }
+  // &__link {
+  //       &::after {
+  //     content: "";
+  //     @include absAll;
+  //     opacity: 0;
+  // }
+  // }
 
   &__img {
     picture {
-      padding-top: 50.25%;
+      // padding-top: 50.25%;
   }
   }
 
 
   &-cont {
+    &__head {
+      // flex: 0;
+      // width: 50px;
+      // padding: 0 20px 0 10px;
+      width: min(vwpc(42px),52px) !important; 
+      margin-left: -10px;
+      display: none;
+      @include mq-target(lg) {
+        margin-left: -14px;
+        display: block;
+      }
+
+      &--art {
+        display: none;
+      }
+
+      a {
+        font-style: italic;
+        font-family:sans-serif;
+        font-weight: 300; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        height: 100%;
+        font-size: 20px !important;
+        // font-size: min(vwpc(18px),22px) !important;
+      }
+    }
+
     &__bot {
+      flex: 1;
+      margin: 0 !important;
       text-align: left;
     }
   
     &__ttl {
-      margin-top: 8px;
-      font-size: min(vwpc(12px),14px);
+      word-break: break-all;
+      // line-height: 1.5;
+      font-weight: 400 !important;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 4;
+      margin: 0 !important;
+      font-size: min(vwpc(12px),14px) !important;
+      // font-size: 14px !important;
     }
   }
 }

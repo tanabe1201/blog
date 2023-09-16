@@ -7,77 +7,279 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ギャラリー - ポートフォリオ</title>
-  <meta name="description" content="説明文">
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@s_tanabe">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-  <link rel="stylesheet" href="../assets/styles/vendors/font.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css"> -->
-  <link rel="icon" href="../assets/images/icon/favicon-32x32.png" sizes="32x32">
-  <link href="../assets/styles/vendors/lity.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="../assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/styles/style.css" rel="stylesheet">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー - ポートフォリオ</title>
+    <meta name="description" content="説明文">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@s_tanabe">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <link rel="stylesheet" href="../assets/styles/vendors/font.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css"> -->
+    <link rel="icon" href="../assets/images/icon/favicon-32x32.png" sizes="32x32">
+    <link href="../assets/styles/vendors/lity.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/styles/style.css" rel="stylesheet">
+
 </head>
 
 
+<header class="l-header">
+    <div class="l-header__inner">
+        <div class="l-header__logo">
+            <a href="/">
+                <!-- 豚箱速報 -->
+                <!-- <img src="../assets/images/title2.png" alt="ゴースト速報"> -->
+            </a>
+        </div>
+        <div class="" style="display: flex; align-items: center;">
+            <nav>
+                <ul style="display: flex; align-items: center;">
+                    <li>
+                        <a href="" style="color: #fff;">
+                            <span>ABOUT</span>
+                        </a>
+                    </li>
+                    <li style="margin-left: 20px;">
+                        <a href="" style="color: #fff;">
+                            <span>メール</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="l-header__sns">
+                <a href="https://twitter.com/home?lang=ja">
+                    <svg class="i-twitter" style="width: 38px; height: 38px;">
+                        <use xlink:href="../assets/images/sprite.svg#ri-twitter-x-fill"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</header>
 
 
-<!-- <nav class="l-drawer__content js-draw--content">
-  
-  <div class="l-drawer__wrap">
+<style>
+    /* 
+
+<div class="p-fea__bg">
+    <section class="p-fea">
+    <div class="p-fea__header">
+        <h2 class="c-sec__ttl">
+            <span class="-en">RANKING</span>
+            <span class="-ja">ランキング</span>
+        </h2>
+    </div>
+
+        <div class="p-fea__inner">
+            <div class="p-fea-slider">
+
+                <div class="p-fea-slider__btn">
+                    <div class="p-fea-slider__btnPrev js-slider-btnPrev"></div>
+                    <div class="p-fea-slider__btnNext js-slider-btnNext"></div>
+                </div>
+                <div class="swiper p-fea-slider__container js-index-slider">
+                    <ul class="swiper-wrapper p-fea-slider__wrap">
+
+                        <li class="swiper-slide p-fea-slider__slide">
+                            <a href="https://www.cmoa.jp/special/?page_id=debutsupport"
+                                class="inview p-fea-content__link">
+                                <figure class="c-picture__img p-fea-content__img">
+                                    <picture>
+                                        <img src="../assets/images/cpn1.jpg" alt="サムネイル">
+                                    </picture>
+                                </figure>
+                            </a>
+
+                            <!-- <div class="p-fea-content__cap">
+                              <ul class="p-fea-content__labels">
+                                  <li class="info">キャンペーン</li>
+                              </ul>
+                              <ul class="p-fea-content__labels">
+                                  <li class="date">2022.01.02</li>
+                              </ul>
+                              <a href="#">
+                                  <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
+                                      “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                  </h3>
+                              </a>
+                          </div> -->
+                        </li>
+                        <li class="swiper-slide p-fea-slider__slide">
+                            <a href="#" class="inview p-fea-content__link">
+                                <figure class="c-picture__img p-fea-content__img">
+                                    <picture>
+                                        <img src="../assets/images/cpn2.jpg" alt="サムネイル">
+                                    </picture>
+                                </figure>
+                            </a>
+                            <!-- <div class="p-fea-content__cap">
+                              <ul class="p-fea-content__labels">
+                                  <li class="date">2022.01.02</li>
+                              </ul>
+                              <a href="#">
+                                  <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
+                                      “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                  </h3>
+                              </a>
+                              <ul class="p-fea-content__labels">
+                                  <li class="info">キャンペーン</li>
+                              </ul>
+                          </div> -->
+                        </li>
+                        <li class="swiper-slide p-fea-slider__slide">
+                            <a href="#" class="inview p-fea-content__link">
+                                <figure class="c-picture__img p-fea-content__img">
+                                    <picture>
+                                        <img src="../assets/images/cpn3.jpg" alt="サムネイル">
+                                    </picture>
+                                </figure>
+                            </a>
+                            <!-- <div class="p-fea-content__cap">
+                              <ul class="p-fea-content__labels">
+                                  <li class="date">2022.01.02</li>
+                              </ul>
+                              <a href="#">
+                                  <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
+                                      “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                  </h3>
+                              </a>
+                              <ul class="p-fea-content__labels">
+                                  <li class="info">キャンペーン</li>
+                              </ul>
+                          </div> -->
+                        </li>
+                        <li class="swiper-slide p-fea-slider__slide">
+                            <a href="#" class="inview p-fea-content__link">
+                                <figure class="c-picture__img p-fea-content__img">
+                                    <picture>
+                                        <img src="../assets/images/sys_bg.webp" alt="サムネイル">
+                                    </picture>
+                                </figure>
+                            </a>
+                            <!-- <div class="p-fea-content__cap">
+                              <ul class="p-fea-content__labels">
+                                  <li class="date">2022.01.02</li>
+                              </ul>
+                              <a href="#">
+                                  <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
+                                      “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                  </h3>
+                              </a>
+                              <ul class="p-fea-content__labels">
+                                  <li class="info">キャンペーン</li>
+                              </ul>
+                          </div> -->
+                        </li>
+                        <li class="swiper-slide p-fea-slider__slide">
+                            <a href="#" class="inview p-fea-content__link">
+                                <figure class="c-picture__img p-fea-content__img">
+                                    <picture>
+                                        <img src="../assets/images/sys_bg.webp" alt="サムネイル">
+                                    </picture>
+                                </figure>
+                            </a>
+                            <!-- <div class="p-fea-content__cap">
+                              <ul class="p-fea-content__labels">
+                                  <li class="date">2022.01.02</li>
+                              </ul>
+                              <a href="#">
+                                  <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
+                                      “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                  </h3>
+                              </a>
+                              <ul class="p-fea-content__labels">
+                                  <li class="info">キャンペーン</li>
+                              </ul>
+                          </div> -->
+                        </li>
+                        <li class="swiper-slide p-fea-slider__slide">
+                            <a href="#" class="inview p-fea-content__link">
+                                <figure class="c-picture__img p-fea-content__img">
+                                    <picture>
+                                        <img src="../assets/images/sys_bg.webp" alt="サムネイル">
+                                    </picture>
+                                </figure>
+                            </a>
+                            <!-- <div class="p-fea-content__cap">
+                              <ul class="p-fea-content__labels">
+                                  <li class="date">2022.01.02</li>
+                              </ul>
+                              <a href="#">
+                                  <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
+                                      “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                  </h3>
+                              </a>
+                              <ul class="p-fea-content__labels">
+                                  <li class="info">キャンペーン</li>
+                              </ul>
+                          </div> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+</div>
+
+    <!-- <nav class="l-drawer__content js-draw--content">
     
-    <ul class="l-drawer__list l-drawer__list--menu">
-      <li class="l-drawer__item">
-        <a href="#top" class="js-draw--trigger">
-          <span>top</span>
-        </a>
-      </li>
-      <li class="l-drawer__item">
-        <a href="#about" class="js-draw--trigger">
-          <span>ABOUT</span>
-        </a>
-      </li>
-      <li class="l-drawer__item">
-        <a href="#concept" class="js-draw--trigger">
-          <span>concept</span>
-          
-        </a>
-      </li>
-      <li class="l-drawer__item">
-        <a href="#chara" class="js-draw--trigger">
-          <span>character</span>
-        </a>
-      </li>
-      <li class="l-drawer__item">
-        <a href="#camp" class="js-draw--trigger">
-          <span>campaign</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav> -->
+    <div class="l-drawer__wrap">
+        
+        <ul class="l-drawer__list l-drawer__list--menu">
+        <li class="l-drawer__item">
+            <a href="#top" class="js-draw--trigger">
+            <span>top</span>
+            </a>
+        </li>
+        <li class="l-drawer__item">
+            <a href="#about" class="js-draw--trigger">
+            <span>ABOUT</span>
+            </a>
+        </li>
+        <li class="l-drawer__item">
+            <a href="#concept" class="js-draw--trigger">
+            <span>concept</span>
+            
+            </a>
+        </li>
+        <li class="l-drawer__item">
+            <a href="#chara" class="js-draw--trigger">
+            <span>character</span>
+            </a>
+        </li>
+        <li class="l-drawer__item">
+            <a href="#camp" class="js-draw--trigger">
+            <span>campaign</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+    </nav> -->
+**/
+    </style>
 
 <body id="top" data-character="1">
-  <link rel="stylesheet" href="../assets/images/sprite.svg">
-  
-  <div class="IEblock">
-    <div class="comment_block">
-      <p>このブラウザは閲覧非対応です。</p>
+    <link rel="stylesheet" href="../assets/images/sprite.svg">
+
+    <div class="IEblock">
+        <div class="comment_block">
+            <p>このブラウザは閲覧非対応です。</p>
+        </div>
     </div>
-  </div>
 
 <div class="section__bg"></div>
 <main class="l-main">

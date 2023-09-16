@@ -2,11 +2,20 @@
 
 
 .p-fea {
+    width: 96vw;
+    // width: min(vwpc(640px), 1600px);
+    // width: 90%;
+    margin: 20px auto;
+    @include mq-target(sm) {
+      max-width: 1060px;
+    }
+
     &__header {
         @include flex($align:center, $justify:space-between);
     }
 
     &-slider {
+        overflow: hidden;
         position: relative;
 
         &__container {
@@ -18,9 +27,9 @@
             opacity: 1;
         }
 
-        &:hover .p-movie-slider__btn div {
+        &:hover .p-fea-slider__btn div {
             opacity: 0.85;
-            background-color: rgba(1, 6, 13, 0.75) !important;
+            background-color: rgb(0, 0, 0) !important;
         }
 
         &__wrap {
@@ -38,12 +47,13 @@
             width: 46%;
 
             @include mq-target(sm) {
-                margin-right: 1.4%;
+                margin-right: 1%;
                 width: 38%;
             }
 
             @include mq-target(lg) {
                 width: 26.4%;
+                width: 24.2%;
             }
 
             &:last-child {
@@ -51,7 +61,66 @@
             }
         }
 
-        
+        &__btn {
+            // cursor: pointer;
+            // display: flex;
+            // margin-left: 10px;
+        }
+
+        &__btnPrev,
+        &__btnNext {
+            // flex-shrink: 0;
+            // margin: 0;
+            // left: initial;
+            // right: initial;
+            display: grid;
+            // place-content: center;
+            // position: relative;
+            z-index: 500;
+            transition: all 0.15s ease-in 0s;
+            // position: absolute;
+            // overflow: visible;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
+            width: 44px;
+            opacity: 0;
+
+
+            // height: 40px;
+            @include mq-target(sm) {
+                // width: min(vwpc(30px),46px);
+                // height: min(vwpc(30px),46px);
+            }
+
+            &::after {
+                content: "";
+                width: 40px;
+                height: 40px;
+                margin: auto;
+                background: url(../../assets/images/arrow_next.png) no-repeat center/contain;
+
+                @include mq-target(sm) {
+                    width: min(vwpc(30px), 40px);
+                    height: min(vwpc(30px), 40px);
+                }
+            }
+        }
+
+        &__btnPrev {
+            right: initial;
+            left: 0;
+            margin-right: 4px;
+
+            @include mq-target(sm) {
+                margin-right: 4px
+            }
+
+            &::after {
+                background: url(../../assets/images/arrow_prev.png) no-repeat center/contain;
+            }
+        }
     }
 
     &-content {
@@ -78,13 +147,13 @@
             position: relative;
             overflow: hidden;
 
-            // &::after {
-            //     content: "";
-            //     @include absAll;
-            //     display: block;
-            //     background: url(../../assets/images/frame.png) no-repeat center top/contain;
-            //     background-size: 100% 100%;
-            // }
+            &::after {
+                content: "";
+                @include absAll;
+                display: block;
+                background: url(../../assets/images/frame.png) no-repeat center top/contain;
+                background-size: 100% 100%;
+            }
 
             picture {
                 padding-top: 58.25%;
@@ -102,7 +171,7 @@
         }
 
         &__labels {
-            margin-top: min(vwsp(4px),10px);
+            margin-top: min(vwsp(4px), 10px);
             position: relative;
             text-align: left;
 
@@ -161,9 +230,12 @@
 
         &__ttl {
             margin-top: 10px !important;
+            font-size: 14px;
         }
 
     }
 
 
-    }
+
+
+}

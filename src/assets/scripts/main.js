@@ -42,93 +42,22 @@ window.addEventListener('load', function(){
 });  
 
 
-document.addEventListener('DOMContentLoaded', function () {
 
-  {
-    const accSingleTriggers = document.querySelectorAll('.js-acc--trigger');
-
-    accSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
-
-    function toggleAccordion() {
-      const items = document.querySelectorAll('.js-acc--content');
-      const thisItem = this.parentNode;
-
-      items.forEach(item => {
-        if (thisItem == item) {
-          thisItem.classList.toggle('is-active');
-          return;
-        }
-        item.classList.remove('is-active');
-      });
-    }
-  }
-
-  {
-    const el = document.querySelectorAll('.inview');
-    const els = Array.prototype.slice.call(el);
-
-    const cb = function (entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // setTimeout(() => {
-          entry.target.classList.add('is-anim');
-          // }, 100);
-        } else {}
-      });
-    }
-
-    const options = {
-      root: null,
-      rootMargin: '-15% 0px',
-      threshold: 0
-    };
-    const io = new IntersectionObserver(cb, options);
-    els.forEach(el => io.observe(el));
-  }
-
-  {
-    const el = document.querySelectorAll('.animate-heading');
-    const els = Array.prototype.slice.call(el);
-
-    const cb = function (entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-
-          entry.target.classList.add('inview');
-          // setTimeout(() => {
-          // }, 600);
-        } else {
-          // entry.target.classList.remove('inview');
-        }
-      });
-    }
-
-    const options = {
-      root: null,
-    };
-
-    const io = new IntersectionObserver(cb, options);
-    els.forEach(el => io.observe(el));
-
-    for (let el of els) {
-      const chars = el.innerHTML.trim().split("");
-
-      el.innerHTML = chars.reduce((acc, curr) => {
-        curr = curr.replace(/\s+/, '&nbsp;');
-        return `${acc}<span class="char">${curr}</span>`;
-      }, "");
-    }
-  }
+var tabTriggers = document.querySelectorAll('.js-tab--trigger');
+var tabContents = document.querySelectorAll('.js-tab--content');
+tabTriggers.forEach(function (trigger) {
+  return trigger.addEventListener('click', function (e) {
+    e.preventDefault();
+    tabTriggers.forEach(function (trigger) {
+      trigger.classList.remove('is-active');
+    });
+    trigger.classList.add('is-active');
+    tabContents.forEach(function (content) {
+      return content.classList.remove('is-active');
+    });
+    document.getElementById(trigger.dataset.tab).classList.add('is-active');
+  });
 });
-
-
-
-$(function() {
-  $('.p-movie-slider__wrap li .p-movie-content__cap h3').matchHeight();
-});
-
-
-
 // // ブラウザ高さを取得し
 // var windowHeight = document.documentElement.clientHeight;
 

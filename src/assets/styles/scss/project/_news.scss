@@ -14,28 +14,59 @@
     background-position: center;
     filter: blur(4px);
 
+    &::after {
+        content: "";
+        @include absAll;
+        background: rgba($color: #000000, $alpha: 0.45);
+    }
+
     @include mq-target(sm) {
         background-image: url(../../assets/images/charaBg_04.jpg);
     }
 }
 
-.p-news {
+.p-pickup {
+    &__inner {
+        
+    }
+}
 
-    margin-top: 40px;
+.p-news {
+    // margin-top: 40px;
 
     // width: 90vw;
-    // padding-left: 1.4vw;
+
     @include mq-target(sm) {
         // width: min(vwpc(520px), 600px);
-        width: min(vwpc(400px), 748px);
+        width: min(vwpc(530px), 770px);
         margin: 0;
     }
 
-    &__bg {
-        // height: max-content;
-        // position: sticky;
-        // top: 0;
+    &-tab {
+        &__list {
+            justify-content: initial;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-right: 10px;
+            margin-bottom: 4px;
+            width: auto;
+
+            a {
+                span {
+                    font-size: min(vwsp(10px),16px);
+                    font-weight: 900;
+                    padding: 2px 7px;
+                    display: inline-block;
+                    background: linear-gradient(transparent 30%, rgba(199, 29, 49, 0.65) 0%);
+                    @include mq-target(sm) {
+                        font-size: min(vwpc(12px),16px);
+                    }
+                }
+            }
+        }
     }
+
 
     &__inner {
         // background: rgba($color: #1b1b1b, $alpha: 0.65);
@@ -52,20 +83,30 @@
     }
 
     &__item {
-        filter: drop-shadow(0 0 12px rgba(38, 99, 213, 0.25));
+        // filter: drop-shadow(0 0 12px rgba(38, 99, 213, 0.25));
         // min-height: min(vwsp(130px),180px);
         // min-height: 180px;
         position: relative;
         // padding-top: 9.3333333333vw;
         display: flex;
 
+        &:first-child {
+            padding-top: 0;
+            display: block;
+        }
+
         @include mq-target(sm) {
             // min-height: min(vwpc(140px),180px);
         }
 
         &:hover a {
-            transition: all .2s ease-in-out;
+            transition: all .1s ease-in-out;
             opacity: 0.75;
+        }
+
+        &:first-child .p-news-cont__head {
+            padding: 0;
+            width: 100%;
         }
 
     }
@@ -77,7 +118,7 @@
 
             @include mq-target(sm) {
                 // width: 240px;
-                width: min(vwpc(140px), 200px);
+                width: min(vwpc(160px), 240px);
             }
         }
 
@@ -85,32 +126,58 @@
             position: relative;
             text-align: left;
             flex: 1;
-            margin-left: min(vwsp(12px), 16px);
+            margin-left: min(vwsp(8px), 16px);
 
             @include mq-target(sm) {
-                margin-left: min(vwpc(14px), 20px);
+                margin-left: min(vwpc(10px), 14px);
+            }
+        }
+
+        &__img {
+            picture {
+                overflow: hidden;
+                // border-radius: 8px;
             }
         }
     }
 
     &__ttl {
-        font-weight: 400;
         font-size: min(vwsp(12px), 16px);
         margin-top: 4px;
 
         @include mq-target(sm) {
             // margin-top: 8px;
-            margin-top: min(vwpc(4px), 6px);
+            margin-top: 2px;
+            // margin-top: min(vwpc(2px), 4px);
             // margin-top: min(vwpc(2px),4px);
-            font-size: min(vwpc(14px), 16px);
+            font-size: min(vwpc(14px), 18px);
+        }
+
+        &--1 {
+            font-size: min(vwsp(16px),20px);
+            @include mq-target(sm) {
+                font-size: min(vwpc(16px),20px);
+            }
+        }
+    }
+
+    &__txt {
+        margin: 4px 0 10px;
+        color: #9e9e9e;
+        font-size: min(vwsp(12px),16px);
+        @include mq-target(sm) {
+            font-size: min(vwpc(14px),16px);
         }
     }
 
     &__foot {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-top: 10px;
+        // justify-content: space-between;
+        margin-top: 6px;
+        @include mq-target(sm) {
+            margin-top: 10px;
+        }
     }
 
     &__btn {
