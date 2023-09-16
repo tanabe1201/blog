@@ -326,13 +326,13 @@
       span {
           font-weight:900;
           position: relative;
-          font-size: min(vwsp(10px),14px);
+          font-size: min(vwsp(12px),14px);
           background-image: linear-gradient(to bottom, #fd5842, #352e2c);
           -webkit-background-clip: text;
           color: transparent;
           // filter: drop-shadow(2px 1px 1px rgba(46, 77, 254, 0.25));
           @include mq-target(sm) {
-            font-size: min(vwpc(10px),14px);
+            font-size: min(vwpc(14px),14px);
           }
       }
     }
@@ -370,7 +370,7 @@
   }
 
   &__ttl {
-    font-weight: 700 !important;
+    font-weight: 700;
     font-weight: bold;
     text-align: left;
     line-height: 1.4;

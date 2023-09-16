@@ -142,10 +142,12 @@
     }
 
     &__ttl {
-        font-size: min(3.2vw, 16px);
+        font-weight: 400;
+        font-size: min(3.6vw, 16px);
         margin-top: 4px;
 
         @include mq-target(sm) {
+            font-weight: 700;
             // margin-top: 8px;
             margin-top: 2px;
             // margin-top: min(vwpc(2px), 4px);
