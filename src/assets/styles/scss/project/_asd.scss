@@ -7,7 +7,7 @@
     // width: 90%;
     margin: 20px auto;
     @include mq-target(sm) {
-      max-width: 1060px;
+      max-width: 1010px;
     }
 
     &__header {
@@ -47,13 +47,13 @@
             width: 46%;
 
             @include mq-target(sm) {
-                margin-right: 1%;
+                margin-right: 1.4%;
                 width: 38%;
             }
 
             @include mq-target(lg) {
                 width: 26.4%;
-                width: 24.2%;
+                width: 32.4%;
             }
 
             &:last-child {
@@ -139,6 +139,7 @@
         }
 
         &__img {
+            padding: 0;
             // border: 0.1125vw solid #ddd;
             // filter: drop-shadow(0 0 0.115vw #000);
             // border-radius: 4px;
@@ -151,13 +152,10 @@
                 content: "";
                 @include absAll;
                 display: block;
-                background: url(../../assets/images/frame.png) no-repeat center top/contain;
+                // background: url(../../assets/images/frame.png) no-repeat center top/contain;
                 background-size: 100% 100%;
             }
 
-            picture {
-                padding-top: 58.25%;
-            }
 
         }
 

@@ -19,14 +19,17 @@ body {
 	// font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, "MS PGothic", sans-serif;
 	// font-family: 'Arial', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, YuGothic, 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
 	font-family: Noto Sans CJK JP,Noto Sans,Noto,Hiragino Sans,Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,sans-serif;
+	// font-family: YakuHanJP,'-apple-system','BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.04em;
 	-webkit-text-size-adjust: 100%;
 	// background: #ddd;
 	// background: #170f2a;
 	// background: #1b1b1b;
-	// background: #04011b;
-	background: rgba($color: #000000, $alpha: 1);
+	background: #04011b;
+	// background: rgba($color: #000000, $alpha: 1);
+	background: rgba($color: #141414, $alpha: 0.75);
+	
 
 	background-position: center;
 

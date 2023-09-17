@@ -21,12 +21,12 @@
   // height: min(12.267vw,9.1rem);
   padding: 10px;
   @include mq-target(sm) {
-    padding: 20px 0;
-    height: 84px;
+    padding: 14px 0;
+    // height: 84px;
   }
 
-  margin-bottom: 20px;
-  border-bottom: 4px solid #1c1e22;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #1c1e22;
   background: rgba($color: #1b1b1b, $alpha: 0.55);
   // background: rgba($color: #000, $alpha: 0.65);
       &__inner {
@@ -42,23 +42,23 @@
       width: 96vw;
       margin: 0 auto;
       @include mq-target(sm) {
-        max-width: 1060px;
+        max-width: 1010px;
       }
   }
 
   &__logo {
-    margin-top: 14px;
+    // margin-top: 14px;
     width: min(vwpc(190px),280px);
     position: relative;
     z-index: 600;
     // top: 12px;
-    left: 12px;
+    // left: 12px;
     a {
-      @include absCenter;
+      // @include absCenter;
       font-size: 28px;
       color: $color-white;
       display: flex;
-      width: min(vwpc(190px),280px);
+      width: min(vwpc(120px),160px);
 
       img {
         // width: min(21.333vw,16rem);

@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
     <link rel="stylesheet" href="./assets/styles/vendors/font.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanjp.css">
     <link rel="icon" href="./assets/images/icon/favicon-32x32.png" sizes="32x32">
     <link href="./assets/styles/vendors/lity.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
         <div class="l-header__logo">
             <a href="/">
                 <!-- 豚箱速報 -->
-                <!-- <img src="./assets/images/title2.png" alt="ゴースト速報"> -->
+                <img src="./assets/images/title2.png" alt="ゴースト速報">
             </a>
         </div>
         <div class="" style="display: flex; align-items: center;">
@@ -280,8 +280,8 @@
             <p>このブラウザは閲覧非対応です。</p>
         </div>
     </div>
-<!-- 
-        <section class="p-fea">
+
+        <!-- <section class="p-fea">
             <div class="p-fea-slider">
 
                 <div class="p-fea-slider__btn">
@@ -389,7 +389,7 @@
                     </div>
                 </div> -->
                 <div class="c-sec__inner p-news__inner">
-                    <div class="c-sec__header">
+                    <div class="c-sec__header p-news-head">
                         <a href="#">
                             <h2 class="c-sec__ttl">
                                 <span class="-en">TOP NEWS</span>
@@ -399,34 +399,40 @@
                                 <use xlink:href="./assets/images/sprite.svg#nextpage"></use>
                             </svg>
                         </a>
+                        <ul class="c-tab__list p-news-tab__list">
+                            <li class="c-tab__item p-news-tab__item">
+                                <a href="">
+                                    <span>ニュース</span>
+                                </a>
+                            </li>
+                            <li class="c-tab__item p-news-tab__item">
+                                <a href="">
+                                    <span>エンタメ</span>
+                                </a>
+                            </li>
+                            <li class="c-tab__item p-news-tab__item">
+                                <a href="">
+                                    <span>炎上系</span>
+                                </a>
+                            </li>
+                            <li class="c-tab__item p-news-tab__item">
+                                <a href="">
+                                    <span>イベント</span>
+                                </a>
+                            </li>
+                            <li class="c-tab__item p-news-tab__item">
+                                <a href="">
+                                    <span>キャンペーン</span>
+                                </a>
+                            </li>
+                            <li class="c-tab__item p-news-tab__item">
+                                <a href="">
+                                    <span>キャンペーン</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="c-tab__list p-news-tab__list">
-                        <li class="c-tab__item p-news-tab__item">
-                            <a href="">
-                                <span>ニュース</span>
-                            </a>
-                        </li>
-                        <li class="c-tab__item p-news-tab__item">
-                            <a href="">
-                                <span>エンタメ</span>
-                            </a>
-                        </li>
-                        <li class="c-tab__item p-news-tab__item">
-                            <a href="">
-                                <span>炎上系</span>
-                            </a>
-                        </li>
-                        <li class="c-tab__item p-news-tab__item">
-                            <a href="">
-                                <span>イベント</span>
-                            </a>
-                        </li>
-                        <li class="c-tab__item p-news-tab__item">
-                            <a href="">
-                                <span>キャンペーン</span>
-                            </a>
-                        </li>
-                    </ul>
+
                     <ul class="p-news__list">
                         <li class="c-cont__item p-news__item">
                             <div class="p-news-cont__head">
@@ -439,20 +445,14 @@
                                 </a>
                             </div>
                             <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>キャンペーン</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="/system">
-                                    <h3 class="c-cont__ttl p-news__ttl p-news__ttl--1">
-                                        「劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉」公開は2024年冬！特報第1弾、ティザービジュアル第2弾が公開
-                                    </h3>
-                                    <p class="p-news__txt">
-                                        iPhone版『DEATH STRANDING DIRECTOR'S CUT』が発表された。対応機種などの詳細は続報を待ちたい。
-                                    </p>
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!! DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
                                     <div class="p-news__foot">
                                         <div class="c-cont__time">
                                             <svg class="i-clock">
@@ -460,13 +460,19 @@
                                             </svg>
                                             <time>4時間前</time>
                                         </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                         <div class="p-news__btn">
                                             <div class="">
                                             </div>
                                             <span>続きを読む</span>
                                         </div>
                                     </div>
-                                </a>
                             </div>
                         </li>
                         <li class="c-cont__item p-news__item">
@@ -480,22 +486,14 @@
                                 </a>
                             </div>
                             <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        大阪日本橋を舞台にした上海産メイド喫茶スローライフADV「電気街の喫茶店」がPLAYISMより2024年に発売！
-                                    </h3>
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            巨大ロボゲー新作『メックウォーリア5：クランズ』PC/PS/Xbox向けに発表！空前のロボゲーブームに乗り遅れるな！！
+                                        </h3>
+                                    </a>
+                                </div>
                                     <div class="p-news__foot">
                                         <div class="c-cont__time">
                                             <svg class="i-clock">
@@ -503,13 +501,19 @@
                                             </svg>
                                             <time>4時間前</time>
                                         </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                         <div class="p-news__btn">
                                             <div class="">
                                             </div>
                                             <span>続きを読む</span>
                                         </div>
                                     </div>
-                                </a>
                             </div>
                         </li>
                         <li class="c-cont__item p-news__item">
@@ -523,22 +527,15 @@
                                 </a>
                             </div>
                             <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        「劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉」公開は2024年冬！特報第1弾、ティザービジュアル第2弾が公開
-                                    </h3>
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
                                     <div class="p-news__foot">
                                         <div class="c-cont__time">
                                             <svg class="i-clock">
@@ -546,13 +543,19 @@
                                             </svg>
                                             <time>4時間前</time>
                                         </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                         <div class="p-news__btn">
                                             <div class="">
                                             </div>
                                             <span>続きを読む</span>
                                         </div>
                                     </div>
-                                </a>
                             </div>
                         </li>
                         <li class="c-cont__item p-news__item">
@@ -566,22 +569,15 @@
                                 </a>
                             </div>
                             <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        テレビアニメ「16bitセンセーション ANOTHER LAYER」初回放送は10月4日24時30分！キービジュアルと本PVが公開に
-                                    </h3>
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
                                     <div class="p-news__foot">
                                         <div class="c-cont__time">
                                             <svg class="i-clock">
@@ -589,13 +585,19 @@
                                             </svg>
                                             <time>4時間前</time>
                                         </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                         <div class="p-news__btn">
                                             <div class="">
                                             </div>
                                             <span>続きを読む</span>
                                         </div>
                                     </div>
-                                </a>
                             </div>
                         </li>
                         <li class="c-cont__item p-news__item">
@@ -609,22 +611,15 @@
                                 </a>
                             </div>
                             <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        生バンドで熱く愛を叫んだ「アイドルマスター シンデレラガールズ」単独ライブ「Shout out Live!!!」DAY1レポート
-                                    </h3>
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
                                     <div class="p-news__foot">
                                         <div class="c-cont__time">
                                             <svg class="i-clock">
@@ -632,13 +627,19 @@
                                             </svg>
                                             <time>4時間前</time>
                                         </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                         <div class="p-news__btn">
                                             <div class="">
                                             </div>
                                             <span>続きを読む</span>
                                         </div>
                                     </div>
-                                </a>
                             </div>
                         </li>
                         <li class="c-cont__item p-news__item">
@@ -652,126 +653,455 @@
                                 </a>
                             </div>
                             <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        「アイドルマスター シンデレラガールズ」Shout out Live!!!
-                                        DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img p-news-cont__img">
-                                        <picture>
-                                            <img src="./assets/images/cpn1.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        「アズレン」雲仙（CV：三森すずこ）などが登場するイベントが9月14日に開催！盛りだくさんの着せ替え衣装や今後のアップデート、「シノマス」コラボ情報も
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img p-news-cont__img">
-                                        <picture>
-                                            <img src="./assets/images/cpn2.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                                <div class="p-news-cont__desc">
 
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/game1.png" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/game2.webp" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="/system" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/ogp.webp" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!! DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/ogp3.jpg" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            巨大ロボゲー新作『メックウォーリア5：クランズ』PC/PS/Xbox向けに発表！空前のロボゲーブームに乗り遅れるな！！
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/ogp2.jpg" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/ogp4.jpg" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/evnt2.png" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/game1.png" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="c-cont__item p-news__item">
+                            <div class="p-news-cont__head">
+                                <a href="#" class="c-cont__link">
+                                    <figure class="c-picture__img p-news-cont__img">
+                                        <picture>
+                                            <img src="./assets/images/game2.webp" alt="">
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="p-news-cont__bot">
+                                <div class="p-news-cont__desc">
+
+                                    <a href="">
+                                        <h3 class="c-cont__ttl p-news__ttl">
+                                            「アイドルマスター シンデレラガールズ」Shout out Live!!!
+                                            DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
+                                        </h3>
+                                    </a>
+                                </div>
+                                    <div class="p-news__foot">
+                                        <div class="c-cont__time">
+                                            <svg class="i-clock">
+                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                            </svg>
+                                            <time>4時間前</time>
+                                        </div>
+                                        <ul class="c-cont-tag__list">
+                                            <li class="c-cont-tag__item">
+                                                <a href="">
+                                                    <span>キャンペーン</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="p-news__btn">
+                                            <div class="">
+                                            </div>
+                                            <span>続きを読む</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -816,7 +1146,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 ドイツ発スリープテック・ブランド　エマ・スリープ全国の企業を対象にエマブランドの製品を提供するコラボ企画を開始～2023年9月14日（木）から応募受付開始～
                                             </h3>
                                         </a>
@@ -835,7 +1165,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 ワーナー ブラザース100周年記念
                                                 この秋は、渋谷にワーナー・ブラザース人気キャラクターが集合！トムとジェリー、トゥイーティーたちがSHIBUYA109渋谷店とコラボレーション！
                                             </h3>
@@ -854,7 +1184,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 塚田農場は日本相撲協会と年間契約を締結し2023年10月1日より飲食業界で初のオフィシャルスポンサーとして活動
                                             </h3>
                                         </a>
@@ -872,7 +1202,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 ハートマーケット プロデュースベイシア限定販売の婦人服ブランド「＆H」好評につき9月20日（水）よりベイシア61店舗で拡大展開スタート
                                             </h3>
                                         </a>
@@ -890,7 +1220,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 SLY（スライ）2023年秋冬シーズンを通して展開するアーティストとのコラボレーションプロジェクト第二弾 GIDDRA
                                                 STUDIOとのコラボレーションアイテムを発売
                                             </h3>
@@ -909,7 +1239,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 ドイツ発スリープテック・ブランド　エマ・スリープ全国の企業を対象にエマブランドの製品を提供するコラボ企画を開始～2023年9月14日（木）から応募受付開始～
                                             </h3>
                                         </a>
@@ -927,7 +1257,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 ワーナー ブラザース100周年記念
                                                 この秋は、渋谷にワーナー・ブラザース人気キャラクターが集合！トムとジェリー、トゥイーティーたちがSHIBUYA109渋谷店とコラボレーション！
                                             </h3>
@@ -946,7 +1276,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 塚田農場は日本相撲協会と年間契約を締結し2023年10月1日より飲食業界で初のオフィシャルスポンサーとして活動
                                             </h3>
                                         </a>
@@ -964,7 +1294,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 ハートマーケット プロデュースベイシア限定販売の婦人服ブランド「＆H」好評につき9月20日（水）よりベイシア61店舗で拡大展開スタート
                                             </h3>
                                         </a>
@@ -982,7 +1312,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 SLY（スライ）2023年秋冬シーズンを通して展開するアーティストとのコラボレーションプロジェクト第二弾 GIDDRA
                                                 STUDIOとのコラボレーションアイテムを発売
                                             </h3>
@@ -1002,7 +1332,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
                                             </h3>
                                         </a>
@@ -1016,7 +1346,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
                                             </h3>
                                         </a>
@@ -1030,7 +1360,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
                                             </h3>
                                         </a>
@@ -1044,7 +1374,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
                                             </h3>
                                         </a>
@@ -1058,7 +1388,7 @@
                                     </div>
                                     <div class="p-news-cont__bot l-side-cont__bot">
                                         <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl" style="font-size: 12px;">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl">
                                                 オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
                                             </h3>
                                         </a>
