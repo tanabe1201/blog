@@ -42,23 +42,23 @@
         }
 
         &__slide {
-            width: 100%;
+            width: 94%;
             margin-right: 2%;
-            width: 46%;
+            // width: 46%;
 
-            @include mq-target(sm) {
-                margin-right: 1.4%;
-                width: 38%;
-            }
+            // @include mq-target(sm) {
+            //     margin-right: 1.4%;
+            //     width: 38%;
+            // }
 
-            @include mq-target(lg) {
-                width: 26.4%;
-                width: 32.4%;
-            }
+            // @include mq-target(lg) {
+            //     width: 26.4%;
+            //     width: 32.4%;
+            // }
 
-            &:last-child {
-                margin-right: 0;
-            }
+            // &:last-child {
+            //     margin-right: 0;
+            // }
         }
 
         &__btn {

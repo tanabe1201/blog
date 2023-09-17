@@ -67,6 +67,26 @@
     }
   }
 
+  &__rank {
+    position: relative;
+    span {
+      position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+width: 24px;
+height: 24px;
+line-height: 24px;
+font-size: 16px;
+background-color: rgba(220,6,16,.9);
+color: #fff;
+font-size: 14px;
+font-style: italic;
+text-align: center;
+font-weight: 500;
+    }
+  }
+
   &__list {
 
     // margin-top: -16px;

@@ -65,17 +65,21 @@
     }
 
     span {
-      font-size: min(vwpc(10px),12px);
       color: $color-white;
+      font-size: 12px;
+      @include mq-target(sm){
+      }
     }
   }
 }
 
 .c-picture {
   &__img {
-    padding: 2%;
     position: relative;
     transform: scale(1);
+    @include mq-target(sm) {
+      padding: 2%;
+    }
 
     &::after {
       content: "";
