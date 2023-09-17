@@ -16,7 +16,7 @@
   // width: 90%;
   margin: 0 auto;
   @include mq-target(sm) {
-    max-width: 1010px;
+    max-width: 1020px;
   }
   &__inner {
     // margin-top: 40px;
@@ -56,7 +56,7 @@
   }
 
   &__scroll {
-    width: min(vwpc(210px),260px);
+    width: min(vwpc(190px),270px);
   }
 
   &__inner {

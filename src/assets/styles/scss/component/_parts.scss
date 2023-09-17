@@ -199,10 +199,10 @@
       -webkit-background-clip: text;
       color: transparent;
       font-weight: 400;
-      font-size: min(vwsp(36px),42px);
+      font-size: min(vwsp(42px),48px);
       
       @include mq-target(sm) {
-        font-size: min(vwpc(40px),48px);
+        font-size: min(vwpc(42px),48px);
       }
     }
 
@@ -224,7 +224,7 @@
     // filter: drop-shadow(1px 1px 1px #000);
     opacity: 0.95;
     filter: drop-shadow(0 0 0.425vw rgba(254, 233, 46, .75));
-    font-size: min(vwsp(12px),16px);
+    font-size: min(vwsp(14px),18px);
     @include mq-target(sm) {
       font-size: min(vwpc(16px),18px);
     }

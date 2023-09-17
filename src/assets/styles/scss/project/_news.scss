@@ -40,7 +40,7 @@
 
     @include mq-target(sm) {
         // width: min(vwpc(520px), 600px);
-        width: min(vwpc(520px), 740px);
+        width: min(vwpc(540px), 740px);
         margin: 0;
     }
 
@@ -56,9 +56,13 @@
     &-tab {
         &__list {
             display: flex;
-            margin-top: 4px;
             overflow-x:scroll;
+            margin: 4px 0 6px;
             justify-content: initial;
+            @include mq-target(sm) {
+                margin: 4px 0 0;
+                overflow: initial;
+            }
         }
         &__item {
             white-space: nowrap;
@@ -72,7 +76,7 @@
                 span {
                     white-space: nowrap;
                     font-weight: 900;
-                    font-size: min(vwsp(10px),16px);
+                    font-size: min(vwsp(12px),16px);
                     padding: 2px 7px;
                     display: inline-block;
                     background: linear-gradient(transparent 40%, rgba(187, 16, 36, 0.95) 0%);
@@ -117,6 +121,10 @@
         display: flex;
         padding: min(vwpc(10px),14px) min(vwpc(14px),18px);
         padding: min(vwpc(10px),14px) 0;
+
+        &:first-child {
+            border-top: none;
+        }
 
         @include mq-target(sm) {
 
@@ -214,7 +222,7 @@
         &__img {
             // margin-bottom: 10px;
             picture {
-                padding-top: 78.46875%;
+                padding-top: 80%;
                 @include mq-target(sm) {
                     padding-top: 54.46875%;
                 }

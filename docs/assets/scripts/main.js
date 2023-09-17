@@ -76,13 +76,7 @@ tabTriggers.forEach(function (trigger) {
 //     });
 // });
 
-var windowWidth = $(window).width();
-var windowSm = 768;
-
-if (windowWidth <= windowSm) {//横幅768px以下（スマホ）に適用させるJavaScriptを記述
-} else {
-  $(function () {
-    $('.p-news__item .p-news-cont__bot a .p-news__ttl').matchHeight();
-  });
-}
+$(function () {
+  $('.p-news__item .p-news-cont__bot a .p-news__ttl').matchHeight();
+});
 //# sourceMappingURL=main.js.map
