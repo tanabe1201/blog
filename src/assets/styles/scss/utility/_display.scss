@@ -4,14 +4,14 @@
 
 .u-dp-sp {
     display: block;
-    @include mq-target(sm) {
+    @include mq-target(md) {
         display: none;
     }
 }
 
 .u-dp-pc {
     display: none;
-    @include mq-target(sm) {
+    @include mq-target(md) {
         display: block;
     }
 }

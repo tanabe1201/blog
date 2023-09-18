@@ -3,14 +3,15 @@
 
 
 .single {
-    @include mq-target(sm) {
-        width: min(vwpc(540px), 740px);
+    @include mq-target(md) {
+        // width: min(vwpc(510px), 660px);
+        width: min(vwpc(538px), 728px);
     }
 
     &-head {
         &__inner {
-            border-right: 2px solid #1c1e22;
-            border-left: 2px solid #1c1e22;
+            border-right: $color-border-waku;
+            border-left: $color-border-waku;
         }
 
         &__bg {
@@ -41,19 +42,20 @@
             @include flex($justify:space-between);
             padding: min(vwsp(12px), 24px) min(vwsp(10px), 20px) min(vwsp(12px), 24px);
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-            @include mq-target(sm) {
+            @include mq-target(md) {
                 padding: 20px 25px 10px;
             }
         }
 
         &__ttl {
             font-family: Arial, Helvetica, sans-serif;
-            @include mq-target(sm) {
+            @include mq-target(md) {
                 flex-grow: 1;
                 margin-right: 15px;
                 width: 76.42857%;
             }
             & .-en {
+                line-height: 1.4;
                 font-weight: 900;
                 opacity: 1;
                 background: none;
@@ -61,6 +63,9 @@
                 filter: drop-shadow(1px 1px 1px #000);
                 font-size: min(vwsp(18px), 22px);
                 @include mq-target(sm) {
+                    font-size: 28px;
+                }
+                @include mq-target(md) {
                     font-size: min(vwpc(22px), 28px);
                 }
             }
@@ -73,20 +78,24 @@
 
 
     &__inner {
+        background: #fff;
         padding: min(vwsp(16px), 30px) min(vwsp(10px), 20px);
-
         @include mq-target(sm) {
-            padding: min(vwpc(20px), 30px) min(vwpc(20px), 30px) min(vwpc(30px), 50px);
+            padding: 24px 24px 24px 16px;
+        }
+
+        @include mq-target(md) {
+            padding: min(vwpc(10px), 20px) min(vwpc(12px), 24px) min(vwpc(30px), 50px);
             padding-bottom: 60px;
         }
     }
 
     &-head {
         &__date {
-            color: $color-white;
+            color: $color-font;
             padding: 0 min(vwsp(10px), 20px) min(vwsp(12px), 24px);
-            @include mq-target(sm) {
-                padding: 0 25px 20px;
+            @include mq-target(md) {
+                padding: 0 25px 10px;
             }
         }
     }
@@ -99,7 +108,7 @@
 
         &__img {
             display: none;
-            @include mq-target(sm) {
+            @include mq-target(md) {
                 width: 21.42857%;
                 max-width: 150px;
                 display: block;
@@ -112,8 +121,8 @@
 
         &-cont {
             display: block;
-            border-right: 2px solid #1c1e22;
-            border-left: 2px solid #1c1e22;
+            border-right: $color-border-waku;
+            border-left: $color-border-waku;
             &__cover {
 
             }
@@ -148,8 +157,10 @@
 
 
 .single__entry {
-    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+    // font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    color: #000;
 }
 
 .single__entry h2 {
@@ -178,7 +189,7 @@
     font-size: min(vwpc(16px), 24px);
     letter-spacing: .08em;
     line-height: 1.5;
-    border-left: 2px solid #000;
+    border-left: 1px solid #000;
     margin: 48px 0 8px;
     padding-bottom: 4px;
     position: relative;
@@ -196,13 +207,37 @@
     }
 }
 
+.single__entry div span {
+    
+    @include mq-target(sm) {
+        font-size: 18px;
+    }
+    
+    @include mq-target(md) {
+        font-size: min(vwpc(14px), 16px);
+    }
+}
+.single__entry div {
+    
+    @include mq-target(sm) {
+        font-size: 18px;
+    }
+    
+    @include mq-target(md) {
+        font-size: min(vwpc(14px), 16px);
+    }
+}
 
 .single__entry p {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     letter-spacing: 0.07em;
     font-size: min(vwsp(14px), 16px);
 
     @include mq-target(sm) {
+        font-size: 16px;
+    }
+
+    @include mq-target(md) {
         font-size: min(vwpc(14px), 16px);
     }
 }
@@ -213,8 +248,9 @@
 
 
 .single__entry a {
-    color: #000;
-    text-decoration: underline
+    color: maroon;
+    text-decoration: none;
+    // text-decoration: underline
 }
 
 html.notouch .single__entry a:hover {

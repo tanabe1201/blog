@@ -19,17 +19,14 @@
   // }
   // border: 2px solid #1c1e22;
   // height: min(12.267vw,9.1rem);
-  padding: 10px;
-  @include mq-target(sm) {
-    padding: 14px 0;
-    // height: 84px;
-  }
+
 
   margin-bottom: 40px;
-  border-bottom: 2px solid #1c1e22;
-  background: rgba($color: #1b1b1b, $alpha: 0.55);
   // background: rgba($color: #000, $alpha: 0.65);
-      &__inner {
+  &__inner {
+    border: 2px solid #1c1e22;
+    border-top: none;
+        background: rgba($color: #1b1b1b, $alpha: 0.55);
         position: relative;
         height: 100%;
         display: flex;
@@ -39,10 +36,15 @@
       //   position: relative;
       //   @include flex($align:center, $justify:center);
       // width: 96vw;
-      width: 96vw;
+      width: 98vw;
       margin: 0 auto;
+      padding: 10px;
       @include mq-target(sm) {
-        max-width: 1010px;
+        padding: 14px 20px;
+        // height: 84px;
+      }
+      @include mq-target(sm) {
+        max-width: 1240px;
       }
   }
 

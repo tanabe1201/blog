@@ -98,6 +98,6 @@ tabTriggers.forEach(function (trigger) {
 //     });
 // });
 
-$(function() {
-  $('.p-news__item .p-news-cont__bot a .p-news__ttl').matchHeight();
-});
+// $(function() {
+//   $('.c-sec__header').matchHeight();
+// });

@@ -3,7 +3,7 @@
 $mq-breakpoints-min: ('xxs': '0px',
   'xs': '481px',
   'sm': '768px',
-  'md': '1024px',
+  'md': '960px',
   'lg': '1200px',
   'xl': '1900px',
 ) !default;
@@ -11,7 +11,7 @@ $mq-breakpoints-min: ('xxs': '0px',
 $mq-breakpoints-max: ('xxs': '440px',
   'xs': '480px',
   'sm': '767px',
-  'md': '991px',
+  'md': '959px',
   'lg': '1023px',
   'xl': '1199px',
 ) !default;
@@ -44,8 +44,13 @@ $mq-breakpoints-max: ('xxs': '440px',
   @return $size;
 }
 
+// @function vwpc($size) {
+//   $vw-context: 769 * 0.01 * 1px;
+//   @return math.div($size, $vw-context) * 1vw;
+//   @return $size;
+// }
 @function vwpc($size) {
-  $vw-context: 769 * 0.01 * 1px;
+  $vw-context: 960 * 0.01 * 1px;
   @return math.div($size, $vw-context) * 1vw;
   @return $size;
 }
