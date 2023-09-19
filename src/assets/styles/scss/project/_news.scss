@@ -139,65 +139,6 @@
             
         }
 
-        // @include mq-target(md) {
-
-        //     &:first-child {
-        //         padding-top: min(vwpc(10px),12px) !important;
-        //     }
-    
-        //     &:nth-child(-n+4) {
-        //         display: block;
-        //         padding: min(vwpc(10px),12px) 0 min(vwpc(12px),20px);
-        //         width: calc(100% / 2);
-    
-        //         & .p-news-cont__head { width: 100%; }
-    
-        //         & .p-news-cont__bot {
-        //             flex: 0;
-        //             margin: 4px 0 0;
-        //             a {
-        //                 h3 {
-        //                     min-height: min(vwpc(80px),100px);
-        //                     margin: 0;
-        //                     display: block;
-        //                     font-size: min(vwpc(12px),16px);
-        //                 }
-        //             }
-        //             .p-news__foot {
-        //                 justify-content: initial;
-        //                 // padding-top: 20px;
-        //             }
-        //         }
-        //     }
-    
-        //     &:nth-of-type(1) { border-top: none; }
-    
-        //     &:nth-of-type(1),
-        //     &:nth-of-type(3) {
-        //         padding-right:min(vwpc(6px),8px);
-        //         border-right: $color-border-waku;;
-        //     }
-    
-        //     &:nth-of-type(2),
-        //     &:nth-of-type(4) {
-        //         padding-left: min(vwpc(6px),8px);
-        //     }
-    
-        //     &:nth-of-type(3),
-        //     &:nth-of-type(4) {
-        //         border-top: $color-border-waku;
-        //     }
-    
-        //     &:nth-child(-n+2) { border-bottom: none; }
-
-
-        // }
-
-
-
-
-        
-
         &:hover a {
             transition: all .1s ease-in-out;
             opacity: 0.75;
@@ -251,7 +192,7 @@
                     padding-top: 58.46875%;
                 }
                 @include mq-target(lg) {
-                    padding-top: 54.46875%;
+                    // padding-top: 54.46875%;
                     border: 0.1125vw solid #1b1b1b;
                 }
             }

@@ -1,17 +1,17 @@
 @use "../foundation"as *;
 
-@keyframes fadein {
-  0% {
-    opacity: 0
-  }
+// @keyframes fadein {
+//   0% {
+//     opacity: 0
+//   }
 
-  100% {
-    opacity: 1
-  }
-}
+//   100% {
+//     opacity: 1
+//   }
+// }
 
 .l-main {
-  animation: fadein 1s forwards;
+  // animation: fadein 1s forwards;
   overflow: hidden;
 }
 
@@ -202,7 +202,7 @@
 
   &__img {
     padding: 0 !important;
-    margin-bottom: 4px;
+    // margin-bottom: 4px;
 
     picture {
       height: min(vwpc(48px), 68px) !important;
@@ -267,7 +267,7 @@
 
     &__bot {
       flex: 1;
-      margin: 4px 0 0 !important;
+      margin: 6px 0 0 !important;
       text-align: left;
     }
 
@@ -280,6 +280,7 @@
       -webkit-line-clamp: 4;
       margin: 0 !important;
       font-size: min(vwpc(12px), 14px) !important;
+      font-size: 13px !important;
       // font-size: 14px !important;
     }
   }
