@@ -1,5 +1,31 @@
 @use "../foundation" as *;
 
+.i-next {
+  position: relative;
+  // top: 4px;
+  margin-left: 8px;
+  width: min(vwsp(18px),26px);
+  height: min(vwsp(18px),26px);
+  @include mq-target(sm) {
+    width: 32px;
+    height: 32px;
+  }
+  @include mq-target(md) {
+    width: min(vwpc(14px),18px);
+    height: min(vwpc(14px),18px);
+  }
+  color: #999;
+}
+
+.i-ttl {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  // top: -4px;
+  padding-right: 4px;
+  color: $color-font;
+}
+
 .c-pagePath {
   position: relative;
   background: rgba($color: #606060, $alpha: 0.15);
@@ -7,7 +33,7 @@
   // background: rgba($color: #000, $alpha: 0.65);
   width: 100%;
   border: $color-border-waku;
-  // border-bottom: none;
+  border-bottom: none;
   ul {
     @include flex($align:center);
     padding: min(vwsp(2px),6px) 10px min(vwsp(4px),6px);
@@ -153,7 +179,7 @@
     // background: url(../images/charaBg04.jpg) repeat center bottom;
     // background: rgba($color: #000000, $alpha: 0.75);
     // background: rgba($color: #fff, $alpha: 1.0);
-    background: rgba($color: #2e2e2e, $alpha: 0.55);
+    background: rgba($color: #2e2e2e, $alpha: 0.45);
     // background: rgba($color: #1b1b1b, $alpha: 0.75);
     // background: rgba($color: #141414, $alpha: 0.75);
     // background: rgba($color: #000, $alpha: 0.75);
@@ -168,8 +194,8 @@
     }
     // padding: vwsp(40px) vwsp(28px);
     @include mq-target(md) {
-      margin: 0 auto 10px;
-      padding: min(vwpc(12px),16px) min(vwpc(8px),12px);
+      margin: 0 auto 8px;
+      padding: 12px min(vwpc(8px),10px);
     }
   }
 
@@ -183,8 +209,8 @@
       padding: 8px 16px 0;
     }
     @include mq-target(md) {
-      padding: min(vwpc(6px),8px) min(vwpc(8px),12px) 0;
-      margin: 0 auto 4px;
+      padding: min(vwpc(4px),4px) min(vwpc(8px),12px);
+      margin: 0 auto 2px;
     }
 
     a {
@@ -200,22 +226,6 @@
         opacity: 0.75;
       }
     }
-
-    .i-next {
-      margin-left: 8px;
-      width: min(vwsp(18px),26px);
-      height: min(vwsp(18px),26px);
-      @include mq-target(sm) {
-        width: 28px;
-        height: 28px;
-      }
-      @include mq-target(md) {
-        width: min(vwpc(14px),20px);
-        height: min(vwpc(14px),20px);
-      }
-      color: $color-red;
-    }
-
   }
 
   &__ttl {
@@ -224,24 +234,27 @@
     z-index: 10;
     text-align: left;
     display: inline-block;
-    font-family: "teko";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // font-family: "teko";
 
     & .-en {
       display: block;
       height: auto;
-      font-weight: 400;
+      // font-weight: 400;
       // top: 0.2604166667vw;
       font-size: 4.375vw;
       position: relative;
       // top: 5px;
-      color: #fff;
+      color: $color-font;
       letter-spacing: .04em;
-      line-height: 1;
-      text-transform: capitalize;
+      // line-height: 1;
+      // text-transform: capitalize;
       // opacity: .75;
-      background-image: linear-gradient(to bottom,#fd1e00,#dc1b6f);
-      -webkit-background-clip: text;
-      color: transparent;
+      // background-image: linear-gradient(to bottom,#fd1e00,#dc1b6f);
+      // -webkit-background-clip: text;
+      // color: transparent;
       // font-weight: 400;
       font-size: min(vwsp(42px),48px);
 
@@ -251,18 +264,18 @@
       
       @include mq-target(md) {
         font-size: min(vwpc(32px),38px);
-        // font-size: 28px;
+        font-size: 22px;
       }
     }
 
     & .-ja {
 
-      height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-    position: absolute;
+    //   height: 100%;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // margin: auto;
+    // position: absolute;
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -349,7 +362,7 @@
 
   &-tag {
     &__list {
-      margin-left: 10px;
+      margin-left: 14px;
       position: relative;
       @include flex($align:center);
       margin-right: auto;
@@ -448,7 +461,10 @@
       -webkit-line-clamp: 3;
     }
     @include mq-target(md) {
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 4;
+    }
+    @include mq-target(lg) {
+      -webkit-line-clamp: 4;
     }
   }
 }

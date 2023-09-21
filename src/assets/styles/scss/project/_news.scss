@@ -40,7 +40,7 @@
 
     @include mq-target(md) {
         // width: min(vwpc(520px), 600px);
-        width: min(vwpc(548px), 728px);
+        width: min(vwpc(524px), 700px);
         margin: 0;
     }
 
@@ -98,7 +98,7 @@
 
 
     &__inner {
-
+        padding-top: 6px;
         // overflow-y: auto;
         // overscroll-behavior-y: auto;
         // border: none;
@@ -135,7 +135,7 @@
 
         &:first-child {
             border-top: none;
-            padding-top: 20px;
+            padding-top: 14px;
             
         }
 
@@ -158,8 +158,8 @@
 
             @include mq-target(md) {
                 // width: 240px;
-                width: 190px;
-                // width: min(vwpc(180px), 200px);
+                // width: 1200px;
+                width: min(vwpc(200px), 220px);
             }
         }
 
@@ -173,7 +173,7 @@
             margin-left: min(vwsp(8px), 16px);
 
             @include mq-target(md) {
-                margin-left: min(vwpc(8px), 12px);
+                margin-left: min(vwpc(10px), 14px);
             }
             
         }
@@ -189,10 +189,10 @@
                     border: 1px solid #1b1b1b;
                 }
                 @include mq-target(md) {
-                    padding-top: 58.46875%;
+                    padding-top: 54.46875%;
                 }
                 @include mq-target(lg) {
-                    // padding-top: 54.46875%;
+                    // padding-top: 56.46875%;
                     border: 0.1125vw solid #1b1b1b;
                 }
             }
@@ -240,7 +240,7 @@
         // opacity: 0.75;
         border: 1px solid $color-border;
         // width: 8.3521229868vw;
-        width: min(vwpc(80px),120px);
+        width: min(vwpc(100px),120px);
         // height: 3.2439238653vw;
         @include flex($align:center, $justify:center);
         display: none;
@@ -273,6 +273,7 @@
         span {
             color: #9e9e9e;
             position: relative;
+            // font-size: min(vwpc(10px),12px);
             font-size: 10px;
             // font-size: .8333333333vw;
         }
