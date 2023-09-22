@@ -26,7 +26,7 @@
     padding: 10px;
   }
   @include mq-target(md) {
-    max-width: 1240px;
+    max-width: 1020px;
     width: 98vw;
     padding: min(vwpc(6px), 8px);
   }
@@ -55,82 +55,7 @@
 
 
 .l-side {
-  position: relative;
-  z-index: 50;
 
-  @include mq-target(md) {
-    width: min(vwpc(198px), 252px);
-  }
-
-  // background: #000;
-
-  &-tab {
-    &__item {
-      cursor: pointer;
-      width: 33%;
-    }
-  }
-
-  &__scroll {
-    width: min(vwpc(198px), 252px);
-  }
-
-  &__inner {
-
-    // background: rgba($color: #000, $alpha: 0.45);
-    // background: rgba($color: #1b1b1b, $alpha: 0.55);
-    &:not(:first-child) {
-      // margin-top: 10px;
-    }
-
-    &--item {
-      padding: 4px !important;
-    }
-
-  }
-
-  &__rank {
-    position: relative;
-
-    span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 32px;
-      height: 32px;
-      line-height: 32px;
-      font-size: 16px;
-      background-color: rgba(220, 6, 16, .9);
-      color: #fff;
-      font-size: 16px;
-      font-style: italic;
-      text-align: center;
-      font-weight: 500;
-    }
-  }
-
-  &-rank {
-    &__foot {
-      // padding-top: 12px !important;
-      align-items: center !important;
-
-
-      & .c-cont__time {
-        time {
-          line-height: 1 !important;
-          // padding: 0;
-        }
-      }
-    }
-    &__time {
-      width: 100%;
-      justify-content: space-between !important;
-      svg {
-        color: $color-red;
-      }
-    }
-  }
 
   &__list {
 
@@ -241,25 +166,6 @@
     }
   }
 
-
-
-
-
-  // &__link {
-  //       &::after {
-  //     content: "";
-  //     @include absAll;
-  //     opacity: 0;
-  // }
-  // }
-
-  &__img {
-    picture {
-      // padding-top: 50.25%;
-    }
-  }
-
-
   &-cont {
     &__head {
       // flex: 0;
@@ -310,29 +216,33 @@
       font-weight: 400 !important;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
       margin: 0 !important;
-      font-size: min(vwpc(12px), 14px) !important;
+      font-size: min(vwpc(12px), 14px);
     }
   }
 }
 
 
 
-.IEblock {
-  display: none;
-}
+
+.l-side {
+  position: relative;
+  z-index: 50;
+  @include mq-target(md) {
+    width: min(vwpc(166px), 210px);
+  }
 
 
-.bg_particles {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
+  &--scroll {
+    width: min(vwpc(214px), 266px);
+  }
 
-  canvas {
-    filter: blur(1px);
+  &__inner {
+    padding: 12px 8px;
+
+    &--feature {
+      padding: 0px !important;
+    }
   }
 }

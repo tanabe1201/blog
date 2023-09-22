@@ -48,8 +48,9 @@
 //  --------------------
 //  project
 //  --------------------
-@use './scss/project/kv';
 @use './scss/project/block';
-@use './scss/project/about';
+@use './scss/project/single';
+@use './scss/project/feature';
 @use './scss/project/news';
-@use './scss/project/asd';
+@use './scss/project/pickup';
+@use './scss/project/ranking';

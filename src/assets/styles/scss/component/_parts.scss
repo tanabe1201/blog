@@ -1,5 +1,6 @@
 @use "../foundation" as *;
 
+
 .i-next {
   position: relative;
   // top: 4px;
@@ -14,7 +15,7 @@
     width: min(vwpc(14px),18px);
     height: min(vwpc(14px),18px);
   }
-  color: #999;
+  color: $color-red;
 }
 
 .i-ttl {
@@ -28,12 +29,12 @@
 
 .c-pagePath {
   position: relative;
-  background: rgba($color: #606060, $alpha: 0.15);
+  background: rgba($color: #0F0F0F, $alpha: 0.75);
   // background: #0B2341;
   // background: rgba($color: #000, $alpha: 0.65);
   width: 100%;
   border: $color-border-waku;
-  border-bottom: none;
+  // border-bottom: none;
   ul {
     @include flex($align:center);
     padding: min(vwsp(2px),6px) 10px min(vwsp(4px),6px);
@@ -41,7 +42,7 @@
       padding: 8px 16px;
     }
     @include mq-target(md) {
-      padding: min(vwpc(2px),6px) min(vwsp(10px), 20px) min(vwpc(4px),6px);
+      padding: 8px min(vwsp(10px), 14px);
     }
       li {
 
@@ -72,7 +73,8 @@
             font-size: 16px;
           }
           @include mq-target(md) {
-            font-size: min(vwpc(12px),14px);
+            font-size: min(vwpc(12px),16px);
+            // font-size: 18px;
           }
         }
       }
@@ -179,7 +181,7 @@
     // background: url(../images/charaBg04.jpg) repeat center bottom;
     // background: rgba($color: #000000, $alpha: 0.75);
     // background: rgba($color: #fff, $alpha: 1.0);
-    background: rgba($color: #2e2e2e, $alpha: 0.45);
+    background: rgba($color: #1f1f1f, $alpha: 0.75);
     // background: rgba($color: #1b1b1b, $alpha: 0.75);
     // background: rgba($color: #141414, $alpha: 0.75);
     // background: rgba($color: #000, $alpha: 0.75);
@@ -200,25 +202,52 @@
   }
 
   &__header {
+    // border-radius: 4px;
+    overflow: hidden;
+    position: relative;
     text-align: left;
-    background: rgba($color: #2e2e2e, $alpha: 0.55);
+    // background: #0F0F0F;
+    background: rgba($color: #0F0F0F, $alpha: 0.75);
     @include mq-target(sm) {
       border: $color-border-waku;
       margin: 0 auto 14px;
       // padding-bottom: 6px;
-      padding: 8px 16px 0;
+      // padding: 8px 16px 0;
     }
     @include mq-target(md) {
-      padding: min(vwpc(4px),4px) min(vwpc(8px),12px);
-      margin: 0 auto 2px;
+      margin: 0 auto 4px;
     }
-
+    
+    
     a {
+      @include mq-target(sm) {
+        padding: 8px 16px 0;
+      }
+      @include mq-target(md) {
+        padding: min(vwpc(4px),4px) min(vwpc(8px),12px);
+      }
+      
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
       @include mq-target(md) {
+        z-index: 10;
         // justify-content: initial;
+      }
+
+      &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 110;
+        width: 100%;
+        height: 100%;
+        // margin-top: -8px;
+        background-image: repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0, 0, 0, 0.3) 10px,rgba(0, 0, 0, 0.3) 20px);
+        content: "";
+        z-index: 0;
       }
 
       &:hover {
@@ -242,7 +271,7 @@
     & .-en {
       display: block;
       height: auto;
-      // font-weight: 400;
+      font-weight: 400;
       // top: 0.2604166667vw;
       font-size: 4.375vw;
       position: relative;
@@ -264,7 +293,7 @@
       
       @include mq-target(md) {
         font-size: min(vwpc(32px),38px);
-        font-size: 22px;
+        font-size: 20px;
       }
     }
 
@@ -294,6 +323,32 @@
     @include mq-target(md) {
       font-size: min(vwpc(16px),18px);
     }
+    }
+  }
+
+  &__btn {
+    padding: 4px 0 0;
+    a {
+      background: #0F0F0F;
+      @include flex($align:center,$justify:center);
+      // min-width: 220px;
+      border-radius: 4px;
+      border: 1px solid $color-border;
+      padding: 0 16px;
+      height: 40px;
+      font-size: 14px;
+      color: $color-font;
+
+      &:hover {
+        transition: opacity .2s ease;
+        opacity: 0.75;
+      }
+
+      svg {
+        padding-left: 4px;
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
@@ -335,8 +390,8 @@
   // }
 
   &:last-child {
-    border: none;
-      padding-bottom: 0;
+    // border: none;
+      // padding-bottom: 0;
   }
   }
 
@@ -345,8 +400,9 @@
     overflow: hidden;
     position: relative;
     display: block;
+    // border: 0.145vw solid #1b1b1b;
     @include mq-target(md) {
-      filter: drop-shadow(0 0 0.100vw black);
+      filter: drop-shadow(0 0 0.1vw black);
       border-radius: initial;
     }
     &::after {
@@ -384,7 +440,6 @@
         display: flex;
         align-items: center;
         // height: 100%;
-
         border: 1px solid $color-border;
       }
 

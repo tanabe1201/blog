@@ -5,7 +5,7 @@
 .single {
     @include mq-target(md) {
         // width: min(vwpc(510px), 660px);
-        width: min(vwpc(542px), 722px);
+        width: min(vwpc(578px), 724px);
     }
 
     &-head {

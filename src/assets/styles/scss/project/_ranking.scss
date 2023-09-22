@@ -1,0 +1,157 @@
+@use "../foundation"as *;
+
+
+.p-rank {
+    &-tab {
+        &__item {
+            cursor: pointer;
+            width: 33%;
+        }
+    }
+
+    &__item {
+        counter-increment: rank;
+        position: relative;
+        overflow: hidden;
+        margin: 10px 0 0;
+        padding: 0 0 10px;
+
+        &:hover {
+            transition: opacity .2s ease;
+            opacity: 0.75;
+          }
+
+        &:first-child {
+            border-top: none;
+        }
+
+        & .p-rank__count {
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+            }
+
+            &::before {
+                display: block;
+                border-radius: 6px;
+                background: rgba($color: #dc0610, $alpha: 0.85);
+                filter: drop-shadow(0 0 4px rgba(254, 233, 46, .25));
+                width: 100%;
+                height: 28px;
+                transform: rotate(-45deg);
+                left: -50%;
+                top: 0;
+                z-index: 1;
+            }
+
+            &::after {
+                font-style: italic;
+                content: counter(rank);
+                color: #fff;
+                font-size: 12px;
+                line-height: initial;
+                width: 1.4em;
+                left: .1em;
+                top: .2em;
+                z-index: 2;
+            }
+        }
+    }
+
+    &__count {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &-head {
+
+        &__img {
+            // padding: 0;
+            picture {
+                padding: initial;
+                padding-top: 110px;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    &-foot {
+        flex: 1;
+        &__link {
+            display: block;
+            margin: 6px 0 10px;
+        }
+        &__ttl {
+            -webkit-line-clamp: 3;
+        }
+
+        &__data {
+            display: flex;
+            justify-content: space-between;
+
+            & .c-cont-tag__list {
+                margin: 0;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 10px 0 0;
+    }
+}
+
+
+.p-prof {
+
+    &__inner {
+        background: url(../../assets/images/charaBg_04.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        // padding: 0 0 10px 0;
+        padding: 0;
+    }
+    &-body {
+        background: url(../../assets/images/kiritan.png);
+        background-size: 200px auto;
+        background-position: 50px -54px; 
+        background-repeat: no-repeat;
+        // padding: 10;
+        min-height: 209px;
+        @include flex($align:center);
+
+        &__txt {
+            border-radius: 4px;
+            background: rgba($color: #000000, $alpha: 0.85);
+            padding: 8px 4px 8px 14px;
+            position: absolute;
+            bottom: 0;
+            line-height: 1.4;
+            left: 0;
+            width: 100%;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        &__img {
+            width: 450px;
+        }
+    }
+}
+
+.twitter {
+    transform: scale(0.85);
+    /* サイズの拡大縮小の基準位置を決めるcss */
+    transform-origin: left top;
+}

@@ -44,7 +44,7 @@
         // height: 84px;
       }
       @include mq-target(sm) {
-        max-width: 1240px;
+        max-width: 1020px;
       }
   }
 
@@ -60,7 +60,7 @@
       font-size: 28px;
       color: $color-white;
       display: flex;
-      width: min(vwpc(120px),140px);
+      width: min(vwpc(120px),120px);
 
       img {
         // width: min(21.333vw,16rem);
