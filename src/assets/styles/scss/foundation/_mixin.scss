@@ -44,11 +44,12 @@ $mq-breakpoints-max: ('xxs': '440px',
   @return $size;
 }
 
-// @function vwpc($size) {
-//   $vw-context: 769 * 0.01 * 1px;
-//   @return math.div($size, $vw-context) * 1vw;
-//   @return $size;
-// }
+@function vwtb($size) {
+  $vw-context: 769 * 0.01 * 1px;
+  @return math.div($size, $vw-context) * 1vw;
+  @return $size;
+}
+
 @function vwpc($size) {
   $vw-context: 960 * 0.01 * 1px;
   @return math.div($size, $vw-context) * 1vw;

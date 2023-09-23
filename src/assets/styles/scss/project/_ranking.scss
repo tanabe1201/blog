@@ -66,23 +66,10 @@
         overflow: hidden;
     }
 
-    &-head {
-
+    &-cont {
         &__img {
-            // padding: 0;
-            picture {
-                padding: initial;
-                padding-top: 110px;
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: center;
-                }
-            }
+            border: 0.1125vw solid #1b1b1b;
+            padding-top: 32%;
         }
     }
 
@@ -120,15 +107,15 @@
         background-repeat: no-repeat;
         background-position: center;
         // padding: 0 0 10px 0;
-        padding: 0;
+        // padding: 0;
     }
     &-body {
         background: url(../../assets/images/kiritan.png);
         background-size: 200px auto;
-        background-position: 50px -54px; 
+        background-position: 60px -54px; 
         background-repeat: no-repeat;
         // padding: 10;
-        min-height: 209px;
+        min-height: 189px;
         @include flex($align:center);
 
         &__txt {

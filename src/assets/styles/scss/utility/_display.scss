@@ -41,7 +41,7 @@
 }
 
 .col-sm-2 {
-    @include flex($align:center,$justify:space-between);
+    @include flex($align:flex-start,$justify:space-between);
     flex-wrap: wrap;
 
     img {

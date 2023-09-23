@@ -17,13 +17,16 @@
 
 .l-content {
 
-  border: 2px solid #1c1e22;
-  background: rgba($color: #1b1b1b, $alpha: 0.55);
-  max-width: 768px;
-  width: 96vw;
+  // background: rgba($color: #000, $alpha: 0.65);
+  // background: rgba($color: #232323, $alpha: 1);
+  background: rgba($color: #1b1b1b, $alpha: 0.65);
+  width: 98vw;
   margin: 0 auto;
+  
   @include mq-target(sm) {
-    padding: 10px;
+    border: 2px solid #1c1e22;
+    max-width: 800px;
+    padding: 8px;
   }
   @include mq-target(md) {
     max-width: 1020px;
@@ -235,11 +238,13 @@
 
 
   &--scroll {
-    width: min(vwpc(214px), 266px);
+    width: min(vwpc(230px), 280px);
   }
 
   &__inner {
-    padding: 12px 8px;
+    // padding: 10px 10px;
+    padding-left: 12px;
+    padding-right: 12px;
 
     &--feature {
       padding: 0px !important;

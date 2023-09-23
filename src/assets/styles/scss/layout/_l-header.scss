@@ -40,7 +40,7 @@
       margin: 0 auto;
       padding: 10px;
       @include mq-target(sm) {
-        padding: 14px 20px;
+        padding: 8px 10px;
         // height: 84px;
       }
       @include mq-target(sm) {
