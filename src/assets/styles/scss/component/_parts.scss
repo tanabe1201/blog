@@ -259,7 +259,7 @@
     // background: rgba(15, 15, 15, 0.15);
     background: #0f0f0f;
     border: 1px solid $color-border;
-    margin: 0 auto 8px;
+    margin: 0 auto 10px;
     @include mq-target(sm) {
       margin: 0 auto 16px;
       // padding-bottom: 6px;

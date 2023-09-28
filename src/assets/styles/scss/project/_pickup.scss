@@ -156,8 +156,8 @@
             @include lineclamp(3);
             padding: 4px 4px 6px 4px;
             font-size: 12px;
+            font-size: 14px;
             @include mq-target(sm) {
-                font-size: 14px;
             }
         }
     }
@@ -213,7 +213,7 @@
     &__slide {
         // width: 94%;
         margin-right: 1%;
-        width: 38.6%;
+        width: 42.6%;
 
         @include mq-target(sm) {
             margin-right: 1.4%;

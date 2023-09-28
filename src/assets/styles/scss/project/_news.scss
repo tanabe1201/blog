@@ -40,8 +40,11 @@
             // margin: 0 1vw;
             display: flex;
             overflow-x: scroll;
-            padding-bottom: 10px;
+            padding-bottom: 14px;
             justify-content: initial;
+            @include mq-target(sm) {
+                padding-bottom: 10px;
+            }
             @include mq-target(md) {
                 overflow: initial;
             }
@@ -149,7 +152,7 @@
             flex-direction: column;
             justify-content: space-between;
             flex: 1;
-            padding: 0 0 0 12px;
+            padding: 0 0 0 10px;
             // margin-left: 10px;
             @include mq-target(sm) {
                 padding: 0 6px 0 10px;
@@ -167,7 +170,7 @@
             // border: 2px solid #2a2a2a;
             @include mq(sm) {
                 overflow: hidden;
-                aspect-ratio: auto 260 / 210;
+                aspect-ratio: auto 260 / 220;
                 // padding-top: 80%;
             }
             @include mq-target(md) {
