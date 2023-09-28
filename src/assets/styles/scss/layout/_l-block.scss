@@ -16,32 +16,41 @@
 }
 
 .l-content {
-
-  // background: rgba($color: #000, $alpha: 0.65);
+  background: rgba($color: #181818, $alpha: 0.75);
+  border: $color-border-waku;
+  // background: rgba($color: #000, $alpha: 0.45);
+  // background: rgba(27, 27, 27, 0.65);
+  // background: rgba($color: #181818, $alpha: 0.95);
+      // background: rgba(27, 27, 27, 0.75);
   // background: rgba($color: #232323, $alpha: 1);
-  background: rgba($color: #1b1b1b, $alpha: 0.65);
-  width: 98vw;
+  // background: rgba($color: #030E21, $alpha: 0.45);
+  // background-color: #0ae;
+  // width: 98vw;
   margin: 0 auto;
   
   @include mq-target(sm) {
-    border: 2px solid #1c1e22;
+    // border: 1px solid rgba($color: #2e2f30, $alpha: 1);
     max-width: 800px;
-    padding: 8px;
+    // padding: 8px;
   }
   @include mq-target(md) {
     max-width: 1020px;
     width: 98vw;
-    padding: min(vwpc(6px), 8px);
+    // padding: min(vwpc(6px), 8px);
+    // padding: 8px;
   }
 
   &__inner {
-
+    position: relative;
     // margin-top: 40px;
     // padding: 0 2vw;
     @include mq-target(md) {
       display: flex;
       justify-content: space-between;
     }
+
+
+
   }
 
   &__empty {
@@ -215,7 +224,6 @@
 
     &__ttl {
       word-break: break-all;
-      // line-height: 1.5;
       font-weight: 400 !important;
       -webkit-box-orient: vertical;
       overflow: hidden;
@@ -231,6 +239,7 @@
 
 .l-side {
   position: relative;
+  // left: -1px;
   z-index: 50;
   @include mq-target(md) {
     width: min(vwpc(166px), 210px);
@@ -238,16 +247,13 @@
 
 
   &--scroll {
-    width: min(vwpc(230px), 280px);
+    width: min(vwpc(260px), 280px);
   }
 
   &__inner {
+    // border-left: none;
     // padding: 10px 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-
-    &--feature {
-      padding: 0px !important;
-    }
+    // padding-left: 12px;
+    // padding-right: 12px;
   }
 }

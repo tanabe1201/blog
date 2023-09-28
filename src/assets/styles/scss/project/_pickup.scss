@@ -119,8 +119,8 @@
 .p-pickup {
 
     &__inner {
-        padding: 6px;
-        // margin-bottom: 10px;
+        // padding: 6px;
+        margin-bottom: 10px;
     }
 
     &__list {
@@ -137,22 +137,29 @@
 
     &__img {
         border: none;
-        padding-top: 90%;
+        // padding-top: 90%;
+        aspect-ratio: auto 500 / 400;
     }
 
     &__ttl {
-        // border-radius: 4px;
-        font-weight: normal;
-        color: $color-link;
         background: rgba(0, 0, 0, 0.85);
-        padding: 4px 4px 10px 4px;
         position: absolute;
         bottom: 0;
-        line-height: 1.2;
         left: 0;
         width: 100%;
         text-align: left;
-        font-size: 14px;
+        
+        span {
+            font-weight: normal;
+            color: $color-link;
+            line-height: 1.2;
+            @include lineclamp(3);
+            padding: 4px 4px 6px 4px;
+            font-size: 12px;
+            @include mq-target(sm) {
+                font-size: 14px;
+            }
+        }
     }
 
     &__item {
@@ -165,7 +172,7 @@
     }
 
     &__btn {
-        padding-top: 6px;
+        // padding-top: 6px;
     }
 }
 
@@ -206,7 +213,7 @@
     &__slide {
         // width: 94%;
         margin-right: 1%;
-        width: 46.6%;
+        width: 38.6%;
 
         @include mq-target(sm) {
             margin-right: 1.4%;
@@ -233,6 +240,10 @@
         // cursor: pointer;
         // display: flex;
         // margin-left: 10px;
+        display: none;
+        @include mq-target(sm) {
+            display: block;
+        }
     }
 
     &__btnPrev,

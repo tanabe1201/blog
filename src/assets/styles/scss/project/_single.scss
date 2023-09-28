@@ -5,16 +5,16 @@
 .single {
     @include mq-target(md) {
         // width: min(vwpc(510px), 660px);
-        width: min(vwpc(688px), 710px);
+        width: min(vwpc(688px), 738px);
     }
 
     &-head {
         &__inner {
-            border-right: $color-border-waku;
-            border-left: $color-border-waku;
+            // border-right: $color-border-waku;
+            // border-left: $color-border-waku;
             border-bottom: none;
             // border-bottom: $color-border-waku;
-            // margin-bottom: 10px;
+            // margin-bottom: 4px;
         }
 
         &__bg {
@@ -38,45 +38,46 @@
             }
         }
 
-        &__cover { background: rgba(0, 0, 0, 0.45); }
+        &__cover { background: rgba(0, 0, 0, 0.35); }
 
         &__top {
             color: $color-font;
-            align-items: center;
+            // align-items: center;
             @include flex($justify:space-between);
             padding: min(vwsp(12px), 24px) min(vwsp(10px), 20px) min(vwsp(12px), 24px);
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
             @include mq-target(md) {
-                padding: 10px 25px 10px;
+                padding: 30px 40px 10px;
             }
         }
 
         &__ttl {
-            font-family: Arial, Helvetica, sans-serif;
+            // font-family: Arial, Helvetica, sans-serif;
             @include mq-target(md) {
                 flex-grow: 1;
                 margin-right: 15px;
                 width: 76.42857%;
             }
             & .-en {
+                font-family: Arial, Helvetica, sans-serif;
                 line-height: 1.4;
                 font-weight: 900;
                 opacity: 1;
                 background: none;
-                color: $color-font;
+                color: $color-white;
                 filter: drop-shadow(1px 1px 1px #1b1b1b);
                 font-size: min(vwsp(18px), 22px);
                 @include mq-target(sm) {
                     font-size: 28px;
                 }
                 @include mq-target(md) {
-                    font-size: min(vwpc(22px), 28px);
+                    font-size: min(vwpc(22px), 26px);
                 }
             }
         }
 
         &__time {
-            color: $color-font;
+            color: $color-white;
             filter: drop-shadow(1px 1px 1px #1b1b1b);
             margin-bottom: 6px;
         }
@@ -84,20 +85,30 @@
 
 
     &__inner {
-        border: none;
         overflow: hidden;
         position: relative;
-        background: #fff;
-        border: $color-border-waku;
+        // background: #fff;
+        margin: 0;
+        border-top: none;
+        border-right: $color-border-waku;
         padding: min(vwsp(16px), 30px) min(vwsp(10px), 20px);
+        padding: 0;
+        // padding: 12px;
+
+        
+        &::before {
+            content: "";
+            background: transparent;
+        }
+
         @include mq-target(sm) {
-            padding: 24px 24px 24px 16px;
+            // padding: 24px 24px 24px 16px;
         }
 
         @include mq-target(md) {
-            padding: min(vwpc(10px), 20px) min(vwpc(12px), 24px) min(vwpc(30px), 50px);
-            padding-bottom: 60px;
-            padding: 32px 36px 36px;
+            // padding: min(vwpc(10px), 20px) min(vwpc(12px), 24px) min(vwpc(30px), 50px);
+            // padding-bottom: 60px;
+            // padding: 24px 36px 36px;
         }
 
     }
@@ -107,7 +118,7 @@
             color: $color-font;
             padding: 0 min(vwsp(10px), 20px) min(vwsp(12px), 24px);
             @include mq-target(md) {
-                padding: 0 25px 10px;
+                padding: 0 25px 20px;
             }
         }
     }
@@ -121,20 +132,20 @@
         &__img {
             display: none;
             @include mq-target(md) {
-                width: 21.42857%;
+                width: 24.42857%;
                 max-width: 200px;
                 display: block;
             }
 
             img {
-                border: 1px solid $color-border;
+                // border: 1px solid $color-border;
             }
         }
 
         &-cont {
             display: block;
-            border-right: $color-border-waku;
-            border-left: $color-border-waku;
+            // border-right: $color-border-waku;
+            // border-left: $color-border-waku;
             &__cover {
 
             }
@@ -169,22 +180,34 @@
 
 
 .single__entry {
+    // border: $color-border-waku;
+    border-top: none;
+    background: #fff;
+    // border-right: $color-border-waku;
     word-break: break-all;
     // font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     color: #000;
+    padding: 24px 16px;
+    @include mq-target(sm) {
+        padding: 40px 46px 36px;
+    }
 }
 
 .single__entry h2 {
     position: relative;
     color: #424242;
-    font-size: 24px;
+    font-size: 22px;
     // background-image: linear-gradient(to bottom, #fd1e00, #dc1b6f);
     // -webkit-background-clip: text;
     // color: transparent;
-    margin: 0 0 24px;
+    margin: 32px 0 24px;
     padding-bottom: 10px;
     border-bottom: 3px solid #e0e0e0;
+
+    &:first-child {
+        margin-top: 0;
+    }
 
     &::after {
         content: "";
@@ -198,12 +221,12 @@
 }
 
 .single__entry h3 {
-    font-family: "teko";
-    font-size: min(vwpc(16px), 24px);
+    // font-family: "teko";
+    font-size: min(vwpc(16px), 20px);
     letter-spacing: .08em;
     line-height: 1.5;
     border-left: 1px solid #000;
-    margin: 0 0 48px;
+    margin: 8px 0 48px;
     padding-bottom: 4px;
     position: relative;
 
@@ -251,7 +274,8 @@
     }
 
     @include mq-target(md) {
-        font-size: min(vwpc(14px), 16px);
+        font-size: 14px;
+        // font-size: min(vwpc(14px), 16px);
     }
 }
 

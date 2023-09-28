@@ -83,6 +83,13 @@ $mq-breakpoints-max: ('xxs': '440px',
   margin: 0 auto;
 }
 
+@mixin lineclamp($math) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $math;
+  overflow: hidden;
+}
+
 @mixin column4($width) {
   display: flex;
   justify-content: space-between;
