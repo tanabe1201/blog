@@ -13,16 +13,22 @@ $width-m:66.6666666667vw;
 
 $padding: 30px 0 60px;
 
-$color-bg: linear-gradient(to right bottom, rgba(7, 34, 108, 1), rgba(17, 21, 108, 0.55));
 $color-main: #000;
 $color-key: #64B4F0;
 $color-key-2: #e3bc7a;
 
-$color-font:#fff;
-$color-key:#999;
-$color-link:#4997f0;
+$color-font:#1b1b1b;
+$color-key:#666;
+$color-bg: #00d1ff;
+// $color-bg: #1b1b1b;
+// $color-bg: #00a2ff;
+
+
+
+
+$color-link:#004B91;
 $color-border: rgba(255, 255, 255, 0.1);
-$color-border-waku: 1px solid rgba($color: #2e2f30, $alpha: 1);
+$color-border-waku: 1px solid rgba($color: rgb(230, 230, 231), $alpha: 1);
 
 
 

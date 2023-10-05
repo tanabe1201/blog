@@ -5,40 +5,40 @@
 @use './scss/foundation/variables' as *;
 @use './scss/foundation/mixin' as *;
 @use './scss/foundation/base';
-@use './scss/foundation/keyframes';
-@use './scss/foundation/grid';
-@use './scss/foundation/animations';
+// @use './scss/foundation/keyframes';
+// @use './scss/foundation/grid';
+// @use './scss/foundation/animations';
 
 //  --------------------
 //  component
 //  --------------------
-@use './scss/component/heading';
-@use './scss/component/button';
-@use './scss/component/slider';
-@use './scss/component/modal';
-@use './scss/component/line';
+// @use './scss/component/heading';
+// @use './scss/component/button';
+// @use './scss/component/line';
+// @use './scss/component/smoke';
+// @use './scss/component/modal';
 @use './scss/component/parts';
-@use './scss/component/smoke';
+@use './scss/component/slider';
 
 //  --------------------
 //  layout
 //  --------------------
+// @use './scss/layout/l-drawer';
+// @use './scss/layout/l-sidebar';
+// @use './scss/layout/l-section';
+// @use './scss/layout/l-dropdown';
+// @use './scss/layout/l-modal';
 @use './scss/layout/l-header';
-@use './scss/layout/l-block';
-@use './scss/layout/l-drawer';
-@use './scss/layout/l-sidebar';
-@use './scss/layout/l-section';
-@use './scss/layout/l-dropdown';
-@use './scss/layout/l-modal';
 @use './scss/layout/l-footer';
+@use './scss/layout/l-block';
 
 //  --------------------
 //  js
 //  --------------------
-@use './scss/js/accordion';
+// @use './scss/js/accordion';
 @use './scss/js/tab';
-@use './scss/js/pageTopScroll';
-@use './scss/js/lity';
+// // @use './scss/js/pageTopScroll';
+// @use './scss/js/lity';
 
 //  --------------------
 //  utility
@@ -49,8 +49,8 @@
 //  project
 //  --------------------
 @use './scss/project/block';
-@use './scss/project/single';
 @use './scss/project/feature';
 @use './scss/project/news';
 @use './scss/project/pickup';
 @use './scss/project/ranking';
+@use './scss/project/single';

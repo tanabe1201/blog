@@ -31,4 +31,3 @@ if (elmIndexSwiper.length > 0) {
     });
   }
 }
-//# sourceMappingURL=swiper.js.map

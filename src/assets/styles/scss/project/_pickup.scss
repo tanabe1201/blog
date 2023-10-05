@@ -1,186 +1,5 @@
 @use "../foundation"as *;
 
-
-.p-fea {
-
-
-
-    &-content {
-        &__link {
-
-
-            // &:hover {
-            //     transform: translate3d(0, 0.2rem, 0);
-            // }
-
-
-        }
-
-        &__img {
-            padding: 0;
-            // border: 0.1125vw solid #ddd;
-            // filter: drop-shadow(0 0 0.115vw #000);
-            // border-radius: 4px;
-            width: 99%;
-            margin: auto;
-            position: relative;
-            overflow: hidden;
-
-            picture {
-                // padding-top: 49%;
-            }
-
-            &::after {
-                content: "";
-                @include absAll;
-                display: block;
-                // background: url(../../assets/images/frame.png) no-repeat center top/contain;
-                background-size: 100% 100%;
-            }
-
-
-        }
-
-        &__cap {
-            flex: 1;
-
-            // padding: 0 0 min(vwsp(12px),14px);
-            @include mq-target(sm) {
-                // padding: 0;
-            }
-        }
-
-        &__labels {
-            margin-top: min(vwsp(4px), 10px);
-            position: relative;
-            text-align: left;
-
-            // margin: 10px 0 20px;
-            // margin: 0 -8px 0;
-            // padding: 0 8px 0;
-            @include mq-target(sm) {
-                // margin: 6px vw(-8px, 1920) 0;
-                // padding: 0 vw(8px, 1920) 0;
-            }
-
-
-            li {
-                // margin: 0 46px 0 0;
-                // padding: 2px 8px;
-                border: 1px solid transparent;
-                filter: brightness(1.5);
-
-                @include mq-target(sm) {
-                    // margin: 0 vw(8px, 1920) 0 0;
-                    // padding: 1px 4px;
-                    // padding: 1px min(vwpc(2px),4px) 0;
-                    // padding: vw(2px, 1920) vw(4px, 1920);
-                }
-
-                &:last-child {
-                    margin: 0;
-                }
-            }
-
-            .date {
-                display: none;
-                line-height: 1;
-                font-family: "teko";
-                position: relative;
-                // font-weight: 400;
-                font-size: min(vwsp(22px), 36px);
-
-                @include mq-target(sm) {
-                    font-size: min(vwpc(26px), 36px);
-                }
-            }
-
-            .info {
-                font-size: min(vwsp(10px), 14px);
-                // color: $color-red;
-                background-image: linear-gradient(to bottom, #fd5842, #352e2c);
-                -webkit-background-clip: text;
-                color: transparent;
-
-                @include mq-target(sm) {
-                    // font-size: min(vwpc(10px),12px);
-                }
-            }
-        }
-
-        &__ttl {
-            margin-top: 10px !important;
-            font-size: 14px;
-        }
-    }
-}
-
-
-.p-pickup {
-
-    &__inner {
-        // padding: 6px;
-        margin-bottom: 10px;
-    }
-
-    &__list {
-
-    }
-    &__link {
-        transition: all .2s ease;
-        position: relative;
-        overflow: hidden;
-        display: block;
-        filter: drop-shadow(0 0 0.115vw black);
-        border: 1px solid $color-border;
-    }
-
-    &__img {
-        border: none;
-        // padding-top: 90%;
-        aspect-ratio: auto 500 / 400;
-    }
-
-    &__ttl {
-        background: rgba(0, 0, 0, 0.85);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: left;
-        
-        span {
-            font-weight: normal;
-            color: $color-link;
-            line-height: 1.2;
-            @include lineclamp(3);
-            padding: 4px 4px 6px 4px;
-            font-size: 12px;
-            @include mq-target(sm) {
-                font-size: 14px;
-            }
-        }
-    }
-
-    &__item {
-        a {
-            // border: 1px solid $color-border;
-            display: block;
-            padding: 6px 6px 10px 6px;
-            background: rgba($color: #2e2e2e, $alpha: 0.65);
-        }
-    }
-
-    &__btn {
-        // padding-top: 6px;
-    }
-}
-
-
-.swiper-button-disabled {
-    opacity: 0 !important;
-}
-
 .c-slider {
     max-width: 1020px;
     margin: auto;
@@ -212,21 +31,17 @@
 
     &__slide {
         // width: 94%;
-        margin-right: 1%;
-        width: 42.6%;
+        margin-right: 2.8%;
+        width: 42.2%;
 
         @include mq-target(sm) {
             margin-right: 1.4%;
-            margin-right: 1%;
-            width: 23.2%;
-            width: 26.6%;
+            width: 38.6%;
         }
 
         @include mq-target(md) {
             margin-right: 1%;
-            width: 24.2%;
-            // width: 32.6%;
-            // width: 28.6%;
+            width: 19.2%;
         }
 
         &:last-child {
@@ -237,69 +52,132 @@
     &__btn {
         max-width: 1020px;
         margin: auto;
-        // cursor: pointer;
-        // display: flex;
-        // margin-left: 10px;
         display: none;
-        @include mq-target(sm) {
+        @include mq-target(md) {
             display: block;
         }
     }
 
     &__btnPrev,
     &__btnNext {
-        // flex-shrink: 0;
-        // margin: 0;
-        // left: initial;
-        // right: initial;
-        display: grid;
-        // place-content: center;
-        // position: relative;
-        z-index: 500;
-        transition: all 0.15s ease-in 0s;
-        // position: absolute;
-        // overflow: visible;
         position: absolute;
+        width: 40px;
         height: 100%;
-        top: 0;
-        right: 0;
-        width: 44px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 100;
+        border: 0px;
+        background-color: rgba(1, 6, 13, 0.3);
+        transition: background-color 0.15s ease-in 0s;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
         opacity: 0;
 
-
-        // height: 40px;
-        @include mq-target(sm) {
-            // width: min(vwpc(30px),46px);
-            // height: min(vwpc(30px),46px);
-        }
-
-        &::after {
-            content: "";
-            width: 40px;
-            height: 40px;
+        svg {
+            width: 24px;
+            height: 24px;
             margin: auto;
-            background: url(../../assets/images/arrow_next.png) no-repeat center/contain;
-
-            @include mq-target(sm) {
-                width: 34px;
-                height: 34px;
-                // width: min(vwpc(30px), 40px);
-                // height: min(vwpc(30px), 40px);
-            }
+            color: $color-white;
         }
     }
-
+    
     &__btnPrev {
         right: initial;
         left: 0;
         margin-right: 4px;
-
+        
         @include mq-target(sm) {
             margin-right: 4px
         }
-
-        &::after {
-            background: url(../../assets/images/arrow_prev.png) no-repeat center/contain;
+        
+        svg {
+            transform: scale(-1);
         }
     }
 }
+
+.p-pickup {
+
+    &-slider {
+        overflow: visible !important;
+    }
+
+    &__inner {
+        // background: #1b1b1b;
+        padding: 10px 8px 10px;
+        @include mq-target(sm) {
+            margin-bottom: 8px;
+            padding: 10px 2.4vw;;
+        }
+        @include mq-target(md) {
+            padding: 10px 0 0;
+            background: none;
+            margin: 0 10px 8px;
+        }
+
+        // .c-sec__header {
+        //     &::before {
+        //         display: none;
+        //     }
+
+        //     svg {
+        //         color: $color-white;
+        //     }
+
+        //     a {
+        //         h2 {
+        //             background: #1b1b1b;
+        //             span {
+        //                 color: $color-white;
+        //             }
+
+
+        //         }
+        //     }
+        // }
+    }
+    &__img {
+        @include mq-target(md) {
+            aspect-ratio: 200 / 160;
+        }
+    }
+
+    &__ttl {
+        display: block;
+        text-align: left;
+        bottom: 0;
+        width: 100%;
+        padding-top: 8px;
+        @include mq-target(md) {
+            padding: 12px 6px 6px 8px;
+            background: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.758) 20%,#000 100%);
+            position: absolute;
+        }
+        
+        span {
+            color: $color-font;
+            line-height: 1.4;
+            @include lineclamp(3);
+            font-size: 13px;
+
+            @include mq-target(md) {
+                font-weight: normal;
+                color: $color-white;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}
+

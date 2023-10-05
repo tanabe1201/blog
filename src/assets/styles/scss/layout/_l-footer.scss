@@ -2,184 +2,97 @@
 
 .l-footer {
   margin-top: 100px;
-  background: linear-gradient(to right bottom, rgba(34, 33, 33, 1), rgba(2, 2, 3, 1));   
-  border-top: 1px solid #000;
-
   // background: #fff;
   position: relative;
-
+  
   // border-top: $border;
-  top: -14px;
+  // top: -14px;
   
   z-index: 3;
   
   &__inner {
-
-    padding: 136px 0px 0px;
+    background-color: #212121; 
+    padding: 40px 0 32px;
     position: relative;
     z-index: 400;
   }
 
-  &__head {
-    @include maxWidth(1000px);
-    width: 90%;
-    padding: 30px 6%;
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    @include flex($align:center, $justify:space-between, $wrap:wrap);
-    // border: 6px solid #292929;
-    border-radius: 20px;
-    background: $color-white;
+  &__container {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
 
-  &__list {
-    &--badge {
-      margin: 10px 0 0;
-      @include flex($align:center, $wrap:wrap, $justify:space-between);
-    }
-  }
-
-  &__item {
-    &--badge {
-      width: 49%;
-      a {
-        display: block;
-
-        img {
-          object-fit: contain;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
-
-  &__img {
-    &--app {
-      width: 120px;
-      height: 120px;
-    }
-  }
-
-  &__spec {
-    position: relative;
-    @include flex($align:center);
-  }
-
-  &__detail {
-    &--spec {
-      padding: 0 0 0 3.07812vw;
-
-      @include mq-target(md) {
-        padding: 0px 0px 0px 17px;
-      }
-
-
-      dl {
-        text-align: left;
-        @include flex($wrap:wrap);
-        color: $color-black;
-        font-size: 3.125vw;
-        width: 52.34375vw;
-
-        dt {
-          position: relative;
-          width: 30%;
-
-          &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: -4px;
-            transform: translateY(-50%);
-            background: $color-black;
-            width: 3px;
-            height: 3px;
-            border-radius: 2px;
-          }
-        }
-
-        dd {
-          width: 70%;
-          padding: 0 0 0 2.60417vw;
-        }
-      }
-    }
-  }
-}
-
-
-@include mq-target(sm) {
-  .l-footer {
-    &__head {  
-      flex-wrap: nowrap;
-    }
-
+  &-sns {
     &__list {
-      &--badge {
-        margin: 0;
-      }
+      margin: 1.5em 0;
+      // padding: 1em 0;
+      // background-color: rgba(0,0,0,.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &__item {
-      &--badge {
-        width: 100%;
-  
-        &:last-child {
-          margin-top: 4px;
-        }
-      }
-    }
+      padding: 0 8px;
 
-    &__detail {
-
-      &--spec {
-        dl {
-          width: 236px;
-          font-size: 15px;
-          dt {
-            width: 72px;
-          }
-  
-          dd {
-            width: 164px;
-            padding: 0px 0px 0px 16px;
-          }
+      a {
+        svg {
+          color: $color-white;
+          width: 30px;
+          height: 30px;
         }
       }
     }
   }
-}
 
-
-@include mq-target(md) {
-  .l-footer {
-
-
-    &__head {
-      padding: 30px 4%;
-    }
-
-    &__item {
-      &--badge {
-        width: 48%;
-
-        &:last-child {
-          margin:0;
-        }
-      }
-    }
-
-    &__detail {
-      &--spec {
-        dl {
-          dd {
-            padding: 0px 0px 0px 16px;
-          }
-        }
-      }
-    }
+  &__logo {
+    width: 280px;
+    margin: auto;
   }
+
+  &__copy {
+    font-size: 12px;
+  }
+
+  &__pageTop {
+    bottom: 40px;
+    position: fixed;
+    z-index: 5;
+    top: auto;
+    left: auto;
+    margin: 0;
+    right: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    a {
+      display: block;
+      width: 52px;
+      height: 52px;
+      border-radius: 9999px;
+      border: 1px solid $color-bg;
+      background: rgba($color: #fff, $alpha: 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: $color-bg;
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    // transform: scale(-1);
+  }
+
 }
+
+
+
