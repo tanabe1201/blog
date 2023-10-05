@@ -1905,7 +1905,7 @@ img {
   background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 6px, transparent 0, transparent 12px);
   white-space: nowrap;
   padding: 1px 8px 3px;
-  font-size: 10px;
+  font-size: 12px;
   display: inline-block;
   color: #fff;
 }
@@ -2356,10 +2356,6 @@ img {
   transform-origin: left top;
 }
 
-:root {
-  --primary-color: red;
-}
-
 @media screen and (min-width: 960px) {
   .single {
     width: min(68.75vw, 712px);
@@ -2557,7 +2553,7 @@ img {
   z-index: 1;
 }
 .single-foot__item a span {
-  font-size: 10px;
+  font-size: 13px;
   color: #1b1b1b;
 }
 @media screen and (min-width: 768px) {
@@ -2600,7 +2596,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .single-rela_item .p-news-cont__bot h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
