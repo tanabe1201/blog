@@ -101,6 +101,7 @@
 
 .c-tab {
   &__list {
+    overflow: scroll;
     @include flex($align:center);
     // flex-wrap: wrap;
     padding-bottom: 4px;
@@ -238,7 +239,7 @@
     // background: rgba(15, 15, 15, 0.15);
     // background: $color-bg;
     // border: 1px solid $color-border;
-    margin: 0 auto 8px;
+    margin: 0 auto 12px;
     @include mq-target(sm) {
       margin: 0 0 10px;
       // padding-bottom: 6px;
@@ -312,7 +313,7 @@
   &__ttl {
     // flex: 1;
     line-height: initial;
-    background: #fff;
+    // background: #fff;
     position: relative;
     text-transform: uppercase;
     z-index: 10;

@@ -109,9 +109,10 @@
     }
 
     &__inner {
-        // background: #1b1b1b;
-        padding: 16px 2% 10px;
+        background: #1b1b1b;
+        padding: 16px 2% 16px;
         @include mq-target(sm) {
+            background: $color-white;
             margin-bottom: 8px;
             padding: 16px 2.4vw;
         }
@@ -121,26 +122,26 @@
             margin: 0 15px 8px;
         }
 
-        // .c-sec__header {
-        //     &::before {
-        //         display: none;
-        //     }
+        .c-sec__header {
+            &::before {
+                display: none;
+            }
 
-        //     svg {
-        //         color: $color-white;
-        //     }
+            svg {
+                color: $color-white;
+            }
 
-        //     a {
-        //         h2 {
-        //             background: #1b1b1b;
-        //             span {
-        //                 color: $color-white;
-        //             }
+            a {
+                h2 {
+                    background: #1b1b1b;
+                    span {
+                        color: $color-white;
+                    }
 
 
-        //         }
-        //     }
-        // }
+                }
+            }
+        }
     }
     &__img {
         @include mq(sm) {
@@ -164,7 +165,7 @@
         }
         
         span {
-            color: $color-font;
+            color: $color-white;
             line-height: 1.4;
             @include lineclamp(3);
             font-size: 13px;

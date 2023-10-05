@@ -324,6 +324,7 @@ img {
   }
 }
 .c-tab__list {
+  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +431,7 @@ img {
   border-radius: 2px;
   position: relative;
   text-align: left;
-  margin: 0 auto 8px;
+  margin: 0 auto 12px;
 }
 @media screen and (min-width: 768px) {
   .c-sec__header {
@@ -471,7 +472,6 @@ img {
 }
 .c-sec__ttl {
   line-height: initial;
-  background: #fff;
   position: relative;
   text-transform: uppercase;
   z-index: 10;
@@ -2241,10 +2241,12 @@ img {
   overflow: visible !important;
 }
 .p-pickup__inner {
-  padding: 16px 2% 10px;
+  background: #1b1b1b;
+  padding: 16px 2% 16px;
 }
 @media screen and (min-width: 768px) {
   .p-pickup__inner {
+    background: #fff;
     margin-bottom: 8px;
     padding: 16px 2.4vw;
   }
@@ -2255,6 +2257,18 @@ img {
     background: none;
     margin: 0 15px 8px;
   }
+}
+.p-pickup__inner .c-sec__header::before {
+  display: none;
+}
+.p-pickup__inner .c-sec__header svg {
+  color: #fff;
+}
+.p-pickup__inner .c-sec__header a h2 {
+  background: #1b1b1b;
+}
+.p-pickup__inner .c-sec__header a h2 span {
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   .p-pickup__img {
@@ -2282,7 +2296,7 @@ img {
   }
 }
 .p-pickup__ttl span {
-  color: #1b1b1b;
+  color: #fff;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -2498,7 +2512,7 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: min(3.2876712329vw, 24px) min(2.7397260274vw, 20px) min(3.2876712329vw, 24px);
+  padding: 24px min(2.7397260274vw, 20px) 12px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 @media screen and (min-width: 768px) {
