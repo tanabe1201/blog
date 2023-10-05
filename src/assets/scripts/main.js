@@ -117,3 +117,8 @@ $(window).on('load', function() {
 
 });
 
+
+
+$(function() {
+  $('.single-foot__item').matchHeight();
+});

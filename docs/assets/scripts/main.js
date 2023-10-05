@@ -92,4 +92,7 @@ $(window).on('load', function () {
     current_toc = index;
   }
 });
+$(function () {
+  $('.single-foot__item').matchHeight();
+});
 //# sourceMappingURL=main.js.map

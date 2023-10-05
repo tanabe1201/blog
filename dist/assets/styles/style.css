@@ -793,12 +793,17 @@ img {
   }
 }
 .l-header__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .l-header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .l-header__container {
   height: 100%;
@@ -860,14 +865,9 @@ img {
   }
 }
 .l-header-menu__list {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .l-header-menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .l-header-menu__item {
   min-width: 80px;
@@ -1290,15 +1290,24 @@ img {
 }
 
 .l-footer {
-  margin-top: 100px;
   position: relative;
   z-index: 3;
+}
+@media screen and (min-width: 768px) {
+  .l-footer {
+    margin-top: 100px;
+  }
 }
 .l-footer__inner {
   background-color: #212121;
   padding: 40px 0 32px;
   position: relative;
   z-index: 400;
+}
+@media screen and (max-width: 767px) {
+  .l-footer__inner {
+    padding-bottom: 100px;
+  }
 }
 .l-footer-sns__list {
   margin: 1.5em 0;
@@ -1325,6 +1334,7 @@ img {
   margin: auto;
 }
 .l-footer__copy {
+  margin-top: 10px;
   font-size: 12px;
 }
 .l-footer__pageTop {
@@ -1577,6 +1587,48 @@ img {
 }
 .l-side__btn {
   margin: 20px 0;
+}
+
+.l-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(243, 243, 243, 0.98);
+  -webkit-box-shadow: 0 -1px 0 0 #E9E9EA;
+  box-shadow: 0 -1px 0 0 #E9E9EA;
+}
+.l-menu__inner {
+  height: 84px;
+}
+.l-menu__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.l-menu__item {
+  min-width: 50px;
+  max-width: 50px;
+  padding: 10px 0;
+}
+.l-menu__item:last-child {
+  padding-right: 0;
+}
+.l-menu__item a {
+  color: #666;
+}
+.l-menu__item a svg {
+  height: 28px;
+  width: auto;
+}
+.l-menu__item a span {
+  font-size: 12px;
+  display: block;
+  padding-top: 2px;
 }
 
 .js-tab--content {
@@ -1885,36 +1937,38 @@ img {
   margin-top: 0 !important;
 }
 
-.section__bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../assets/images/charaBg_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.section__bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 110;
-  opacity: 0.55;
-  background: #00d1ff;
-  /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#6DD5FA), to(#a0d9ff));
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #a0d9ff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  z-index: 0;
-}
 @media screen and (min-width: 960px) {
+  .section__bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/charaBg_sp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .section__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 110;
+    opacity: 0.55;
+    background: #00d1ff;
+    /* fallback for old browsers */
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#6DD5FA), to(#a0d9ff));
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #a0d9ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 0;
+  }
+}
+@media screen and (min-width: 960px) and (min-width: 960px) {
   .section__bg {
     background-image: url(../../assets/images/bg_04.jpg);
   }
@@ -2575,9 +2629,6 @@ img {
   z-index: 1;
 }
 .single-foot__item a {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;

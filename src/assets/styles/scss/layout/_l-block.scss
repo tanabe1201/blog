@@ -1,14 +1,6 @@
 @use "../foundation"as *;
 
-// @keyframes fadein {
-//   0% {
-//     opacity: 0
-//   }
 
-//   100% {
-//     opacity: 1
-//   }
-// }
 
 .l-main {
   // margin-top: 40px;
@@ -58,8 +50,6 @@
     }
   }
 }
-
-
 
 .l-side {
 
@@ -229,9 +219,6 @@
   }
 }
 
-
-
-
 .l-side {
   position: relative;
   // left: -1px;
@@ -255,5 +242,59 @@
 
   &__btn {
     margin: 20px 0;
+  }
+}
+
+
+.l-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(243, 243, 243, 0.98);
+  // background: #1b1b1b;
+  box-shadow: 0 -1px 0 0 #E9E9EA;
+  
+  &__inner {
+    height: 84px;
+  }
+  
+  &__list {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+  }
+
+  &__item {
+    min-width: 50px;
+    max-width: 50px;
+    // margin: auto;
+    padding: 10px 0;
+    // height: 100%;
+    // line-height: 1;
+    &:not(:last-child) {
+      // border-right: $color-border-waku;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a {
+      // font-weight: bold;
+      color: $color-key;
+      svg {
+        height: 28px;
+        width: auto;
+      }
+
+      span {
+        font-size: 12px;
+        display: block;
+        padding-top: 2px;
+      }
+    }
   }
 }

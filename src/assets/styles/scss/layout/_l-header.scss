@@ -47,10 +47,13 @@
   }
 
   &__top {
-    display: flex;
     // display: none;
     justify-content: space-between;
     // align-items: flex-end;
+    display: none;
+    @include mq-target(sm) {
+      display: flex;
+    }
   }
 
   &__container {
@@ -99,10 +102,7 @@
 
   &-menu {
     &__list {
-      display: none;
-      @include mq-target(sm) {
-        display: flex;
-      }
+      display: flex;
     }
 
     &__item {
