@@ -150,7 +150,7 @@ body {
   font-weight: 400;
   -webkit-font-feature-settings: "palt";
   font-feature-settings: "palt";
-  line-height: 1.4;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   background: #fff;
 }
@@ -1122,7 +1122,7 @@ img {
   position: relative;
   z-index: 999999;
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 4vw;
   cursor: pointer;
   width: 32px;
@@ -2433,7 +2433,7 @@ img {
   line-height: 1.4;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-  font-size: min(4.9315068493vw, 22px);
+  font-size: 20px;
 }
 @media screen and (min-width: 768px) {
   .single-head__ttl .-en {
@@ -2471,7 +2471,7 @@ img {
   margin: 0;
   border-top: none;
   padding: min(4.3835616438vw, 30px) min(2.7397260274vw, 20px);
-  padding: 12px;
+  padding: 12px 16px;
 }
 @media screen and (min-width: 768px) {
   .single__inner {
@@ -2557,7 +2557,7 @@ img {
   z-index: 1;
 }
 .single-foot__item a span {
-  font-size: 12px;
+  font-size: 10px;
   color: #1b1b1b;
 }
 @media screen and (min-width: 768px) {
@@ -2619,7 +2619,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 3px solid #e0e0e0;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media screen and (min-width: 768px) {
   .single__entry h2 {
@@ -2652,7 +2652,7 @@ img {
   margin: 0 0 48px;
   padding-bottom: 4px;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media screen and (min-width: 768px) {
   .single__entry h3 {
@@ -2701,7 +2701,7 @@ img {
 
 .single__entry p {
   margin-bottom: 24px;
-  font-size: min(3.8356164384vw, 16px);
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .single__entry p {
@@ -2817,3 +2817,4 @@ html.notouch .single__entry a:hover {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+/*# sourceMappingURL=style.css.map */
