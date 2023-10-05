@@ -587,9 +587,8 @@
 .c-card {
   &__item {
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     @include mq-target(sm) {
-      margin-bottom: 20px;
     }
 
     &:first-child {
@@ -602,12 +601,11 @@
       content: "";
       height: 0.5px;
       left: 0;
-      bottom: -6px;
       width: 100%;
       // left: 15px;
       // width: calc(100% - 30px);
+      bottom: -10px;
       @include mq-target(sm) {
-        bottom: -10px;
       }
     }
 
