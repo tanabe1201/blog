@@ -8,7 +8,7 @@
 
     &__container {
         cursor: grab;
-        overflow: visible;
+        overflow: hidden;
     }
 
     &:hover .js-slider-btnPrev {
@@ -41,7 +41,7 @@
 
         @include mq-target(md) {
             margin-right: 1%;
-            width: 19.2%;
+            width: 24.2%;
         }
 
         &:last-child {
@@ -110,15 +110,15 @@
 
     &__inner {
         // background: #1b1b1b;
-        padding: 10px 8px 10px;
+        padding: 16px 2% 10px;
         @include mq-target(sm) {
             margin-bottom: 8px;
-            padding: 10px 2.4vw;;
+            padding: 16px 2.4vw;
         }
         @include mq-target(md) {
-            padding: 10px 0 0;
+            padding: 24px 0 0;
             background: none;
-            margin: 0 10px 8px;
+            margin: 0 15px 8px;
         }
 
         // .c-sec__header {
@@ -147,7 +147,7 @@
             border-radius: 4px;
         }
         @include mq-target(md) {
-            aspect-ratio: 200 / 160;
+            aspect-ratio: 200 / 130;
         }
     }
 
