@@ -255,9 +255,13 @@
   background-color: rgba(243, 243, 243, 0.98);
   // background: #1b1b1b;
   box-shadow: 0 -1px 0 0 #E9E9EA;
+  display: block;
+  @include mq-target(sm) {
+    display: none;
+  }
   
   &__inner {
-    height: 84px;
+    height: 68px;
   }
   
   &__list {
@@ -286,7 +290,7 @@
       // font-weight: bold;
       color: $color-key;
       svg {
-        height: 28px;
+        height: 24px;
         width: auto;
       }
 

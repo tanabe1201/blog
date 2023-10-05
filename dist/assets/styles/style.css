@@ -1347,6 +1347,12 @@ img {
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .l-footer__pageTop {
+    display: block;
+  }
 }
 @media screen and (min-width: 960px) {
   .l-footer__pageTop {
@@ -1598,9 +1604,15 @@ img {
   background-color: rgba(243, 243, 243, 0.98);
   -webkit-box-shadow: 0 -1px 0 0 #E9E9EA;
   box-shadow: 0 -1px 0 0 #E9E9EA;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .l-menu {
+    display: none;
+  }
 }
 .l-menu__inner {
-  height: 84px;
+  height: 68px;
 }
 .l-menu__list {
   height: 100%;
@@ -1622,7 +1634,7 @@ img {
   color: #666;
 }
 .l-menu__item a svg {
-  height: 28px;
+  height: 24px;
   width: auto;
 }
 .l-menu__item a span {
