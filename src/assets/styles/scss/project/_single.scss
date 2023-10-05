@@ -75,8 +75,7 @@
                 line-height: 1.4;
                 color: $color-white;
                 text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-                font-size: min(vwsp(18px), 22px);
-
+                font-size: 20px;
                 @include mq-target(sm) {
                     font-size: 36px;
                 }
@@ -112,7 +111,7 @@
         margin: 0;
         border-top: none;
         padding: min(vwsp(16px), 30px) min(vwsp(10px), 20px);
-        padding: 12px;
+        padding: 12px 16px;
         @include mq-target(sm) {
             padding: 24px 72px;
         }
@@ -190,7 +189,7 @@
                 }
 
                 span {
-                    font-size: 12px;
+                    font-size: 10px;
                     color: $color-font;
                     @include mq-target(sm) {
                         font-size: 14px;
@@ -275,7 +274,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 3px solid #e0e0e0;
-    font-size: 20px;
+    font-size: 18px;
     @include mq-target(sm) {
         font-size: 24px;
     }
@@ -307,7 +306,7 @@
     margin: 0 0 48px;
     padding-bottom: 4px;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     @include mq-target(sm) {
         font-size: 32px;
     }
@@ -353,7 +352,8 @@
 .single__entry p {
     margin-bottom: 24px;
     // letter-spacing: 0.07em;
-    font-size: min(vwsp(14px), 16px);
+    font-size: 14px;
+    // font-size: min(vwsp(14px), 16px);
 
     @include mq-target(sm) {
         font-size: 16px;

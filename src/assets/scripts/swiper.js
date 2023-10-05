@@ -29,7 +29,7 @@ if (elmIndexSwiper.length > 0) {
       paginationClickable: false,
       grabCursor: true,
       freeMode: true,
-      // touchEventsTarget: true,
+      touchEventsTarget: true,
       navigation: {
         prevEl: '.js-slider-btnPrev' + i,
         nextEl: '.js-slider-btnNext' + i
