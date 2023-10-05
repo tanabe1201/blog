@@ -1,36 +1,36 @@
 @use "../foundation"as *;
 
 
-// .section__bg {
-//     position: fixed;
-//     z-index: -1;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-image: url(../../assets/images/charaBg_sp.jpg);
-//     // background-color: #0ae;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     // filter: blur(2px);
+.section__bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/charaBg_sp.jpg);
+    // background-color: #0ae;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // filter: blur(2px);
 
-//     &::before {
-//         content: "";
-//         @include absAll;
-//         display: block;
-//         z-index: 110;
-//         opacity: 0.55;
-//         background: $color-bg;  /* fallback for old browsers */
-//         background: linear-gradient(to right, #FFFFFF, #6DD5FA, #a0d9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    &::before {
+        content: "";
+        @include absAll;
+        display: block;
+        z-index: 110;
+        opacity: 0.55;
+        background: $color-bg;  /* fallback for old browsers */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #a0d9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
-//         z-index: 0;
-//     }
+        z-index: 0;
+    }
 
-//     @include mq-target(md) {
-//         background-image: url(../../assets/images/bg_04.jpg);
-//     }
-// }
+    @include mq-target(md) {
+        background-image: url(../../assets/images/bg_04.jpg);
+    }
+}
 
 .p-news {
     @include mq-target(md) {
@@ -40,14 +40,12 @@
     &-tab {
         &__list {
             width: 100%;
-            // margin: 0 1vw;
             display: flex;
             overflow-x: scroll;
-            // padding-bottom: 12px;
+            padding-bottom: 10px;
             justify-content: initial;
             @include mq-target(sm) {
                 overflow: initial;
-                // padding-bottom: 10px;
             }
             @include mq-target(md) {
             }
@@ -70,11 +68,11 @@
                     color: $color-white;
                     @include mq-target(sm) {
                         padding: 1px 10px 2px;
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                     
                     @include mq-target(md) {
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -148,17 +146,11 @@
 
         &__img {
             overflow: hidden;
-            // border-radius: 4px;
             @include mq(sm) {
-                overflow: hidden;
-                aspect-ratio: auto 260 / 210;
+                border-radius: 6px;
+                aspect-ratio: auto 260 / 216;
                 // padding-top: 80%;
             }
-            @include mq-target(md) {
-                // border-radius: 0px;
-                // padding-top: 56.46875%;
-            }
-
         }
 
         &__ttl {
@@ -167,9 +159,9 @@
             font-size: 13px;
             font-weight: bold;
             color: $color-link;
-            @include lineclamp(4);
             // font-size: 14px;
             // font-size: min(vwsp(12px), 14px);
+            @include lineclamp(4);
             @include lineclamp(3);
             @include mq-target(sm) {
                 line-height: 1.5;

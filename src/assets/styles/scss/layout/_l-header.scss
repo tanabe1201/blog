@@ -36,7 +36,7 @@
       padding: 10px 0;
       @include mq-target(sm) {
         width: 98vw;
-        padding: 6px 24px 12px;
+        padding: 12px 24px 12px;
         // padding: 8px 60px;
         // height: 84px;
       }
@@ -62,7 +62,8 @@
     flex-wrap: wrap;
     // align-items: center;
     @include mq-target(sm) {
-      height: 54px;
+      flex-wrap: initial;
+      height: 52px;
     }
   }
 
@@ -98,7 +99,10 @@
 
   &-menu {
     &__list {
-      display: flex;
+      display: none;
+      @include mq-target(sm) {
+        display: flex;
+      }
     }
 
     &__item {

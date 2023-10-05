@@ -784,7 +784,7 @@ img {
 @media screen and (min-width: 768px) {
   .l-header__inner {
     width: 98vw;
-    padding: 6px 24px 12px;
+    padding: 12px 24px 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -816,7 +816,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .l-header__container {
-    height: 54px;
+    -ms-flex-wrap: initial;
+    flex-wrap: initial;
+    height: 52px;
   }
 }
 .l-header__txt {
@@ -858,9 +860,14 @@ img {
   }
 }
 .l-header-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .l-header-menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .l-header-menu__item {
   min-width: 80px;
@@ -1321,17 +1328,21 @@ img {
   font-size: 12px;
 }
 .l-footer__pageTop {
-  bottom: 40px;
   position: fixed;
-  z-index: 5;
-  top: auto;
-  left: auto;
+  z-index: 200;
+  right: 20px;
+  bottom: 20px;
   margin: 0;
-  right: 40px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media screen and (min-width: 960px) {
+  .l-footer__pageTop {
+    right: 40px;
+    bottom: 40px;
+  }
 }
 .l-footer__pageTop.is-active {
   opacity: 1;
@@ -1874,6 +1885,41 @@ img {
   margin-top: 0 !important;
 }
 
+.section__bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/images/charaBg_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section__bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 110;
+  opacity: 0.55;
+  background: #00d1ff;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#6DD5FA), to(#a0d9ff));
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #a0d9ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 0;
+}
+@media screen and (min-width: 960px) {
+  .section__bg {
+    background-image: url(../../assets/images/bg_04.jpg);
+  }
+}
+
 @media screen and (min-width: 960px) {
   .p-news {
     width: min(68.75vw, 712px);
@@ -1885,6 +1931,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
+  padding-bottom: 10px;
   -webkit-box-pack: initial;
   -ms-flex-pack: initial;
   justify-content: initial;
@@ -1912,12 +1959,12 @@ img {
 @media screen and (min-width: 768px) {
   .p-news-tab__item a span {
     padding: 1px 10px 2px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 960px) {
   .p-news-tab__item a span {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .p-news__inner {
@@ -1969,8 +2016,8 @@ img {
 }
 @media screen and (max-width: 767px) {
   .p-news-cont__img {
-    overflow: hidden;
-    aspect-ratio: auto 260/210;
+    border-radius: 6px;
+    aspect-ratio: auto 260/216;
   }
 }
 .p-news-cont__ttl {
@@ -2154,6 +2201,11 @@ img {
     padding: 10px 0 0;
     background: none;
     margin: 0 10px 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-pickup__img {
+    border-radius: 4px;
   }
 }
 @media screen and (min-width: 960px) {

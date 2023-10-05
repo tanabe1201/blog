@@ -143,6 +143,9 @@
         // }
     }
     &__img {
+        @include mq(sm) {
+            border-radius: 4px;
+        }
         @include mq-target(md) {
             aspect-ratio: 200 / 160;
         }

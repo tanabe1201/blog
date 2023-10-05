@@ -56,16 +56,19 @@
   }
 
   &__pageTop {
-    bottom: 40px;
     position: fixed;
-    z-index: 5;
-    top: auto;
-    left: auto;
+    z-index: 200;
+    right: 20px;
+    bottom: 20px;
     margin: 0;
-    right: 40px;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    
+    @include mq-target(md) {
+      right: 40px;
+      bottom: 40px;
+    }
 
     &.is-active {
       opacity: 1;
