@@ -252,9 +252,9 @@
     margin: 12px 15px 0;
     display: none;
     
-    @include mq-target(sm) {
-        display: block;
-    }
+    // @include mq-target(sm) {
+    //     display: block;
+    // }
     &::before {
         content: "";
         @include absAll;

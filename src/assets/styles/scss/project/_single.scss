@@ -116,7 +116,7 @@
         }
         
         @include mq-target(md) {
-            padding: 12px min(vwpc(32px),32px);
+            padding: 12px min(vwpc(32px),42px);
         }
         
         
