@@ -58,7 +58,7 @@
     padding: 8px 16px;
     // padding: min(vwsp(2px),6px) 10px min(vwsp(4px),6px);
     @include mq-target(sm) {
-      padding: 7px 46px;
+      padding: 8px 46px;
     }
       li {
         line-height: 1;
@@ -101,10 +101,12 @@
 
 .c-tab {
   &__list {
-    overflow: scroll;
     @include flex($align:center);
     // flex-wrap: wrap;
     padding-bottom: 4px;
+    @include mq(sm) {
+      overflow: scroll;
+    }
     // border-bottom: $color-border-waku;
 
   }
@@ -247,6 +249,7 @@
     }
     
     @include mq-target(md) {
+      // padding: 0 10px;
     }   
 
     &::before {
@@ -349,14 +352,13 @@
       font-size: 4.375vw;
       position: relative;
       // top: 5px;
-      letter-spacing: 0.06em;
+      // letter-spacing: 0.06em;
       color: $color-font;
       font-size: min(vwsp(16px),24px);
 
       span {
-        padding-left: 6px;
+        padding-left: 4px;
         font-size: 14px;
-        letter-spacing: initial;
         // background: #fff;
       }
 
