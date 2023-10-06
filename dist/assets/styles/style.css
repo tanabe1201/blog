@@ -2138,6 +2138,12 @@ img {
 .p-kv {
   position: relative;
   margin: 12px 15px 0;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-kv {
+    display: block;
+  }
 }
 .p-kv::before {
   content: "";
