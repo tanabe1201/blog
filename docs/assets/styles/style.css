@@ -416,12 +416,12 @@ img {
 }
 @media screen and (min-width: 960px) {
   .c-sec__inner {
-    padding: 15px;
+    padding: 12px;
   }
 }
 @media screen and (min-width: 960px) {
   .c-sec__inner:first-child {
-    padding-top: 16px;
+    padding-top: 14px;
   }
 }
 .c-sec__inner:last-child {
@@ -439,7 +439,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .c-sec__header {
-    margin: 0 0 10px;
+    margin: 0 0 14px;
   }
 }
 .c-sec__header::before {
@@ -529,7 +529,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .c-sec__ttl .-en {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .c-sec__btn {
@@ -1403,8 +1403,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .l-content {
-    border: 2px solid #00d1ff;
-    max-width: 1020px;
+    max-width: 1040px;
     width: 98vw;
   }
 }
@@ -1954,7 +1953,7 @@ img {
 
 @media screen and (min-width: 960px) {
   .p-news {
-    width: min(68.75vw, 700px);
+    width: min(68.75vw, 720px);
   }
 }
 .p-news-tab__list {
@@ -2279,9 +2278,9 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-pickup__inner {
-    padding: 15px 0 12px;
+    padding: 15px 0 14px;
     background: none;
-    margin: 0 15px 0px;
+    margin: 0 12px 0px;
   }
 }
 .p-pickup__inner .c-sec__header::before {
@@ -2505,7 +2504,7 @@ img {
 
 @media screen and (min-width: 960px) {
   .single {
-    width: min(68.75vw, 700px);
+    width: min(68.75vw, 720px);
   }
 }
 .single-head__inner {
