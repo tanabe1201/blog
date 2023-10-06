@@ -203,7 +203,7 @@
     @include mq-target(md) {
       // margin: 0 0 8px;
       // padding: 10px;
-      padding: 12px;
+      padding: 15px;
       // padding: min(vwpc(10px),12px);
     }
 
@@ -372,7 +372,7 @@
       }
       
       @include mq-target(md) {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -574,7 +574,7 @@
 .c-card {
   &__item {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     @include mq-target(sm) {
     }
 
@@ -591,7 +591,7 @@
       width: 100%;
       // left: 15px;
       // width: calc(100% - 30px);
-      bottom: -10px;
+      bottom: -12px;
       @include mq-target(sm) {
       }
     }
