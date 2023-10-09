@@ -31,7 +31,7 @@ select,
 table,
 textarea,
 ul.tree-view {
-    -webkit-font-smoothing: none;
+    /* -webkit-font-smoothing: none; */
     font-family: "Pixelated MS Sans Serif", Arial;
     font-size: 11px
 }
