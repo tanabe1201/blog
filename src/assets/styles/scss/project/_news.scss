@@ -23,7 +23,7 @@
         }
         
         @include mq-target(md) {
-            width: min(vwpc(200px), 210px);
+            width: min(vwpc(200px), 214px);
         }
     }
 
@@ -35,7 +35,7 @@
         flex-direction: column;
         justify-content: space-between;
         flex: 1;
-        padding: 0 0 0 8px;
+        padding: 0 0 0 10px;
 
         // margin-left: 10px;
         @include mq-target(sm) {
@@ -59,7 +59,7 @@
             @include mq(sm) {
                 outline: 0;
                 border-radius: 6px;
-                aspect-ratio: auto 260 / 236;
+                aspect-ratio: auto 260 / 240;
             }
         }
 
@@ -73,7 +73,7 @@
         &__ttl {
             flex: 1;
             line-height: 1.4;
-            font-size: 13px;
+            font-size: 14px;
             padding-right: 4px;
             color: $color-link;
             @include lineclamp(3);

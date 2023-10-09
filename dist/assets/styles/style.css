@@ -165,9 +165,7 @@ body {
   font-feature-settings: "palt";
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
-  background-color: #F5FAFF;
-  background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff 1px, #EDF2F7 1px);
-  background-size: 40px 40px;
+  background: #fff;
 }
 
 a {
@@ -444,7 +442,7 @@ img {
 
 @media screen and (min-width: 960px) {
   .c-sec {
-    width: min(70.8333333333vw, 758px);
+    width: min(70.8333333333vw, 768px);
   }
 }
 .c-sec__inner {
@@ -1983,7 +1981,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news__head {
-    width: min(20.8333333333vw, 210px);
+    width: min(20.8333333333vw, 214px);
   }
 }
 .p-news__foot {
@@ -2002,7 +2000,7 @@ img {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0 0 0 8px;
+  padding: 0 0 0 10px;
 }
 @media screen and (min-width: 768px) {
   .p-news__foot {
@@ -2021,7 +2019,7 @@ img {
   .p-news-cont__img {
     outline: 0;
     border-radius: 6px;
-    aspect-ratio: auto 260/236;
+    aspect-ratio: auto 260/240;
   }
 }
 .p-news-cont__foot {
@@ -2040,7 +2038,7 @@ img {
   -ms-flex: 1;
   flex: 1;
   line-height: 1.4;
-  font-size: 13px;
+  font-size: 14px;
   padding-right: 4px;
   color: #004B91;
   display: -webkit-box;
@@ -2185,7 +2183,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-pickup__img {
-    aspect-ratio: 200/170;
+    aspect-ratio: 200/164;
   }
 }
 .p-pickup__ttl {
@@ -2548,10 +2546,15 @@ img {
   }
 }
 .single__inner {
-  padding: 24px 24px;
+  padding: 12px;
   overflow: hidden;
   position: relative;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .single__inner {
+    padding: 24px 24px;
+  }
 }
 .single__inner::before {
   content: "";
@@ -2727,6 +2730,9 @@ img {
   }
 }
 
+.single__entry div span {
+  font-size: 14px;
+}
 @media screen and (min-width: 768px) {
   .single__entry div span {
     font-size: 16px;
@@ -2734,6 +2740,7 @@ img {
 }
 .single__entry div {
   line-height: 1.6;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .single__entry div {

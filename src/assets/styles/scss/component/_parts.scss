@@ -215,7 +215,7 @@
   // width: 100%;
   // margin: auto;
   @include mq-target(md) {
-    width: min(vwpc(680px), 758px);
+    width: min(vwpc(680px), 768px);
   }
 
   &__inner {
