@@ -94,5 +94,6 @@ $(window).on('load', function () {
 });
 $(function () {
   $('.single-foot__item').matchHeight();
+  $('.p-pickuptop__item a h3').matchHeight();
 });
 //# sourceMappingURL=main.js.map

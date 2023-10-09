@@ -3,37 +3,52 @@
 
 
 .l-main {
-  // margin-top: 40px;
+  position: relative;
+  z-index: 3;
+
   // animation: fadein 1s forwards;
   // overflow: hidden;
 }
 
 .l-content {
-  background: #fff;
+
+  // overflow: hidden;
+  //  border-radius: 12px;
+  // background: #fff;
+  background: transparent;
   margin: 0 auto;
   // overflow: hidden;
   
   @include mq-target(sm) {
     max-width: 800px;
-    border: $color-border-waku;
+    // border: $color-border-waku;
     // width: 98vw;
-    clip-path: polygon(28px 0%, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px);
+    // clip-path: polygon(28px 0%, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px);
   }
   @include mq-target(md) {
-    border: 2px solid $color-bg;
-    max-width: 1040px;
+    // outline: 3px solid $color-bg;
+    // border: 4px solid $color-bg;
+    max-width: 1100px;
+    max-width: 1200px;
     width: 98vw;
     // padding: min(vwpc(6px), 8px);
     // padding: 8px;
   }
 
   &__inner {
+    // padding-top: 40px;
+    // padding: 0 10px;
     position: relative;
+    // background: #fff;
+    padding: 0 0 60px;
     // margin-top: 40px;
+    // padding: 4px;
     // padding: 0 2vw;
     @include mq-target(md) {
       display: flex;
-      justify-content: space-between;
+      // justify-content: flex-end;
+      // justify-content: space-between;
+      flex-wrap: wrap;
     }
 
 
@@ -42,7 +57,7 @@
 
   &__empty {
     // display: none;
-    width: min(vwpc(180px), 220px) !important;
+    width: min(vwpc(180px), 210px) !important;
     display: none;
 
     @include mq-target(lg) {
@@ -220,18 +235,35 @@
 }
 
 .l-side {
+  width: 100%;
+  background: transparent;
   position: relative;
   // left: -1px;
-  z-index: 50;
-  min-height:1000px;
 
+  padding-right: 4px;
+  z-index: 50;
+  // min-height:1000px;
+  display: none;
   @include mq-target(md) {
+    display: block;
     // width: min(vwpc(166px), 210px);
-    width: min(vwpc(300px), 320px);
+    width: min(vwpc(260px), 270px);
   }
   &--scroll {
+    // width: 220px;
     position:-webkit-sticky; position:sticky; top:0;
     // height: 100%;
+  }
+
+  &--empty {
+
+    // width: min(vwpc(50px),160px);
+    // width: 170px;
+    // width: 9.97vw;
+  }
+
+  &-single {
+    // width: 300px;
   }
 
   &__single {
@@ -241,7 +273,7 @@
   }
 
   &__btn {
-    margin: 20px 0;
+    // margin: 20px 0 ;
   }
 }
 

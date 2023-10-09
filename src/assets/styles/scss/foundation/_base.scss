@@ -1,5 +1,19 @@
 @use "../foundation"as *;
 
+:root {
+	--easing: cubic-bezier(.2, 1, .2, 1);
+	--transition: .8s var(--easing);
+	--color-base: #f8f8f8;
+	--color-gray: #ddd;
+	--color-theme: #f5695f;
+	--color-theme-darken: #f12617;
+	--box-shadow: .8rem .8rem 1.2rem rgba(0, 0, 0, .05), -.8rem -.8rem 1.2rem #fff;
+	--box-shadow-hover: 1rem 1rem 1.5rem rgba(0, 0, 0, .08), -1rem -1rem 1.5rem #fff;
+	--box-shadow-inset: inset .8rem .8rem 1.2rem rgba(0, 0, 0, .05), inset -.8rem -.8rem 1.2rem #fff;
+	--box-shadow-dark: .8rem .8rem 1.2rem rgba(0, 0, 0, .1), -.8rem -.8rem 1.2rem rgba(#fff,.2);
+  }
+  
+
 html {
 	height: -webkit-fill-available;
 	-webkit-text-size-adjust: 100%;
@@ -11,15 +25,49 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 	min-height: -webkit-fill-available;
-	color: $color-white;
-	font-family: Helvetica, Arial, "BIZ UDGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
+	color: $color-font;
+	// font-family: Helvetica, $line-b, "BIZ UDGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
+	// font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	// font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+	font-family: $line-b, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	// font-family: YakuHanJP,'-apple-system','BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	font-feature-settings: "palt";
+	// letter-spacing: 0.04em;
 	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
-	background-color: rgba(243, 243, 243, 0.98);
+	// background: #fff;
 	// background-color: rgba(255, 255, 255, 0.98);
+	// background-color: rgba(243, 243, 243, 1);
+	// background: $color-white;
+	background-color: #F5FAFF;
+	background-image:  linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff 1px, #EDF2F7 1px);
+	background-size: 40px 40px;
+// background: #000;
+
+// &::before {
+// 	display: block;
+//     content: '';
+// 	@include absAll;
+// 	position: fixed;
+//     z-index: 1;
+// 	opacity: 0.5;
+//     background: radial-gradient(farthest-side circle at center center, $color-bg,rgb(34, 36, 68),rgb(20, 139, 163),transparent);
+// }
+
+// &::after {
+// 	display: block;
+//     content: '';
+// 	position: fixed;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     z-index: 2;
+//     background: center top repeating-linear-gradient(transparent,transparent 6px,#123 6px,#123 8px), repeating-linear-gradient(90deg, transparent,transparent 6px,#123 6px,#123 8px);
+//     opacity: 0.5;
+// }
 
 }
 

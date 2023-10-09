@@ -4,16 +4,17 @@
   position: relative;  
   z-index: 3;
   @include mq-target(sm) {
-    margin-top: 100px;
+    margin: 0;
+    // margin-top: 60px !important;
   }
   
   &__inner {
-    background-color: #212121; 
-    padding: 40px 0 32px;
+    // background-color: #212121; 
     position: relative;
+    padding: 40px 0 32px;
     z-index: 400;
     @include mq(sm) {
-      padding-bottom: 100px;
+      padding: 20px 0 80px;
     }
   }
 
@@ -47,7 +48,7 @@
   }
 
   &__logo {
-    width: 280px;
+    width: 320px;
     margin: auto;
   }
 
@@ -72,7 +73,7 @@
     
     @include mq-target(md) {
       right: 40px;
-      bottom: 40px;
+      bottom: 20px;
     }
 
     &.is-active {
@@ -82,11 +83,11 @@
 
     a {
       display: block;
-      width: 52px;
-      height: 52px;
-      border-radius: 9999px;
+      width: 62px;
+      height: 62px;
+      border-radius: 6px;
       border: 1px solid $color-bg;
-      background: rgba($color: #fff, $alpha: 0.85);
+      background: rgba($color: #fff, $alpha: 0.65);
       display: flex;
       align-items: center;
       justify-content: center;

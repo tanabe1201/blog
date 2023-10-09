@@ -1,6 +1,53 @@
 @use "../foundation"as *;
 
 
+.p-about {
+    &__inner {
+    }
+    
+    &__container {
+        padding: 2%;
+        @include mq-target(sm) {
+            padding: 24px 24px 12px;
+        }
+    }
+
+    &__btn {
+        padding-top: 24px;
+    }
+
+    &__item {
+        margin-bottom: 32px;
+        &::after {
+            bottom: -16px;
+        }
+        dl {
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 14px;
+            @include mq-target(md) {
+                font-size: 14px;
+            }
+            dt {
+                width: 100%;
+                color: $color-link;
+                padding-right: 20px;
+                @include mq-target(sm) {
+                    width: 160px;
+                }
+            }
+
+            dd {
+                flex: 1;
+                @include mq(sm) {
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+
 
 
 

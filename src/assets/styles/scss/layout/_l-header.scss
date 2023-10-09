@@ -9,39 +9,48 @@
 
 .l-header {
   position: relative;
+  z-index: 3;
   width: 100%;
-  box-shadow: 0 5px 10px -5px rgba(143,167,179,.6);
-  background: #fff;
-  margin-bottom: 30px;
+  margin-top: 0 !important;
+  // box-shadow: 0 5px 10px -5px rgba(143,167,179,.6);
+
+  // margin-bottom: 30px;
   // background-image: url(../../assets/images/hed_bg.jpg);
   // background-size: contain;
   // background: rgba($color: #000, $alpha: 0.65);
+
+  // &:hover a {
+  //   transition: all 0.2s ease-out;
+  //   opacity: 0.75;
+  // }
+
+  max-width: 1200px;
+  margin: auto;
+  @include mq-target(sm) {
+    width: 98vw;
+  }
+
   &__inner {
+    margin-top: 0 !important;
     position: relative;
-// padding: 0 120px;
-    // border: 2px solid #1c1e22;
+
     border-top: none;
-        // background: rgba($color: #1b1b1b, $alpha: 0.55);
+
         position: relative;
         height: 100%;
 
-        // justify-content: center;
 
-        // height: 64px;
-      //   position: relative;
-      //   @include flex($align:center, $justify:center);
-      // width: 96vw;
-      width: 94vw;
       margin: 0 auto;
-      padding: 10px 0;
+      padding: 12px;
       @include mq-target(sm) {
-        width: 98vw;
-        padding: 12px 24px 12px;
+        padding: 10px 12px 12px 42px;
+        // width: 98vw;
+        // padding: 8px 0 6px;
         // padding: 8px 60px;
         // height: 84px;
       }
       @include mq-target(sm) {
-        max-width: 1020px;
+
         // width: 100%;
       }
   }
@@ -66,7 +75,7 @@
     // align-items: center;
     @include mq-target(sm) {
       flex-wrap: initial;
-      height: 52px;
+      height: 48px;
     }
   }
 
@@ -94,14 +103,19 @@
   }
   
   &__left {
+    position: relative;
+    z-index: 2;
     width: 100%;
     @include mq-target(sm) {
       flex: 1;
+      // width: 400px;
     }
   }
 
   &-menu {
     &__list {
+      position: relative;
+      z-index: 2;
       display: flex;
     }
 
@@ -159,7 +173,7 @@
       margin: 0 auto 14px;
       display: block;
       line-height: 1;
-      width: 240px;
+      width: 90%;
       @include mq-target(sm) {
         margin: 0;
         width: 300px;
@@ -232,7 +246,7 @@
 .search-form .btn-action-global-search {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%)
@@ -246,7 +260,7 @@
   width: 100%;
   padding: 0 40px 0 20px;
   border: 1px solid #ddd;
-  border-radius: 18px;
+  // border-radius: 18px;
   background: #fff;
   box-sizing: border-box;
   outline: 0;
@@ -303,6 +317,8 @@
 }
 
 .btn-action-global-search {
+  min-width: initial;
+  box-shadow: initial;
   display: inline-block;
   height: 26px;
   line-height: 24px;

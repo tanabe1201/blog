@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="../assets/styles/vendors/font.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanjp.css"> -->
     <!-- <link href="../assets/styles/vendors/lity.min.css" rel="stylesheet"> -->
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script>
+    <!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
+    <link href="../assets/styles/vendors/98.css" rel="stylesheet">
     <link href="../assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
     <link href="../assets/styles/style.css" rel="stylesheet">
 </head>
@@ -34,13 +36,14 @@
 
 
 
-<header class="l-header">
+<header class="l-header window">
+
     <div class="l-header__inner">
         <div class="l-header__top">
             <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
             <ul class="l-header-menu__list">
                 <li class="l-header-menu__item">
-                    <a href="">
+                    <a href="/gallery">
                         <svg>
                             <use xlink:href="../assets/images/sprite.svg#tabler-home"></use>
                         </svg>
@@ -53,6 +56,14 @@
                             <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
                         </svg>
                         <span>お問合せ</span>
+                    </a>
+                </li>
+                <li class="l-header-menu__item">
+                    <a href="">
+                        <svg>
+                            <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                        </svg>
+                        <span>RSS</span>
                     </a>
                 </li>
                 <li class="l-header-menu__item">
@@ -76,7 +87,6 @@
                         <img src="../assets/images/logos.png" alt="ゴースト速報">
                     </a>
                 </div>
-
             </div>
             <div class="l-header__left">
                 <div class="global-search">
@@ -103,6 +113,7 @@
 </header>
 
 
+
 <!-- <div class="l-header__wrap--sp">
     <div class="l-drawer__trigger js-draw--trigger">
       <span class="-line"></span>
@@ -111,7 +122,7 @@
 
 
 
-<nav class="l-drawer__content js-draw--content">
+<!-- <nav class="l-drawer__content js-draw--content">
     
     <div class="l-drawer__wrap">
         
@@ -133,7 +144,7 @@
         </li>
         </ul>
     </div>
-    </nav>
+    </nav> -->
 
 <body id="top">
     <link rel="stylesheet" href="../assets/images/sprite.svg">
@@ -141,7 +152,7 @@
         <div class="l-menu__inner">
         <ul class="l-menu__list">
             <li class="l-menu__item">
-                <a href="">
+                <a href="/">
                     <svg>
                         <use xlink:href="../assets/images/sprite.svg#tabler-home"></use>
                     </svg>
@@ -150,7 +161,7 @@
             </li>
 
             <li class="l-menu__item">
-                <a href="">
+                <a href="/system">
                     <svg>
                         <use xlink:href="../assets/images/sprite.svg#i-news"></use>
                     </svg>
@@ -158,11 +169,11 @@
                 </a>
             </li>
             <li class="l-menu__item">
-                <a href="">
+                <a href="/gallery">
                     <svg>
-                        <use xlink:href="../assets/images/sprite.svg#i-crown"></use>
+                        <use xlink:href="../assets/images/sprite.svg#i-prof"></use>
                     </svg>
-                    <span>人気記事</span>
+                    <span>アキバコ</span>
                 </a>
             </li>
             <li class="l-menu__item">
@@ -192,1126 +203,722 @@
         </div>
     </div>
 
-<div class="section__bg"></div>
 <main class="l-main">
 
 
     <div class="l-content">
 
+
         <div class="l-content__inner">
-            <section class="p-news">
-                <!-- <div class="c-sec__header" style="text-align: left;">
-                    <h2 class="c-sec__ttl">
-                        <span class="-en">NEWS</span>
-                        <span class="-ja">最新記事</span>
-                    </h2>
-                </div> -->
-                <div class="c-sec__inner p-news__inner">
-                    <ul class="p-news__list">
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
 
-                                <a href="/system" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/ogp3.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>キャンペーン</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="/system">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        【TGSVR2023】加賀美ハヤト、闇ノシュウ、おめがシスターズが公式アンバサダーに就任。クエスト機能やステージエリアの実施などさまざまな情報が公開
-                                    </h3>
-                                    <div class="" style="display: flex; justify-content: space-between;">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/ogp.webp" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        大阪日本橋を舞台にした上海産メイド喫茶スローライフADV「電気街の喫茶店」がPLAYISMより2024年に発売！
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/ogp2.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-「劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉」公開は2024年冬！特報第1弾、ティザービジュアル第2弾が公開
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/ogp.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        テレビアニメ「16bitセンセーション ANOTHER LAYER」初回放送は10月4日24時30分！キービジュアルと本PVが公開に
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/evnt1.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        生バンドで熱く愛を叫んだ「アイドルマスター シンデレラガールズ」単独ライブ「Shout out Live!!!」DAY1レポート
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/evnt2.png" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        「アイドルマスター シンデレラガールズ」Shout out Live!!! DAY1の発表内容を紹介！「デレステ」8周年記念広告やTVアニメ「U149」BD全巻購入特典など
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="#" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/cpn1.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        「アズレン」雲仙（CV：三森すずこ）などが登場するイベントが9月14日に開催！盛りだくさんの着せ替え衣装や今後のアップデート、「シノマス」コラボ情報も
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item p-news__item">
-                            <div class="p-news-cont__head">
-                                <a href="/system" class="c-cont__link">
-                                    <figure class="c-picture__img">
-                                        <picture>
-                                            <img src="../assets/images/cpn2.jpg" alt="">
-                                        </picture>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="p-news-cont__bot">
-                                <ul class="c-cont-tag__list">
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>イベント</span>
-                                        </a>
-                                    </li>
-                                    <li class="c-cont-tag__item">
-                                        <a href="">
-                                            <span>グッズ</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    <h3 class="c-cont__ttl p-news__ttl">
-                                        “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                    </h3>
-                                    <div class="p-news__foot">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>4時間前</time>
-                                        </div>
-                                        <div class="p-news__btn">
-                                            <div class="">
-                                            </div>
-                                            <span>続きを読む</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+            <section class="p-pickup">
 
-                    </ul>
-                </div>
             </section>
-            <!-- <section class="l-side l-side__scroll  u-dp-pc">
-                <div class="c-sec__header">
-                    <a href="#">
-                        <h2 class="c-sec__ttl">
-                            <span class="-en">NEWS</span>
-                            <span class="-ja">最新記事</span>
-                        </h2>
-                        <svg class="i-next">
-                            <use xlink:href=".../assets/images/sprite.svg#nextpage"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="c-sec__inner l-side__inner l-side__inner--scroll">
 
-                    <ul class="l-side__list l-side__list--scroll">
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="/system" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn1.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
+            <div class="l-side u-dp-pc">
 
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-コミックシーモアの70%OFFクーポンでおトクに漫画を読む！ 「コミックシーモア」では、漫画を1巻70%OFFで読むことができます。                                    </h3>
-                                </a>
+                <div class="window">
+
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">AKIBAKO</a></li>
+                                <li><a href="/">アキバコ</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
                             </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="/gallery" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img l-side__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn2.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
+                        </div>
+                    </div>
 
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        『TikTok Lite』（ティックトックライト）をダウンロード、新規会員登録で5000円プレゼント
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
+                    <div class="c-sec__inner p-prof__inner window__view">
+                        <div class="p-prof-body">
+                            <figure class="p-prof__img">
+                                <img src="../assets/images/28.png" alt="">
+                            </figure>
+                        </div>
+                        <p class="p-prof-body__txt">
+                            ようこそニュース速報アキバコへ<br>
+                            便所のラクガキです。暇潰しにどうぞ
+                        </p>
 
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn1.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-コミックシーモアの70%OFFクーポンでおトクに漫画を読む！ 「コミックシーモア」では、漫画を1巻70%OFFで読むことができます。                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img l-side__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn2.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        『TikTok Lite』（ティックトックライト）をダウンロード、新規会員登録で5000円プレゼント
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item l-side__rank">
-                            <a href="/gallery" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/cpn3.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
-            </section> -->
-            <section class="single">
-                <div class="single__bg">
-                <!-- <div class="c-sec__header">
-                    <h2 class="c-sec__ttl">
-                        <span class="-en">ARTICLE</span>
-                        <span class="-ja">記事詳細</span>
-                    </h2>
-                </div> -->
-                <div class="c-sec__inner single__inner">
-                    <div class="single__header">
-                        <p>2023.06.30</p>
-                        <ul class="single__tag">
-                            <li>キャンペーン</li>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">TOP NEWS</a></li>
+                                <li><a href="/">最新記事</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-sec__inner window__view">
+                        <ul class="p-rank__list">
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/single1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/single1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <div class="c-sec__btn l-side__btn">
+                            <a href="#">
+                                <i>もっと見る</i>
+                                <svg>
+                                    <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">RANKING</a></li>
+                                <li><a href="/">人気記事</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-sec__header">
+
+                        <ul class="c-tab__list p-rank-tab__list">
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger is-active"
+                                data-tab="tab-content01">
+                                <span>現在</span>
+                            </li>
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
+                                <span>週間</span>
+                            </li>
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
+                                <span>月間</span>
+                            </li>
                         </ul>
                     </div>
-                    <h1 class="c-sec__ttl single__ttl">
-                        <span class="-en">
-                            「パラノマサイト」ポップアップストア「超常ストア in 錦糸町マルイ」がオープン！TV画面に入って案内人と撮影ができるフォトスポットも
-                        </span>
-                        <!-- <span class="-ja">最新記事</span> -->
-                    </h1>
+                    <div class="c-sec__inner l-side__inner p-rank__inner window__view">
 
+                        <div class="l-side-tab__content">
+                            <div id="tab-content01" class="p-about__box js-tab--content is-active">
+                                <ul class="p-rank__list">
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/single1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/single1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="c-sec__btn l-side__btn">
+                                    <a href="#">
+                                        <i>もっと見る</i>
+                                        <svg>
+                                            <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="tab-content02" class="p-about__box js-tab--content">
 
-                    <figure class="c-picture__img single__img">
-                        <picture>
-                            <img src="../assets/images/ogp4.jpg" alt="">
-                        </picture>
-                    </figure>
-                    <div class="single__entry">
+                                <ul class="l-side__list l-side__list--scroll">
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                1
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                2
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                3
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                4
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                5
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
 
-                        <p>
-                            セガ歴代ゲーム機より、「セガ マスターシステム」「メガドライブ」「セガサターン」「ドリームキャスト」がラインナップ。それぞれがデザインされたTシャツ、パーカーなどのアパレルに加え、バッグやステッカーなどのグッズが登場している。
-                        </p>
-
-                        <img src="../assets/images/single.webp" alt="">
-                        <div class="col-sm-2">
-                            <img src="../assets/images/single1.jpg" alt="">
-                            <img src="../assets/images/single2.jpg" alt="">
-                            <img src="../assets/images/single3.jpg" alt="">
-                            <img src="../assets/images/single1.jpg" alt="">
+                                </ul>
+                            </div>
                         </div>
 
-                        <h2>ドット絵アクリルチャーム</h2>
-                        <p>
-                            発売日：2023年11月中旬予定<br>
-                            サイズ：S/M/L/XL<br>
-                            素材：綿100％<br>
-                            価格：3,300円（税込）
-                        </p>
-                        <div class="col-sm-2">
-                            <img src="../assets/images/3.jpg" alt="">
-                            <img src="../assets/images/4.jpg" alt="">
-                        </div>
                     </div>
                 </div>
+
+                <!-- <div class="window l-side--scroll">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">TOC</a></li>
+                                <li><a href="/">目次</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <button aria-label="Minimize"></button>
+                                <button aria-label="Maximize"></button>
+                                <button aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-sec__inner p-toc__inner window__view">
+
+
+                        <div class="u-hideLg  p-toc__container">
+                            <div class="u-mb40 u-pcOnly">
+                                <ul class="toc">
+                                    <li class="toc__child" style="padding-top: 0;">
+                                        <a href="#js-articleTop">記事トップ</a>
+                                    </li>
+                                    <li class="toc__child"><a href="#js-heading0">コラボカフェ試食レポート！
+                                            昭和レトロ感あふれるメニューはどれも美味しくてお洒落</a></li>
+                                    <ul class="toc__parent">
+                                        <li class="toc__child"><a href="#js-heading1">ゲームが売れなかった理由を考える</a></li>
+                                        <li class="toc__child"><a href="#js-heading2">ゲームが売れなかった理由を考える</a></li>
+                                        <li class="toc__child"><a href="#js-heading3">スクロールの位置・速さなどを調整する</a></li>
+                                        <li class="toc__child"><a href="#js-heading4">サンプル</a></li>
+                                        <li class="toc__child"><a href="#js-heading5">PV第1弾を公開</a></li>
+                                        <li class="toc__child"><a href="#js-heading6">公式サイト・リンク</a></li>
+                                    </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
             </div>
-            </section>
-<!-- 
-            <section class="l-side u-dp-pc">
 
-                <div class="c-sec__header">
-                    <a href="#">
-                        <h2 class="c-sec__ttl">
-                            <span class="-en">ABOUT</span>
-                            <span class="-ja">豚箱速報</span>
-                        </h2>
-                        <svg class="i-next">
-                            <use xlink:href=".../assets/images/sprite.svg#nextpage"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="c-sec__inner l-side__inner">
+            <section class="c-sec p-about">
 
-                    <ul class="l-side__list">
-                        <li class="c-cont__item l-side__item">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/single4.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        会員登録後すぐに使える70%OFFクーポン配布中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img l-side__img">
-                                    <picture>
-                                        <img src=".../assets/images/single1.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        『TikTok Lite』（ティックトックライト）をダウンロード、新規会員登録で5000円プレゼント
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/single2.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <div class="c-sec__header" style="margin-top: 30px;">
-                    <a href="#">
-                        <h2 class="c-sec__ttl">
-                            <span class="-en">REPORT</span>
-                            <span class="-ja">現地確認</span>
-                        </h2>
-                        <svg class="i-next">
-                            <use xlink:href=".../assets/images/sprite.svg#nextpage"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="c-sec__inner l-side__inner">
-
-                    <ul class="l-side__list">
-                        <li class="c-cont__item l-side__item">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/single4.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        会員登録後すぐに使える70%OFFクーポン配布中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img l-side__img">
-                                    <picture>
-                                        <img src=".../assets/images/single1.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        『TikTok Lite』（ティックトックライト）をダウンロード、新規会員登録で5000円プレゼント
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="c-cont__item l-side__item">
-                            <a href="" class="c-cont__link l-side__link">
-                                <figure class="c-picture__img">
-                                    <picture>
-                                        <img src=".../assets/images/single2.jpg" alt="">
-                                    </picture>
-                                </figure>
-                            </a>
-
-                            <div class="l-side-cont__bot">
-                                <a href="#">
-                                    <h3 class="c-cont__ttl l-side-cont__ttl">
-                                        Amazonブラックフライデー2023開催中
-                                    </h3>
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section> -->
-        </div>
-
-        <div class="p-fea__bg u-dp-sp" style="margin-top: 30px;">
-            <section class="p-featre">
-                <div class="p-fea__header">
-                    <h2 class="c-sec__ttl">
-                        <span class="-en">RANKING</span>
-                        <span class="-ja">ランキング</span>
-                    </h2>
-                </div>
-
-                <div class="p-fea__inner">
-                    <div class="p-fea-slider">
-
-                        <!-- <div class="p-fea-slider__btn">
-                            <div class="p-fea-slider__btnPrev js-slider-btnPrev"></div>
-                            <div class="p-fea-slider__btnNext js-slider-btnNext"></div>
-                        </div> -->
-                        <div class="swiper p-fea-slider__container js-index-slider">
-                            <ul class="swiper-wrapper p-fea-slider__wrap">
-
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                            </h3>
-                                        </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp2.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                            </h3>
-                                        </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                            </h3>
-                                        </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp2.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                            </h3>
-                                        </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                            </h3>
-                                        </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp2.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
-                                            </h3>
-                                        </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">PICK UP!!</a></li>
+                                <li><a href="/">おすすめ記事</a></li>
                             </ul>
+                            <div class="title-bar-controls u-dp-pc">
+                                <div class="swiper-pagination js-slider-pagination"></div>
+                            </div>
                         </div>
                     </div>
 
 
-                </div>
+                    <div class="c-sec__inner p-pickup__inner window__view">
 
-            </section>
-        </div>
-        <div class="p-fea__bg u-dp-sp" style="margin-top: 30px;">
-            <section class="p-featre">
-                <div class="p-fea__header">
-                    <h2 class="c-sec__ttl">
-                        <span class="-en">RANKING</span>
-                        <span class="-ja">ランキング</span>
-                    </h2>
-                </div>
+                        <div class="c-slider p-pickup-slider">
+                            <div class="c-slider__btn">
+                                <div class="c-slider__btnPrev js-slider-btnPrev">
+                                    <svg class="i-next">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="c-slider__btnNext js-slider-btnNext">
+                                    <svg class="i-next">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="swiper c-slider__container js-index-slider">
+                                <ul class="swiper-wrapper c-slider__wrap">
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+                                        <a href="#">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/42640892.68224385.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    #サダ 2023/08/18放送 蟲喰い 〜2023ファイナル〜 閲覧注意
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
 
-                <div class="p-fea__inner">
-                    <div class="p-fea-slider">
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
 
-                        <!-- <div class="p-fea-slider__btn">
-                            <div class="p-fea-slider__btnPrev js-slider-btnPrev"></div>
-                            <div class="p-fea-slider__btnNext js-slider-btnNext"></div>
-                        </div> -->
-                        <div class="swiper p-fea-slider__container js-index-slider">
-                            <ul class="swiper-wrapper p-fea-slider__wrap">
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
 
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
                                             </h3>
                                         </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp2.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/cafe01.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
                                             </h3>
                                         </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
                                             </h3>
                                         </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp2.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
                                             </h3>
                                         </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/cafe01.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
                                             </h3>
                                         </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide p-fea-slider__slide">
-                                    <a href="#" class="inview p-fea-content__link">
-                                        <figure class="c-picture__img p-fea-content__img">
-                                            <picture>
-                                                <img src=".../assets/images/ogp2.jpg" alt="サムネイル">
-                                            </picture>
-                                        </figure>
-                                    </a>
-                                    <div class="p-fea-content__cap">
-                                        <ul class="p-fea-content__labels">
-                                            <li class="date">2022.01.02</li>
-                                        </ul>
-                                        <a href="#">
-                                            <h3 class="c-cont__ttl p-news__ttl p-fea-content__ttl">
-                                                “怪異をメスで解剖”ゲーム『青十字病院 東京都支部 怪異解剖部署』正式お披露目。事件の真実を暴くため、“都市伝説”の肉体を切り開く
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
                                             </h3>
                                         </a>
-                                        <ul class="p-fea-content__labels">
-                                            <li class="info">キャンペーン</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        
+
+
                     </div>
 
-
                 </div>
 
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul class="c-pagePath__list">
+                                <li class="c-pagePath__item"><a href="/">AKIBAKO ARCHIVE</a></li>
+                                <li class="c-pagePath__item"><a href="/">運営</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="/" class="i-btn">BACK&nbsp;HOME</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window__view">
+
+
+                        <div class="c-sec__inner p-about__inner window__view">
+
+                            <div class="p-about__container">
+                                <ul class="c-card__list">
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>管理人</dt>
+                                            <dd>ウスワジャ・ビバル</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>開設年</dt>
+                                            <dd>2023年</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>サイト名</dt>
+                                            <dd>『アキバコ』</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>URL</dt>
+                                            <dd>http://localhost:3000</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>サイト内容</dt>
+                                            <dd>アニメ・マンガ・ゲーム・声優ネタなどのサブカル中心のまとめブログ</dd>
+                                        </dl>
+                                    </li>
+
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>相互RSS・リンク</dt>
+                                            <dd>
+                                                逆アクセスなどを参考にして追加しています。<br>
+                                                メールフォームよりご連絡ください。 
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>コメント</dt>
+                                            <dd>
+                                                記事にコメントいただけると嬉しいです(*´∀｀*)
+                                                ただ、余りにひどいもの等は見つけ次第、削除または一部修正する場合があります。御了承ください。 
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>著作権について</dt>
+                                            <dd>
+                                                当サイトは著作権や肖像権の侵害を目的とするものではありません。<br>当サイトで使用・掲載している動画・画像の著作権または肖像権等は各権利所有者に帰属致します。もし問題がありましたら、お手数ですがメールフォームよりお知らせ下さい。迅速に対処致します。
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="c-card__item p-about__item">
+                                        <dl>
+                                            <dt>プライバシーポリシー</dt>
+                                            <dd>
+                                                当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
+                                                このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。 
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="c-sec__btn p-about__btn">
+                                    <a href="/">
+                                        <i>ホームへ戻る</i>
+                                        <svg>
+                                            <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
             </section>
+
+
         </div>
+        <!-- <div class="c-pagePath">
+            <ul style="opacity: 0;">
+                <li><a href="/">ホーム</a></li>
+                <li><a href="">ニュース</a></li>
+            </ul>
+        </div> -->
+
     </div>
 
 </main>
@@ -1330,13 +937,13 @@
   </a>
 </div>
 
-<footer class="l-footer" id="footer">
+<footer id="footer" class="l-footer window">
   <div class="l-footer__inner">
     <div class="l-footer__container">
 
       <div class="l-footer__logo">
         <a href="">
-          <img src="../assets/images/akibako_fff.png" alt="">
+          <img src="../assets/images/logos.png" alt="">
         </a>
       </div>
 <!--   
@@ -1376,10 +983,10 @@
 </footer>
 
 <!-- vendors -->
-<!-- <script src="../assets/scripts/vendors/jquery-3.6.0.min.js"></script> -->
+<script src="../assets/scripts/vendors/jquery-3.6.0.min.js"></script>
 <!-- <script src="../assets/scripts/vendors/rellax.min.js"></script> -->
-<script src="../assets/scripts/vendors/jquery.magnific-popup.js"></script>
-<script src="../assets/scripts/vendors/lity.min.js"></script>
+<!-- <script src="../assets/scripts/vendors/jquery.magnific-popup.js"></script> -->
+<!-- <script src="../assets/scripts/vendors/lity.min.js"></script> -->
 <script src="../assets/scripts/vendors/jquery.matchHeight-min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
 <!-- <script src="../assets/scripts/vendors/intersection-observer.js"></script> -->

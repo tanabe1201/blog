@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="../assets/styles/vendors/font.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanjp.css"> -->
     <!-- <link href="../assets/styles/vendors/lity.min.css" rel="stylesheet"> -->
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script>
+    <!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
+    <link href="../assets/styles/vendors/98.css" rel="stylesheet">
     <link href="../assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
     <link href="../assets/styles/style.css" rel="stylesheet">
 </head>
@@ -34,13 +36,14 @@
 
 
 
-<header class="l-header">
+<header class="l-header window">
+
     <div class="l-header__inner">
         <div class="l-header__top">
             <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
             <ul class="l-header-menu__list">
                 <li class="l-header-menu__item">
-                    <a href="">
+                    <a href="/gallery">
                         <svg>
                             <use xlink:href="../assets/images/sprite.svg#tabler-home"></use>
                         </svg>
@@ -53,6 +56,14 @@
                             <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
                         </svg>
                         <span>お問合せ</span>
+                    </a>
+                </li>
+                <li class="l-header-menu__item">
+                    <a href="">
+                        <svg>
+                            <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                        </svg>
+                        <span>RSS</span>
                     </a>
                 </li>
                 <li class="l-header-menu__item">
@@ -76,7 +87,6 @@
                         <img src="../assets/images/logos.png" alt="ゴースト速報">
                     </a>
                 </div>
-
             </div>
             <div class="l-header__left">
                 <div class="global-search">
@@ -103,6 +113,7 @@
 </header>
 
 
+
 <!-- <div class="l-header__wrap--sp">
     <div class="l-drawer__trigger js-draw--trigger">
       <span class="-line"></span>
@@ -111,7 +122,7 @@
 
 
 
-<nav class="l-drawer__content js-draw--content">
+<!-- <nav class="l-drawer__content js-draw--content">
     
     <div class="l-drawer__wrap">
         
@@ -133,7 +144,7 @@
         </li>
         </ul>
     </div>
-    </nav>
+    </nav> -->
 
 <body id="top">
     <link rel="stylesheet" href="../assets/images/sprite.svg">
@@ -141,7 +152,7 @@
         <div class="l-menu__inner">
         <ul class="l-menu__list">
             <li class="l-menu__item">
-                <a href="">
+                <a href="/">
                     <svg>
                         <use xlink:href="../assets/images/sprite.svg#tabler-home"></use>
                     </svg>
@@ -150,7 +161,7 @@
             </li>
 
             <li class="l-menu__item">
-                <a href="">
+                <a href="/system">
                     <svg>
                         <use xlink:href="../assets/images/sprite.svg#i-news"></use>
                     </svg>
@@ -158,11 +169,11 @@
                 </a>
             </li>
             <li class="l-menu__item">
-                <a href="">
+                <a href="/gallery">
                     <svg>
-                        <use xlink:href="../assets/images/sprite.svg#i-crown"></use>
+                        <use xlink:href="../assets/images/sprite.svg#i-prof"></use>
                     </svg>
-                    <span>人気記事</span>
+                    <span>アキバコ</span>
                 </a>
             </li>
             <li class="l-menu__item">
@@ -196,112 +207,760 @@
 
 
     <div class="l-content">
-
-        <div id="js-articleTop" class="single__head">
-
-            <div class="c-pagePath">
+        <!-- <div class="c-pagePath title-bar">
+            <div class="c-pagePath__inner">
                 <ul>
-                    <li><a href="/">ホーム</a></li>
-                    <li><a href="">ニュース</a></li>
+                    <li><a href="/">AKIBAKO ARCHIVE</a></li>
+                    <li><a href="/">記事詳細</a></li>
                 </ul>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
             </div>
-            <div class="single-head__inner">
-                <div class="single-head__bg" style="background-image: url(../assets/images/ogp.webp);">
-                    <div class="single-head__cover">
-                        <div class="single-head__top">
-                            <h1 class="c-sec__ttl single-head__ttl">
-                                <span class="-en">
-                                    【食レポ】『パラノマサイト』コラボカフェ試食レポート！ 昭和レトロ感あふれるメニューはどれも美味しくてお洒落♪
-                                </span>
-                            </h1>
-                            <!-- <figure class="single__head__img">
-                                <img src="../assets/images/evnt1.jpg" alt="">
-                            </figure> -->
-                        </div>
-                        <div class="single-head__desc single-head__date">
-                            <div class="c-cont__time single-head__time">
-                                <svg class="i-clock">
-                                    <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                </svg>
-                                <time>2023年9月14日 14:00</time>
-                            </div>
-                            <ul class="c-tab__list single-tab__list" style="border: none;">
-                                <li class="c-tab__item p-news-tab__item">
-                                    <a href="">
-                                        <span>ニュース</span>
-                                    </a>
-                                </li>
-                                <li class="c-tab__item p-news-tab__item">
-                                    <a href="">
-                                        <span>エンタメ</span>
-                                    </a>
-                                </li>
-                                <li class="c-tab__item p-news-tab__item">
-                                    <a href="">
-                                        <span>炎上系</span>
-                                    </a>
-                                </li>
-                                <li class="c-tab__item p-news-tab__item">
-                                    <a href="">
-                                        <span>イベント</span>
-                                    </a>
-                                </li>
-                                <li class="c-tab__item p-news-tab__item">
-                                    <a href="">
-                                        <span>キャンペーン</span>
-                                    </a>
-                                </li>
+        </div> -->
+
+        <div class="l-content__inner">
+
+            <div class="p-pickup">
+
+            </div>
+
+
+            <div class="l-side u-dp-pc">
+                <div class="window">
+
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">AKIBAKO</a></li>
+                                <li><a href="/">アキバコ</a></li>
                             </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="c-sec__inner p-prof__inner window__view">
+                        <div class="p-prof-body">
+                            <figure class="p-prof__img">
+                                <img src="../assets/images/28.png" alt="">
+                            </figure>
+                        </div>
+                        <p class="p-prof-body__txt">
+                            ようこそニュース速報アキバコへ<br>
+                            便所のラクガキです。暇潰しにどうぞ
+                        </p>
 
                     </div>
 
                 </div>
-            </div>
-
-        </div>
-
-
-        <div class="l-content__inner">
-
-            <section class="single">
-
-                <div class="c-sec__inner single__inner">
-
-                    <div id="js-articleBody" class="single__entry">
-                        <h2>コラボカフェ試食レポート！ 昭和レトロ感あふれるメニューはどれも美味しくてお洒落♪</h2>
-
-                        <img src="https://pbs.twimg.com/media/F6qvQn-aUAAVUGf?format=jpg&name=large" alt="">
-
-                        <p>
-                            　最近本作に激ハマりした“ことめぐ”が、電撃オンライン編集部で本作の大ファンである、そみんさん、まり蔵さんとカフェへお邪魔してきました！
-                        </p>
-                        <p>
-                            　この記事では、写真たっぷりで店内の展示物、コラボメニューをご紹介していきます。
-                        </p>
-
-                        <h3>コラボカフェ試食レポート！ 昭和レトロ感あふれるメニューはどれも美味しくてお洒落♪</h3>
-
-
-                        <div class="col-sm-2">
-                            <img src="https://dengekionline.com/images/ZjTx/avAB/txYl/pTtR/3yiIJrIlboMF5mMMn7ep8EPM8knMf9dAsBrVJM2Hvskg2chcjFszYwP4NruMV9SgrmgMSeaua1mF6nbg_main.webp" alt="">
-                            <img src="https://dengekionline.com/images/R9Od/oDFd/cExJ/rqMr/zDNYd5IpgUBcRepEiLXtFlHedly3ayFWX1cOP1EdNA2hJBHjr8wr7j1foQrEXwtjhb0uuG56ACzEJclW_main.webp" alt="">
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">TOP NEWS</a></li>
+                                <li><a href="/">最新記事</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
                         </div>
-
-                        <p>
-                            　店内は、カフェの基調色である黒と『パラノマサイト』の世界観がとてもマッチしていて、装飾が一段と映えていました。怪しげな雰囲気もありつつ、シンプルでカッコイイ。
-                        </p>
-
                     </div>
-                    <div class="single-foot">
-                        <div class="c-sec__btn p-single__btn">
-                            <a href="/">
-                                <i>ホームに戻る</i>
+                    <div class="c-sec__inner window__view">
+                        <ul class="p-rank__list">
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/single1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="../assets/images/single1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <div class="c-sec__btn l-side__btn">
+                            <a href="#">
+                                <i>もっと見る</i>
                                 <svg>
                                     <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
                                 </svg>
                             </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">RANKING</a></li>
+                                <li><a href="/">人気記事</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="c-sec__header">
+
+                        <ul class="c-tab__list p-rank-tab__list">
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger is-active" data-tab="tab-content01">
+                                <span>現在</span>
+                            </li>
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
+                                <span>週間</span>
+                            </li>
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
+                                <span>月間</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-sec__inner l-side__inner p-rank__inner window__view">
+
+                        <div class="l-side-tab__content">
+                            <div id="tab-content01" class="p-about__box js-tab--content is-active">
+                                <ul class="p-rank__list">
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/single1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-card__item p-rank__item">
+                                        <div class="p-rank-head p-rank__count">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-rank-cont__img">
+                                                    <img src="../assets/images/single1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                            <div class="p-rank-foot">
+                                                <a href="/system" class="p-rank-foot__link">
+                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- <div class="c-sec__btn l-side__btn">
+                                    <a href="#">
+                                        <i>もっと見る</i>
+                                        <svg>
+                                            <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
+                                        </svg>
+                                    </a>
+                                </div> -->
+                            </div>
+                            <div id="tab-content02" class="p-about__box js-tab--content">
+
+                                <ul class="l-side__list l-side__list--scroll">
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                1
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                2
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                3
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                4
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="c-cont__item l-side__item">
+                                        <div class="p-news-cont__head l-side-cont__head">
+                                            <a href="/system">
+                                                5
+                                            </a>
+                                        </div>
+                                        <div class="p-news-cont__bot l-side-cont__bot">
+                                            <a href="/system">
+                                                <h3 class="c-cont__ttl l-side-cont__ttl">
+                                                    オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div class="window l-side--scroll">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">TOC</a></li>
+                                <li><a href="/">目次</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <button aria-label="Minimize"></button>
+                                <button aria-label="Maximize"></button>
+                                <button aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-sec__inner p-toc__inner window__view">
+
+
+                        <div class="u-hideLg  p-toc__container">
+                            <div class="u-mb40 u-pcOnly">
+                                <ul class="toc">
+                                    <li class="toc__child" style="padding-top: 0;">
+                                        <a href="#js-articleTop">記事トップ</a>
+                                    </li>
+                                    <li class="toc__child"><a href="#js-heading0">コラボカフェ試食レポート！
+                                            昭和レトロ感あふれるメニューはどれも美味しくてお洒落</a></li>
+                                    <ul class="toc__parent">
+                                        <li class="toc__child"><a href="#js-heading1">ゲームが売れなかった理由を考える</a></li>
+                                        <li class="toc__child"><a href="#js-heading2">ゲームが売れなかった理由を考える</a></li>
+                                        <li class="toc__child"><a href="#js-heading3">スクロールの位置・速さなどを調整する</a></li>
+                                        <li class="toc__child"><a href="#js-heading4">サンプル</a></li>
+                                        <li class="toc__child"><a href="#js-heading5">PV第1弾を公開</a></li>
+                                        <li class="toc__child"><a href="#js-heading6">公式サイト・リンク</a></li>
+                                    </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <section class="c-sec single">
+
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">PICK UP!!</a></li>
+                                <li><a href="/">ピックアップ</a></li>
+                            </ul>
+                            <div class="title-bar-controls u-dp-pc">
+                                <div class="swiper-pagination js-slider-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-sec__inner p-pickup__inner window__view">
+
+                        <div class="c-slider p-pickup-slider">
+                            <div class="c-slider__btn">
+                                <div class="c-slider__btnPrev js-slider-btnPrev">
+                                    <svg class="i-next">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="c-slider__btnNext js-slider-btnNext">
+                                    <svg class="i-next">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="swiper c-slider__container js-index-slider">
+                                <ul class="swiper-wrapper c-slider__wrap">
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+                                        <a href="#">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/42640892.68224385.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    #サダ 2023/08/18放送 蟲喰い 〜2023ファイナル〜 閲覧注意
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/cafe01.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="../assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/cafe01.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single3.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul class="c-pagePath__list">
+                                <li class="c-pagePath__item"><a href="/">AKIBAKO ARCHIVE</a></li>
+                                <li class="c-pagePath__item"><a href="/">記事詳細</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="/" class="i-btn">BACK&nbsp;HOME</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="window__view">
+                        <div id="js-articleTop" class="single__head">
+                            <div class="single-head__inner">
+                                <div class="single-head__bg">
+                                    <div class="single-head__cover">
+                                        <div class="single-head__top">
+                                            <h1 class="c-sec__ttl single-head__ttl">
+                                                <span class="-en">
+                                                    (´；ω；`)助けて フィギュア中古で買うか迷ってる
+                                                </span>
+                                            </h1>
+                                        </div>
+                                        <div class="single-head__desc single-head__date">
+                                            <div class="c-cont__time single-head__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                </svg>
+                                                <time>2023年9月14日 14:00</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-sec__inner single__inner window__view">
+
+
+
+                            <div id="js-articleBody" class="single__entry">
+                                <div class="article-header">
+
+                                    <div class="article-title-outer">
+                                    <h2 class="article-title entry-title"><a href="http://majikichi.com/archives/10691046.html" title="平均寿命　既婚男性82歳　未婚男性67歳" rel="bookmark">平均寿命　既婚男性82歳　未婚男性67歳</a></h2>
+                                    </div>
+                                    <ul class="article-meta" style="display: flex; margin-bottom: 20px; justify-content: space-between;">
+                                    <li><abbr class="updated" title="2023-10-07T18:00:48+09:00">2023年10月07日 18:00</abbr> | </li>
+                                    <li><a href="http://majikichi.com/archives/10691046.html#comments" title="コメント一覧へ">コメント(80)</a> | </li>
+                                    <li>カテゴリ：
+                                    <a href="http://majikichi.com/archives/cat_187099.html" title="カテゴリアーカイブへ">結婚/恋愛/男女</a> | 
+                                    <a href="http://b.hatena.ne.jp/entry/add/http://majikichi.com/archives/10691046.html" target="_blank" title="はてなブックマークに追加">はてなブックマークに追加</a>
+                                    | 
+                                    <a href="http://twitter.com/share" title="平均寿命　既婚男性82歳　未婚男性67歳" id="twSBC10691046" class="twSButton" target="_blank" >ツイート</a>
+                                    
+                                    </li></ul>
+                                    
+                                </div><!-- articleHeader End -->
+                                    
+                                <div id="article-body" class="article-body entry-content">
+                                    
+                                    <div class="article-body-inner">
+                                    
+                                    <div class="t_h" >1: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(埼玉県) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:07:07.91 ID:aQdxz4ch0● BE:439992976-PLT(16000)</span></div>
+                                    <div class="t_b" style="background-color:#f5f5f5;margin:5px 20px 10px;padding:10px;border:1px solid #cccccc;border-color:#cccccc;padding-left:10px;">
+                                    
+                                    <iframe src="https://richlink.blogsys.jp/embed/e091bcee-97b6-3cc9-ac4f-921335b013b2" style="height: 120px; width: 580px; max-width: 100%; vertical-align:top;" scrolling="no" frameborder="0"></iframe>
+                                    
+                                    
+                                    
+                                    </div><br />
+                                    <p style="color:gray;text-align:right;">引用元: <a href="https://hayabusa9.5ch.net/test/read.cgi/news/1696662427/">未婚男性の平均寿命はなんと６７歳！  [439992976]</a></p><!-- Generated by まとめくす (https://2mtmex.com/) --><script src="//js.smac-ad.com/000/016/679.js"></script><a name="more"></a>
+                                    <br />
+                                    <div class="article-body-more"><div class="t_h" >2: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(新潟県) [GB]</span> :<span style="color: gray;"> 2023/10/07(土) 16:08:30.05 ID:wlZ0927B0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> そんなに長生きしたくねえよ </div><br />
+                                    <div class="t_h" >4: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(東京都) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:10:09.96 ID:4TODnUKb0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> ワロタｗｗｗｗｗ <br /> ネトウヨの末路ｗｗｗｗｗｗｗ </div><br />
+                                    <div class="t_h" >7: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(大阪府) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:11:40.09 ID:o0Lyq2cB0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 食生活は大事だよーー </div><br />
+                                    <div class="t_h" >8: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(鳥取県) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:12:03.19 ID:ZrgZxraV0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> そんなに貯金なくていいのか </div><br />
+                                    <div class="t_h" >9: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(大阪府) [ﾆﾀﾞ]</span> :<span style="color: gray;"> 2023/10/07(土) 16:13:37.24 ID:B4FPUY600</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 未婚＝貧乏 <br />  <br /> これだから当然の話 </div><br />
+                                    <div class="t_h" >10: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(SB-Android) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:13:37.78 ID:D6DGSw1M0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> <span style="color:mediumblue;" class="anchor">&gt;&gt;1</span> <br /> それも最後は孤独死だからなw <br /> 最後まで人に迷惑かけるなよ </div><br />
+                                    <div class="t_h" >11: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [DE]</span> :<span style="color: gray;"> 2023/10/07(土) 16:13:40.55 ID:eYSkYHYx0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 年収別で統計出して </div><br />
+                                    <div class="t_h" >13: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(栃木県) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:16:05.31 ID:DarnAd2l0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 年金黒字で丁度いいんじゃね </div><br />
+                                    <div class="t_h" >14: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [ﾆﾀﾞ]</span> :<span style="color: gray;"> 2023/10/07(土) 16:16:21.05 ID:oHzbh26j0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> ってか長生きしたいって気もない <br /> 67なら頃合いじゃね？ </div><br />
+                                    <div class="t_h" >16: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(千葉県) [ﾆﾀﾞ]</span> :<span style="color: gray;"> 2023/10/07(土) 16:17:05.05 ID:krL4ail80</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> コドオジが親より早く死ぬのかw </div><br />
+                                    <div class="t_h" >17: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(福岡県) [ID]</span> :<span style="color: gray;"> 2023/10/07(土) 16:18:51.63 ID:s951jEss0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 独身のほとんどは低収入だから健康診断も行けない </div><br />
+                                    <div class="t_h" >19: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [KR]</span> :<span style="color: gray;"> 2023/10/07(土) 16:19:21.18 ID:o9Or6aP60</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 未婚なら早く死にたくね？ <br /> 栄養より生きてでも楽しみ無くて早く死ぬ気がするわ </div><br />
+                                    <div class="t_h" >20: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [EU]</span> :<span style="color: gray;"> 2023/10/07(土) 16:20:40.62 ID:xj6j0ppn0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 大事な事なので二度スレ立てたんだよな </div><br />
+                                    <div class="t_h" >21: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(東京都) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:20:43.29 ID:DallXPuM0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 親戚付き合いしない近所付き合いしない友達居ないはそのくらいだな </div><br />
+                                    <div class="t_h" >22: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(東京都) [DE]</span> :<span style="color: gray;"> 2023/10/07(土) 16:20:59.41 ID:jDbUTUUo0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 子供や孫いないんなら丁度いいのでは？ </div><br />
+                                    <div class="t_h" >24: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(宮崎県) [ﾆﾀﾞ]</span> :<span style="color: gray;"> 2023/10/07(土) 16:21:21.12 ID:IraZTiv10</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 酒とかタバコとかバカスカやってた世代が思いっきり平均下げてるだろうからこれからはどうかな </div><br />
+                                    <div class="t_h t_i" >44: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(ジパング) [ﾆﾀﾞ]</span> :<span style="color: gray;"> 2023/10/07(土) 16:31:10.80 ID:44d/h6/Y0</span></div>
+                                    <div class="t_b t_i" style="padding-left:10px;"> <span style="color:mediumblue;" class="anchor">&gt;&gt;24</span> <br /> 寿命自体は医療で伸びるが健康寿命に関しちゃこれから更に下がる言われてるし現実に下がってる <br /> しかも40代以下でも下がってる <br /> 酒だなんだより疲労睡眠不足食事ストレスなどの方が健康に大きく関わるよ <br /> 現代社会は自律神経やっちゃう人がめちゃくちゃ多いからそこで体調崩して主に脳や血管の病気になる </div><br />
+                                    <div class="t_h" >25: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [CH]</span> :<span style="color: gray;"> 2023/10/07(土) 16:22:44.57 ID:iVt7qVNQ0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> あと15年で死ぬのか </div><br />
+                                    <div class="t_h" >26: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(愛知県) [TW]</span> :<span style="color: gray;"> 2023/10/07(土) 16:22:51.20 ID:7yNOYTZN0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> そこまで生きられるとは思ってない </div><br />
+                                    <div class="t_h" >28: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(ジパング) [CN]</span> :<span style="color: gray;"> 2023/10/07(土) 16:24:18.32 ID:smY4Mnwd0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> もう一声ほしいな <br /> 57歳くらいだったら退職金も年金も気にしない生活になれる </div><br />
+                                    <div class="t_h" >30: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(神奈川県) [JP]</span> :<span style="color: gray;"> 2023/10/07(土) 16:24:44.59 ID:Iy7Lb2Yj0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 俺の寿命はあと15年かよ(´・ω・) <br /> 遺言には欲を丸出しにして血みどろになって <br /> 俺の遺産を奪い合えって書いとくわ </div><br />
+                                    <div class="t_h" >31: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(SB-iPhone) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:25:08.23 ID:+7sfXLNR0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> つまり女のせいか </div><br />
+                                    <div class="t_h" >35: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(東京都) [DE]</span> :<span style="color: gray;"> 2023/10/07(土) 16:26:50.10 ID:AgXuVEyl0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> まだ長い、安楽死制度はよ </div><br />
+                                    <div class="t_h" >38: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(大阪府) [DE]</span> :<span style="color: gray;"> 2023/10/07(土) 16:29:48.91 ID:RNtd6d7Z0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 自民党『人生100年時代』 </div><br />
+                                    <div class="t_h" >43: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(東京都) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:30:58.94 ID:NCShKzRs0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 未婚かどうかじゃなくて資産があるかどうかが鍵なのでは <br /> 未婚でも金に余裕があるなら長生き出来るんじゃね <br /> 年金ギリギリで生活してちゃそりゃ早死にするだろ </div><br />
+                                    <div class="t_h" >48: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(茸) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:34:42.62 ID:IuMX8OCq0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 寿命を決めるのは活性酸素と炎症 <br /> 塩分とりすぎ糖分とりすぎ運動しなさすぎで酒タバコやるやつだな <br /> 平均寿命を見積もった世代て結婚できないと貧困だった奴らだろ <br /> 今変わってるはず </div><br />
+                                    <div class="t_h" >50: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [CN]</span> :<span style="color: gray;"> 2023/10/07(土) 16:36:53.74 ID:gHCr3Qg20</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> ウチの一族72歳で死ぬ人がやたら多いからその平均よりは生きられそうだ </div><br />
+                                    <div class="t_h" >54: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [GE]</span> :<span style="color: gray;"> 2023/10/07(土) 16:38:53.56 ID:7ntre6iu0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 税金年金払うだけ払って早死にする国としては最高の人間やね </div><br />
+                                    <div class="t_h" >57: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(国際宇宙ステーション) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:41:27.51 ID:nVP//Tau0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 長すぎず短すぎず </div><br />
+                                    <div class="t_h" >65: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(千葉県) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:52:07.32 ID:PNFkiE6S0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 離婚して一人暮らしだった父親が68歳で胃がんで死んだわ <br /> 原因は食べ物と酒量だな </div><br />
+                                    <div class="t_h" >66: <span style="color: green; font-weight: bold;">名無しさん＠涙目です。(東京都) [US]</span> :<span style="color: gray;"> 2023/10/07(土) 16:58:01.25 ID:+Ekz8+4T0</span></div>
+                                    <div class="t_b" style="padding-left:10px;"> 結構長生きだな。65ぐらいかと思ってた </div><br /><script src="//js.smac-ad.com/000/016/679.js"></script>
+                                    
+                                    </div>
+                                    
+                                    </div>
+
+
+                            
+                                </div>
+                            </div><!-- single__entry -->
+
+
+                            
+                        </div>
+                    </div>
+                    <div class="single-foot">
                         <ul class="single-foot__list">
                             <li class="single-foot__item -prev">
                                 <a href="">
@@ -318,545 +977,80 @@
                                 </a>
                             </li>
                         </ul>
-
-                    </div>
-
-                    <div class="c-sec__header">
-                        <a href="#">
-                            <h2 class="c-sec__ttl">
-                                <svg class="i-ttl">
-                                    <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                        <div class="c-sec__btn single__btn">
+                            <a href="/">
+                                <i>ホームに戻る</i>
+                                <svg>
+                                    <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
                                 </svg>
-                                <span class="-en l-side__ttl">
-                                    関連記事一覧
-                                    <span>
-                                        Related
-                                    </span>
-                                </span>
-                            </h2>
-                        </a>
-                    </div>
-                    <ul class="p-news__list">
-                        <li class="c-card__item p-news__item single-rela_item">
-                            <div class="c-card__item--inner">
-
-                                <div class="p-news-cont__bot">
-                                    <a href="/system">
-                                        <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            【NIKKE】ティアが登場。スイーツと爬虫類を愛するニケ。 夢は本物のドラゴンに会って願いごとをすること【声優：大久保瑠美】
-                                        </h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="c-card__item p-news__item single-rela_item">
-                            <div class="c-card__item--inner">
-                                <div class="p-news-cont__bot">
-                                    <a href="/system">
-                                        <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『MFゴースト』緒方役の畠中佑やレースクイーンも出演する番組『MFG-TV』が配信開始。第1回目は担当編集による原作者・しげの秀一のマル秘トークも
-                                        </h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="c-card__item p-news__item single-rela_item">
-                            <div class="c-card__item--inner">
-                                <div class="p-news-cont__bot">
-                                    <a href="/system">
-                                        <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『MFゴースト』緒方役の畠中佑やレースクイーンも出演する番組『MFG-TV』が配信開始。第1回目は担当編集による原作者・しげの秀一のマル秘トークも
-                                        </h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </section>
-            <section class="l-side u-dp-pc">
-                <div class="c-sec__inner">
-                    
-                    <div class="c-sec__header">
-                        <a href="#">
-                            <h2 class="c-sec__ttl">
-                                <svg class="i-ttl">
-                                    <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
-                                </svg>
-                                <span class="-en l-side__ttl">
-                                    所感
-                                    <span>
-                                        feeling
-                                    </span>
-                                </span>
-                            </h2>
-                        </a>
-                    </div>
-                    <div class="p-prof__inner">
-                        <div class="p-prof-body">
-                            <figure class="p-prof__img">
-                                <img src="../assets/images/28.png" alt="">
-                            </figure>
-                        </div>
-                        <p class="p-prof-body__txt">
-                            数店舗回りましたが、アクスタは都会だと結構無くなってる所が多いです！
-    クリアファイルは今のとこ余裕があるみたいですが、アクスタとは違って通販が無いので早めに手に入れた方がいいです！
-                        </p>
-                    </div>
-                </div>
-
-                <div class="l-side--scroll">
-                    <div class="c-sec__inner p-toc__inner">
-                        <div class="c-sec__header">
-                            <a href="#">
-                                <h2 class="c-sec__ttl">
-                                    <svg class="i-ttl">
-                                        <use xlink:href="../assets/images/sprite.svg#i-toc"></use>
-                                    </svg>
-                                    <span class="-en l-side__ttl">
-                                        目次
-                                        <span>
-                                            contents
-                                        </span>
-                                    </span>
-                                </h2>
                             </a>
                         </div>
-    
-                        <div class="u-hideLg  p-toc__container">
-                            <div class="u-mb40 u-pcOnly">
-                                <ul class="toc">
-                                    <li class="toc__child" style="padding-top: 0;">
-                                        <a href="#js-articleTop">記事トップ</a>
-                                    </li>
-                                    <li class="toc__child"><a href="#js-heading0">コラボカフェ試食レポート！ 昭和レトロ感あふれるメニューはどれも美味しくてお洒落</a></li>
-                                    <ul class="toc__parent">
-                                        <li class="toc__child"><a href="#js-heading1">ゲームが売れなかった理由を考える</a></li>
-                                        <li class="toc__child"><a href="#js-heading2">ゲームが売れなかった理由を考える</a></li>
-                                        <li class="toc__child"><a href="#js-heading3">スクロールの位置・速さなどを調整する</a></li>
-                                        <li class="toc__child"><a href="#js-heading4">サンプル</a></li>
-                                        <li class="toc__child"><a href="#js-heading5">PV第1弾を公開</a></li>
-                                        <li class="toc__child"><a href="#js-heading6">公式サイト・リンク</a></li>
-                                    </ul>
-                            </div>
-                        </div>
-    
                     </div>
                 </div>
-
-
-
-
-                <!-- <div class="c-sec__inner l-side__inner p-rank__inner">
-                    <div class="c-sec__header">
-                        <a href="#">
-                            <h2 class="c-sec__ttl">
-                                <svg class="i-ttl">
-                                    <use xlink:href="../assets/images/sprite.svg#i-crown"></use>
-                                </svg>
-                                <span class="-en l-side__ttl">
-                                    Populur
-                                    <span>
-                                        人気記事
-                                    </span>
-                                </span>
-                            </h2>
-                            <svg class="i-next">
-                                <use xlink:href="../assets/images/sprite.svg#nextpage"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <ul class="c-tab__list p-rank-tab__list">
-                        <li class="c-tab__item p-rank-tab__item js-tab--trigger is-active" data-tab="tab-content01">
-                            <span>現在</span>
-                        </li>
-                        <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
-                            <span>週間</span>
-                        </li>
-                        <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
-                            <span>月間</span>
-                        </li>
-                    </ul>
-
-                    <div class="l-side-tab__content">
-                        <div id="tab-content01" class="p-about__box js-tab--content is-active">
-                            <ul class="p-rank__list">
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/evnt1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/ogp_r.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/single1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    【Amazon】小学生向けキッズタブレット『Fire HD 10 キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/ogp4.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/goods1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    【Amazon】小学生向けキッズタブレット『Fire HD 10 キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/cpn3.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    【Amazon】小学生向けキッズタブレット『Fire HD 10 キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/cpn2.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    【Amazon】小学生向けキッズタブレット『Fire HD 10 キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item p-rank__item">
-                                    <div class="p-rank-head p-rank__count">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-rank-cont__img">
-                                                <img src="../assets/images/cpn1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="p-rank-foot">
-                                            <a href="/system" class="p-rank-foot__link">
-                                                <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                    【Amazon】小学生向けキッズタブレット『Fire HD 10 キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                </h3>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="p-rank-foot__data">
-                                        <div class="c-cont__time">
-                                            <svg class="i-clock">
-                                                <use xlink:href="../assets/images/sprite.svg#clock24"></use>
-                                            </svg>
-                                            <time>2023.12.01</time>
-                                        </div>
-                                        <ul class="c-cont-tag__list">
-                                            <li class="c-cont-tag__item">
-                                                <a href="">
-                                                    <span>キャンペーン</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <li><a href="/">RELATED</a></li>
+                                <li><a href="/">関連記事</a></li>
                             </ul>
-                            
-                            <div class="c-sec__btn p-rank__btn">
-                                <a href="#">
-                                    <i>もっと見る</i>
-                                    <svg>
-                                        <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
-                                    </svg>
-                                </a>
+                            <div class="title-bar-controls">
+                                <button aria-label="Minimize"></button>
+                                <button aria-label="Maximize"></button>
+                                <button aria-label="Close"></button>
                             </div>
                         </div>
-                        <div id="tab-content02" class="p-about__box js-tab--content">
+                    </div>
+                    <div class="c-sec__inner window__view">
+                        <ul class="p-news__list">
+                            <li class="c-card__item p-news__item single-rela_item">
+                                <div class="c-card__item--inner">
 
-                            <ul class="l-side__list l-side__list--scroll">
-                                <li class="c-cont__item l-side__item">
-                                    <div class="p-news-cont__head l-side-cont__head">
+                                    <div class="p-news-cont__bot">
                                         <a href="/system">
-                                            1
-                                        </a>
-                                    </div>
-                                    <div class="p-news-cont__bot l-side-cont__bot">
-                                        <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl">
-                                                オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                【NIKKE】ティアが登場。スイーツと爬虫類を愛するニケ。 夢は本物のドラゴンに会って願いごとをすること【声優：大久保瑠美】
                                             </h3>
                                         </a>
                                     </div>
-                                </li>
-                                <li class="c-cont__item l-side__item">
-                                    <div class="p-news-cont__head l-side-cont__head">
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item single-rela_item">
+                                <div class="c-card__item--inner">
+                                    <div class="p-news-cont__bot">
                                         <a href="/system">
-                                            2
-                                        </a>
-                                    </div>
-                                    <div class="p-news-cont__bot l-side-cont__bot">
-                                        <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl">
-                                                オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『MFゴースト』緒方役の畠中佑やレースクイーンも出演する番組『MFG-TV』が配信開始。第1回目は担当編集による原作者・しげの秀一のマル秘トークも
                                             </h3>
                                         </a>
                                     </div>
-                                </li>
-                                <li class="c-cont__item l-side__item">
-                                    <div class="p-news-cont__head l-side-cont__head">
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item single-rela_item">
+                                <div class="c-card__item--inner">
+                                    <div class="p-news-cont__bot">
                                         <a href="/system">
-                                            3
-                                        </a>
-                                    </div>
-                                    <div class="p-news-cont__bot l-side-cont__bot">
-                                        <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl">
-                                                オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『MFゴースト』緒方役の畠中佑やレースクイーンも出演する番組『MFG-TV』が配信開始。第1回目は担当編集による原作者・しげの秀一のマル秘トークも
                                             </h3>
                                         </a>
                                     </div>
-                                </li>
-                                <li class="c-cont__item l-side__item">
-                                    <div class="p-news-cont__head l-side-cont__head">
-                                        <a href="/system">
-                                            4
-                                        </a>
-                                    </div>
-                                    <div class="p-news-cont__bot l-side-cont__bot">
-                                        <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl">
-                                                オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
-                                            </h3>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="c-cont__item l-side__item">
-                                    <div class="p-news-cont__head l-side-cont__head">
-                                        <a href="/system">
-                                            5
-                                        </a>
-                                    </div>
-                                    <div class="p-news-cont__bot l-side-cont__bot">
-                                        <a href="/system">
-                                            <h3 class="c-cont__ttl l-side-cont__ttl">
-                                                オトメイトパーティー2023新発表・新作ゲームまとめ。『薄桜鬼』15周年記念PV、ヤクルトスワローズの選手と恋愛しリーグ優勝を目指す『マイナイン』ほか最新情報が公開
-                                            </h3>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
-                
-                <div class="c-sec__inner l-side__inner">
-                    <div class="c-sec__header">
-                        <a href="#">
-                            <h2 class="c-sec__ttl">
-                                <svg class="i-ttl">
-                                    <use xlink:href="../assets/images/sprite.svg#i-prof"></use>
-                                </svg>
-                                <span class="-en l-side__ttl">
-                                    AKIBAKO
-                                    <span>
-                                        空箱アーカイブ
-                                    </span>
-                                </span>
-                            </h2>
-                        </a>
-                    </div>
-                    <div class=" p-prof__inner">
-                        <div class="p-prof-body">
-                            <p class="p-prof-body__txt">
-                                ようこそアキバコへ<br>
-                                便所のラクガキです。暇潰しにどうぞ
-                            </p>
-                        </div>
-                        <figure class="p-prof__img">
-                            <img src="../assets/images/28.png" alt="">
-                        </figure>
-                    </div>
-                </div> -->
+
             </section>
+
         </div>
-        <div class="c-pagePath">
+        <!-- <div class="c-pagePath">
             <ul style="opacity: 0;">
                 <li><a href="/">ホーム</a></li>
                 <li><a href="">ニュース</a></li>
             </ul>
-        </div>
+        </div> -->
 
     </div>
 
@@ -878,13 +1072,13 @@
   </a>
 </div>
 
-<footer class="l-footer" id="footer">
+<footer id="footer" class="l-footer window">
   <div class="l-footer__inner">
     <div class="l-footer__container">
 
       <div class="l-footer__logo">
         <a href="">
-          <img src="../assets/images/akibako_fff.png" alt="">
+          <img src="../assets/images/logos.png" alt="">
         </a>
       </div>
 <!--   
@@ -924,10 +1118,10 @@
 </footer>
 
 <!-- vendors -->
-<!-- <script src="../assets/scripts/vendors/jquery-3.6.0.min.js"></script> -->
+<script src="../assets/scripts/vendors/jquery-3.6.0.min.js"></script>
 <!-- <script src="../assets/scripts/vendors/rellax.min.js"></script> -->
-<script src="../assets/scripts/vendors/jquery.magnific-popup.js"></script>
-<script src="../assets/scripts/vendors/lity.min.js"></script>
+<!-- <script src="../assets/scripts/vendors/jquery.magnific-popup.js"></script> -->
+<!-- <script src="../assets/scripts/vendors/lity.min.js"></script> -->
 <script src="../assets/scripts/vendors/jquery.matchHeight-min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
 <!-- <script src="../assets/scripts/vendors/intersection-observer.js"></script> -->

@@ -92,7 +92,6 @@
   },
   "description": "",
   "dependencies": {
-    "caniuse-lite": "^1.0.30001419",
     "imagemin-mozjpeg": "^9.0.0",
     "meow": "^10.1.1"
   }

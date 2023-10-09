@@ -1,194 +1,87 @@
 @use "../foundation"as *;
 
-
-.section__bg {
-
-    @include mq-target(md) {
-        position: fixed;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(../../assets/images/charaBg_sp.jpg);
-        // background-color: #0ae;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        // filter: blur(2px);
-
-        &::before {
-            content: "";
-            @include absAll;
-            display: block;
-            z-index: 110;
-            opacity: 0.65;
-            background: $color-bg;
-            /* fallback for old browsers */
-            background: linear-gradient(to right, #FFFFFF, #6DD5FA, #a0d9ff);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-            z-index: 0;
-        }
-
-        @include mq-target(md) {
-            background-image: url(../../assets/images/bg_04.jpg);
-        }
-
-    }
-}
-
 .p-news {
-    @include mq-target(md) {
-        width: min(vwpc(660px), 720px);
-    }
 
     &-tab {
-        &__list {
-            width: 100%;
-            display: flex;
-            overflow-x: scroll;
-            padding-bottom: 10px;
-            justify-content: initial;
-
-            @include mq-target(sm) {
-                overflow: initial;
-            }
-
-            @include mq-target(md) {}
-        }
+        &__list { justify-content: space-between; }
 
         &__item {
-            display: inline-block;
             margin: 0 8px 0 0;
             width: auto;
-
-            a {
-                span {
-                    background: $color-red;
-                    background: $color-bg;
-                    background-image: repeating-linear-gradient(-45deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 6px, transparent 0, transparent 12px);
-                    white-space: nowrap;
-                    padding: 1px 8px 3px;
-                    // font-weight: 900;
-                    font-size: 12px;
-                    display: inline-block;
-                    color: $color-white;
-
-                    @include mq-target(sm) {
-                        padding: 1px 10px 2px;
-                        font-size: 14px;
-                    }
-
-                    @include mq-target(md) {
-                        font-size: 12px;
-                    }
-                }
-            }
         }
     }
 
-    &__inner {
+    &__head {
+        // width: 100%;
 
-        // background-color: #e5e5f7;
-        // opacity: 0.8;
+        width: 96px;
 
-        // border-right:none;
-        // clip-path: polygon(32px 0%, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%, 0 32px);
+        // width: min(vwsp(90px),150px);
+        @include mq-target(sm) {
+            width: 220px;
+            // width: calc((200/716)*100%);
+        }
+        
+        @include mq-target(md) {
+            width: min(vwpc(200px), 210px);
+        }
+    }
 
-        // background-color: rgb(247, 247, 249);
-        // background: #fff;
-        // padding: 4px;
-        // background: url(../images/sectionBg.jpeg) repeat center;
-        // background-size: 110% 110%;
-        padding-bottom: 0;
-        // clip-path: polygon(32px 0%, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%, 0 32px);
+    &__foot {
+        // margin: 4px 0;
+        position: relative;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding: 0 0 0 8px;
 
-        // border: $color-border-waku;
+        // margin-left: 10px;
+        @include mq-target(sm) {
+            flex-direction: column;
+            padding: 0 4px 0 14px;
+            // margin-left: 16px;
+        }
 
         @include mq-target(md) {
-            border-right: $color-border-waku;
-            // padding: 6px;
-            // padding: 24px 1vw;
+            // margin-left: 12px;
         }
-    }
 
-    &__item {
-        &:hover a {
-            transition: all .1s ease-in-out;
-            opacity: 0.75;
-        }
     }
 
     &-cont {
-        &__top {
-            // width: 100%;
-            width: 96px;
-
-            // width: min(vwsp(90px),150px);
-            @include mq-target(sm) {
-                // width: 246px;
-                width: 256px;
-            }
-
-            @include mq-target(md) {}
-        }
-
-        &__bot {
-            position: relative;
-            text-align: left;
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-between;
-            flex: 1;
-            padding: 0 0 0 10px;
-
-            // margin-left: 10px;
-            @include mq-target(sm) {
-                flex-direction: column;
-                padding: 0 6px 0 14px;
-                // margin-left: 16px;
-            }
-
-            @include mq-target(md) {
-                // margin-left: 12px;
-            }
-
-        }
 
         &__img {
             overflow: hidden;
-            // outline-offset: 1px;
-            // border: $color-border-waku;
-            outline: $color-border-waku;;
-            // outline: 1px solid $color-font;
+            outline: 1px solid $color-key;
+
             @include mq(sm) {
                 outline: 0;
                 border-radius: 6px;
-                aspect-ratio: auto 260 / 216;
-                // padding-top: 80%;
+                aspect-ratio: auto 260 / 236;
             }
         }
 
+        &__foot {
+            // padding-top: 8px
+            @include flex($align:center, $justify:space-between);
+
+            @include mq-target(sm) {}
+        }
+
         &__ttl {
+            flex: 1;
             line-height: 1.4;
-            // margin-top: 4px;
             font-size: 13px;
-            font-weight: bold;
+            padding-right: 4px;
             color: $color-link;
-            // font-size: 14px;
-            // font-size: min(vwsp(12px), 14px);
-            @include lineclamp(4);
             @include lineclamp(3);
-
             @include mq-target(sm) {
-                line-height: 1.6;
-                font-size: 16px;
+                font-size: 18px;
             }
-
             @include mq-target(md) {
-                // font-size: min(vwpc(16px), 17px);
-                font-size: 16px;
+                font-size: min(vwpc(16px), 18px);
             }
         }
 
@@ -198,74 +91,10 @@
             color: $color-key;
             padding-top: 4px;
             display: none;
-            
+
             @include mq-target(sm) {
                 // @include lineclamp(3);
             }
         }
-
-        &__data {
-            // padding-top: 8px
-            @include flex($align:center, $justify:space-between);
-
-            @include mq-target(sm) {}
-        }
-
-        &__btn {
-            padding-top: 6px;
-            width: 200px;
-            margin-left: auto;
-            display: none;
-            @include mq-target(sm) {
-                display: block;
-            }
-            a {
-                font-weight: bold;
-                color: $color-link;
-                padding: 7px 0 6px 12px;
-                text-align: center;
-                border: $color-border-waku;
-                background-color: rgba(243, 243, 243, 0.98);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 13px;
-                // line-height: 1;
-
-                svg {
-                    width: 18px;
-                    height: 18px;
-                }
-            }
-        }
-    }
-
-    &__btn {
-        margin: 20px 0 0;
-    }
-}
-
-
-
-.p-kv {
-    position: relative;
-    margin: 12px 15px 0;
-    display: none;
-    
-    // @include mq-target(sm) {
-    //     display: block;
-    // }
-    &::before {
-        content: "";
-        @include absAll;
-        background: rgba($color: #000, $alpha: 0.25);
-        z-index: 1;
-    }
-
-    &__img {
-        position: relative;
-        aspect-ratio: 16 / 6;
-
-
     }
 }

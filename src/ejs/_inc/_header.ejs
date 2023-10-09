@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="<%= filePath %>assets/styles/vendors/font.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanjp.css"> -->
     <!-- <link href="<%= filePath %>assets/styles/vendors/lity.min.css" rel="stylesheet"> -->
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script>
+    <!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
+    <link href="<%= filePath %>assets/styles/vendors/98.css" rel="stylesheet">
     <link href="<%= filePath %>assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
     <link href="<%= filePath %>assets/styles/style.css" rel="stylesheet">
 </head>
@@ -32,13 +34,14 @@
 
 
 
-<header class="l-header">
+<header class="l-header window">
+
     <div class="l-header__inner">
         <div class="l-header__top">
             <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
             <ul class="l-header-menu__list">
                 <li class="l-header-menu__item">
-                    <a href="">
+                    <a href="/gallery">
                         <svg>
                             <use xlink:href="<%= filePath %>assets/images/sprite.svg#tabler-home"></use>
                         </svg>
@@ -51,6 +54,14 @@
                             <use xlink:href="<%= filePath %>assets/images/sprite.svg#tabler-message-circle"></use>
                         </svg>
                         <span>お問合せ</span>
+                    </a>
+                </li>
+                <li class="l-header-menu__item">
+                    <a href="">
+                        <svg>
+                            <use xlink:href="<%= filePath %>assets/images/sprite.svg#i-news"></use>
+                        </svg>
+                        <span>RSS</span>
                     </a>
                 </li>
                 <li class="l-header-menu__item">
@@ -74,7 +85,6 @@
                         <img src="<%= filePath %>assets/images/logos.png" alt="ゴースト速報">
                     </a>
                 </div>
-
             </div>
             <div class="l-header__left">
                 <div class="global-search">
@@ -101,6 +111,7 @@
 </header>
 
 
+
 <!-- <div class="l-header__wrap--sp">
     <div class="l-drawer__trigger js-draw--trigger">
       <span class="-line"></span>
@@ -109,7 +120,7 @@
 
 
 
-<nav class="l-drawer__content js-draw--content">
+<!-- <nav class="l-drawer__content js-draw--content">
     
     <div class="l-drawer__wrap">
         
@@ -131,7 +142,7 @@
         </li>
         </ul>
     </div>
-    </nav>
+    </nav> -->
 
 <body id="top">
     <link rel="stylesheet" href="<%= filePath %>assets/images/sprite.svg">
@@ -139,7 +150,7 @@
         <div class="l-menu__inner">
         <ul class="l-menu__list">
             <li class="l-menu__item">
-                <a href="">
+                <a href="/">
                     <svg>
                         <use xlink:href="<%= filePath %>assets/images/sprite.svg#tabler-home"></use>
                     </svg>
@@ -148,7 +159,7 @@
             </li>
 
             <li class="l-menu__item">
-                <a href="">
+                <a href="/system">
                     <svg>
                         <use xlink:href="<%= filePath %>assets/images/sprite.svg#i-news"></use>
                     </svg>
@@ -156,11 +167,11 @@
                 </a>
             </li>
             <li class="l-menu__item">
-                <a href="">
+                <a href="/gallery">
                     <svg>
-                        <use xlink:href="<%= filePath %>assets/images/sprite.svg#i-crown"></use>
+                        <use xlink:href="<%= filePath %>assets/images/sprite.svg#i-prof"></use>
                     </svg>
-                    <span>人気記事</span>
+                    <span>アキバコ</span>
                 </a>
             </li>
             <li class="l-menu__item">
