@@ -50,7 +50,7 @@
         flex-direction: column;
         justify-content: space-between;
         flex: 1;
-        padding: 0 0 0 8px;
+        padding: 0 6px 0 8px;
 
         // margin-left: 10px;
         @include mq-target(sm) {
@@ -75,7 +75,7 @@
         &__img {
             overflow: hidden;
             outline: 0;
-            aspect-ratio: auto 260 / 250;
+            aspect-ratio: auto 260 / 240;
             border-radius: 6px;
             
             @include mq-target(sm) {

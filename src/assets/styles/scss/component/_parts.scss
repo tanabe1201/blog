@@ -306,9 +306,13 @@
       z-index: 3;
       @include flex($align:center);
       margin-right: auto;
+      transform-origin: left bottom;
+      transform: scale(0.8);
 
       // margin-left: 12px;
       @include mq-target(sm) {
+        transform-origin: initial;
+        transform: scale(initial);
         // margin-left: 14px;
 
       }
@@ -351,8 +355,13 @@
     color: $color-key;
     z-index: 1;
     font-weight: 300;
+    transform-origin: right bottom;
+    transform: scale(0.8);
 
-    @include mq-target(md) {
+
+    @include mq-target(sm) {
+      transform-origin: initial;
+      transform: scale(initial);
       // margin-top: min(vwpc(10px),12px);
     }
 
@@ -364,8 +373,10 @@
       width: 14px;
       height: 14px;
       fill: #9e9e9e;
+      display: none;
 
       @include mq-target(sm) {
+        display: block;
         width: 16px;
         height: 16px;
       }
