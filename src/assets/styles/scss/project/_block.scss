@@ -26,7 +26,8 @@
             display: flex;
             flex-wrap: wrap;
             font-size: 14px;
-            @include mq-target(md) {
+            font-size: min(vwsp(14px),16px);
+            @include mq-target(sm) {
                 font-size: 14px;
             }
             dt {

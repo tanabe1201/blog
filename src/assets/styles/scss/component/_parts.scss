@@ -262,7 +262,7 @@
       border: 1px solid $color-border;
       padding: 0 16px;
       font-size: 14px;
-      height: 36px;
+      height: min(vwsp(36px),42px);
       
       @include mq-target(sm) {
         height: 42px;
@@ -307,7 +307,7 @@
       @include flex($align:center);
       margin-right: auto;
       transform-origin: left bottom;
-      transform: scale(0.8);
+      transform: scale(0.9);
 
       // margin-left: 12px;
       @include mq-target(sm) {
@@ -329,7 +329,7 @@
       a {
         font-weight: bold;
         // border-radius: 32px;
-        padding: 2px 6px 1px;
+        padding: 2px 6px 2px;
         background-color: #F6F8FA;
         @include flex($align:center);
         line-height: 100%;
@@ -356,7 +356,7 @@
     z-index: 1;
     font-weight: 300;
     transform-origin: right bottom;
-    transform: scale(0.8);
+    transform: scale(0.9);
 
 
     @include mq-target(sm) {

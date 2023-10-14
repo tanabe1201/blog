@@ -150,6 +150,12 @@
     }
 
     &__foot {
+        // margin-top: 6px;
+        // display: inline-block;
+        @include mq-target(md) {
+            // margin: 0;
+            display: none;
+        }
         time {
             color: #999;
             display: block;
@@ -179,13 +185,13 @@
 
         span {
             font-weight: normal;
-            font-size: 14px;
+            font-size: min(vwsp(14px),16px);
             line-height: 1.4;
             // color: $color-link;
             color: $color-white;
-            @include lineclamp(4);
-
+            @include lineclamp(3);
             @include mq-target(sm) {
+                @include lineclamp(4);
                 font-size: 15px;
             }
 
