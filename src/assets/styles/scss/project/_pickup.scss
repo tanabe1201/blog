@@ -7,6 +7,7 @@
     position: relative;
 
     &__container {
+
         cursor: grab;
         overflow: hidden;
     }
@@ -34,16 +35,22 @@
         margin-right: 2%;
         width: 42.2%;
 
+        // @include mq-target(sm) {
+        //     margin-right: 1.4%;
+        //     width: 30.6%;
+        // }
+
         @include mq-target(sm) {
-            margin-right: 1.4%;
-            width: 30.6%;
+
+            margin-right: 10px;
+            width: 28.6%;
+            // width: 19.6%;
+            // width: 16.4%;
         }
 
         @include mq-target(md) {
             margin-right: 1%;
             width: 24.2%;
-            // width: 19.2%;
-            // width: 15.8%;
         }
 
         &:last-child {
@@ -55,6 +62,7 @@
         // max-width: 1020px;
         margin: auto;
         display: none;
+
         @include mq-target(md) {
             display: block;
         }
@@ -88,16 +96,16 @@
             color: $color-white;
         }
     }
-    
+
     &__btnPrev {
         right: initial;
         left: 0;
         margin-right: 4px;
-        
+
         @include mq-target(sm) {
             margin-right: 4px
         }
-        
+
         svg {
             transform: scale(-1);
         }
@@ -105,24 +113,47 @@
 }
 
 .p-pickup {
+    margin-right: -86px;
+    margin-left: -86px;
+
+    @include mq-target(md) {
+        margin: auto;
+    }
+
     // max-width: 1050px ;
-    width: 100%;
+    // width: 100%;
     &-slider {
         overflow: visible !important;
     }
 
     &__inner {
+        background: #1b1b1b;
         // background: #fff;
         // border-bottom: $color-border-waku;
-        padding: 8px 8px 10px;
+        padding: 12px 2px 16px 10px;
+
         @include mq-target(md) {
-            padding: min(vwpc(8px),10px) min(vwpc(6px),8px) min(vwpc(6px),8px);
+            padding: 4px 4px 4px;
+            // padding: min(vwpc(8px),8px) min(vwpc(6px),8px) min(vwpc(6px),6px);
         }
     }
+
     &__img {
-        outline: $color-border-waku;
+
+        // outline: $color-border-waku;
         @include mq-target(md) {
-            aspect-ratio: 200 / 164;
+            aspect-ratio: 200 / 150;
+        }
+    }
+
+    &__foot {
+        time {
+            color: #999;
+            display: block;
+
+            @include mq-target(md) {
+                display: none;
+            }
         }
     }
 
@@ -133,30 +164,32 @@
         text-align: left;
         bottom: 0;
         width: 100%;
-        padding-top: 6px;
+        padding: 8px 0 6px;
+
         @include mq-target(md) {
-            padding-top: 8px;
+            padding: 8px 0 0;
             // background: rgba($color: #000, $alpha: 0.85);
-            padding: 10px 4px 4px 10px;
-            background: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.658) 20%,#000 100%);
+            padding: min(vwpc(6px), 10px) 4px 4px min(vwpc(6px), 10px);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .558) 20%, #000 100%);
             position: absolute;
         }
-        
+
         span {
             font-weight: normal;
             font-size: 14px;
             line-height: 1.4;
-            color: $color-link;
+            // color: $color-link;
+            color: $color-white;
             @include lineclamp(4);
+
             @include mq-target(sm) {
-                @include lineclamp(3);
-                font-size: 14px;
+                font-size: 15px;
             }
-            
+
             @include mq-target(md) {
-                font-family: Arial, Helvetica, sans-serif;
+                // @include lineclamp(3);
+                // font-family: Arial, Helvetica, sans-serif;
                 font-size: 12px;
-                color: $color-white;
             }
         }
     }
@@ -171,47 +204,43 @@
 
 
 .swiper-pagination {
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-gap: 10px 4px;
--webkit-box-pack: center;
--webkit-justify-content: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-// margin: 8px 0 0;
-text-align: center;
-position: relative;
-top: 0;
+    @include flex($align:center,$wrap:wrap,$justify:center);
+    text-align: center;
+    position: relative;
+    top: 0;
+    gap: 10px 6px;
+    @include mq-target(md) {
+        gap: 10px 4px;
+    }
 }
+
 .swiper-pagination-bullet {
     display: block;
-width: 12px;
-height: 12px;
-box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-border: 6px solid transparent;
-background-clip: padding-box;
-border-radius: 0;
-box-sizing: content-box;
-cursor: pointer;
-margin: 0 !important;
--webkit-transition: var(--transition);
-transition: var(--transition);
-vertical-align: top;
-background-color: $color-key;
-background: silver;
 
-&:hover {
-    transform: scale(1.2);
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+
+    background-clip: padding-box;
+    border-radius: 0;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: 0 !important;
+    transition: var(--transition);
+    vertical-align: top;
+    background-color: $color-key;
+    background: silver;
+    width: 12px;
+    height: 12px;
+    border: 4px solid transparent;
+    @include mq-target(md) {
+        border: 6px solid transparent;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
-}
+
 .swiper-pagination-bullet-active {
-// width: 4rem;
-// background-color: $color-bg;
-
-
+    // width: 4rem;
+    // background-color: $color-bg;
 }

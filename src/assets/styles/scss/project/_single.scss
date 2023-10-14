@@ -106,7 +106,7 @@
 
 
     &__inner {
-        padding: 12px;
+        padding: 6px;
         // background: #fff;
         overflow: hidden;
         position: relative;
@@ -115,7 +115,8 @@
         // padding: min(vwsp(16px), 30px) min(vwsp(10px), 20px);
         // // padding: 12px 16px;
         @include mq-target(sm) {
-            padding: 24px 24px;
+            // padding: 24px 24px;
+            padding: 14px 16px 14px;
             // padding: 24px 72px;
         }
         
@@ -136,7 +137,7 @@
     &-foot {
 
         margin: 0;
-        padding: 10px;
+        padding: min(vwpc(6px));
         // margin-top: 24px;
         // margin: 0 0 14px;
         // padding-bottom: 20px;
@@ -197,8 +198,10 @@
                     font-size: 13px;
                     color: $color-font;
                     @include mq-target(sm) {
-                        font-size: 14px !important;
-
+                        font-size: min(vwtb(14px),16px);
+                    }
+                    @include mq-target(md) {
+                        font-size: min(vwpc(13px),14px);
                     }
                 }
             }
@@ -256,7 +259,7 @@
         }
 
         .p-news-cont__ttl {
-            font-size: 16px;
+            // font-size: 16px;
         }
     }
 }
@@ -266,13 +269,13 @@
 .single__entry {
     // font-family: -apple-system,"BlinkMacSystemFont","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif,"Segoe UI Emoji";
     // font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック",sans-serif;
-    font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+    // font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
     word-break: break-all;
     text-align: left;
     // padding-bottom: 24px;
 
     // color: $color-font;
-    color: #424242;
+    // color: #424242;
 }
 
 .single__entry h2 {
@@ -288,10 +291,10 @@
     border-bottom: 3px solid #e0e0e0;
     font-size: 18px;
     @include mq-target(sm) {
-        font-size: 24px;
+        font-size: 20px;
     }
     @include mq-target(md) {
-        font-size: 22px;
+        font-size: min(vwpc(18px),22px);
     }
 
     &:first-child {
@@ -316,7 +319,6 @@
     // font-family: "teko";
     padding-top: 10px;
     letter-spacing: .08em;
-    line-height: 1.5;
     margin: 42px 0 24px;
     padding: 10px 14px;
     position: relative;
@@ -329,34 +331,10 @@
     }
 }
 
-.single__entry div span {
 
-
-    font-size: 14px;
-    @include mq-target(sm) {
-        font-size: 16px;
-    }
-
-    @include mq-target(md) {
-        // font-size: min(vwpc(14px), 16px);
-    }
-}
-
-.single__entry div {
-    line-height: 1.6;
-    font-size: 14px;
-    @include mq-target(sm) {
-        font-size: 16px;
-    }
-
-    @include mq-target(md) {
-        // font-size: min(vwpc(14px), 16px);
-    }
-}
 
 .single__entry p {
     margin-bottom: 20px;
-    line-height: 1.8;
     // letter-spacing: 0.07em;
     font-size: 14px;
     // font-size: min(vwsp(14px), 16px);
@@ -370,6 +348,26 @@
         font-size: 16px;
         // font-size: min(vwpc(14px), 16px);
     }
+}
+
+.single__entry .t_h {
+    font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    @include mq-target(sm) {
+        font-size: 14px;
+    }
+}
+.single__entry .t_b {
+    line-height: 1.6;
+    @include mq-target(sm) {
+        font-size: min(vwtb(16px),18px);
+    }
+    @include mq-target(md) {
+        font-size: min(vwpc(14px),16px);
+    }
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .single__entry img {

@@ -8,7 +8,7 @@
     &__container {
         padding: 2%;
         @include mq-target(sm) {
-            padding: 24px 24px 12px;
+            // padding: 24px 24px 12px;
         }
     }
 

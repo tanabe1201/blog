@@ -6,10 +6,12 @@
         &__list { justify-content: space-between; }
 
         &__item {
-            margin: 0 8px 0 0;
+            // margin: 0 8px 0 0;
             width: auto;
         }
     }
+
+    &__inner {}
 
     &__head {
         // width: 100%;
@@ -18,12 +20,14 @@
 
         // width: min(vwsp(90px),150px);
         @include mq-target(sm) {
-            width: 220px;
+            // width: 290px;
+            width: min(vwtb(220px), 290px);
             // width: calc((200/716)*100%);
         }
         
         @include mq-target(md) {
-            width: min(vwpc(200px), 214px);
+            width: min(vwpc(176px), 210px);
+            // width: 200px;
         }
     }
 
@@ -45,9 +49,14 @@
         }
 
         @include mq-target(md) {
+            padding: 0 0 0 min(vwpc(12px),14px);
             // margin-left: 12px;
         }
 
+    }
+
+    &__btn {
+        // padding: 4px;
     }
 
     &-cont {
@@ -63,6 +72,11 @@
             }
         }
 
+        &__mid {
+            margin-top: 4px;
+            margin-bottom: auto;
+        }
+
         &__foot {
             // padding-top: 8px
             @include flex($align:center, $justify:space-between);
@@ -76,12 +90,17 @@
             font-size: 14px;
             padding-right: 4px;
             color: $color-link;
-            @include lineclamp(3);
             @include mq-target(sm) {
-                font-size: 18px;
+                // font-size: 18px;
+                font-size: min(vwtb(16px), 18px);
             }
             @include mq-target(md) {
-                font-size: min(vwpc(16px), 18px);
+                @include lineclamp(4);
+                @include lineclamp(3);
+                font-size: min(vwpc(14px), 18px);
+            }
+            
+            @include mq-target(lg) {
             }
         }
 
