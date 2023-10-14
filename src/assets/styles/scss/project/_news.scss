@@ -6,7 +6,8 @@
         overflow: hidden;
         position: relative;
         @include mq(sm) {
-            min-height: 92px;
+            background: #1b1b1b;
+            min-height: 94px;
         }
     }
 
@@ -79,7 +80,7 @@
                 &::before {
                     content: "";
                     @include absAll;
-                    background: rgba($color: #fff, $alpha: 0.75);
+                    background: rgba($color: #000000, $alpha: 0.75);
                     z-index: 1;
                 }
                 // border-radius: 6px;
@@ -103,16 +104,16 @@
         }
 
         &__ttl {
-            font-family: $line-b;
+            font-weight: normal;
             flex: 1;
             line-height: 1.4;
             font-size: 14px;
-            color: $color-font;
+            // color: $color-font;
+            color: $color-white;
             // font-weight: bold;
             // text-shadow: 0 0 2px rgba(49, 49, 49, 0.25);
             @include lineclamp(3);
             @include mq-target(sm) {
-                font-family: $line-r;
                 line-height: 1.3;
                 @include lineclamp(4);
                 padding-right: 4px;
