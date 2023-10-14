@@ -23,7 +23,7 @@
         // width: 100%;
         position: absolute;
         right: 0;
-        width: 120px;
+        width: 110px;
         // display: none;
         // width: min(vwsp(90px),150px);
         @include mq-target(sm) {
@@ -83,7 +83,7 @@
                     z-index: 1;
                 }
                 // border-radius: 6px;
-                aspect-ratio: auto 260 / 220;
+                aspect-ratio: auto 260 / 210;
             }
         }
 

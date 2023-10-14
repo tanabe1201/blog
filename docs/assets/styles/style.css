@@ -2011,7 +2011,7 @@ img {
 .p-news__head {
   position: absolute;
   right: 0;
-  width: 120px;
+  width: 110px;
 }
 @media screen and (min-width: 768px) {
   .p-news__head {
@@ -2064,7 +2064,7 @@ img {
 @media screen and (max-width: 767px) {
   .p-news-cont__img {
     outline: 0;
-    aspect-ratio: auto 260/220;
+    aspect-ratio: auto 260/210;
   }
   .p-news-cont__img::before {
     content: "";
