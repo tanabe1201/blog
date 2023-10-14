@@ -113,8 +113,11 @@
 }
 
 .p-pickup {
-    margin-right: -86px;
-    margin-left: -86px;
+    
+    @include mq-target(sm) {
+        margin-right: -86px;
+        margin-left: -86px;
+    }
 
     @include mq-target(md) {
         margin: auto;
