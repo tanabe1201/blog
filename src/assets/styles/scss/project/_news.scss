@@ -6,7 +6,7 @@
         // overflow: hidden;
         position: relative;
         @include mq(sm) {
-            min-height: 100px;
+            min-height: 102px;
         }
     }
 
@@ -102,10 +102,10 @@
         &__ttl {
             flex: 1;
             line-height: 1.4;
-            font-size: 14px;
+            font-size: 16px;
             color: $color-font;
             // font-weight: bold;
-            text-shadow: 0 0 2px rgba(49, 49, 49, 0.25);
+            // text-shadow: 0 0 2px rgba(49, 49, 49, 0.25);
             @include lineclamp(3);
             @include mq-target(sm) {
                 line-height: 1.3;

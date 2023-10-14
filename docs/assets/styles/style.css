@@ -163,7 +163,6 @@ body {
   font-weight: 400;
   -webkit-font-feature-settings: "palt";
   font-feature-settings: "palt";
-  letter-spacing: 0.04em;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   background-color: #03034D;
@@ -1997,7 +1996,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .p-news__inner {
-    min-height: 100px;
+    min-height: 102px;
   }
 }
 .p-news-tab__list {
@@ -2096,9 +2095,8 @@ img {
   -ms-flex: 1;
   flex: 1;
   line-height: 1.4;
-  font-size: 14px;
+  font-size: 16px;
   color: #222;
-  text-shadow: 0 0 2px rgba(49, 49, 49, 0.25);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
