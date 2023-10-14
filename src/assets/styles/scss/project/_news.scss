@@ -6,7 +6,7 @@
         // overflow: hidden;
         position: relative;
         @include mq(sm) {
-            min-height: 100px;
+            min-height: 92px;
         }
     }
 
@@ -47,7 +47,7 @@
         flex-direction: column;
         justify-content: space-between;
         flex: 1;
-        padding: 0 0 0 6px;
+        padding: 0 0 0 8px;
 
         // margin-left: 10px;
         @include mq-target(sm) {
@@ -88,8 +88,11 @@
         }
 
         &__mid {
-            margin-top: 6px;
+            margin-top: 4px;
             margin-bottom: auto;
+            @include mq-target(sm) {
+                margin-top: 6px;
+            }
         }
 
         &__foot {
@@ -101,8 +104,8 @@
 
         &__ttl {
             flex: 1;
-            line-height: 1.3;
-            font-size: 16px;
+            line-height: 1.4;
+            font-size: 14px;
             color: $color-font;
             // font-weight: bold;
             // text-shadow: 0 0 2px rgba(49, 49, 49, 0.25);
