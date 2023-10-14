@@ -39,7 +39,7 @@ $mq-breakpoints-max: ('xxs': '440px',
 
 
 @function vwsp($size) {
-  $vw-context: 365 * 0.01 * 1px;
+  $vw-context: 375 * 0.01 * 1px;
   @return math.div($size, $vw-context) * 1vw;
   @return $size;
 }

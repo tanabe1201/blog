@@ -96,34 +96,34 @@ img {
 
 
 .u-dp-pc {
-	display: block;
-
-	@include mq(md) {
-		display: none;
+	display: none;
+	
+	@include mq-target(md) {
+		display: block;
 	}
 
 	&--sm {
-		display: block;
-
-		@include mq(sm) {
-			display: none;
+		display: none;
+		
+		@include mq-target(sm) {
+			display: block;
 		}
 	}
 }
 
 
 .u-dp-sp {
-	display: none;
-
-	@include mq(md) {
-		display: block;
+	display: block;
+	
+	@include mq-target(md) {
+		display: none;
 	}
 
 	&--sm {
-		display: none;
-
-		@include mq(sm) {
-			display: block;
+		display: block;
+		
+		@include mq-target(sm) {
+			display: none;
 		}
 	}
 }
