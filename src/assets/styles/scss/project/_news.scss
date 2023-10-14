@@ -3,7 +3,7 @@
 .p-news {
 
     &__inner {
-        // overflow: hidden;
+        overflow: hidden;
         position: relative;
         @include mq(sm) {
             min-height: 92px;
@@ -23,7 +23,7 @@
         // width: 100%;
         position: absolute;
         right: 0;
-        width: 160px;
+        width: 120px;
         // display: none;
         // width: min(vwsp(90px),150px);
         @include mq-target(sm) {
@@ -83,7 +83,7 @@
                     z-index: 1;
                 }
                 // border-radius: 6px;
-                // aspect-ratio: auto 260 / 240;
+                aspect-ratio: auto 260 / 220;
             }
         }
 
