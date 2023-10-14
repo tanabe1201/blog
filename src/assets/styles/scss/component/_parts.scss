@@ -262,6 +262,8 @@
       border: 1px solid $color-border;
       padding: 0 16px;
       font-size: 14px;
+      height: 32px;
+      
       @include mq-target(sm) {
         height: 42px;
         font-size: 16px;
@@ -495,6 +497,6 @@
 
   &__link {
     @include absAll;
-    z-index: 2;
+    z-index: 3;
   }
 }

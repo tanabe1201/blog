@@ -106,7 +106,7 @@
 
 
     &__inner {
-        padding: 6px;
+        padding: 14px 14px;
         // background: #fff;
         overflow: hidden;
         position: relative;
@@ -360,6 +360,7 @@
 }
 .single__entry .t_b {
     line-height: 1.6;
+    font-size: 14px;
     @include mq-target(sm) {
         font-size: min(vwtb(16px),18px);
     }
