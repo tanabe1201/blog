@@ -307,7 +307,7 @@
       z-index: 4;
       @include flex($align:center);
       margin-right: auto;
-      transform-origin: left top;
+      transform-origin: right top;
       transform: scale(0.9);
 
       // margin-left: 12px;
@@ -330,9 +330,9 @@
       a {
         font-weight: normal;
         // border-radius: 4px;
-        padding: 2px 8px 0;
+        padding: 2px 8px 1px;
         color: $color-key;
-        border: $color-border-waku;
+        // border: $color-border-waku;
         background-color: #e8e8e8;
         @include flex($align:center);
         line-height: 100%;
