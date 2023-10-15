@@ -114,37 +114,33 @@
 
 
 
-<!-- <div class="l-header__wrap--sp">
-    <div class="l-drawer__trigger js-draw--trigger">
-      <span class="-line"></span>
-    </div>
-</div> -->
 
 
 
-<!-- <nav class="l-drawer__content js-draw--content">
+
+<nav class="l-drawer__content js-draw--content">
     
     <div class="l-drawer__wrap">
         
         <ul class="l-drawer__list l-drawer__list--menu">
         <li class="l-drawer__item">
-            <a href="#top" class="js-draw--trigger">
-            <span>アキバコ</span>
+            <a href="/blog/gallery" class="js-draw--trigger">
+            <span>アキバコについて</span>
             </a>
         </li>
         <li class="l-drawer__item">
             <a href="#about" class="js-draw--trigger">
-            <span>お問合せ</span>
+            <span>お問合せフォーム</span>
             </a>
         </li>
         <li class="l-drawer__item">
             <a href="#concept" class="js-draw--trigger">
-            <span>X</span>
+            <span>X（旧ツイッター）</span>
             </a>
         </li>
         </ul>
     </div>
-    </nav> -->
+    </nav>
 
 <body id="top">
     <link rel="stylesheet" href="./assets/images/sprite.svg">
@@ -152,7 +148,7 @@
         <div class="l-menu__inner">
         <ul class="l-menu__list">
             <li class="l-menu__item">
-                <a href="/blog">
+                <a href="/blog" class="l-menu__link">
                     <svg>
                         <use xlink:href="./assets/images/sprite.svg#tabler-home"></use>
                     </svg>
@@ -161,31 +157,31 @@
             </li>
 
             <li class="l-menu__item">
-                <a href="/blog/system">
+                <a href="/blog/ranking" class="l-menu__link">
                     <svg>
                         <use xlink:href="./assets/images/sprite.svg#i-news"></use>
                     </svg>
-                    <span>新着記事</span>
+                    <span>人気記事</span>
                 </a>
             </li>
             <li class="l-menu__item">
-                <a href="/blog/gallery">
+                <a href="/blog/gallery" class="l-menu__link">
                     <svg>
                         <use xlink:href="./assets/images/sprite.svg#i-prof"></use>
                     </svg>
-                    <span>アキバコ</span>
+                    <span>特集記事</span>
                 </a>
             </li>
-            <li class="l-menu__item">
-                <a href="">
+            <li class="l-menu__item js-draw--trigger">
+                <div class="l-menu__link">
                     <svg>
-                        <use xlink:href="./assets/images/sprite.svg#tabler-message-circle"></use>
+                        <use xlink:href="./assets/images/sprite.svg#tabler-menu-2"></use>
                     </svg>
-                    <span>お問合せ</span>
-                </a>
+                    <span>その他</span>
+                </div>
             </li>
             <li class="l-menu__item">
-                <a href="#top" class="scroll">
+                <a href="#top" class="scroll l-menu__link">
                     <svg>
                         <use xlink:href="./assets/images/sprite.svg#ic-baseline-arrow-upward"></use>
                     </svg>
@@ -216,31 +212,7 @@
 
             </div> -->
             <div class="l-side">
-                <div class="window">
-                    <div class="c-pagePath title-bar">
-                        <div class="c-pagePath__inner">
-                            <ul>
-                                <!-- <li><a href="/">AKIBAKO</a></li> -->
-                                <li><a href="/">お知らせ</a></li>
-                            </ul>
-                            <div class="title-bar-controls">
-                                <a href="/gallery" class="i-btn">MORE</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="p-prof__inner c-sec__inner window__view">
-                        <div class="p-prof-body">
-                            <figure class="p-prof__img">
-                                <img src="./assets/images/28.png" alt="">
-                            </figure>
-                        </div>
-                        <p class="p-prof-body__txt">
-                            ようこそニュース速報アキバコへ<br>
-                            まとめブログです。暇潰しにどうぞ
-                        </p>
-                    </div>
-                </div>
                 <div class="window">
                     <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
@@ -430,6 +402,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <section class="c-sec">
@@ -949,6 +922,12 @@
                                         </a>
                                     </div>
                                     <div class="p-news__foot">
+
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
+                                            </h3>
+                                        </div>
                                         <div class="p-news-cont__foot">
                                             <p class="c-cont__time">
                                                 <svg class="i-clock">
@@ -966,11 +945,6 @@
                                                 </ul>
                                             </div>
 
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
-                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -986,6 +960,12 @@
                                         </a>
                                     </div>
                                     <div class="p-news__foot">
+
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート
+                                            </h3>
+                                        </div>
                                         <div class="p-news-cont__foot">
                                             <p class="c-cont__time">
                                                 <svg class="i-clock">
@@ -1003,11 +983,6 @@
                                                 </ul>
                                             </div>
 
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート
-                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1023,6 +998,11 @@
                                         </a>
                                     </div>
                                     <div class="p-news__foot">
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
+                                            </h3>
+                                        </div>
                                         <div class="p-news-cont__foot">
                                             <p class="c-cont__time">
                                                 <svg class="i-clock">
@@ -1040,11 +1020,6 @@
                                                 </ul>
                                             </div>
 
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
-                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1060,6 +1035,11 @@
                                         </a>
                                     </div>
                                     <div class="p-news__foot">
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
+                                            </h3>
+                                        </div>
                                         <div class="p-news-cont__foot">
                                             <p class="c-cont__time">
                                                 <svg class="i-clock">
@@ -1078,311 +1058,9 @@
                                             </div>
 
                                         </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
-                                            </h3>
-                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                『ウマ娘 プリティーダービー Season 3 (3期)』2話感想・・・まさかキタちゃんの良き理解者がナイスネイチャとは！　ここが私のスタートライン！
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/news1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/_K8A1332.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/ewew.webp" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/news1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/evnt1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                『ウマ娘 プリティーダービー Season 3 (3期)』2話感想・・・まさかキタちゃんの良き理解者がナイスネイチャとは！　ここが私のスタートライン！
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/news1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
                         </ul>
                     </div>
                     <div class="c-sec__btn l-side__btn p-news__btn window__view">
@@ -1685,7 +1363,31 @@
 
                     </div>
                 </div>
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <!-- <li><a href="/">AKIBAKO</a></li> -->
+                                <li><a href="/">お知らせ</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="/gallery" class="i-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="p-prof__inner c-sec__inner window__view">
+                        <div class="p-prof-body">
+                            <figure class="p-prof__img">
+                                <img src="./assets/images/28.png" alt="">
+                            </figure>
+                        </div>
+                        <p class="p-prof-body__txt">
+                            ようこそニュース速報アキバコへ<br>
+                            <!-- まとめブログです。暇潰しにどうぞ -->
+                        </p>
+                    </div>
+                </div>
             </div>
 
 

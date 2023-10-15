@@ -95,5 +95,6 @@
         <symbol viewBox="0 0 24 24" id="ic-baseline-arrow-upward"><path fill="currentColor" d="m4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8l-8 8z"></path></symbol>
         <symbol viewBox="0 0 24 24" id="ic-baseline-arrow-forward-ios"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></symbol>
     <symbol viewBox="0 0 24 24" id="i-toc"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12.5 21H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8m0 4v6m3-3l-3 3l-3-3"></path><path d="M11 17a1 1 0 1 0 2 0a1 1 0 0 0-2 0"></path></g></symbol>
+    <symbol viewBox="0 0 24 24" id="tabler-menu-2"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></symbol>
     </defs>
 </svg>

@@ -257,7 +257,7 @@
     display: block;
     // width: min(vwpc(166px), 210px);
     // width: min(vwpc(194px), 250px);
-    width: min(vwpc(194px), 250px);
+    width: min(vwpc(199px), 250px);
   }
   &--scroll {
     // width: 220px;
@@ -333,6 +333,11 @@
     }
 
     a {
+
+    }
+  }
+
+  &__link {
       // font-weight: bold;
       color: $color-key;
       svg {
@@ -345,6 +350,5 @@
         display: block;
         padding-top: 2px;
       }
-    }
   }
 }

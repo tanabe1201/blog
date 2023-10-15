@@ -1,205 +1,8 @@
+<% let pageId = 'ranking'; %>
+<% let filePath = jsonData.pages[pageId].filePath %>
+<%- include('./../_inc/_header', { pageId: pageId }) %>
 
 
-
-
-
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
-    <meta name="description" content="説明文">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:site_name" content="">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@s_tanabe">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
-    <link rel="icon" href="./assets/images/icon/favicon-32x32.png" sizes="32x32">
-    <link rel="stylesheet" href="./assets/styles/vendors/font.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanjp.css"> -->
-    <!-- <link href="./assets/styles/vendors/lity.min.css" rel="stylesheet"> -->
-    <!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' id='jquery-js'></script> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
-    <link href="./assets/styles/vendors/98.css" rel="stylesheet">
-    <link href="./assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
-    <link href="./assets/styles/style.css" rel="stylesheet">
-</head>
-
-
-
-
-<header class="l-header window">
-
-    <div class="l-header__inner">
-        <div class="l-header__top">
-            <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
-            <ul class="l-header-menu__list">
-                <li class="l-header-menu__item">
-                    <a href="/gallery">
-                        <svg>
-                            <use xlink:href="./assets/images/sprite.svg#tabler-home"></use>
-                        </svg>
-                        <span>アキバコ</span>
-                    </a>
-                </li>
-                <li class="l-header-menu__item">
-                    <a href="">
-                        <svg>
-                            <use xlink:href="./assets/images/sprite.svg#tabler-message-circle"></use>
-                        </svg>
-                        <span>お問合せ</span>
-                    </a>
-                </li>
-                <li class="l-header-menu__item">
-                    <a href="">
-                        <svg>
-                            <use xlink:href="./assets/images/sprite.svg#i-news"></use>
-                        </svg>
-                        <span>RSS</span>
-                    </a>
-                </li>
-                <li class="l-header-menu__item">
-                    <a href="">
-                        <svg>
-                            <use xlink:href="./assets/images/sprite.svg#ri-twitter-x-fill"></use>
-                        </svg>
-                        <span>エックス</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="l-header__container">
-
-            <div class="l-header__right">
-                <div class="l-header__logo">
-                    <a href="/">
-                        <span>
-                            アキバコ&nbsp;アーカイブ
-                        </span>
-                        <img src="./assets/images/logos.png" alt="ゴースト速報">
-                    </a>
-                </div>
-            </div>
-            <div class="l-header__left">
-                <div class="global-search">
-                    <div class="search-box">
-                        <form class="search-form" action="/search/contents">
-                            <input type="hidden" name="content" value="">
-                            <div class="suggestbox-container">
-                                <input id="search-word" type="search" class="awesomplete search-area" name="keyword" placeholder="フリーワード">
-                                <button type="submit" class="btn btn-transparent btn-action-global-search"
-                                    title="検索する">
-                                    <svg>
-                                        <use xlink:href="./assets/images/sprite.svg#tabler-search"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</header>
-
-
-
-
-
-
-
-<nav class="l-drawer__content js-draw--content">
-    
-    <div class="l-drawer__wrap">
-        
-        <ul class="l-drawer__list l-drawer__list--menu">
-        <li class="l-drawer__item">
-            <a href="/blog/gallery" class="js-draw--trigger">
-            <span>アキバコについて</span>
-            </a>
-        </li>
-        <li class="l-drawer__item">
-            <a href="#about" class="js-draw--trigger">
-            <span>お問合せフォーム</span>
-            </a>
-        </li>
-        <li class="l-drawer__item">
-            <a href="#concept" class="js-draw--trigger">
-            <span>X（旧ツイッター）</span>
-            </a>
-        </li>
-        </ul>
-    </div>
-    </nav>
-
-<body id="top">
-    <link rel="stylesheet" href="./assets/images/sprite.svg">
-    <div class="l-menu">
-        <div class="l-menu__inner">
-        <ul class="l-menu__list">
-            <li class="l-menu__item">
-                <a href="/blog" class="l-menu__link">
-                    <svg>
-                        <use xlink:href="./assets/images/sprite.svg#tabler-home"></use>
-                    </svg>
-                    <span>ホーム</span>
-                </a>
-            </li>
-
-            <li class="l-menu__item">
-                <a href="/blog/ranking" class="l-menu__link">
-                    <svg>
-                        <use xlink:href="./assets/images/sprite.svg#i-news"></use>
-                    </svg>
-                    <span>人気記事</span>
-                </a>
-            </li>
-            <li class="l-menu__item">
-                <a href="/blog/gallery" class="l-menu__link">
-                    <svg>
-                        <use xlink:href="./assets/images/sprite.svg#i-prof"></use>
-                    </svg>
-                    <span>特集記事</span>
-                </a>
-            </li>
-            <li class="l-menu__item js-draw--trigger">
-                <div class="l-menu__link">
-                    <svg>
-                        <use xlink:href="./assets/images/sprite.svg#tabler-menu-2"></use>
-                    </svg>
-                    <span>その他</span>
-                </div>
-            </li>
-            <li class="l-menu__item">
-                <a href="#top" class="scroll l-menu__link">
-                    <svg>
-                        <use xlink:href="./assets/images/sprite.svg#ic-baseline-arrow-upward"></use>
-                    </svg>
-                    <span>一番上へ</span>
-                </a>
-            </li>
-        </ul>
-        </div>
-    </div>
-
-    <!-- <div class="section__bg"></div>
-    <div class="IEblock">
-        <div class="comment_block">
-            <p>このブラウザは閲覧非対応です。</p>
-        </div>
-    </div> -->
-
-<!-- <div class="section__bg"></div> -->
 <main class="l-main">
 
 
@@ -233,7 +36,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -249,7 +52,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -265,7 +68,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/single1.jpg" alt="">
+                                            <img src="../assets/images/single1.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -282,7 +85,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -298,7 +101,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -314,7 +117,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -330,7 +133,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -346,7 +149,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/single1.jpg" alt="">
+                                            <img src="../assets/images/single1.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -363,7 +166,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                            <img src="../assets/images/evnt1.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -379,7 +182,7 @@
                                 <div class="p-rank-head">
                                     <a href="/system" class="c-cont__link">
                                         <figure class="c-img p-rank-cont__img">
-                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                            <img src="../assets/images/ogp_r.jpg" alt="">
                                         </figure>
                                     </a>
                                     <div class="p-rank-foot">
@@ -396,7 +199,7 @@
                             <a href="#">
                                 <i>もっと見る</i>
                                 <svg>
-                                    <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                    <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
                                 </svg>
                             </a>
                         </div>
@@ -424,13 +227,13 @@
                             <div class="c-slider__btn">
                                 <div class="c-slider__btnPrev js-slider-btnPrev">
                                     <svg class="i-next">
-                                        <use xlink:href="./assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
                                         </use>
                                     </svg>
                                 </div>
                                 <div class="c-slider__btnNext js-slider-btnNext">
                                     <svg class="i-next">
-                                        <use xlink:href="./assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
                                         </use>
                                     </svg>
                                 </div>
@@ -440,7 +243,7 @@
                                     <li class="swiper-slide c-slider__slide p-pickuptop__item">
                                         <a href="#">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/42640892.68224385.jpg" alt="">
+                                                <img src="../assets/images/42640892.68224385.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -456,7 +259,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -467,7 +270,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="../assets/images/single1.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -483,7 +286,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -494,7 +297,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="../assets/images/single1.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -510,7 +313,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -521,7 +324,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="../assets/images/single1.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -537,7 +340,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -548,7 +351,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/cafe01.jpg" alt="">
+                                                <img src="../assets/images/cafe01.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -564,7 +367,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -575,7 +378,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -591,7 +394,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -602,7 +405,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -618,7 +421,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -629,7 +432,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/cafe01.jpg" alt="">
+                                                <img src="../assets/images/cafe01.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -645,7 +448,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -656,7 +459,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -672,7 +475,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -683,7 +486,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -699,7 +502,7 @@
                                                 </div>
                                                 <p class="c-cont__time">
                                                     <svg class="i-clock">
-                                                        <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
                                                     </svg>
                                                     <time>2023年10月05日&nbsp;23:00</time>
                                                 </p>
@@ -728,13 +531,13 @@
                             <div class="c-slider__btn">
                                 <div class="c-slider__btnPrev js-slider-btnPrev">
                                     <svg class="i-next">
-                                        <use xlink:href="./assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
                                         </use>
                                     </svg>
                                 </div>
                                 <div class="c-slider__btnNext js-slider-btnNext">
                                     <svg class="i-next">
-                                        <use xlink:href="./assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
+                                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-forward-ios">
                                         </use>
                                     </svg>
                                 </div>
@@ -744,7 +547,7 @@
                                     <li class="swiper-slide c-slider__slide p-pickuptop__item">
                                         <a href="#">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/42640892.68224385.jpg" alt="">
+                                                <img src="../assets/images/42640892.68224385.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -757,7 +560,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="../assets/images/single1.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -770,7 +573,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="../assets/images/single1.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -783,7 +586,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="../assets/images/single1.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -796,7 +599,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/cafe01.jpg" alt="">
+                                                <img src="../assets/images/cafe01.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -809,7 +612,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -822,7 +625,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -835,7 +638,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/cafe01.jpg" alt="">
+                                                <img src="../assets/images/cafe01.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -848,7 +651,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -861,7 +664,7 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single3.jpg" alt="">
+                                                <img src="../assets/images/single3.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
@@ -881,193 +684,360 @@
                         <div class="c-pagePath__inner">
                             <ul>
                                 <!-- <li><a href="/">TOP&nbsp;NEWS</a></li> -->
-                                <li><a href="/">新着総合ニュース</a></li>
+                                <li><a href="/">24時間記事ランキング</a></li>
                             </ul>
                             <div class="title-bar-controls">
-                                <a href="#" class="i-btn">MORE</a>
+                                <!-- <a href="#" class="i-btn">MORE</a> -->
                             </div>
                         </div>
                     </div>
+
                     <div class="c-sec__header p-news__header">
-
-                    <ul class="c-tab__list p-news-tab__list">
-                        <li class="c-tab__item p-news-tab__item">
-                            カテゴリ：ニュース
-                        </li>
-                        <li class="c-tab__item p-news-tab__item">
-                            カテゴリ選択：
-                            <select name="select" onChange="location.href=value;">
-                                <option value="#">選択してください</option>
-                                <option value="/system">ニュース</option>
-                                <option value="bbbbb.html">炎上</option>
-                                <option value="ccccc.html">エンタメ</option>
-                                <option value="ddddd.html">レポート</option>
-                                <option value="eeeee.html">ゲーム</option>
-                            </select>
-                        </li>
-
-                    </ul>
+                        <ul class="c-tab__list p-news-tab__list">
+                            <li class="c-tab__item p-news-tab__item">
+                                カテゴリ：ニュース
+                            </li>
+                            <li class="c-tab__item p-news-tab__item">
+                                カテゴリ選択：
+                                <select name="select" onChange="location.href=value;">
+                                    <option value="#">選択してください</option>
+                                    <option value="/system">ニュース</option>
+                                    <option value="bbbbb.html">炎上</option>
+                                    <option value="ccccc.html">エンタメ</option>
+                                    <option value="ddddd.html">レポート</option>
+                                    <option value="eeeee.html">ゲーム</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul class="c-tab__list p-rank-tab__list">
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger is-active"
+                                data-tab="tab-content01">
+                                <span>現在</span>
+                            </li>
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
+                                <span>週間</span>
+                            </li>
+                            <li class="c-tab__item p-rank-tab__item js-tab--trigger" data-tab="tab-content02">
+                                <span>月間</span>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="c-sec__inner p-news__inner window__view">
-                        <ul class="p-news__list">
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/test.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
-                                            </h3>
+                        <div id="tab-content01" class="p-about__box js-tab--content is-active">
+                            <ul class="p-news__list">
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/test.jpg" alt="">
+                                                </figure>
+                                            </a>
                                         </div>
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                        <div class="p-news__foot">
+
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
+                                                </h3>
                                             </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                エンタメ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/ewew.webp" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート
-                                            </h3>
-                                        </div>
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
                                             </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/ewew.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/news1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
-                                            </h3>
-                                        </div>
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                    恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート
+                                                </h3>
                                             </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                製品情報
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/evnt1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                            『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
-                                            </h3>
-                                        </div>
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
                                             </div>
-
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/news1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+    『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
+                                                </h3>
+                                            </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                製品情報
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
+                                                </h3>
+                                            </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                エンタメ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-content02" class="p-about__box js-tab--content">
+                            <ul class="p-news__list">
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/news1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+    『陰の実力者になりたくて！ 2nd season (2期)』2話感想・・・シャドウ自身の視点ではなんかカッコイイセリフ言いながら泥棒してるだけｗｗｗ
+                                                </h3>
+                                            </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                製品情報
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
+                                                </h3>
+                                            </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                エンタメ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/test.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
+
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『16bitセンセーション ANOTHER LAYER』2話感想・・・昔と現代のゲーム制作の差が面白い、未来人だからって無双はできない！そして最後にまさかの展開・・・
+                                                </h3>
+                                            </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                エンタメ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="c-card__item p-news__item">
+                                    <a href="/system" class="c-card__link"></a>
+                                    <div class="c-card__item--inner">
+                                        <div class="p-news__head">
+                                            <a href="/system" class="c-cont__link">
+                                                <figure class="c-img p-news-cont__img">
+                                                    <img src="../assets/images/ewew.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="p-news__foot">
+
+                                            <div class="p-news-cont__mid">
+                                                <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                    恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート
+                                                </h3>
+                                            </div>
+                                            <div class="p-news-cont__foot">
+                                                <p class="c-cont__time">
+                                                    <svg class="i-clock">
+                                                        <use xlink:href="../assets/images/sprite.svg#clock24"></use>
+                                                    </svg>
+                                                    <time>2023年10月05日&nbsp;23:00</time>
+                                                </p>
+                                                <div class="p-news-cont__tag">
+                                                    <ul class="c-cont-tag__list">
+                                                        <li class="c-cont-tag__item">
+                                                            <a href="">
+                                                                製品情報
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="c-sec__btn l-side__btn p-news__btn window__view">
                         <a href="#">
                             <i>もっと見る</i>
                             <svg>
-                                <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
                             </svg>
                         </a>
                     </div>
@@ -1114,7 +1084,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1130,7 +1100,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/ogp_r.jpg" alt="">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1146,7 +1116,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/single1.jpg" alt="">
+                                                    <img src="../assets/images/single1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1163,7 +1133,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1179,7 +1149,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/ogp_r.jpg" alt="">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1195,7 +1165,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/single1.jpg" alt="">
+                                                    <img src="../assets/images/single1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1212,7 +1182,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1228,7 +1198,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/ogp_r.jpg" alt="">
+                                                    <img src="../assets/images/ogp_r.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1244,7 +1214,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/single1.jpg" alt="">
+                                                    <img src="../assets/images/single1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1261,7 +1231,7 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
+                                                    <img src="../assets/images/evnt1.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
@@ -1278,7 +1248,7 @@
                                     <a href="#">
                                         <i>もっと見る</i>
                                         <svg>
-                                            <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                            <use xlink:href="../assets/images/sprite.svg#i-nextpage2"></use>
                                         </svg>
                                     </a>
                                 </div>
@@ -1379,7 +1349,7 @@
                     <div class="p-prof__inner c-sec__inner window__view">
                         <div class="p-prof-body">
                             <figure class="p-prof__img">
-                                <img src="./assets/images/28.png" alt="">
+                                <img src="../assets/images/28.png" alt="">
                             </figure>
                         </div>
                         <p class="p-prof-body__txt">
@@ -1408,85 +1378,4 @@
 </main>
 
 
-
-
-<!-- <a href="#top" class="c-sec__top sc-inview">
-  <img src="./assets/images/top_icon.png" alt="">
-</a> -->
-<div class="l-footer__pageTop">
-  <a href="#top" class="scroll">
-    <svg>
-      <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-upward"></use>
-  </svg>
-  </a>
-</div>
-
-<footer id="footer" class="l-footer window">
-  <div class="l-footer__inner">
-    <div class="l-footer__container">
-
-      <div class="l-footer__logo">
-        <a href="">
-          <img src="./assets/images/logos.png" alt="">
-        </a>
-      </div>
-<!--   
-      <ul class="l-footer-sns__list">
-        <li class="l-footer-sns__item">
-          <a href="">
-            <svg>
-              <use xlink:href="./assets/images/sprite.svg#ri-twitter-x-fill"></use>
-          </svg>
-          </a>
-        </li>
-        <li class="l-footer-sns__item">
-          <a href="">
-            <svg>
-              <use xlink:href="./assets/images/sprite.svg#tabler-message-circle"></use>
-          </svg>
-          </a>
-        </li>
-        <li class="l-footer-sns__item">
-          <a href="">
-            <svg>
-              <use xlink:href="./assets/images/sprite.svg#tabler-message-circle"></use>
-          </svg>
-          </a>
-        </li>
-      </ul> -->
-      <p class="l-footer__copy">
-        Copyright © akibako, All rights reserved.
-      </p>
-  
-    </div>
-  </div>
-
-
-  <!-- <div class="c-line c-line--reverse"></div> -->
-  <!-- <div class="section__bottom inview"></div> -->
-</footer>
-
-<!-- vendors -->
-<script src="./assets/scripts/vendors/jquery-3.6.0.min.js"></script>
-<!-- <script src="./assets/scripts/vendors/rellax.min.js"></script> -->
-<!-- <script src="./assets/scripts/vendors/jquery.magnific-popup.js"></script> -->
-<!-- <script src="./assets/scripts/vendors/lity.min.js"></script> -->
-<script src="./assets/scripts/vendors/jquery.matchHeight-min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
-<!-- <script src="./assets/scripts/vendors/intersection-observer.js"></script> -->
-<script src="./assets/scripts/vendors/swiper-bundle.min.js"></script>
-
-
-
-
-<!-- scripts -->
-<!-- <script src="./assets/scripts/anim.js"></script> -->
-<script src="./assets/scripts/swiper.js"></script>
-<script src="./assets/scripts/main.js"></script>
-
-<!-- 
- -->
-
-</body>
-
-</html>
+<%- include('./../_inc/_footer', { pageId: pageId }) %>

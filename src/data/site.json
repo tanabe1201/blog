@@ -9,7 +9,7 @@
       "description": "説明文",
       "filePath": "./"
     },
-    "character": {
+    "ranking": {
       "name": "キャラクターについて - ",
       "description": "説明文",
       "filePath": "../"

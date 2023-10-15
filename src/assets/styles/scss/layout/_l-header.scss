@@ -403,9 +403,9 @@
   &__trigger {
     position: relative;
     z-index: 999999;
-    position: absolute;
-    top: 8px;
-    right: 4vw;
+    // position: absolute;
+    // top: 8px;
+    // right: 4vw;
     cursor: pointer;
     width: 32px;
     height: 32px;
@@ -516,15 +516,20 @@
   }
 
   &__item {
-    // padding: 4px 0;
     width: 100%;
     background: #1b1b1b;
 
-    span {
-      color: $color-white;
-      font-size: 18px;
-      display: block;
+    a {
+      padding: 6px 4px;
+
+      span {
+        color: $color-white;
+        font-size: 18px;
+        display: block;
+      }
     }
+
+
 
 
     a,
