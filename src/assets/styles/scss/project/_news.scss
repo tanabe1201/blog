@@ -58,7 +58,7 @@
         flex-direction: column;
         justify-content: space-between;
         flex: 1;
-        padding: 0 0 0 8px;
+        padding: 0 0 0 12px;
 
         // margin-left: 10px;
         @include mq-target(sm) {
@@ -103,7 +103,7 @@
         &__head {}
 
         &__mid {
-            margin-top: 3px;
+            // margin-top: 3px;
             margin-bottom: auto;
             @include mq-target(sm) {
                 margin-top: 4px;
