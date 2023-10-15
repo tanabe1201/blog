@@ -40,7 +40,7 @@
     
     
     margin: 0 auto;
-    padding: 12px;
+    padding: 0 6px 6px;
     @include mq-target(sm) {
       max-width: 800px;
       padding: 6px;
@@ -50,7 +50,7 @@
       // height: 84px;
     }
     @include mq-target(md) {
-        padding: 12px 12px 8px 42px;
+        padding: 12px 12px 8px 12px;
         max-width: 1200px;
 
         // width: 100%;
@@ -175,7 +175,7 @@
       // font-style: italic;
       color: $color-font;
       // display: flex;
-      margin: 0 auto 14px;
+      margin: 0 auto 10px;
       display: block;
       line-height: 1;
       width: 90%;

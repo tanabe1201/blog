@@ -1,7 +1,7 @@
 @use "../foundation"as *;
 
 .window {
-  margin-top: 6px;
+  margin-top: 2px;
   @include mq-target(md) {
     margin-top: 2px;
     // margin-top: min(vwpc(2px),4px);
@@ -345,7 +345,7 @@
         }
 
         @include mq-target(md) {
-          font-size: min(vwpc(10px),12px);
+          font-size: min(vwpc(10px),11px);
         }
 
         &:hover {
@@ -405,7 +405,7 @@
       }
 
       @include mq-target(md) {
-        font-size: min(vwpc(10px),12px);
+        font-size: min(vwpc(10px),11px);
         // font-size: min(vwpc(10px),14px);
       }
     }

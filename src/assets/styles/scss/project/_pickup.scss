@@ -54,7 +54,9 @@
         }
 
         &:last-child {
-            margin-right: 0;
+            @include mq-target(md) {
+                margin-right: 0;
+            }
         }
     }
 

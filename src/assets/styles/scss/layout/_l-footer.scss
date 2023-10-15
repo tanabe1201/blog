@@ -11,11 +11,10 @@
   &__inner {
     // background-color: #212121; 
     position: relative;
-    z-index: 400;
-    @include mq(sm) {
-      padding: 20px 0 80px;
+    padding: 20px 0 80px;
+    @include mq-target(sm) {
+      padding:60px 0 42px;
     }
-    padding:60px 0 42px;
     @include mq-target(md) {
       padding:80px 0 62px;
     }

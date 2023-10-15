@@ -22,11 +22,12 @@
   //  border-radius: 12px;
   // background: #fff;
   // background: transparent;
-  margin: 2px auto 80px;
   // overflow: hidden;
+  margin: 2px auto 20px;
   
   @include mq-target(sm) {
     max-width: 960px;
+    margin: 2px auto 80px;
     padding: 0 86px 42px;
     // border: $color-border-waku;
     // width: 98vw;
