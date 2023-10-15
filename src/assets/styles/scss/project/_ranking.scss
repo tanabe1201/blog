@@ -122,16 +122,18 @@
             width: 100%;
             box-sizing: border-box;
             margin-left: 0;
+            @include mq-target(md) {
+                padding: 8px min(vwpc(2px),4px) min(vwpc(4px),6px) min(vwpc(6px),8px);
+            }
             h3 {
-                // font-family: $line-b;
-                // font-size: min(vwpc(12px),12px);
+                font-weight: normal;
                 line-height: 1.4;
                 filter: drop-shadow(1px 1px 1px #1b1b1b);
                 color: $color-white;
-                font-size: 12px;
                 -webkit-line-clamp: 3;
-                @include mq-target(lg) {
-                    -webkit-line-clamp: 4;
+                @include mq-target(md) {
+                    font-size: min(vwpc(12px),13px);
+                    // -webkit-line-clamp: 4;
                 }
             }
         }
@@ -177,20 +179,22 @@
         opacity: 0;
         // margin: -10px auto;
         z-index: 1;
+        @include mq-target(md) {
+            // width: min(vwpc(60px),70px);
+        }
     }
 
     &-body {
         &__txt {
             // font-family: $line-r;
-            line-height: 1.5;
             // margin-top: -46px;
             z-index: 2;
             position: relative;
-            padding: 8px min(vwpc(2px),6px) 8px 6px;
+            padding: 10px 0 8px min(vwpc(4px),8px);
             width: 100%;
             text-align: left;
             // font-size: 14px;
-            font-size:  min(vwpc(11px),14px);
+            font-size:  min(vwpc(12px),13px);
             color: $color-font;
             background-color: rgba($color: #fff, $alpha: 0.95);
             border: 2px solid $color-bg;

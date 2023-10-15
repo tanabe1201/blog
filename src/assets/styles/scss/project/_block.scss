@@ -30,6 +30,9 @@
             @include mq-target(sm) {
                 font-size: 14px;
             }
+            @include mq-target(md) {
+                // font-size: min(vwpc(12px),14px);
+            }
             dt {
                 width: 100%;
                 color: $color-link;
@@ -37,6 +40,9 @@
                 @include mq-target(sm) {
                     width: 160px;
                 }
+                // @include mq-target(md) {
+                //     width: min(vwpc(150px),160px);
+                // }
             }
 
             dd {

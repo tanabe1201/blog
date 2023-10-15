@@ -33,7 +33,7 @@
     // clip-path: polygon(28px 0%, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px);
   }
   @include mq-target(md) {
-    padding: 2px 4px 4px min(vwpc(4px),6px);
+    padding: 2px 4px 4px min(vwpc(4px),4px);
     // padding: initial;
     // outline: 3px solid $color-bg;
     // border: 4px solid $color-bg;
@@ -255,7 +255,8 @@
   @include mq-target(md) {
     display: block;
     // width: min(vwpc(166px), 210px);
-    width: min(vwpc(194px), 240px);
+    // width: min(vwpc(194px), 250px);
+    width: min(vwpc(204px), 250px);
   }
   &--scroll {
     // width: 220px;

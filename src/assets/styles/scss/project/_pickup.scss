@@ -49,8 +49,8 @@
         }
 
         @include mq-target(md) {
-            margin-right: 1%;
-            width: 24.2%;
+            margin-right: 0.4%;
+            width: 24.6%;
         }
 
         &:last-child {
@@ -87,6 +87,9 @@
         justify-content: center;
         color: rgb(255, 255, 255);
         cursor: pointer;
+        @include mq-target(md) {
+            width: min(vwpc(32px),40px);
+        }
         // opacity: 0;
 
         svg {
@@ -94,6 +97,10 @@
             height: 24px;
             margin: auto;
             color: $color-white;
+            @include mq-target(md) {
+                width: min(vwpc(18px),24px);
+                height: min(vwpc(18px),24px);
+            }
         }
     }
 
@@ -120,7 +127,7 @@
     }
 
     @include mq-target(md) {
-        margin: auto;
+        margin: 2px 0 0;
     }
 
     // max-width: 1050px ;
@@ -136,6 +143,7 @@
         padding: 12px 2px 16px 10px;
 
         @include mq-target(md) {
+            background: #fff;
             padding: 4px 4px 4px;
             // padding: min(vwpc(8px),8px) min(vwpc(6px),8px) min(vwpc(6px),6px);
         }
@@ -191,14 +199,14 @@
             color: $color-white;
             @include lineclamp(3);
             @include mq-target(sm) {
-                @include lineclamp(4);
+                // @include lineclamp(4);
                 font-size: 15px;
             }
 
             @include mq-target(md) {
                 // @include lineclamp(3);
                 // font-family: Arial, Helvetica, sans-serif;
-                font-size: 12px;
+                font-size: min(vwpc(12px),13px);
             }
         }
     }
