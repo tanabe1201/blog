@@ -102,7 +102,7 @@
         &__head {}
 
         &__mid {
-            margin-top: 4px;
+            margin-top: 3px;
             margin-bottom: auto;
             @include mq-target(sm) {
                 margin-top: 4px;
@@ -126,12 +126,13 @@
         &__ttl {
             flex: 1;
             // font-weight: normal;
-            line-height: 1.3;
+            line-height: 1.4;
             // letter-spacing: 0.04em;
             font-size: min(vwsp(13px), 18px);
             @include lineclamp(3);
             color: $color-white;
             @include mq-target(sm) {
+                line-height: 1.3;
                 // font-weight: bold;
                 @include lineclamp(4);
                 font-size: min(vwtb(16px), 18px);
