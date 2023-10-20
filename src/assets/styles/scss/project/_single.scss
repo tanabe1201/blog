@@ -106,7 +106,7 @@
 
 
     &__inner {
-        padding: 14px 14px;
+        padding: 14px 16px;
         // background: #fff;
         overflow: hidden;
         position: relative;
@@ -260,7 +260,13 @@
         }
 
         .p-news-cont__ttl {
-            // font-size: 16px;
+            font-size: min(vwsp(14px),16px);
+            @include mq-target(sm) {
+                font-size: 16px;
+            }
+            @include mq-target(md) {
+                font-size: min(vwpc(14px),16px);
+            }
         }
     }
 }
@@ -295,7 +301,7 @@
         font-size: 20px;
     }
     @include mq-target(md) {
-        font-size: min(vwpc(16px),22px);
+        font-size: min(vwpc(16px),20px);
     }
 
     &:first-child {
@@ -328,7 +334,7 @@
         font-size: 32px;
     }
     @include mq-target(md) {
-        font-size: min(vwpc(16px), 20px);
+        font-size: min(vwpc(16px), 18px);
     }
 }
 
@@ -352,7 +358,7 @@
 .single__entry .t_h {
     font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     @include mq-target(sm) {
         font-size: 14px;
     }

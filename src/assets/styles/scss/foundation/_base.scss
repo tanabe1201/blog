@@ -29,12 +29,14 @@ body {
 	// font-family: Helvetica, $line-b, "BIZ UDGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
 	// font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 	// font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
-	font-family: $line-b, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 	// font-family: YakuHanJP,'-apple-system','BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	// font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",Meiryo,"メイリオ","MS PGothic",sans-serif;
 	font-size: 14px;
+	font-family: $line-r, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 	font-weight: 400;
 	font-feature-settings: "palt";
 	line-height: 1.4;
+	letter-spacing: 0.04em;
 	-webkit-text-size-adjust: 100%;
 	// background: #fff;
 	// background-color: rgba(255, 255, 255, 0.98);
@@ -43,31 +45,10 @@ body {
 	background-color: #03034D;
 	background-image:  linear-gradient(#03034D 1px, transparent 1px), linear-gradient(to right, #000047 1px, #03034D 1px);
 	background-size: 5px 5px;
-// background: #000;
 
-// &::before {
-// 	display: block;
-//     content: '';
-// 	@include absAll;
-// 	position: fixed;
-//     z-index: 1;
-// 	opacity: 0.5;
-//     background: radial-gradient(farthest-side circle at center center, $color-bg,rgb(34, 36, 68),rgb(20, 139, 163),transparent);
-// }
-
-// &::after {
-// 	display: block;
-//     content: '';
-// 	position: fixed;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     z-index: 2;
-//     background: center top repeating-linear-gradient(transparent,transparent 6px,#123 6px,#123 8px), repeating-linear-gradient(90deg, transparent,transparent 6px,#123 6px,#123 8px);
-//     opacity: 0.5;
-// }
-
+	@include mq-target(sm) {
+		font-family: $line-b, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	}
 }
 
 a {
