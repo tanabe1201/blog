@@ -34,12 +34,74 @@
 </head>
 
 
+<header class="l-header">
 
-
-<header class="l-header window">
-
+    
     <div class="l-header__inner">
-        <div class="l-header__top">
+
+        <div class="l-header-nav">
+            <div class="l-header__logo">
+                <a href="/">
+                    <!-- <span>
+                        アキバコ&nbsp;アーカイブ
+                    </span> -->
+                    <img src="./assets/images/logos.png" alt="速報">
+                </a>
+            </div>
+            <div class="global-search">
+                <div class="search-box">
+                    <form class="search-form" action="/search/contents">
+                        <input type="hidden" name="content" value="">
+                        <div class="suggestbox-container">
+                            <input id="search-word" type="search" class="awesomplete search-area" name="keyword" placeholder="検索ワード">
+                            <button type="submit" class="btn btn-transparent btn-action-global-search"
+                                title="検索する">
+                                <svg>
+                                    <use xlink:href="./assets/images/sprite.svg#tabler-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <ul class="l-header-menu__list">
+            <li class="l-header-menu__item">
+                <a href="/gallery">
+                    <svg>
+                        <use xlink:href="./assets/images/sprite.svg#i-prof"></use>
+                    </svg>
+                    <span>アキバコ</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="./assets/images/sprite.svg#tabler-message-circle"></use>
+                    </svg>
+                    <span>お問合せ</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="./assets/images/sprite.svg#i-news"></use>
+                    </svg>
+                    <span>RSS</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="./assets/images/sprite.svg#ri-twitter-x-fill"></use>
+                    </svg>
+                    <span>エックス</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- <div class="l-header__top">
             <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
             <ul class="l-header-menu__list">
                 <li class="l-header-menu__item">
@@ -75,8 +137,8 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="l-header__container">
+        </div> -->
+        <!-- <div class="l-header__container">
 
             <div class="l-header__right">
                 <div class="l-header__logo">
@@ -89,24 +151,9 @@
                 </div>
             </div>
             <div class="l-header__left">
-                <div class="global-search">
-                    <div class="search-box">
-                        <form class="search-form" action="/search/contents">
-                            <input type="hidden" name="content" value="">
-                            <div class="suggestbox-container">
-                                <input id="search-word" type="search" class="awesomplete search-area" name="keyword" placeholder="フリーワード">
-                                <button type="submit" class="btn btn-transparent btn-action-global-search"
-                                    title="検索する">
-                                    <svg>
-                                        <use xlink:href="./assets/images/sprite.svg#tabler-search"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+
             </div>
-        </div>
+        </div> -->
 
 
     </div>
@@ -114,8 +161,7 @@
 
 
 
-
-
+<div class="l-global">
 
 
 <nav class="l-drawer__content js-draw--content">
@@ -192,33 +238,25 @@
         </div>
     </div>
 
-    <!-- <div class="section__bg"></div>
+    <div class="section__bg"></div>
     <div class="IEblock">
         <div class="comment_block">
             <p>このブラウザは閲覧非対応です。</p>
         </div>
-    </div> -->
+    </div>
 
 <!-- <div class="section__bg"></div> -->
 <main class="l-main">
-
-
-
     <div class="l-content window">
-
         <div class="l-content__inner">
+            <!-- <div class="l-side l-side--small">
 
-            <!-- <div class="p-pickup">
-
-            </div> -->
-            <div class="l-side">
-
-                <div class="window">
+                <div class="window l-side--small">
                     <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
                             <ul>
-                                <!-- <li><a href="/">RANKING</a></li> -->
-                                <li><a href="/">特集記事</a></li>
+
+                                <li><a href="/">エンタメ記事</a></li>
                             </ul>
                             <div class="title-bar-controls">
                                 <a href="#" class="i-btn">MORE</a>
@@ -392,21 +430,14 @@
                                 </div>
                             </li>
                         </ul>
-                        <!-- <div class="c-sec__btn l-side__btn window__view">
-                            <a href="#">
-                                <i>もっと見る</i>
-                                <svg>
-                                    <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
-                                </svg>
-                            </a>
-                        </div> -->
+
                     </div>
                 </div>
+            </div> -->
 
-            </div>
+            <div class="c-sec">
 
-            <section class="c-sec">
-                <div class="window p-pickup">
+                <section class="window p-pickup">
                     <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
                             <ul>
@@ -447,6 +478,45 @@
                                                     #サダ 2023/08/18放送 蟲喰い 〜2023ファイナル〜 閲覧注意
                                                 </span>
                                             </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single4.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+    
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/thumb.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide c-slider__slide p-pickuptop__item">
+    
+                                        <a href="#" class="inview p-pickup__link">
+                                            <figure class="c-img p-pickup__img">
+                                                <img src="./assets/images/single1.jpg" alt="">
+                                            </figure>
+                                            <h3 class="p-pickup__ttl">
+                                                <span>
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
+                                                </span>
+                                            </h3>
                                             <!-- <div class="p-news-cont__foot p-pickup__foot">
                                                 <div class="u-dp-sp--sm">
                                                     <ul class="c-cont-tag__list">
@@ -467,11 +537,11 @@
     
                                         <a href="#" class="inview p-pickup__link">
                                             <figure class="c-img p-pickup__img">
-                                                <img src="./assets/images/single1.jpg" alt="">
+                                                <img src="./assets/images/cafe01.jpg" alt="">
                                             </figure>
                                             <h3 class="p-pickup__ttl">
                                                 <span>
-                                                    俺が4年間のバイトで遭遇したガイジランキング　第5位糖質被害妄想ガイジ
+                                                    浅草カフェでオススメ‼️豪快に注いでくれるカフェラテが飲めるお店
                                                 </span>
                                             </h3>
                                             <!-- <div class="p-news-cont__foot p-pickup__foot">
@@ -575,7 +645,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
                             <ul>
@@ -740,8 +810,10 @@
                         </div>
                     </div> -->
     
-                </div>
-                <div class="window">
+                </section>
+    
+
+                <section class="window p-news" style="flex: 1;">
                     <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
                             <ul>
@@ -757,7 +829,7 @@
 
                     <ul class="c-tab__list p-news-tab__list">
                         <li class="c-tab__item p-news-tab__item">
-                            カテゴリ：ニュース
+                            カテゴリ：新着総合ニュース
                         </li>
                         <li class="c-tab__item p-news-tab__item">
                             カテゴリ選択：
@@ -782,7 +854,7 @@
                                     <div class="p-news__head">
                                         <a href="/system" class="c-cont__link">
                                             <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/test.jpg" alt="">
+                                                <img src="./assets/images/d.jpg" alt="">
                                             </figure>
                                         </a>
                                     </div>
@@ -806,11 +878,25 @@
                                         </div>
                                         <div class="p-news-cont__mid">
                                             <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                ブックオフ店員「読書は意味ない。ゴミみたいな内容の本が世の中に溢れているから、若者が読書しなくなるのは当たり前」
+                                                「転生したらスライムだった件」YouTubeで1期全話を無料公開、本日配信スタート【新作アニメ「コリウスの夢」と一緒にお楽しみください！】
                                             </h3>
                                         </div>
 
                                     </div>
+                                    <ul class="p-news__plate">
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">炎上</p>
+                                        </li>
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">声優</p>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <!-- <p class="p-news__plate">
                                     <time>続きを読む</time>
@@ -846,13 +932,22 @@
                                         </div>
                                         <div class="p-news-cont__mid">
                                             <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                『嵐』、マジでオワコンへ　二宮和也さん、松本潤さんは主演作ボロボロ、相葉雅紀さんは打ち切り、櫻井翔さんは・・・
-                                            </h3>
+                                                恋愛アドベンチャー『君が望む永遠』（全年齢版）再開発プロジェクト始動。クラウドファンディングが10月21日よりスタート                                            </h3>
                                         </div>
-
-                                        <!-- <p class="p-news__plate">
-                                            <time>続きを読む</time>
-                                        </p> -->
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </li>
@@ -862,7 +957,362 @@
                                     <div class="p-news__head">
                                         <a href="/system" class="c-cont__link">
                                             <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/news1.jpg" alt="">
+                                                <img src="./assets/images/cv.webp" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                Switch版『マブラヴ』『マブラヴ オルタネイティヴ』が2024年春に発売決定。Steam版『帝都燃ゆ』も発表
+                                            </h3>
+                                        </div>
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/thumb.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                後藤祐樹市議「今の議員は選挙の時に良い事ばかり言って何一つ成果をあげられない議員ばかり。そんな議員は辞退して有望な人材に席を譲るべき」これもう次の首相候補だろ
+                                            </h3>
+                                        </div>
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/thumb.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                ブックオフ店員「読書は意味ない。ゴミみたいな内容の本が世の中に溢れているから、若者が読書しなくなるのは当たり前」
+                                            </h3>
+                                        </div>
+
+                                    </div>
+                                    <ul class="p-news__plate">
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">炎上</p>
+                                        </li>
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">声優</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/uq.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『ポケモン』ミミッキュやゲンガーの部屋着・ヘアバンドがかわいい！ アパレルグッズがアベイルにて10/28より発売
+                                            </h3>
+                                        </div>
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/hr.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                日本人形のフリをする和風ステルスアクション『Ichima-san』体験版が配信開始。その“姿”を見られてはいけない
+                                            </h3>
+                                        </div>
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/test.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                ブックオフ店員「読書は意味ない。ゴミみたいな内容の本が世の中に溢れているから、若者が読書しなくなるのは当たり前」
+                                            </h3>
+                                        </div>
+
+                                    </div>
+                                    <ul class="p-news__plate">
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">炎上</p>
+                                        </li>
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">声優</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <p class="p-news__plate">
+                                    <time>続きを読む</time>
+                                </p> -->
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/y_6530fa34028d7.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="p-news__foot">
+                                        <div class="p-news-cont__foot">
+                                            <p class="c-cont__time">
+                                                <svg class="i-clock">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <time>エンタメ</time>
+                                            </p>
+                                            <div class="p-news-cont__tag">
+                                                <ul class="c-cont-tag__list">
+                                                    <li class="c-cont-tag__item">
+                                                        <a href="">
+                                                            2023年10月18日00:00
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-news-cont__mid">
+                                            <h3 class="c-cont__ttl p-news-cont__ttl">
+                                                『キノの旅』キノの愛銃“カノン”チャーム付きアクスタが登場。電撃文庫30周年を記念したオンラインくじが10月26日発売
+                                            </h3>
+                                        </div>
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-news__item">
+                                <a href="/system" class="c-card__link"></a>
+                                <div class="c-card__item--inner">
+                                    <div class="p-news__head">
+                                        <a href="/system" class="c-cont__link">
+                                            <figure class="c-img p-news-cont__img">
+                                                <img src="./assets/images/game1.png" alt="">
                                             </figure>
                                         </a>
                                     </div>
@@ -889,387 +1339,20 @@
                                                 統一教会、国と全面戦争へ「我々が何法の何条に違反した？」「解散命令請求は死刑求刑と同じ」
                                             </h3>
                                         </div>
-
-                                    </div>
-                                    <!-- <p class="p-news__plate">
-                                        <time>続きを読む</time>
-                                    </p> -->
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/evnt1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
                                                     <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
                                                 </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                イスラエル批判に署名した学生さん、個人情報を抜かれて人生終了する・・・
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/test.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
                                                     <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
                                                 </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                ゲーム開発者「ゲームレビューで『はまりすぎて0点です』みたいなウケ狙い低評価やめろ。醤油差しペロペロするようなもん」
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/ewew.webp" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
-                                                </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                ジャニーズ、社名変更前最後の日に「ジュリーさんありがとう」「ジャニーズ事務所頑張れ」など　世界トレンド1位に・・・
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/news1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
-                                                </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                岸田首相、スーパーを視察へ→ついに気付く！「確かに高くなってる。思い切った対策を実行する！」　期待してええんか・・・？
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/evnt1.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
-                                                </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                霜降り明星・粗品さん、「オールスター感謝祭」で女優をマジギレさせ炎上→翌日謝罪するもファンの忠告には「DMで文句ください。イジって晒すんでｗ」と煽る
-
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/test.jpg" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
-                                                </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                【訃報】「冬の稲妻」や「昴」などで知られる谷村新司さんが死去　74歳　急性腸炎で手術を受け療養していた
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            エンタメ
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="c-card__item p-news__item">
-                                <a href="/system" class="c-card__link"></a>
-                                <div class="c-card__item--inner">
-                                    <div class="p-news__head">
-                                        <a href="/system" class="c-cont__link">
-                                            <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/ewew.webp" alt="">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="p-news__foot">
-                                        <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
-                                                </svg>
-                                                <time>エンタメ</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            2023年10月18日00:00
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="p-news-cont__mid">
-                                            <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                【凄すぎ】『マインクラフト』、世界累計販売本数が3億本を突破！”世界一売れたゲーム”の称号を不動のものに！！
-                                            </h3>
-                                        </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
-                                                </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> -->
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </li>
@@ -1306,24 +1389,20 @@
                                                 後藤祐樹市議「今の議員は選挙の時に良い事ばかり言って何一つ成果をあげられない議員ばかり。そんな議員は辞退して有望な人材に席を譲るべき」これもう次の首相候補だろ
                                             </h3>
                                         </div>
-                                        <!-- <div class="p-news-cont__foot">
-                                            <p class="c-cont__time">
-                                                <svg class="i-clock">
-                                                    <use xlink:href="./assets/images/sprite.svg#clock24"></use>
+                                        <ul class="p-news__plate">
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
                                                 </svg>
-                                                <time>2023年10月05日&nbsp;23:00</time>
-                                            </p>
-                                            <div class="p-news-cont__tag">
-                                                <ul class="c-cont-tag__list">
-                                                    <li class="c-cont-tag__item">
-                                                        <a href="">
-                                                            製品情報
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div> -->
+                                                <p style="padding-left: 2px;">炎上</p>
+                                            </li>
+                                            <li class="u-flexbox" style="align-items: center;">
+                                                <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                    <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                                </svg>
+                                                <p style="padding-left: 2px;">声優</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </li>
@@ -1333,7 +1412,7 @@
                                     <div class="p-news__head">
                                         <a href="/system" class="c-cont__link">
                                             <figure class="c-img p-news-cont__img">
-                                                <img src="./assets/images/evnt1.jpg" alt="">
+                                                <img src="./assets/images/tw.webp" alt="">
                                             </figure>
                                         </a>
                                     </div>
@@ -1357,35 +1436,50 @@
                                         </div>
                                         <div class="p-news-cont__mid">
                                             <h3 class="c-cont__ttl p-news-cont__ttl">
-                                                当て逃げのフジモンさん、事故直後にパニクるどころか平然と◯◯していた模様・・・
+                                                Twitchで他社プラットフォームへの同時配信が解禁。クリップ（切り抜き）機能の強化なども発表
                                             </h3>
                                         </div>
 
                                     </div>
+                                    <ul class="p-news__plate">
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">炎上</p>
+                                        </li>
+                                        <li class="u-flexbox" style="align-items: center;">
+                                            <svg class="i-clock" style="width: 18px; height: 18px;">
+                                                <use xlink:href="./assets/images/sprite.svg#i-tag"></use>
+                                            </svg>
+                                            <p style="padding-left: 2px;">声優</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </li>
+                         
+
+
+
 
                         </ul>
                     </div>
-                    <!-- <div class="c-sec__btn l-side__btn c-sec__inner p-news__btn window__view">
+                    <div class="c-sec__btn l-side__btn c-sec__inner p-news__btn window__view">
                         <a href="#">
                             <i>もっと見る</i>
                             <svg>
                                 <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
                             </svg>
                         </a>
-                    </div> -->
-                </div>
-            </section>
-
-
+                    </div>
+                </section>
+            </div>
 
             <div class="l-side">
-                <div class="window">
+                <!-- <div class="window">
                     <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
                             <ul>
-                                <!-- <li><a href="/">AKIBAKO</a></li> -->
                                 <li><a href="/">お知らせ</a></li>
                             </ul>
                             <div class="title-bar-controls">
@@ -1401,17 +1495,17 @@
                             </figure>
                         </div>
                         <p class="p-prof-body__txt">
-                            ようこそニュース速報アキバコへ<br>
-                            現在時刻は午後14時00分です。
+                            ニュース速報アキバコです。<br>
+                            5ch、エンタメ関連のまとめブログです。
                         </p>
                     </div>
-                </div>
+                </div> -->
                 <div class="window">
                     <div class="c-pagePath title-bar">
                         <div class="c-pagePath__inner">
                             <ul>
                                 <!-- <li><a href="/">RANKING</a></li> -->
-                                <li><a href="/">人気記事</a></li>
+                                <li><a href="/">総合記事ランキング</a></li>
                             </ul>
                             <div class="title-bar-controls">
                                 <a href="#" class="i-btn">MORE</a>
@@ -1442,13 +1536,13 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
+                                                    <img src="./assets/images/news3.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
                                                 <a href="/system" class="p-rank-foot__link">
                                                     <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        任天堂もPCにソフトを出してほしい。ソニーもソフトを出すようになってきたのに
+                                                        『アトリエ』ライザ、ソフィー、レスナの等身大パネルがくじの景品に。ガスト30周年記念企画のグッズが公開
                                                     </h3>
                                                 </a>
                                             </div>
@@ -1458,13 +1552,13 @@
                                         <div class="p-rank-head p-rank__count">
                                             <a href="/system" class="c-cont__link">
                                                 <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/ogp_r.jpg" alt="">
+                                                    <img src="./assets/images/cscs.jpg" alt="">
                                                 </figure>
                                             </a>
                                             <div class="p-rank-foot">
                                                 <a href="/system" class="p-rank-foot__link">
                                                     <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                                        『アトリエ』ライザ、ソフィー、レスナの等身大パネルがくじの景品に。ガスト30周年記念企画のグッズが公開
                                                     </h3>
                                                 </a>
                                             </div>
@@ -1480,8 +1574,7 @@
                                             <div class="p-rank-foot">
                                                 <a href="/system" class="p-rank-foot__link">
                                                     <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
-                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                                        Switch『ディスクロニア：CA ディフィニティブエディション』無料体験版が配信。導入から約2時間の内容をプレイ可能
                                                     </h3>
                                                 </a>
                                             </div>
@@ -1514,88 +1607,6 @@
                                                 <a href="/system" class="p-rank-foot__link">
                                                     <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
                                                         『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="c-card__item p-rank__item window__view">
-                                        <div class="p-rank-head p-rank__count">
-                                            <a href="/system" class="c-cont__link">
-                                                <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/single1.jpg" alt="">
-                                                </figure>
-                                            </a>
-                                            <div class="p-rank-foot">
-                                                <a href="/system" class="p-rank-foot__link">
-                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
-                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="c-card__item p-rank__item window__view">
-                                        <div class="p-rank-head p-rank__count">
-                                            <a href="/system" class="c-cont__link">
-                                                <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
-                                                </figure>
-                                            </a>
-                                            <div class="p-rank-foot">
-                                                <a href="/system" class="p-rank-foot__link">
-                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        任天堂もPCにソフトを出してほしい。ソニーもソフトを出すようになってきたのに
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="c-card__item p-rank__item window__view">
-                                        <div class="p-rank-head p-rank__count">
-                                            <a href="/system" class="c-cont__link">
-                                                <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/ogp_r.jpg" alt="">
-                                                </figure>
-                                            </a>
-                                            <div class="p-rank-foot">
-                                                <a href="/system" class="p-rank-foot__link">
-                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="c-card__item p-rank__item window__view">
-                                        <div class="p-rank-head p-rank__count">
-                                            <a href="/system" class="c-cont__link">
-                                                <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/single1.jpg" alt="">
-                                                </figure>
-                                            </a>
-                                            <div class="p-rank-foot">
-                                                <a href="/system" class="p-rank-foot__link">
-                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        【Amazon】小学生向けキッズタブレット『Fire HD 10
-                                                        キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="c-card__item p-rank__item window__view">
-                                        <div class="p-rank-head p-rank__count">
-                                            <a href="/system" class="c-cont__link">
-                                                <figure class="c-img p-rank-cont__img">
-                                                    <img src="./assets/images/evnt1.jpg" alt="">
-                                                </figure>
-                                            </a>
-                                            <div class="p-rank-foot">
-                                                <a href="/system" class="p-rank-foot__link">
-                                                    <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
-                                                        『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
                                                     </h3>
                                                 </a>
                                             </div>
@@ -1692,31 +1703,237 @@
                     </div>
                 </div>
 
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <!-- <li><a href="/">RANKING</a></li> -->
+                                <li><a href="/">新着特集記事</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-sec__inner l-side__inner p-rank__inner scroll_bar">
+
+                        <ul class="p-rank__list">
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                任天堂もPCにソフトを出してほしい。ソニーもソフトを出すようになってきたのに
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/single1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <!-- <div class="c-sec__btn l-side__btn window__view">
+                            <a href="#">
+                                <i>もっと見る</i>
+                                <svg>
+                                    <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="window">
+                    <div class="c-pagePath title-bar">
+                        <div class="c-pagePath__inner">
+                            <ul>
+                                <!-- <li><a href="/">RANKING</a></li> -->
+                                <li><a href="/">新着エンタメ記事</a></li>
+                            </ul>
+                            <div class="title-bar-controls">
+                                <a href="#" class="i-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-sec__inner l-side__inner p-rank__inner scroll_bar">
+
+                        <ul class="p-rank__list">
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                任天堂もPCにソフトを出してほしい。ソニーもソフトを出すようになってきたのに
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/single1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                【Amazon】小学生向けキッズタブレット『Fire HD 10
+                                                キッズプロ』発表。最大25%高速化したプロセッサや最大13時間稼働できるバッテリーを搭載
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/evnt1.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『FF7 エバークライシス』600万DL突破。最新アップデート情報を発表する公式生放送が9月26日に配信決定
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-card__item p-rank__item window__view">
+                                <div class="p-rank-head">
+                                    <a href="/system" class="c-cont__link">
+                                        <figure class="c-img p-rank-cont__img">
+                                            <img src="./assets/images/ogp_r.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                    <div class="p-rank-foot">
+                                        <a href="/system" class="p-rank-foot__link">
+                                            <h3 class="c-cont__ttl l-side-cont__ttl p-rank-foot__ttl">
+                                                『龍が如く』桐生一馬と真島吾朗がフィギュア化。オプションパーツにはスタミナンXやヘルメット、鬼炎のドスが付属
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <!-- <div class="c-sec__btn l-side__btn window__view">
+                            <a href="#">
+                                <i>もっと見る</i>
+                                <svg>
+                                    <use xlink:href="./assets/images/sprite.svg#i-nextpage2"></use>
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+
             </div>
-
-
-
-
-
-
-
         </div>
-        <!-- <div class="c-pagePath">
-            <ul style="opacity: 0;">
-                <li><a href="/">ホーム</a></li>
-                <li><a href="">ニュース</a></li>
-            </ul>
-        </div> -->
     </div>
 
 </main>
 
 
 
+</div>
 
-<!-- <a href="#top" class="c-sec__top sc-inview">
-  <img src="./assets/images/top_icon.png" alt="">
-</a> -->
 <div class="l-footer__pageTop">
   <a href="#top" class="scroll">
     <svg>
@@ -1725,7 +1942,7 @@
   </a>
 </div>
 
-<footer id="footer" class="l-footer window">
+<footer id="footer" class="l-footer">
   <div class="l-footer__inner">
     <div class="l-footer__container">
 

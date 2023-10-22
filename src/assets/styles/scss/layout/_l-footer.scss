@@ -1,6 +1,7 @@
 @use "../foundation" as *;
 
 .l-footer {
+  
   position: relative;  
   z-index: 3;
   @include mq-target(sm) {
@@ -9,6 +10,7 @@
   }
   
   &__inner {
+    background: linear-gradient(90deg, navy, #1084d0);
     // background-color: #212121; 
     position: relative;
     padding: 20px 0 80px;
@@ -55,6 +57,7 @@
   }
 
   &__copy {
+    color: $color-white;
     margin-top: 10px;
     font-size: 12px;
   }

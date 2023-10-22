@@ -1,10 +1,10 @@
 @use "../foundation"as *;
 
 .window {
-  margin-top: 2px;
-  // padding: 4px;
+  // margin-top: 2px;
+  padding: 4px;
   @include mq-target(md) {
-    margin-top: 2px;
+    margin-bottom: 2px;
     // margin-top: min(vwpc(2px),4px);
   }
 
@@ -19,7 +19,6 @@
     background-color: #ffffff;
     box-shadow: inset -1px -1px 0px #ffffff, inset 1px 1px 0px 0px #808088, inset -2px -2px 0px #bbc3c4, inset 2px 2px 0px 0px #0c0c0c;
   }
-
 
 }
 
@@ -108,13 +107,14 @@
       }
 
       a {
+        font-family: $line-b;
         display: block;
         color: $color-white;
         font-size: min(vwsp(12px), 14px);
 
         @include mq-target(sm) {
-          font-size: 12px;
-          font-size: 14px;
+          // font-size: 12px;
+          font-size: min(vwpc(13px),14px);
         }
       }
     }
@@ -140,7 +140,7 @@
     margin: 0px 1px;
     box-shadow: inset 0px -1px 0px #808088, inset -1px 0px 0px #808088, inset 0px 0px 0px 1px #ffffff, -1px 0px 0px #808088, 1px 0px 0px #ffffff, -1px 1px 0px 0px #ffffff, 1px 1px 0px 0px #ffffff;
     padding: 4px 6px 4px 12px;
-
+    // background: #edebeb;
     // padding: 3px 0 2px;
     // padding-left: 12px;
     // padding-bottom: 4px;
@@ -174,11 +174,12 @@
       // border-bottom: 1px solid $color-red;
       span {
         font-weight: bold;
-        color: $color-red;
+        // color: $color-red;
       }
     }
 
     span {
+      font-family: $line-r;
       font-size: 12px;
       color: $color-white;
 
@@ -187,7 +188,7 @@
       }
 
       @include mq-target(md) {
-        font-size: min(vwsp(12px), 14px);
+        font-size: min(vwpc(12px), 14px);
       }
     }
   }
@@ -220,11 +221,10 @@
   // width: 100%;
   // margin: auto;
   @include mq-target(md) {
-    // width: min(vwpc(550px), 688px);
-    width: min(vwpc(550px), 688px);
+    width: min(vwpc(696px), 750px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
-    margin: 0 2px;
+    // margin: 0 2px;
   }
 
   &__inner {
@@ -238,7 +238,7 @@
       padding: 12px;
     }
     @include mq-target(md) {
-      padding: min(vwpc(10px),12px) min(vwpc(10px),12px);
+      padding: min(vwpc(10px),14px) min(vwpc(10px),12px);
     }
 
     &:last-child {
@@ -262,7 +262,7 @@
       // background: rgba($color: #444, $alpha: 0.25);
       @include flex($align:center, $justify:center);
       // min-width: 220px;
-      border-radius: 4px;
+      // border-radius: 4px;
       font-style: normal;
       border: 1px solid $color-border;
       padding: 0 16px;
@@ -275,7 +275,7 @@
       }
       @include mq-target(md) {
         font-size: min(vwpc(12px),14px);
-        height: min(vwpc(32px),36px);
+        height: min(vwpc(36px),42px);
       }
 
       i {
@@ -335,9 +335,10 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         // font-family: $line-b;
         // font-weight: normal;
+        // font-weight: bold;
         // border-radius: 4px;
         // padding: 2px 8px 1px;
-        // color: $color-key;
+        // color: #999999;
         color: #666;
         // border: $color-border-waku;
         // background-color: #e8e8e8;
@@ -364,7 +365,7 @@
   }
 
   &__time {
-    line-height: 1;
+    // line-height: 1;
     display: flex;
     align-items: center;
     color: #5686ab;
@@ -493,7 +494,7 @@
 
     &:hover a {
       transition: all 0.2s ease-out;
-      opacity: 0.75;
+      opacity: 0.95;
     }
 
     &:first-child {

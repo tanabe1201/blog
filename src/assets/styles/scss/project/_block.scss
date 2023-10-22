@@ -6,7 +6,7 @@
     }
     
     &__container {
-        padding: 2%;
+        padding: 2% 2% 40px;
         @include mq-target(sm) {
             // padding: 24px 24px 12px;
         }
@@ -38,7 +38,7 @@
                 color: $color-link;
                 padding-right: 20px;
                 @include mq-target(sm) {
-                    width: 160px;
+                    width: 180px;
                 }
                 // @include mq-target(md) {
                 //     width: min(vwpc(150px),160px);

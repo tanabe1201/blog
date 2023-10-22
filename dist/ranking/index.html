@@ -34,12 +34,74 @@
 </head>
 
 
+<header class="l-header">
 
-
-<header class="l-header window">
-
+    
     <div class="l-header__inner">
-        <div class="l-header__top">
+
+        <div class="l-header-nav">
+            <div class="l-header__logo">
+                <a href="/">
+                    <!-- <span>
+                        アキバコ&nbsp;アーカイブ
+                    </span> -->
+                    <img src="../assets/images/logos.png" alt="速報">
+                </a>
+            </div>
+            <div class="global-search">
+                <div class="search-box">
+                    <form class="search-form" action="/search/contents">
+                        <input type="hidden" name="content" value="">
+                        <div class="suggestbox-container">
+                            <input id="search-word" type="search" class="awesomplete search-area" name="keyword" placeholder="検索ワード">
+                            <button type="submit" class="btn btn-transparent btn-action-global-search"
+                                title="検索する">
+                                <svg>
+                                    <use xlink:href="../assets/images/sprite.svg#tabler-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <ul class="l-header-menu__list">
+            <li class="l-header-menu__item">
+                <a href="/gallery">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#i-prof"></use>
+                    </svg>
+                    <span>アキバコ</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
+                    </svg>
+                    <span>お問合せ</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                    </svg>
+                    <span>RSS</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#ri-twitter-x-fill"></use>
+                    </svg>
+                    <span>エックス</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- <div class="l-header__top">
             <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
             <ul class="l-header-menu__list">
                 <li class="l-header-menu__item">
@@ -75,8 +137,8 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="l-header__container">
+        </div> -->
+        <!-- <div class="l-header__container">
 
             <div class="l-header__right">
                 <div class="l-header__logo">
@@ -89,24 +151,9 @@
                 </div>
             </div>
             <div class="l-header__left">
-                <div class="global-search">
-                    <div class="search-box">
-                        <form class="search-form" action="/search/contents">
-                            <input type="hidden" name="content" value="">
-                            <div class="suggestbox-container">
-                                <input id="search-word" type="search" class="awesomplete search-area" name="keyword" placeholder="フリーワード">
-                                <button type="submit" class="btn btn-transparent btn-action-global-search"
-                                    title="検索する">
-                                    <svg>
-                                        <use xlink:href="../assets/images/sprite.svg#tabler-search"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+
             </div>
-        </div>
+        </div> -->
 
 
     </div>
@@ -114,8 +161,7 @@
 
 
 
-
-
+<div class="l-global">
 
 
 <nav class="l-drawer__content js-draw--content">
@@ -192,12 +238,12 @@
         </div>
     </div>
 
-    <!-- <div class="section__bg"></div>
+    <div class="section__bg"></div>
     <div class="IEblock">
         <div class="comment_block">
             <p>このブラウザは閲覧非対応です。</p>
         </div>
-    </div> -->
+    </div>
 
 
 <main class="l-main">
@@ -1577,10 +1623,8 @@
 
 
 
+</div>
 
-<!-- <a href="#top" class="c-sec__top sc-inview">
-  <img src="./assets/images/top_icon.png" alt="">
-</a> -->
 <div class="l-footer__pageTop">
   <a href="#top" class="scroll">
     <svg>
@@ -1589,7 +1633,7 @@
   </a>
 </div>
 
-<footer id="footer" class="l-footer window">
+<footer id="footer" class="l-footer">
   <div class="l-footer__inner">
     <div class="l-footer__container">
 
