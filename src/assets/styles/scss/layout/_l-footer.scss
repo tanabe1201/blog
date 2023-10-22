@@ -52,8 +52,11 @@
   }
 
   &__logo {
-    width: 320px;
+    width: 200px;
     margin: auto;
+    @include mq-target(sm) {
+      width: 320px;
+    }
   }
 
   &__copy {

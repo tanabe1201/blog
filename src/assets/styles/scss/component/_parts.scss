@@ -2,8 +2,13 @@
 
 .window {
   // margin-top: 2px;
-  padding: 4px;
+  padding: 2px;
+  @include mq-target(sm) {
+    padding: 3px;
+
+  }
   @include mq-target(md) {
+    padding: 4px;
     margin-bottom: 2px;
     // margin-top: min(vwpc(2px),4px);
   }
@@ -110,7 +115,7 @@
         font-family: $line-b;
         display: block;
         color: $color-white;
-        font-size: min(vwsp(12px), 14px);
+        font-size: min(vwsp(14px), 16px);
 
         @include mq-target(sm) {
           // font-size: 12px;
@@ -221,7 +226,7 @@
   // width: 100%;
   // margin: auto;
   @include mq-target(md) {
-    width: min(vwpc(696px), 750px);
+    width: min(vwpc(680px), 740px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
     // margin: 0 2px;
@@ -238,7 +243,8 @@
       padding: 12px;
     }
     @include mq-target(md) {
-      padding: min(vwpc(10px),14px) min(vwpc(10px),12px);
+      padding: 12px;
+      // padding: min(vwpc(10px),12px) min(vwpc(10px),12px);
     }
 
     &:last-child {
@@ -267,7 +273,7 @@
       border: 1px solid $color-border;
       padding: 0 16px;
       font-size: 14px;
-      height: min(vwsp(36px),42px);
+      height: min(vwsp(32px),42px);
       
       @include mq-target(sm) {
         height: 42px;

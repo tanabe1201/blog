@@ -37,9 +37,9 @@
         display: flex;
         bottom: 8px;
         // display: none;
+        display: none;
         @include mq-target(md) {
         bottom: -10px;
-        display: none;
     }
     
     li {
@@ -108,7 +108,7 @@
         flex-direction: column;
         justify-content: space-between;
         flex: 1;
-        padding: 0 0 0 12px;
+        padding: 0 0 0 10px;
 
         // margin-left: 10px;
         @include mq-target(sm) {
@@ -141,10 +141,10 @@
             outline: 0;
             aspect-ratio: auto 260 / 240;
             border-radius: 6px;
-            // filter: drop-shadow(0 0 1px #282727);
+            filter: drop-shadow(0 0 1px #282727);
             @include mq-target(sm) {
                 border-radius: 0px;
-                outline: 1px solid #e0e0e0;
+                outline: 2px solid #e0e0e0;
                 aspect-ratio: 16 / 9;
 
             }
@@ -156,7 +156,7 @@
             margin-top: 2px;
             margin-bottom: auto;
             @include mq-target(sm) {
-                margin-top: 3px;
+                margin-top: 4px;
             }
             @include mq-target(md) {
                 // margin-top: 6px;
@@ -195,7 +195,7 @@
 
             @include mq-target(md) {
                 line-height: 1.3;
-                font-size: min(vwpc(16px), 18px);
+                font-size: min(vwpc(16px), 17px);
                 // @include lineclamp(3);
             }
             
