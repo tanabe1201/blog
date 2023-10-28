@@ -241,7 +241,7 @@
     text-align: center;
     position: relative;
     top: 0;
-    gap: 10px 6px;
+    gap: 10px 4px;
     @include mq-target(md) {
         gap: 10px 4px;
     }
@@ -262,9 +262,11 @@
     background-color: $color-key;
     background: silver;
     border: 4px solid transparent;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     @include mq-target(sm) {
+        width: 12px;
+        height: 12px;
     }
     @include mq-target(md) {
         border: 4px solid transparent;
