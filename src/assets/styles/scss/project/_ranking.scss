@@ -147,7 +147,7 @@
                 font-weight: 600;
                 // filter: drop-shadow(1px 1px 1px #1b1b1b);
                 color: $color-white;
-                -webkit-line-clamp: 3;
+                -webkit-line-clamp: 4;
                 @include mq-target(md) {
                     // font-size: 12px;
                     font-size: min(vwpc(11px),12px);

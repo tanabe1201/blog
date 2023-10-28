@@ -168,8 +168,9 @@
 
         &__ttl {
             // line-height: 1.3;
-            // margin-top: 3px;
+            // dist/assets
             flex: 1;
+            font-weight: bold;
             // letter-spacing: 0.04em;
             font-size: min(vwsp(13px), 18px);
             @include lineclamp(3);
@@ -177,7 +178,6 @@
             
             @include mq-target(sm) {
                 line-height: 1.4;
-                font-weight: bold;
                 @include lineclamp(4);
                 font-size: min(vwtb(16px), 18px);
                 color: $color-link;
@@ -185,6 +185,7 @@
             }
 
             @include mq-target(md) {
+                margin-top: 2px;
                 // line-height: 1.3;
                 font-size: min(vwpc(15px), 18px);
                 // @include lineclamp(3);

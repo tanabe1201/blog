@@ -287,7 +287,7 @@
     font-weight: normal;
     padding: 16px;
     @include mq-target(md) {
-        padding: 12px min(vwpc(6px),12px) 12px;
+        padding: 10px min(vwpc(6px),12px) 12px;
     }
 }
 
@@ -335,7 +335,7 @@
         font-size: 20px;
     }
     @include mq-target(md) {
-        font-size: min(vwpc(16px),20px);
+        font-size: min(vwpc(16px),18px);
     }
 
     &:first-child {
@@ -406,14 +406,14 @@
     }
 }
 .single__entry .t_b {
-    line-height: 1.7;
+    line-height: 1.6;
     font-weight: bold;
     font-size: 14px;
     @include mq-target(sm) {
         font-size: min(vwtb(15px),18px);
     }
     @include mq-target(md) {
-        font-size: min(vwpc(14px),15px);
+        font-size: min(vwpc(14px),16px);
     }
     margin-bottom: min(vwpc(16px),20px);
 }

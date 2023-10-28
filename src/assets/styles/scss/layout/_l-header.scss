@@ -92,6 +92,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    // width: 100%;
+    flex: 1;
     
     @include mq-target(sm) {
       flex: 1 0 auto;
