@@ -3,6 +3,7 @@
 .window {
   // margin-top: 2px;
   padding: 2px;
+  margin-bottom: 2px;
   @include mq-target(sm) {
     // padding: 3px;
     margin-bottom: 4px;
@@ -268,7 +269,7 @@
       border: 1px solid $color-border;
       padding: 0 16px;
       font-size: 14px;
-      height: min(vwsp(32px),42px);
+      height: min(vwsp(36px),42px);
       color: $color-white;
       
       @include mq-target(sm) {
@@ -419,9 +420,8 @@
 .c-card {
   &__item {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     @include mq-target(lg) {
-      margin-bottom: 20px;
     }
 
     &:hover a {
@@ -444,9 +444,8 @@
       width: 100%;
       left: 0;
       // width: calc(100% - 30px);
-      bottom: -8px;
+      bottom: -10px;
       @include mq-target(lg) {
-        bottom: -10px;
       }
     }
 

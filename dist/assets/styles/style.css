@@ -235,6 +235,7 @@ img {
 
 .window {
   padding: 2px;
+  margin-bottom: 2px;
 }
 @media screen and (min-width: 768px) {
   .window {
@@ -488,7 +489,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0 16px;
   font-size: 14px;
-  height: min(8.5333333333vw, 42px);
+  height: min(9.6vw, 42px);
   color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -646,12 +647,7 @@ img {
 
 .c-card__item {
   position: relative;
-  margin-bottom: 16px;
-}
-@media screen and (min-width: 1200px) {
-  .c-card__item {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 .c-card__item:hover a {
   -webkit-transition: all 0.2s ease-out;
@@ -666,12 +662,7 @@ img {
   left: 0;
   width: 100%;
   left: 0;
-  bottom: -8px;
-}
-@media screen and (min-width: 1200px) {
-  .c-card__item::after {
-    bottom: -10px;
-  }
+  bottom: -10px;
 }
 .c-card__item:last-child {
   margin-bottom: 0;
