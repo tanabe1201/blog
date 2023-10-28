@@ -33,6 +33,7 @@
   display: block;
   min-height: 14px;
   padding: 0 10px;
+  font-weight: bold;
   background: silver;
   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
 }
@@ -68,11 +69,15 @@
 
 .c-pagePath {
   width: 100%;
+  min-height: 28px;
   position: relative;
   padding: 3px 6px 3px 14px;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   @include mq-target(sm) {
-    padding: 3px 6px 3px 14px;
+    padding: 6px 6px 6px 14px;
+  }
+  @include mq-target(md) {
+    padding: 4px 6px 4px 14px;
   }
 
 
@@ -86,7 +91,7 @@
     @include flex($align:center);
 
     li {
-      // line-height: 1;
+      line-height: 1;
       color: $color-key;
       white-space: nowrap;
       position: relative;
@@ -115,13 +120,15 @@
 
       a {
         display: block;
+        font-weight: 600;
         color: $color-white;
         font-size: min(vwsp(14px), 16px);
 
         @include mq-target(sm) {
-          font-size: 14px;
+          font-size: min(vwtb(16px), 18px);
         }
         @include mq-target(md) {
+          font-size: 15px;
         }
       }
     }
@@ -146,7 +153,7 @@
     min-height: 22px;
     margin: 0px 1px;
     box-shadow: inset 0px -1px 0px #808088, inset -1px 0px 0px #808088, inset 0px 0px 0px 1px #ffffff, -1px 0px 0px #808088, 1px 0px 0px #ffffff, -1px 1px 0px 0px #ffffff, 1px 1px 0px 0px #ffffff;
-    padding: 6px 6px 5px 14px;
+    padding: 5px 6px 5px 14px;
     // background: #edebeb;
     // padding: 3px 0 2px;
     // padding-left: 12px;
@@ -229,7 +236,7 @@
   // margin: auto;
   @include mq-target(md) {
     width: min(vwpc(680px), 740px);
-    width: min(vwpc(540px), 640px);
+    width: min(vwpc(540px), 620px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
     margin: 0 2px;
@@ -264,20 +271,21 @@
     }
 
     a {
+      font-weight: bold;
       background: $color-bg;
       @include flex($align:center, $justify:center);
       border: 1px solid $color-border;
       padding: 0 16px;
-      font-size: 14px;
-      height: min(vwsp(36px),42px);
+      font-size: min(vwsp(12px),16px);
+      height: min(vwsp(34px),42px);
       color: $color-white;
       
       @include mq-target(sm) {
-        height: 38px;
-        font-size: 14px;
+        height: 42px;
+        font-size: min(vwtb(14px),16px);
       }
       @include mq-target(md) {
-        font-size: min(vwpc(13px),15px);
+        font-size: min(vwpc(13px),13px);
         height: min(vwpc(36px),40px);
       }
       &:hover {

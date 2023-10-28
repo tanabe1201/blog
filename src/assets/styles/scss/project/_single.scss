@@ -203,7 +203,7 @@
                 }
 
                 span {
-                    font-size: 13px;
+                    font-size: min(vwsp(12px),14px);
                     color: $color-font;
                     @include mq-target(sm) {
                         font-size: min(vwtb(14px),16px);
@@ -252,17 +252,23 @@
     }
 
     &__btn {
-        padding-top: 6px;
+        padding: 2px;
     }
 
-    &-rela_item {
+    &-rela__inner {
+        background: #fff;
+    }
+
+    &-rela__item {
+
         & .p-news-cont__bot {
             padding: 0;
             h3 {
+                color: $color-link;
                 // font-size: 15px;
                 margin: 0;
                 @include mq(sm) {
-                    font-size: 13px;
+                    // font-size: 13px;
                 }
             }
         }
@@ -273,7 +279,7 @@
                 font-size: 16px;
             }
             @include mq-target(md) {
-                font-size: min(vwpc(14px),15px);
+                font-size: min(vwpc(14px),16px);
             }
         }
     }
@@ -282,10 +288,13 @@
 .article-header {
     // color: $color-white;
     background: #edebeb;
-    margin: 2px;
     box-shadow: inset 0px -1px 0px #808088, inset -1px 0px 0px #808088, inset 0px 0px 0px 1px #ffffff, -1px 0px 0px #808088, 1px 0px 0px #ffffff, -1px 1px 0px 0px #ffffff, 1px 1px 0px 0px #ffffff;
+    margin: 2px;
     font-weight: normal;
-    padding: 16px;
+    padding: min(vwsp(10px),14px);
+    @include mq-target(sm) {
+        padding: 16px;
+    }
     @include mq-target(md) {
         padding: 10px min(vwpc(6px),12px) 12px;
     }
@@ -297,8 +306,8 @@
         // font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
         word-break: break-all;
         text-align: left;
-        padding: 10px;
-        @include mq-target(sm) {
+        padding: min(vwsp(10px),14px);
+     @include mq-target(sm) {
         padding: 16px;
     }
         
@@ -381,10 +390,7 @@
 
 .single__entry p {
     margin-bottom: 20px;
-    // letter-spacing: 0.07em;
-    font-size: 14px;
-    // font-size: min(vwsp(14px), 16px);
-
+    font-size: min(vwsp(14px),16px);
     @include mq-target(sm) {
         font-size: 16px;
     }
@@ -395,27 +401,26 @@
 }
 
 .single__entry .t_h {
-    // font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
-    font-size: 12px;
-    margin-bottom: 4px;
+    font-size: min(vwsp(12px),14px);
     @include mq-target(sm) {
         font-size: 14px;
     }
     @include mq-target(md) {
-        font-size: min(vwpc(10px),12px);
+        font-size: min(vwpc(12px),14px);
     }
 }
 .single__entry .t_b {
     line-height: 1.6;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 500 !important;
+    font-size: min(vwsp(14px),16px);
+    margin-bottom: 8px;
     @include mq-target(sm) {
-        font-size: min(vwtb(15px),18px);
+        font-size: min(vwtb(16px),18px);
     }
     @include mq-target(md) {
         font-size: min(vwpc(14px),16px);
+        margin-bottom: min(vwpc(16px),20px);
     }
-    margin-bottom: min(vwpc(16px),20px);
 }
 
 .single__entry img {
@@ -483,8 +488,6 @@ html.notouch .single__entry a:hover {
     margin: auto 0
 }
 
-
-
 .toc {
 
     text-align: left;
@@ -524,7 +527,6 @@ html.notouch .single__entry a:hover {
 .toc__child--active {
     background-color: #dfdfdf;
 }
-
 
 .p-toc {
 
