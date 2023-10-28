@@ -4,11 +4,12 @@
   // margin-top: 2px;
   padding: 2px;
   @include mq-target(sm) {
-    padding: 3px;
+    // padding: 3px;
+    margin-bottom: 4px;
 
   }
   @include mq-target(md) {
-    padding: 4px;
+    // padding: 4px;
     margin-bottom: 2px;
     // margin-top: min(vwpc(2px),4px);
   }
@@ -67,10 +68,10 @@
 .c-pagePath {
   width: 100%;
   position: relative;
-  padding: 5px 6px 3px 14px;
-
+  padding: 3px 6px 3px 14px;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   @include mq-target(sm) {
-    padding: 4px 6px 4px 14px;
+    padding: 3px 6px 3px 14px;
   }
 
 
@@ -112,14 +113,14 @@
       }
 
       a {
-        font-family: $line-b;
         display: block;
         color: $color-white;
         font-size: min(vwsp(14px), 16px);
 
         @include mq-target(sm) {
-          // font-size: 12px;
-          font-size: min(vwpc(13px),14px);
+          font-size: 14px;
+        }
+        @include mq-target(md) {
         }
       }
     }
@@ -144,7 +145,7 @@
     min-height: 22px;
     margin: 0px 1px;
     box-shadow: inset 0px -1px 0px #808088, inset -1px 0px 0px #808088, inset 0px 0px 0px 1px #ffffff, -1px 0px 0px #808088, 1px 0px 0px #ffffff, -1px 1px 0px 0px #ffffff, 1px 1px 0px 0px #ffffff;
-    padding: 4px 6px 4px 12px;
+    padding: 6px 6px 5px 14px;
     // background: #edebeb;
     // padding: 3px 0 2px;
     // padding-left: 12px;
@@ -227,24 +228,23 @@
   // margin: auto;
   @include mq-target(md) {
     width: min(vwpc(680px), 740px);
+    width: min(vwpc(520px), 640px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
-    // margin: 0 2px;
+    margin: 0 2px;
   }
 
   &__inner {
-    font-family: $line-r, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    // font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
     padding: 10px 8px;
     @include mq-target(sm) {
-      font-family: $line-b, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
       padding: 12px;
     }
     @include mq-target(md) {
-      padding: 12px;
-      // padding: min(vwpc(10px),12px) min(vwpc(10px),12px);
+      // padding: 12px 12px 12px;
+      padding: min(vwpc(10px),12px) min(vwpc(10px),12px);
     }
 
     &:last-child {
@@ -263,40 +263,34 @@
     }
 
     a {
-      background: rgba($color: #0F0F0F, $alpha: 0.55);
       background: $color-bg;
-      // background: rgba($color: #444, $alpha: 0.25);
       @include flex($align:center, $justify:center);
-      // min-width: 220px;
-      // border-radius: 4px;
-      font-style: normal;
       border: 1px solid $color-border;
       padding: 0 16px;
       font-size: 14px;
       height: min(vwsp(32px),42px);
+      color: $color-white;
       
       @include mq-target(sm) {
-        height: 42px;
-        font-size: 16px;
+        height: 38px;
+        font-size: 14px;
       }
       @include mq-target(md) {
-        font-size: min(vwpc(12px),14px);
-        height: min(vwpc(36px),42px);
+        font-size: min(vwpc(13px),15px);
+        height: min(vwpc(36px),40px);
       }
-
-      i {
-        color: $color-white;
-        font-style: normal;
-      }
-
-
       &:hover {
         transition: opacity .2s ease;
         opacity: 0.75;
       }
 
+      i {
+        font-style: normal;
+      }
+
       svg {
-        color: $color-white;
+        position: relative;
+        // top: -1px;
         width: 20px;
         height: 20px;
         padding-left: 4px;
@@ -318,12 +312,12 @@
       @include flex($align:center);
       margin-right: auto;
       transform-origin: right top;
-      transform: scale(0.9);
+      // transform: scale(0.9);
 
       // margin-left: 12px;
       @include mq-target(sm) {
         // transform-origin: left top;
-        transform: scale(1);
+        // transform: scale(1);
         // margin-left: 14px;
 
       }
@@ -338,19 +332,9 @@
       }
 
       a {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        // font-family: $line-b;
-        // font-weight: normal;
-        // font-weight: bold;
-        // border-radius: 4px;
-        // padding: 2px 8px 1px;
-        // color: #999999;
-        color: #666;
-        // border: $color-border-waku;
-        // background-color: #e8e8e8;
+        font-weight: bold;
+        color: #999999;
         @include flex($align:center);
-        line-height: 100%;
-        // color: $color-key;
         font-size: 10px;
 
         @include mq-target(sm) {
@@ -359,7 +343,7 @@
         }
 
         @include mq-target(md) {
-          font-size: min(vwpc(10px),12px);
+          font-size: min(vwpc(10px),11px);
         }
 
         &:hover {
@@ -370,76 +354,18 @@
     }
   }
 
-  &__time {
-    // line-height: 1;
-    display: flex;
-    align-items: center;
-    color: #5686ab;
-    z-index: 1;
-    font-weight: 300;
-    transform-origin: left top;
-    transform: scale(0.9);
-
-
-    @include mq-target(sm) {
-      // transform-origin: left bottom;
-      // transform-origin: initial;
-      transform: scale(1);
-      // margin-top: min(vwpc(10px),12px);
-    }
-
-
-
-    & .i-clock {
-      position: relative;
-      // top: -1px;
-      width: 14px;
-      height: 14px;
-      color: #5686ab;
-      fill: #9e9e9e;
-      // display: none;
-
-      @include mq-target(sm) {
-        // display: block;
-        width: 16px;
-        height: 16px;
-      }
-    }
-
-    time {
-      position: relative;
-      top: 1px;
-      // font-weight: normal;
-
-      color: #5686ab;
-      // font-weight: bold;
-      padding-left: 4px;
-      vertical-align: bottom;
-      font-size: 10px;
-
-      @include mq-target(sm) {
-        font-size: 12px;
-      }
-
-      @include mq-target(md) {
-        font-size: min(vwpc(10px),12px);
-        // font-size: min(vwpc(10px),14px);
-      }
-    }
-  }
-
   &__ttl {
-    font-weight: 700;
     text-align: left;
-    line-height: 1.4;
+    // font-weight: 500;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
     color: $color-link;
-
+    font-weight: 500;
     // color: #1d4fb5;
     @include mq-target(sm) {
+      line-height: 1.4;
       -webkit-line-clamp: 3;
     }
 
@@ -509,8 +435,8 @@
     }
 
     &::after {
-      background: #e0e0e0;
-      // background: #ccc;
+      // background: #e0e0e0;
+      background: #ccc;
       position: absolute;
       content: "";
       height: 0.5px;

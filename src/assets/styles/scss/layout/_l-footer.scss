@@ -1,17 +1,17 @@
 @use "../foundation" as *;
 
 .l-footer {
-  
+  // max-width: 1120px;
   position: relative;  
   z-index: 3;
   @include mq-target(sm) {
-    margin: 0;
+    margin: 0 auto;
     // margin-top: 60px !important;
   }
   
   &__inner {
     background: linear-gradient(90deg, navy, #1084d0);
-    // background-color: #212121; 
+    background-color: #1b1b1b; 
     position: relative;
     padding: 20px 0 80px;
     @include mq-target(sm) {

@@ -10,9 +10,9 @@
 	--box-shadow: .8rem .8rem 1.2rem rgba(0, 0, 0, .05), -.8rem -.8rem 1.2rem #fff;
 	--box-shadow-hover: 1rem 1rem 1.5rem rgba(0, 0, 0, .08), -1rem -1rem 1.5rem #fff;
 	--box-shadow-inset: inset .8rem .8rem 1.2rem rgba(0, 0, 0, .05), inset -.8rem -.8rem 1.2rem #fff;
-	--box-shadow-dark: .8rem .8rem 1.2rem rgba(0, 0, 0, .1), -.8rem -.8rem 1.2rem rgba(#fff,.2);
-  }
-  
+	--box-shadow-dark: .8rem .8rem 1.2rem rgba(0, 0, 0, .1), -.8rem -.8rem 1.2rem rgba(#fff, .2);
+}
+
 
 html {
 	height: -webkit-fill-available;
@@ -26,40 +26,20 @@ body {
 	text-align: center;
 	min-height: -webkit-fill-available;
 	color: $color-font;
-	// font-family: Helvetica, $line-b, "BIZ UDGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
-	// font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-	// font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
 	// font-family: YakuHanJP,'-apple-system','BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
-	// font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",Meiryo,"メイリオ","MS PGothic",sans-serif;
+	// font-family: $line-r, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	;
 	font-size: 14px;
-	font-family: $line-r, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-feature-settings: "palt";
-	line-height: 1.4;
+	// line-height: 1.4;
 	letter-spacing: 0.04em;
 	-webkit-text-size-adjust: 100%;
 	// background: #fff;
-	background: #edebeb;
-	// background-color: rgba(255, 255, 255, 0.98);
-	// background-color: rgba(243, 243, 243, 1);
-	// background: $color-white;
-	// background-color: #03034D;
-	// background-image:  linear-gradient(#3838f3 1px, transparent 1px), linear-gradient(to right, #000047 1px, #03034D 1px);
-	// background-size: 5px 5px;
+	// background: #edebeb;
+	background: #ECF5FF;
 
-	// background-color: #03034D;
-    // background-image: linear-gradient(#03034D 1px, transparent 1px), linear-gradient(to right, #000047 1px, #03034D 1px);
-    // background-size: 5px 5px;
-	// background-image: repeating-linear-gradient(-45deg,transparent,transparent 2px,rgba(0, 0, 0, 0.015) 2px,rgba(0, 0, 0, 0.015) 4px);
-
-	&::before {
-		content: "";
-		@include absAll;
-	}
-
-	@include mq-target(sm) {
-		font-family: $line-b, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-	}
 }
 
 a {
@@ -71,31 +51,31 @@ img {
 	max-width: 100%;
 }
 
-@font-face {
-	/*フォントの名前*/
-	font-family: "line-r";
-	/*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
-	src: url("../../assets/font/LINESeedJP_OTF_Rg.woff") format("woff"),
-}
+// @font-face {
+// 	/*フォントの名前*/
+// 	font-family: "line-r";
+// 	/*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
+// 	src: url("../../assets/font/LINESeedJP_OTF_Rg.woff") format("woff"),
+// }
 
-@font-face {
-	/*フォントの名前*/
-	font-family: "line-b";
-	/*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
-	src: url("../../assets/font/LINESeedJP_OTF_Bd.woff") format("woff"),
-}
+// @font-face {
+// 	/*フォントの名前*/
+// 	font-family: "line-b";
+// 	/*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
+// 	src: url("../../assets/font/LINESeedJP_OTF_Bd.woff") format("woff"),
+// }
 
 
 .u-dp-pc {
 	display: none;
-	
+
 	@include mq-target(md) {
 		display: block;
 	}
 
 	&--sm {
 		display: none;
-		
+
 		@include mq-target(sm) {
 			display: block;
 		}
@@ -105,13 +85,14 @@ img {
 
 .u-dp-sp {
 	display: block;
-	
+
 	@include mq-target(md) {
 		display: none;
 	}
 
 	&--sm {
 		display: block;
+
 		@include mq-target(sm) {
 			display: none;
 		}
@@ -132,16 +113,6 @@ img {
 	filter: drop-shadow(2px 2px 2px #000);
 }
 
-
-// .mfp-bg,
-// .mfp-wrap {
-// 	z-index: 60007;
-// }
-
-
-
 .IEblock {
 	display: none;
 }
-
-

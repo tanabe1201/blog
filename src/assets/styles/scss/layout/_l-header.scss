@@ -16,32 +16,38 @@
   // box-shadow: 0 2px 2px -1px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.12);
   // margin-bottom: 2px !important;
 
-  // border-bottom: $color-border-waku;
   background: linear-gradient(90deg, navy, #1084d0);
-
+  // background: #1b1b1b;
+  
   // margin-bottom: 30px;
   // background-image: url(../../assets/images/hed_bg.jpg);
   // background-size: contain;
   // background: rgba($color: #000, $alpha: 0.65);
-
+  
   // &:hover a {
-  //   transition: all 0.2s ease-out;
+    //   transition: all 0.2s ease-out;
   //   opacity: 0.75;
   // }
   // max-width: 1060px;
   margin: auto;
+  padding: 6px;
   
   @include mq-target(sm) {
+    padding: min(vwtb(12px),16px) 8px;
     // width: 98vw;
+  }
+  @include mq-target(md) {
+    padding: 0;
   }
   
   &__inner {
+    // border: $color-border-waku;
+    max-width: 1140px;
     // padding: 0 24px 0 42px;
     // border-top: 2px solid silver;
-    max-width: 1060px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
     margin-top: 0 !important;
     position: relative;
@@ -82,6 +88,7 @@
   }
 
   &-nav {
+
     flex: 1 0 auto;
     display: flex;
     align-items: center;
@@ -112,7 +119,7 @@
     // align-items: center;
     @include mq-target(sm) {
       flex-wrap: initial;
-      height: 62px;
+      height: 56px;
     }
   }
 
@@ -205,7 +212,7 @@
     // left: 12px
     @include mq(sm) {
       
-      width: 180px;
+      // width: 180px;
       margin: auto;
     }
     @include mq-target(sm) {
@@ -238,7 +245,11 @@
         // width: 500px;
         width: auto;
         
-        img {
+      }
+      img {
+        // height: 42px;
+        height: min(vwsp(42px),48px);
+        @include mq-target(md) {
           height: 56px;
         }
       }
@@ -297,9 +308,12 @@
 .global-search {
   // max-width: 500px;
   width: 100%;
-  display: none;
-  @include mq-target(md) {
+  // display: none;
+  @include mq-target(sm) {
     display: block;
+    width: min(vwtb(280px),450px);
+  }
+  @include mq-target(md) {
     width: min(vwpc(420px),500px);
   } 
   // border-radius: 4px;
@@ -339,10 +353,10 @@
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
   line-height: 30px;
-  height: 30px;
+  height: 28px;
   @include mq-target(sm) {
-    width: 100%;
     border-radius: 18px;
+    width: 100%;
     line-height: 32px;
     height: 32px;
   }

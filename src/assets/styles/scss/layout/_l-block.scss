@@ -15,15 +15,15 @@
 
 .l-global {
   position: relative;
-  margin: 0 auto;
+  margin:  auto;
   max-width: 960px;
   background: #fff;
   // background: #edebeb;
   // background: #fff;
   
   @include mq-target(md) {
-    padding: 8px min(vwpc(4px),8px) 80px;
-    max-width: 1040px;
+    padding: min(vwpc(4px),8px) min(vwpc(4px),8px) 80px;
+    max-width: 1140px;
   }
 
 
@@ -51,7 +51,7 @@
   @include mq-target(sm) {
 
     margin: 0 auto;
-    padding: 0 86px 42px;
+    padding: 4px 86px 42px;
     // border: $color-border-waku;
     // width: 98vw;
     // clip-path: polygon(28px 0%, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px);
@@ -82,7 +82,7 @@
       display: flex;
       // justify-content: flex-end;
       // justify-content: space-between;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
     }
 
 
@@ -114,10 +114,10 @@
   @include mq-target(md) {
     display: block;
     // margin-left: 6px;
-    margin-left: min(vwpc(2px),4px);
+    // margin-left: min(vwpc(2px),4px);
     // width: min(vwpc(166px), 210px);
     // width: min(vwpc(194px), 250px);
-    width: min(vwpc(268px), 280px);
+    width: min(vwpc(214px), 240px);
     // flex: 1;
   }
   &--scroll {
@@ -131,7 +131,7 @@
     // flex: 1;
     // margin-left: 2px;
     @include mq-target(md) {
-      width: min(vwpc(200px),230px);
+      // width: min(vwpc(200px),220px);
     }
 
     // width: min(vwpc(50px),160px);

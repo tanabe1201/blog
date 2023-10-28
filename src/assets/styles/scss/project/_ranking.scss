@@ -119,7 +119,7 @@
     &-cont {
         &__img {
             // aspect-ratio: auto 290 / 90;
-            aspect-ratio: 16 / 9;
+            // aspect-ratio: 16 / 8;
             // aspect-ratio: auto 290 / 160;
         }
     }
@@ -132,7 +132,7 @@
 
             padding: 4px 0 0;
             padding: 8px 4px 8px 10px;
-            background: rgba($color: #000000, $alpha: 0.8);
+            background: rgba($color: #000000, $alpha: 0.85);
             // background: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.658) 20%,#000 80%);
             position: absolute;
             bottom: 0;
@@ -143,15 +143,14 @@
                 padding: 4px min(vwpc(4px),4px) 4px min(vwpc(6px),8px);
             }
             h3 {
-                font-family: $line-r;
-                font-weight: normal;
-                line-height: 1.4;
+                line-height: 1.3;
+                font-weight: 600;
                 // filter: drop-shadow(1px 1px 1px #1b1b1b);
                 color: $color-white;
                 -webkit-line-clamp: 3;
                 @include mq-target(md) {
                     // font-size: 12px;
-                    font-size: min(vwpc(12px),12px);
+                    font-size: min(vwpc(11px),12px);
                     // -webkit-line-clamp: 4;
                 }
             }
@@ -182,7 +181,7 @@
 .p-prof {
 
     &__inner {
-        padding: min(vwpc(4px),8px);
+        padding: min(vwpc(4px),6px);
         overflow: hidden;
         position: relative;
         background: url(../../assets/images/kumosora32.png);
@@ -197,7 +196,7 @@
         position: relative;
         // width: 40px;
         min-width: none;
-        height: 80px;
+        height: 40px;
         opacity: 0;
         // margin: -10px auto;
         z-index: 1;
@@ -212,10 +211,11 @@
             // margin-top: -46px;
             z-index: 2;
             position: relative;
-            padding: 8px 0 6px min(vwpc(8px),12px);
+            padding: 8px 2px 4px min(vwpc(4px),6px);
             width: 100%;
             text-align: left;
             // font-size: 14px;
+            font-weight: bold;
             font-size:  min(vwpc(10px),12px);
             color: $color-font;
             background-color: rgba($color: #fff, $alpha: 0.95);

@@ -5,9 +5,10 @@
     &__inner {
         background: #1b1b1b;
         position: relative;
+
         @include mq-target(sm) {
             background: #fff;
-            	// background-image: repeating-linear-gradient(-45deg,transparent,transparent 2px,rgba(0, 0, 0, 0.015) 2px,rgba(0, 0, 0, 0.015) 4px);
+            // background-image: repeating-linear-gradient(-45deg,transparent,transparent 2px,rgba(0, 0, 0, 0.015) 2px,rgba(0, 0, 0, 0.015) 4px);
 
             // background: #edebeb;
             // background: rgba($color: #edebeb, $alpha: 0.25);
@@ -21,62 +22,39 @@
     }
 
     &-tab {
-        &__list { justify-content: space-between; }
+        &__list {
+
+            justify-content: space-between;
+
+            &--category {
+                justify-content: initial;
+                gap: 8px;
+            }
+        }
 
         &__item {
             // margin: 0 8px 0 0;
             width: auto;
+
+            &:first-child {}
+
+            &--category {
+                background: $color-bg;
+                // background: #fff;
+                padding: 2px 8px 2px;
+                letter-spacing: 0;
+                filter: drop-shadow(0 0 1px #282727);
+                a {
+                    color: $color-white;
+                }
+            }
         }
-    }
-
-    &__plate {
-        display: block;
-        position: absolute;
-        right: 0;
-        overflow: hidden;
-        display: flex;
-        bottom: 8px;
-        // display: none;
-        display: none;
-        @include mq-target(md) {
-        bottom: -10px;
-    }
-    
-    li {
-        // border: $color-border-waku;
-        font-size: 12px;
-        @include mq-target(md) {
-            font-size: min(vwpc(10px),12px);
-        }
-        border-bottom: none;
-        position: relative;
-        font-weight: normal;
-        // top: -1px;
-        display: flex;
-        align-items: center;
-        // display: inline-block;
-        padding: 6px 6px;
-        color: #5686ab;
-        line-height: 1;
-
-        &:nth-child(2) {
-            // display: none;
-        }
-    }
-
-
     }
 
     &__item {
         position: relative;
 
-
-
-        &:first-child::before {
-
-        }
-
-
+        &:first-child::before {}
     }
 
     &__head {
@@ -84,7 +62,8 @@
         // position: absolute;
         // right: 0;
         // width: 120px;
-        width: min(vwsp(80px),180px);
+        width: min(vwsp(80px), 180px);
+
         // display: none;
         // width: min(vwsp(90px),150px);
         @include mq-target(sm) {
@@ -92,9 +71,9 @@
             width: min(vwtb(230px), 290px);
             // width: calc((200/716)*100%);
         }
-        
+
         @include mq-target(md) {
-            width: min(vwpc(160px), 180px);
+            width: min(vwpc(180px), 210px);
             // width: 200px;
         }
     }
@@ -118,75 +97,86 @@
         }
 
         @include mq-target(md) {
-            padding: 0 0 0 min(vwpc(12px),14px);
+            padding: 0 0 0 min(vwpc(12px), 14px);
             // margin-left: 12px;
         }
 
     }
 
-    &__btn {
-        // padding: 4px;
-    }
-
     &-cont {
 
-        &__tag {
-            @include mq-target(sm) {
-                margin-left: 12px;
+        &__list {
+            &--desc {
+                position: relative;
+                z-index: 3;
+                @include flex($align:center, $wrap:wrap);
+
+                li {
+                    position: relative;
+                    @include flex($align:center, $wrap:wrap);
+                    color: #5686ab;
+                    transform-origin: left top;
+                    transform: scale(0.9);
+
+                    @include mq-target(sm) {
+                        transform: scale(1);
+                    }
+
+                    &:nth-of-type(2) {
+                        padding-left: 8px;
+                        color: #999999;
+                    }
+
+                    svg {
+                        position: relative;
+                        top: -1.5px;
+                        padding-right: 3px;
+                        width: 14px;
+                        height: 14px;
+
+                        @include mq-target(sm) {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+
+                    p {
+                        font-size: 10px;
+                        @include mq-target(sm) { font-size: 12px; }
+                        @include mq-target(md) { font-size: min(vwpc(11px), 12px); }
+                        a { color: #5686ab; }
+                    }
+                }
             }
         }
 
         &__img {
             overflow: hidden;
             outline: 0;
-            aspect-ratio: auto 260 / 240;
+            // aspect-ratio: auto 260 / 240;
+            aspect-ratio: 16 / 15;
             border-radius: 6px;
             filter: drop-shadow(0 0 1px #282727);
+
             @include mq-target(sm) {
                 border-radius: 0px;
-                outline: 2px solid #e0e0e0;
+                outline: 1px solid #e0e0e0;
                 aspect-ratio: 16 / 9;
 
             }
         }
 
-        &__head {}
-
-        &__mid {
-            margin-top: 2px;
-            margin-bottom: auto;
-            @include mq-target(sm) {
-                margin-top: 4px;
-            }
-            @include mq-target(md) {
-                // margin-top: 6px;
-                // margin-top: min(vwpc(6px),8px);
-            }
-        }
-
-        &__foot {
-            // padding-top: 8px
-            @include flex($align:center);
-
-            @include mq-target(sm) {}
-        }
-
-        &__tag {
-            padding-right: 12px;
-        }
-
         &__ttl {
+            // margin-top: 3px;
             flex: 1;
-            // font-weight: normal;
-            line-height: 1.4;
-            letter-spacing: 0.04em;
+            // letter-spacing: 0.04em;
             font-size: min(vwsp(13px), 18px);
             @include lineclamp(3);
             color: $color-white;
+            
             @include mq-target(sm) {
                 line-height: 1.4;
-                // font-family: $line-b;
-                // font-weight: bold;
+                font-weight: bold;
                 @include lineclamp(4);
                 font-size: min(vwtb(16px), 18px);
                 color: $color-link;
@@ -194,12 +184,9 @@
             }
 
             @include mq-target(md) {
-                line-height: 1.3;
-                font-size: min(vwpc(16px), 17px);
+                // line-height: 1.3;
+                font-size: min(vwpc(15px), 18px);
                 // @include lineclamp(3);
-            }
-            
-            @include mq-target(lg) {
             }
         }
 
