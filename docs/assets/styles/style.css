@@ -299,7 +299,7 @@ img {
 .c-pagePath {
   width: 100%;
   position: relative;
-  padding: 3px 6px 3px 14px;
+  padding: 4px 6px 4px 14px;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 @media screen and (min-width: 768px) {
@@ -699,7 +699,7 @@ img {
   background: -webkit-gradient(linear, left top, right top, from(navy), to(#1084d0));
   background: linear-gradient(90deg, navy, #1084d0);
   margin: auto;
-  padding: 6px;
+  padding: 6px 4px;
 }
 @media screen and (min-width: 768px) {
   .l-header {
@@ -740,9 +740,6 @@ img {
   }
 }
 .l-header-nav {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,6 +751,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .l-header-nav {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
     -ms-flex-wrap: initial;
     flex-wrap: initial;
   }
@@ -895,7 +895,12 @@ img {
   }
 }
 .l-header__logo a img {
-  height: min(11.2vw, 48px);
+  height: 48px;
+}
+@media screen and (min-width: 768px) {
+  .l-header__logo a img {
+    height: min(11.2vw, 48px);
+  }
 }
 @media screen and (min-width: 960px) {
   .l-header__logo a img {
@@ -1976,10 +1981,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .p-news__foot {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     padding: 0 0 0 12px;
   }
 }

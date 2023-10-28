@@ -84,14 +84,14 @@
         // z-index: 2;
         text-align: left;
         display: flex;
+        // flex-direction: column-reverse;
         flex-direction: column;
         justify-content: space-between;
         flex: 1;
         padding: 0 0 0 10px;
-
+        
         // margin-left: 10px;
         @include mq-target(sm) {
-            flex-direction: column;
             padding: 0 0 0 12px;
             // margin-left: 16px;
         }
