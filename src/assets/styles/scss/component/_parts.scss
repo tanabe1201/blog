@@ -72,7 +72,8 @@
   min-height: 28px;
   position: relative;
   padding: 3px 6px 3px 14px;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
   @include mq-target(sm) {
     padding: 6px 6px 6px 14px;
   }
@@ -239,11 +240,12 @@
     width: min(vwpc(540px), 620px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
-    margin: 0 2px;
+    margin: 0 3px;
   }
 
   &__inner {
-    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
     padding: 10px 8px;
@@ -453,6 +455,7 @@
       left: 0;
       // width: calc(100% - 30px);
       bottom: -10px;
+      // bottom: 0;
       @include mq-target(lg) {
       }
     }
