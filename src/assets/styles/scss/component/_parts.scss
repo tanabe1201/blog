@@ -72,8 +72,8 @@
   min-height: min(vwsp(24px),28px);
   position: relative;
   padding: 3px 6px 3px 14px;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+  // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
   @include mq-target(sm) {
     min-height: 28px;
     padding: 6px 6px 6px 14px;
@@ -241,12 +241,12 @@
     width: min(vwpc(538px), 620px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
-    margin: 0 3px;
+    margin: 0 2px;
   }
 
   &__inner {
-    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+    // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
     padding: 10px 8px;
@@ -255,7 +255,7 @@
     }
     @include mq-target(md) {
       // padding: 12px 12px 12px;
-      padding: min(vwpc(10px),12px) min(vwpc(10px),12px);
+      padding: min(vwpc(8px),10px) min(vwpc(8px),10px);
     }
 
     &:last-child {
@@ -431,7 +431,7 @@
 .c-card {
   &__item {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     @include mq-target(lg) {
     }
 
@@ -455,7 +455,7 @@
       width: 100%;
       left: 0;
       // width: calc(100% - 30px);
-      bottom: -10px;
+      bottom: -8px;
       // bottom: 0;
       @include mq-target(lg) {
       }

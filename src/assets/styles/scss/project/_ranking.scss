@@ -150,7 +150,7 @@
                 -webkit-line-clamp: 4;
                 @include mq-target(md) {
                     // font-size: 12px;
-                    font-size: min(vwpc(11px),13px);
+                    font-size: min(vwpc(11px),12px);
                     // -webkit-line-clamp: 4;
                 }
             }

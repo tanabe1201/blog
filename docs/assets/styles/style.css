@@ -158,7 +158,7 @@ body {
   text-align: center;
   min-height: -webkit-fill-available;
   color: #222;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
   font-size: 14px;
   font-weight: 400;
   -webkit-font-feature-settings: "palt";
@@ -302,7 +302,7 @@ img {
   min-height: min(6.4vw, 28px);
   position: relative;
   padding: 3px 6px 3px 14px;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .c-pagePath {
@@ -460,11 +460,11 @@ img {
   .c-sec {
     width: min(70.8333333333vw, 740px);
     width: min(56.0416666667vw, 620px);
-    margin: 0 3px;
+    margin: 0 2px;
   }
 }
 .c-sec__inner {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
   overflow: hidden;
   position: relative;
   padding: 10px 8px;
@@ -476,7 +476,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .c-sec__inner {
-    padding: min(1.0416666667vw, 12px) min(1.0416666667vw, 12px);
+    padding: min(0.8333333333vw, 10px) min(0.8333333333vw, 10px);
   }
 }
 .c-sec__inner:last-child {
@@ -663,7 +663,7 @@ img {
 
 .c-card__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .c-card__item:hover a {
   -webkit-transition: all 0.2s ease-out;
@@ -678,7 +678,7 @@ img {
   left: 0;
   width: 100%;
   left: 0;
-  bottom: -10px;
+  bottom: -8px;
 }
 .c-card__item:last-child {
   margin-bottom: 0;
@@ -1430,7 +1430,7 @@ img {
 @media screen and (min-width: 960px) {
   .l-global {
     padding: min(0.4166666667vw, 8px) min(0.4166666667vw, 8px) 80px;
-    max-width: 1140px;
+    max-width: 1130px;
   }
 }
 
@@ -1485,7 +1485,7 @@ img {
 @media screen and (min-width: 960px) {
   .l-side {
     display: block;
-    width: min(21.25vw, 249px);
+    width: min(21.25vw, 245px);
   }
 }
 .l-side--scroll {
@@ -1939,7 +1939,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .p-news__inner {
-    background: #fff;
+    background: #edebeb;
   }
 }
 .p-news-tab__list {
@@ -1987,7 +1987,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news__head {
-    width: min(18.75vw, 200px);
+    width: min(18.75vw, 220px);
   }
 }
 .p-news__foot {
@@ -2022,8 +2022,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news__foot {
-    top: -2px;
-    padding: 0 0 0 min(1.25vw, 14px);
+    padding: 0 0 0 min(1.0416666667vw, 12px);
   }
 }
 .p-news-cont__list--desc {
@@ -2100,13 +2099,11 @@ img {
   outline: 0;
   aspect-ratio: 16/14;
   border-radius: 6px;
-  -webkit-filter: drop-shadow(0 0 1px #282727);
-  filter: drop-shadow(0 0 1px #282727);
 }
 @media screen and (min-width: 768px) {
   .p-news-cont__img {
     border-radius: 0px;
-    outline: 1px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     aspect-ratio: 16/9;
   }
 }
@@ -2125,8 +2122,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .p-news-cont__ttl {
-    line-height: 1.3;
-    margin-top: 2px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
@@ -2298,7 +2293,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-pickup__img {
-    aspect-ratio: 16/12;
+    aspect-ratio: 16/13;
   }
 }
 @media screen and (min-width: 960px) {
@@ -2529,7 +2524,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-rank-foot__link h3 {
-    font-size: min(1.1458333333vw, 13px);
+    font-size: min(1.1458333333vw, 12px);
   }
 }
 .p-rank-foot__data {
