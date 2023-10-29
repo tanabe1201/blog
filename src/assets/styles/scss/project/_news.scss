@@ -68,7 +68,7 @@
         // position: absolute;
         // right: 0;
         // width: 120px;
-        width: min(vwsp(80px), 180px);
+        width: min(vwsp(80px), 120px);
 
         // display: none;
         // width: min(vwsp(90px),150px);
@@ -160,7 +160,7 @@
 
                     p {
                         letter-spacing: 0;
-                        font-size: 10px;
+                        font-size: min(vwsp(10px),12px);
                         @include mq-target(sm) { font-size: 12px; }
                         @include mq-target(md) { font-size: min(vwpc(11px), 12px); }
                         a { color: #5686ab; }

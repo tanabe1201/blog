@@ -299,13 +299,14 @@ img {
 
 .c-pagePath {
   width: 100%;
-  min-height: 28px;
+  min-height: min(6.4vw, 28px);
   position: relative;
   padding: 3px 6px 3px 14px;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .c-pagePath {
+    min-height: 28px;
     padding: 6px 6px 6px 14px;
   }
 }
@@ -1976,7 +1977,7 @@ img {
   position: relative;
 }
 .p-news__head {
-  width: min(21.3333333333vw, 180px);
+  width: min(21.3333333333vw, 120px);
 }
 @media screen and (min-width: 768px) {
   .p-news__head {
@@ -2079,7 +2080,7 @@ img {
 }
 .p-news-cont__list--desc li p {
   letter-spacing: 0;
-  font-size: 10px;
+  font-size: min(2.6666666667vw, 12px);
 }
 @media screen and (min-width: 768px) {
   .p-news-cont__list--desc li p {
@@ -2522,7 +2523,7 @@ img {
   }
 }
 .p-rank-foot__link h3 {
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   -webkit-line-clamp: 4;
 }
