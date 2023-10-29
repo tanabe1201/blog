@@ -158,7 +158,7 @@ body {
   text-align: center;
   min-height: -webkit-fill-available;
   color: #222;
-  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 14px;
   font-weight: 400;
   -webkit-font-feature-settings: "palt";
@@ -302,7 +302,7 @@ img {
   min-height: 28px;
   position: relative;
   padding: 3px 6px 3px 14px;
-  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .c-pagePath {
@@ -311,7 +311,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .c-pagePath {
-    padding: 4px 6px 4px 14px;
+    padding: 3px 6px 3px 14px;
   }
 }
 .c-pagePath__inner {
@@ -458,12 +458,12 @@ img {
 @media screen and (min-width: 960px) {
   .c-sec {
     width: min(70.8333333333vw, 740px);
-    width: min(56.25vw, 620px);
+    width: min(56.0416666667vw, 620px);
     margin: 0 3px;
   }
 }
 .c-sec__inner {
-  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   overflow: hidden;
   position: relative;
   padding: 10px 8px;
@@ -1969,7 +1969,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news-tab__item--category a {
-    font-size: min(1.1458333333vw, 12px);
+    font-size: min(1.1458333333vw, 11px);
   }
 }
 .p-news__item {
@@ -2053,7 +2053,6 @@ img {
   transform-origin: left bottom;
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
-  line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .p-news-cont__list--desc li {
@@ -2067,6 +2066,7 @@ img {
 }
 .p-news-cont__list--desc li svg {
   position: relative;
+  top: -1px;
   padding-right: 2px;
   width: 14px;
   height: 14px;
@@ -2088,7 +2088,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news-cont__list--desc li p {
-    font-size: min(1.1458333333vw, 13px);
+    font-size: min(1.1458333333vw, 12px);
   }
 }
 .p-news-cont__list--desc li p a {
@@ -2141,7 +2141,7 @@ img {
   }
 }
 .p-news-cont__txt {
-  line-height: 1.3;
+  line-height: 1.2;
   font-size: 12px;
   color: #666;
   padding-top: 4px;
@@ -2297,7 +2297,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-pickup__img {
-    aspect-ratio: 16/13;
+    aspect-ratio: 16/12;
   }
 }
 @media screen and (min-width: 960px) {
@@ -2522,13 +2522,13 @@ img {
   }
 }
 .p-rank-foot__link h3 {
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   -webkit-line-clamp: 4;
 }
 @media screen and (min-width: 960px) {
   .p-rank-foot__link h3 {
-    font-size: min(1.1458333333vw, 12px);
+    font-size: min(1.1458333333vw, 13px);
   }
 }
 .p-rank-foot__data {
