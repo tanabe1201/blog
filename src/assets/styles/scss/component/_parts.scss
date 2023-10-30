@@ -32,6 +32,7 @@
 .i-btn {
   display: block;
   min-height: 14px;
+  font-size: 11px;
   padding: 0 10px;
   font-weight: bold;
   background: silver;
@@ -73,7 +74,7 @@
   position: relative;
   padding: 3px 6px 3px 14px;
   // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+  // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
   @include mq-target(sm) {
     min-height: 28px;
     padding: 6px 6px 6px 14px;
@@ -93,7 +94,7 @@
     @include flex($align:center);
 
     li {
-      line-height: 1;
+      // line-height: 1;
       color: $color-key;
       white-space: nowrap;
       position: relative;
@@ -238,14 +239,14 @@
   // margin: auto;
   @include mq-target(md) {
     width: min(vwpc(680px), 740px);
-    width: min(vwpc(538px), 638px);
+    width: min(vwpc(538px), 640px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
-    margin: 0 3px;
+    margin: 0 2px;
   }
 
   &__inner {
-    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
@@ -288,7 +289,7 @@
         font-size: min(vwtb(14px),16px);
       }
       @include mq-target(md) {
-        font-size: min(vwpc(13px),13px);
+        font-size: min(vwpc(13px),15px);
         height: min(vwpc(36px),40px);
       }
       &:hover {

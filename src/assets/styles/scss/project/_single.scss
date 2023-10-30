@@ -418,7 +418,7 @@
         font-size: min(vwtb(16px),18px);
     }
     @include mq-target(md) {
-        font-size: min(vwpc(14px),15px);
+        font-size: min(vwpc(14px),16px);
         margin-bottom: min(vwpc(16px),20px);
     }
 }
