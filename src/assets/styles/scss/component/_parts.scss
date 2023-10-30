@@ -238,15 +238,15 @@
   // margin: auto;
   @include mq-target(md) {
     width: min(vwpc(680px), 740px);
-    width: min(vwpc(538px), 620px);
+    width: min(vwpc(538px), 638px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
-    margin: 0 2px;
+    margin: 0 3px;
   }
 
   &__inner {
-    // font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
     padding: 10px 8px;
@@ -255,7 +255,7 @@
     }
     @include mq-target(md) {
       // padding: 12px 12px 12px;
-      padding: min(vwpc(8px),10px) min(vwpc(8px),10px);
+      padding: min(vwpc(10px),12px) min(vwpc(10px),12px);
     }
 
     &:last-child {
