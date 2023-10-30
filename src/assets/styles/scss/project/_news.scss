@@ -49,7 +49,7 @@
                     font-size: 12px;
                     color: $color-white;
                     @include mq-target(md) {
-                        font-size: min(vwpc(11px),12px);
+                        font-size: min(vwpc(11px),11px);
                     }
                 }
             }
@@ -160,7 +160,7 @@
                     }
 
                     p {
-                          font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+                        font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
                         letter-spacing: 0;
                         // font-weight: 700;
                         font-size: min(vwsp(10px),12px);

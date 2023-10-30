@@ -160,7 +160,7 @@ body {
   color: #222;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-font-feature-settings: "palt";
   font-feature-settings: "palt";
   letter-spacing: 0.04em;
@@ -1969,7 +1969,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news-tab__item--category a {
-    font-size: min(1.1458333333vw, 12px);
+    font-size: min(1.1458333333vw, 11px);
   }
 }
 .p-news__item {
@@ -2883,7 +2883,7 @@ img {
 
 .single__entry blockquote {
   position: relative;
-  padding: 1em;
+  padding: 10px;
   margin: 0 0 1em 0;
   background: #f9f9f9;
   color: #333;
@@ -2956,6 +2956,9 @@ img {
 @media screen and (min-width: 768px) {
   .single__entry .t_h {
     font-size: 14px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
   }
 }
 @media screen and (min-width: 960px) {
@@ -2965,7 +2968,7 @@ img {
 }
 
 .single__entry .t_b {
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: min(3.7333333333vw, 16px);
   margin-bottom: 8px;
 }

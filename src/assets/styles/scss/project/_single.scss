@@ -319,7 +319,7 @@
 
 .single__entry blockquote {
     position: relative;
-    padding: 1em;
+    padding: 10px;
     margin: 0 0 1em 0;
     background: #f9f9f9;
     color: #333;
@@ -404,13 +404,16 @@
     font-size: min(vwsp(12px),14px);
     @include mq-target(sm) {
         font-size: 14px;
+        padding-bottom: 2px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
     }
     @include mq-target(md) {
         font-size: min(vwpc(12px),14px);
     }
 }
 .single__entry .t_b {
-    line-height: 1.6;
+    line-height: 1.5;
     // font-weight: 500 !important;
     font-size: min(vwsp(14px),16px);
     margin-bottom: 8px;
