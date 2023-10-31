@@ -432,7 +432,7 @@
 .c-card {
   &__item {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     @include mq-target(lg) {
     }
 
@@ -456,7 +456,7 @@
       width: 100%;
       left: 0;
       // width: calc(100% - 30px);
-      bottom: -8px;
+      bottom: -10px;
       // bottom: 0;
       @include mq-target(lg) {
       }
