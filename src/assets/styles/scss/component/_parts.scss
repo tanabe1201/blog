@@ -129,7 +129,7 @@
         display: block;
         font-weight: 700;
         color: $color-white;
-        font-size: min(vwsp(14px), 16px);
+        font-size: min(vwsp(14px), 18px);
 
         @include mq-target(sm) {
           font-size: min(vwtb(54px), 16px);
@@ -484,5 +484,70 @@
   &__link {
     @include absAll;
     z-index: 3;
+  }
+}
+
+
+
+.c-rank {
+  &__item {
+    counter-increment: rank;
+
+    &--1 {
+      &:nth-of-type(1) {
+        & .c-rank__number::before {
+            background-color: #f7d305;
+            background-image: linear-gradient(to top left,#f7bf05,#fcea7f,#fcd700,#f7d305,#eaca12,#ac9303,#f7d305,#fcea7f,#f7e705,#eaca12,#f7bf05);
+        }
+    }
+    &:nth-of-type(2) {
+        & .c-rank__number::before {
+            background-color: #a5a5a5;
+            background-image: linear-gradient(to top left,#a5a5a5,#e5e5e5,#ae9c9c,#a5a5a5,#a5a5a5,#7f7f7f,#a5a5a5,#e5e5e5,#a5a5a5,#a5a5a5,#a5a5a5);
+        }
+    }
+    &:nth-of-type(3) {
+        & .c-rank__number::before {
+            background-color: #c47222;
+            background-image: linear-gradient(to top left,#c46522,#e8b27d,#d07217,#c47222,#b9722e,#834c17,#c47222,#e8b27d,#c48022,#b9722e,#c46522);
+        }
+    }
+    }
+
+    &--2 { counter-increment: rank 4; }
+    &--3 { counter-increment: rank 7; }
+
+
+
+    & .c-rank__number {
+      &::before {
+        content: counter(rank);
+        display: block;
+        background: #666;
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+        font-family: arial,helvetica,sans-serif;
+        pointer-events: none;
+        position: absolute;
+        text-align: center;
+        z-index: 100;
+        background-image: repeating-linear-gradient(-45deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.1) 6px,transparent 0,transparent 12px);
+        left: calc(0.1em + 1px);
+        top: 0;
+        line-height: 2.5;
+        font-size: min(vwpc(12px),14px);
+        color: $color-white;
+        width: 2em;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+        font-size: 10px;
+
+        @include mq-target(sm) {
+          top: 1px;
+          left: calc(0.2em + 2px);
+          font-size: min(vwpc(12px),14px);
+        }
+    }
+    }
   }
 }
