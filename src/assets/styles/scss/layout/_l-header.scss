@@ -33,7 +33,7 @@
   padding: 6px 4px;
   
   @include mq-target(sm) {
-    padding: min(vwtb(12px),14px) 6px min(vwtb(10px),12px);
+    padding: min(vwtb(8px),10px) 6px min(vwtb(8px),10px);
     // width: 98vw;
   }
   @include mq-target(md) {
@@ -196,9 +196,13 @@
         }
 
         span {
-          font-size: 10px;
           display: block;
-          padding-top: 4px;
+          font-size: 11px;
+          padding-top: 6px;
+          @include mq-target(md) {
+            padding-top: 4px;
+            font-size: 10px;
+          }
         }
       }
     }
@@ -254,7 +258,7 @@
           height: min(vwsp(42px),48px);
         }
         @include mq-target(md) {
-          height: 56px;
+          height: 58px;
         }
       }
       span {

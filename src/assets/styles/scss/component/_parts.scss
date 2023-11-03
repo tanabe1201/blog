@@ -33,10 +33,14 @@
   display: block;
   min-height: 14px;
   font-size: 11px;
-  padding: 0 10px;
+  padding: 1px 10px;
   font-weight: bold;
   background: silver;
   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  &:hover {
+    transition: all .1s ease-in;
+    box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
 }
 
 .i-next {
@@ -77,7 +81,7 @@
   // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
   @include mq-target(sm) {
     min-height: 28px;
-    padding: 6px 6px 6px 14px;
+    padding: 4px 6px 4px 14px;
   }
   @include mq-target(md) {
     padding: 3px 6px 3px 14px;
@@ -123,15 +127,15 @@
 
       a {
         display: block;
-        font-weight: 600;
+        font-weight: 700;
         color: $color-white;
         font-size: min(vwsp(14px), 16px);
 
         @include mq-target(sm) {
-          font-size: min(vwtb(16px), 18px);
+          font-size: min(vwtb(54px), 16px);
         }
         @include mq-target(md) {
-          font-size: 15px;
+          font-size: min(vwpc(13px),15px);
         }
       }
     }
@@ -239,7 +243,7 @@
   // margin: auto;
   @include mq-target(md) {
     width: min(vwpc(680px), 740px);
-    width: min(vwpc(538px), 640px);
+    width: min(vwpc(540px), 640px);
     // flex: 1;
     // margin: 0 min(vwpc(2px),4px);
     margin: 0 2px;
@@ -250,7 +254,7 @@
     // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
-    padding: 10px 8px;
+    padding: 10px;
     @include mq-target(sm) {
       padding: 12px;
     }
@@ -280,17 +284,18 @@
       @include flex($align:center, $justify:center);
       border: 1px solid $color-border;
       padding: 0 16px;
-      font-size: min(vwsp(12px),16px);
+      font-size: min(vwsp(13px),16px);
       height: min(vwsp(34px),42px);
       color: $color-white;
       
       @include mq-target(sm) {
         height: 42px;
-        font-size: min(vwtb(14px),16px);
+        font-size: 16px;
+        // font-size: min(vwtb(15px),16px);
       }
       @include mq-target(md) {
         font-size: min(vwpc(13px),15px);
-        height: min(vwpc(36px),40px);
+        height: min(vwpc(34px),40px);
       }
       &:hover {
         transition: opacity .2s ease;

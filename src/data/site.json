@@ -1,11 +1,11 @@
 {
   "siteInfo": {
-    "name": "ポートフォリオ",
+    "name": "アキバコ",
     "siteUrl": "サイトのドメイン"
   },
   "pages": {
     "home": {
-      "name": "ホーム - ",
+      "name": "トップ - ",
       "description": "説明文",
       "filePath": "./"
     },
@@ -14,13 +14,13 @@
       "description": "説明文",
       "filePath": "../"
     },
-    "gallery": {
-      "name": "ギャラリー - ",
+    "about": {
+      "name": "当サイトについて - ",
       "description": "説明文",
       "filePath": "../"
     },
-    "system": {
-      "name": "システムについて - ",
+    "single": {
+      "name": "記事詳細 - ",
       "description": "説明文",
       "filePath": "../"
     },

@@ -1,7 +1,250 @@
-<% let pageId = 'system'; %>
-<% let filePath = jsonData.pages[pageId].filePath %>
-<%- include('./../_inc/_header', { pageId: pageId }) %>
-<div class="section__bg"></div>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事詳細 - アキバコ</title>
+    <meta name="description" content="説明文">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@s_tanabe">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <link rel="icon" href="../assets/images/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="../assets/styles/vendors/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../assets/styles/vendors/98.css" rel="stylesheet">
+    <link href="../assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/styles/style.min.css" rel="stylesheet">
+</head>
+
+
+<header class="l-header">
+
+    
+    <div class="l-header__inner">
+<!-- 
+        <a href="/" class="" style="position: relative;">
+            <img src="./assets/images/top.jpg" alt="">
+        </a> -->
+
+        <div class="l-header-nav">
+            <div class="l-header__logo">
+                <a href="/">
+                    <!-- <span>
+                        アキバコ&nbsp;アーカイブ
+                    </span> -->
+                    <img src="../assets/images/logos.png" alt="速報">
+                </a>
+            </div>
+            <div class="global-search">
+                <div class="search-box">
+                    <form class="search-form" action="/search/contents">
+                        <input type="hidden" name="content" value="">
+                        <div class="suggestbox-container">
+                            <input id="search-word" type="search" class="awesomplete search-area" name="keyword" placeholder="検索ワード">
+                            <button type="submit" class="btn btn-transparent btn-action-global-search"
+                                title="検索する">
+                                <svg>
+                                    <use xlink:href="../assets/images/sprite.svg#tabler-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <ul class="l-header-menu__list">
+            <li class="l-header-menu__item">
+                <a href="/about">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#i-prof"></use>
+                    </svg>
+                    <span>アキバコ</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
+                    </svg>
+                    <span>お問合せ</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                    </svg>
+                    <span>RSS</span>
+                </a>
+            </li>
+            <li class="l-header-menu__item">
+                <a href="">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#ri-twitter-x-fill"></use>
+                    </svg>
+                    <span>エックス</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- <div class="l-header__top">
+            <p class="l-header__txt">二次元なら何でもお任せ！みんなで作る二次元情報サイト！</p>
+            <ul class="l-header-menu__list">
+                <li class="l-header-menu__item">
+                    <a href="/gallery">
+                        <svg>
+                            <use xlink:href="../assets/images/sprite.svg#tabler-home"></use>
+                        </svg>
+                        <span>アキバコ</span>
+                    </a>
+                </li>
+                <li class="l-header-menu__item">
+                    <a href="">
+                        <svg>
+                            <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
+                        </svg>
+                        <span>お問合せ</span>
+                    </a>
+                </li>
+                <li class="l-header-menu__item">
+                    <a href="">
+                        <svg>
+                            <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                        </svg>
+                        <span>RSS</span>
+                    </a>
+                </li>
+                <li class="l-header-menu__item">
+                    <a href="">
+                        <svg>
+                            <use xlink:href="../assets/images/sprite.svg#ri-twitter-x-fill"></use>
+                        </svg>
+                        <span>エックス</span>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+        <!-- <div class="l-header__container">
+
+            <div class="l-header__right">
+                <div class="l-header__logo">
+                    <a href="/">
+                        <span>
+                            アキバコ&nbsp;アーカイブ
+                        </span>
+                        <img src="../assets/images/logos.png" alt="ゴースト速報">
+                    </a>
+                </div>
+            </div>
+            <div class="l-header__left">
+
+            </div>
+        </div> -->
+
+
+    </div>
+</header>
+
+
+
+<div class="l-global">
+
+
+<nav class="l-drawer__content js-draw--content">
+    
+    <div class="l-drawer__wrap">
+        
+        <ul class="l-drawer__list l-drawer__list--menu">
+        <li class="l-drawer__item">
+            <a href="/blog/gallery" class="js-draw--trigger">
+            <span>アキバコについて</span>
+            </a>
+        </li>
+        <li class="l-drawer__item">
+            <a href="#about" class="js-draw--trigger">
+            <span>お問合せフォーム</span>
+            </a>
+        </li>
+        <li class="l-drawer__item">
+            <a href="#concept" class="js-draw--trigger">
+            <span>X（旧ツイッター）</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+
+<body id="top">
+    <link rel="stylesheet" href="../assets/images/sprite.svg">
+    <div class="l-menu">
+        <div class="l-menu__inner">
+        <ul class="l-menu__list">
+            <li class="l-menu__item">
+                <a href="/blog" class="l-menu__link">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#tabler-home"></use>
+                    </svg>
+                    <span>ホーム</span>
+                </a>
+            </li>
+
+            <li class="l-menu__item">
+                <a href="/blog/single" class="l-menu__link">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#i-news"></use>
+                    </svg>
+                    <span>人気記事</span>
+                </a>
+            </li>
+            <li class="l-menu__item">
+                <a href="/blog/about" class="l-menu__link">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#i-prof"></use>
+                    </svg>
+                    <span>特集記事</span>
+                </a>
+            </li>
+            <li class="l-menu__item js-draw--trigger">
+                <div class="l-menu__link">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#tabler-menu-2"></use>
+                    </svg>
+                    <span>その他</span>
+                </div>
+            </li>
+            <li class="l-menu__item">
+                <a href="#top" class="scroll l-menu__link">
+                    <svg>
+                        <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-upward"></use>
+                    </svg>
+                    <span>一番上へ</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="section__bg"></div>
+    <div class="IEblock">
+        <div class="comment_block">
+            <p>このブラウザは閲覧非対応です。</p>
+        </div>
+    </div>
 <main class="l-main">
 
 
@@ -527,8 +770,7 @@
                                         【動画】陽キャ女さん、パンツ履いたまま路上でおしっこ
                                     </h2>
                                 </div>
-                                <ul class="article-meta"
-                                    style="display: flex; gap: 4px; font-size: 11px;">
+                                <ul class="article-meta">
                                     <li><abbr class="updated" title="2023-10-07T18:00:48+09:00">2023年10月07日 18:00</abbr>
                                         | </li>
                                     <li><a href="http://majikichi.com/archives/10691046.html#comments"
@@ -536,8 +778,6 @@
                                     <li>カテゴリ：
                                         <a href="http://majikichi.com/archives/cat_187099.html"
                                             title="カテゴリアーカイブへ">エンタメ</a> |
-                                        <a href="http://b.hatena.ne.jp/entry/add/http://majikichi.com/archives/10691046.html"
-                                            target="_blank" title="はてなブックマークに追加">はてなブックマークに追加</a>
                                         |
                                         <a href="http://twitter.com/share" title="平均寿命　既婚男性82歳　未婚男性67歳"
                                             id="twSBC10691046" class="twSButton" target="_blank">ツイート</a>
@@ -551,7 +791,7 @@
                                 
                                 <div class="t_h" >1: <span style="color: green; font-weight: bold;">それでも動く名無し</span> :<span style="color: gray;"> 2023/10/22(日) 15:41:18.73 ID:c1QPcD6Nd</span></div>
                                 <div class="t_b" style="padding-left:10px;"> <a href="https://video.twimg.com/ext_tw_video/1714751757509861376/pu/vid/avc1/1270x720/etnCpUs4ZwxdM6Qq.mp4?tag=12" target="_blank">https://video.twimg.com/ext_tw_video/1714751757509861376/pu/vid/avc1/1270x720/etnCpUs4ZwxdM6Qq.mp4?tag=12</a> </div><br />
-                                <p style="color:gray;text-align:right;">引用元: <a href="https://nova.5ch.net/test/read.cgi/livegalileo/1697956878/">【動画】陽キャ女さん、パンツ履いたまま路上でおしっこをした後に何故かパンツを脱ぎ始めるwvwvwvwvw </a></p><!-- Generated by まとめくす (https://2mtmex.com/) --><script src="//js.smac-ad.com/000/016/679.js"></script><script src="//js.smac-ad.com/000/016/679.js"></script><a name="more"></a>
+                                <p style="color:gray;text-align:right;">引用元: <aシャエ href="https://nova.5ch.net/test/read.cgi/livegalileo/1697956878/">【動画】陽キャ女さん、パンツ履いたまま路上でおしっこをした後に何故かパンツを脱ぎ始めるwvwvwvwvw </aシャエ></p><!-- Generated by まとめくす (https://2mtmex.com/) --><script src="//js.smac-ad.com/000/016/679.js"></script><script src="//js.smac-ad.com/000/016/679.js"></script><a name="more"></a>
                                 <br />
                             <!-- <blockquote>
                             </blockquote> -->
@@ -1230,4 +1470,84 @@
 
 
 
-<%- include('./../_inc/_footer', { pageId: pageId }) %>
+
+
+</div>
+
+<div class="l-footer__pageTop">
+  <a href="#top" class="scroll">
+    <svg>
+      <use xlink:href="../assets/images/sprite.svg#ic-baseline-arrow-upward"></use>
+  </svg>
+  </a>
+</div>
+
+<footer id="footer" class="l-footer">
+  <div class="l-footer__inner">
+    <div class="l-footer__container">
+
+      <div class="l-footer__logo">
+        <a href="">
+          <img src="../assets/images/logos.png" alt="">
+        </a>
+      </div>
+<!--   
+      <ul class="l-footer-sns__list">
+        <li class="l-footer-sns__item">
+          <a href="">
+            <svg>
+              <use xlink:href="../assets/images/sprite.svg#ri-twitter-x-fill"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="l-footer-sns__item">
+          <a href="">
+            <svg>
+              <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="l-footer-sns__item">
+          <a href="">
+            <svg>
+              <use xlink:href="../assets/images/sprite.svg#tabler-message-circle"></use>
+          </svg>
+          </a>
+        </li>
+      </ul> -->
+      <p class="l-footer__copy">
+        Copyright © akibako, All rights reserved.
+      </p>
+  
+    </div>
+  </div>
+
+
+  <!-- <div class="c-line c-line--reverse"></div> -->
+  <!-- <div class="section__bottom inview"></div> -->
+</footer>
+
+<!-- vendors -->
+<script src="../assets/scripts/vendors/jquery-3.6.0.min.js"></script>
+<!-- <script src="../assets/scripts/vendors/rellax.min.js"></script> -->
+<!-- <script src="../assets/scripts/vendors/jquery.magnific-popup.js"></script> -->
+<!-- <script src="../assets/scripts/vendors/lity.min.js"></script> -->
+<script src="../assets/scripts/vendors/jquery.matchHeight-min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
+<!-- <script src="../assets/scripts/vendors/intersection-observer.js"></script> -->
+<script src="../assets/scripts/vendors/swiper-bundle.min.js"></script>
+
+
+
+
+<!-- scripts -->
+<!-- <script src="../assets/scripts/anim.js"></script> -->
+<script src="../assets/scripts/swiper.js"></script>
+<script src="../assets/scripts/main.js"></script>
+
+<!-- 
+ -->
+
+</body>
+
+</html>
