@@ -305,10 +305,10 @@
     background-color: $color-key;
     background: silver;
     border: 4px solid transparent;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     @include mq-target(sm) {
-        border: 4px solid transparent;
+        // border: 4px solid transparent;
         width: 14px;
         height: 14px;
     }
