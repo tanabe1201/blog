@@ -369,7 +369,7 @@ img {
   display: block;
   font-weight: 700;
   color: #fff;
-  font-size: min(4.5333333333vw, 19px);
+  font-size: min(4.8vw, 19px);
 }
 @media screen and (min-width: 768px) {
   .c-pagePath ul li a {
