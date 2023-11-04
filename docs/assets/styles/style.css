@@ -234,12 +234,11 @@ img {
 }
 
 .window {
-  padding: 1px;
-  margin-bottom: 4px;
+  padding: 2px;
+  margin-bottom: 2px;
 }
 @media screen and (min-width: 768px) {
   .window {
-    padding: 2px;
     margin-bottom: 4px;
   }
 }
@@ -250,16 +249,11 @@ img {
 }
 .window__view {
   min-height: 20px;
+  margin: 2px 0px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin: 1px 0;
   background-color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .window__view {
-    margin: 2px 0px;
-  }
 }
 @media screen and (min-width: 960px) {
   .window__view {
@@ -1089,7 +1083,7 @@ img {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   line-height: 30px;
-  height: 28px;
+  height: 30px;
 }
 @media screen and (min-width: 768px) {
   .search-area[type=search] {
