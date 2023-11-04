@@ -234,11 +234,12 @@ img {
 }
 
 .window {
-  padding: 2px;
-  margin-bottom: 2px;
+  padding: 1px;
+  margin-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
   .window {
+    padding: 2px;
     margin-bottom: 4px;
   }
 }
@@ -249,11 +250,16 @@ img {
 }
 .window__view {
   min-height: 20px;
-  margin: 2px 0px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  margin: 1px 0;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .window__view {
+    margin: 2px 0px;
+  }
 }
 @media screen and (min-width: 960px) {
   .window__view {
@@ -777,7 +783,7 @@ img {
   background: -webkit-gradient(linear, left top, right top, from(navy), to(#1084d0));
   background: linear-gradient(90deg, navy, #1084d0);
   margin: auto;
-  padding: 4px 10px 10px;
+  padding: 4px 10px 8px;
 }
 @media screen and (min-width: 768px) {
   .l-header {
@@ -982,7 +988,7 @@ img {
   }
 }
 .l-header__logo a img {
-  height: 52px;
+  height: 56px;
 }
 @media screen and (min-width: 768px) {
   .l-header__logo a img {
@@ -2077,7 +2083,7 @@ img {
 }
 
 .p-pickup {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {

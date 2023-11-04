@@ -30,7 +30,7 @@
   // }
   // max-width: 1060px;
   margin: auto;
-  padding: 4px 10px 10px;
+  padding: 4px 10px 8px;
   
   @include mq-target(sm) {
     padding: min(vwtb(8px),10px) 6px min(vwtb(8px),10px);
@@ -253,7 +253,7 @@
         
       }
       img {
-        height: 52px;
+        height: 56px;
         @include mq-target(sm) {
           height: min(vwsp(42px),48px);
         }
