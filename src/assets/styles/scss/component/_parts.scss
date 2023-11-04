@@ -131,7 +131,7 @@
         display: block;
         font-weight: 700;
         color: $color-white;
-        font-size: min(vwsp(18px), 24px);
+        font-size: min(vwsp(17px), 24px);
 
         @include mq-target(sm) {
           font-size: min(vwtb(54px), 16px);
@@ -287,7 +287,7 @@
       border: 1px solid $color-border;
       padding: 0 16px;
       font-size: min(vwsp(14px),18px);
-      height: min(vwsp(36px),42px);
+      height: min(vwsp(38px),42px);
       color: $color-white;
       
       @include mq-target(sm) {
