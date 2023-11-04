@@ -30,7 +30,7 @@
   // }
   // max-width: 1060px;
   margin: auto;
-  padding: 6px 4px;
+  padding: 4px 10px 10px;
   
   @include mq-target(sm) {
     padding: min(vwtb(8px),10px) 6px min(vwtb(8px),10px);
@@ -362,8 +362,8 @@
   transition: all .2s ease-out;
   line-height: 30px;
   height: 28px;
-  border-radius: 12px;
   @include mq-target(sm) {
+    border-radius: 12px;
     border-radius: 18px;
     width: 100%;
     line-height: 32px;

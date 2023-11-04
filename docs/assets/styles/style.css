@@ -747,7 +747,7 @@ img {
   left: calc(0.1em + 1px);
   top: 0;
   line-height: 2.5;
-  font-size: min(1.25vw, 14px);
+  font-size: min(1.3541666667vw, 14px);
   color: #fff;
   width: 2em;
   border-radius: 0 0 4px 4px;
@@ -777,7 +777,7 @@ img {
   background: -webkit-gradient(linear, left top, right top, from(navy), to(#1084d0));
   background: linear-gradient(90deg, navy, #1084d0);
   margin: auto;
-  padding: 6px 4px;
+  padding: 4px 10px 10px;
 }
 @media screen and (min-width: 768px) {
   .l-header {
@@ -1084,10 +1084,10 @@ img {
   transition: all 0.2s ease-out;
   line-height: 30px;
   height: 28px;
-  border-radius: 12px;
 }
 @media screen and (min-width: 768px) {
   .search-area[type=search] {
+    border-radius: 12px;
     border-radius: 18px;
     width: 100%;
     line-height: 32px;
