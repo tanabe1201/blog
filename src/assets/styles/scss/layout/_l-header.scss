@@ -253,7 +253,7 @@
         
       }
       img {
-        height: 54px;
+        height: 56px;
         @include mq-target(sm) {
           height: min(vwsp(42px),48px);
         }

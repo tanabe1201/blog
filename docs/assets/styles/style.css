@@ -235,7 +235,7 @@ img {
 
 .window {
   padding: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 @media screen and (min-width: 768px) {
   .window {
@@ -369,7 +369,7 @@ img {
   display: block;
   font-weight: 700;
   color: #fff;
-  font-size: min(4.8vw, 24px);
+  font-size: min(4.5333333333vw, 24px);
 }
 @media screen and (min-width: 768px) {
   .c-pagePath ul li a {
@@ -976,7 +976,7 @@ img {
   }
 }
 .l-header__logo a img {
-  height: 54px;
+  height: 56px;
 }
 @media screen and (min-width: 768px) {
   .l-header__logo a img {
@@ -2066,7 +2066,7 @@ img {
 }
 
 .p-pickup {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
