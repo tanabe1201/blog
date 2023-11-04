@@ -11,6 +11,7 @@
         overflow: hidden;
         position: relative;
         margin: 0;
+        
         // padding: 14px 16px;
         
         // padding: min(vwsp(16px), 30px) min(vwsp(10px), 20px);
@@ -188,9 +189,9 @@
     &-header {
         background: #edebeb;
         box-shadow: inset 0px -1px 0px #808088, inset -1px 0px 0px #808088, inset 0px 0px 0px 1px #ffffff, -1px 0px 0px #808088, 1px 0px 0px #ffffff, -1px 1px 0px 0px #ffffff, 1px 1px 0px 0px #ffffff;
-        margin: 2px;
         font-weight: normal;
         padding: min(vwsp(8px),14px);
+        margin: 2px;
         @include mq-target(sm) {
             padding: 16px;
         }

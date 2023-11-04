@@ -188,6 +188,7 @@
 
     &__inner {
         background: #1b1b1b;
+        background: #fff;
         // background: #fff;
         // border-bottom: $color-border-waku;
         padding: 10px 2px 10px 8px;
@@ -197,7 +198,6 @@
         }
         
         @include mq-target(md) {
-            background: #fff;
             // background: #edebeb;
             padding: 4px 4px 2px 4px;
             // padding: min(vwpc(8px),8px) min(vwpc(6px),8px) min(vwpc(6px),6px);
@@ -253,15 +253,16 @@
             // font-weight: 400;
             // filter: drop-shadow(1px 1px 1px #1b1b1b);
             // color: $color-link;
-            color: $color-white;
+            color: $color-link;
             @include lineclamp(3);
-
+            
             @include mq-target(sm) {
                 font-size: 15px;
                 font-size: min(vwtb(14px),16px);
             }
             
             @include mq-target(md) {
+                color: $color-white;
                 // color: $color-font;
                 @include lineclamp(4);
                 font-size: min(vwpc(11px),12px);
