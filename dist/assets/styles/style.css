@@ -235,7 +235,7 @@ img {
 
 .window {
   padding: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
   .window {
@@ -2096,7 +2096,7 @@ img {
   overflow: visible !important;
 }
 .p-pickup-slider__item {
-  width: 40%;
+  width: 42%;
   margin-right: 6px;
 }
 @media screen and (min-width: 768px) {
