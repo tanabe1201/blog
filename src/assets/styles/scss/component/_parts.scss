@@ -21,11 +21,11 @@
 
   &__view {
     min-height: 20px;
-    margin: 2px 0px;
     flex-grow: 1;
     background-color: #ffffff;
     box-shadow: inset -1px -1px 0px #ffffff, inset 1px 1px 0px 0px #808088, inset -2px -2px 0px #bbc3c4, inset 2px 2px 0px 0px #0c0c0c;
-    @include mq-target(md) {
+    @include mq-target(sm) {
+      // margin: 2px 0px;
     }
   }
 
@@ -267,6 +267,7 @@
 
   &__btn {
     padding: 16px 0 0;
+    margin: 0;
     @include mq-target(sm) {
       padding: 20px 0 0;
     }
