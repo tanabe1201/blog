@@ -739,10 +739,10 @@ img {
   background-image: linear-gradient(to top left, #c46522, #e8b27d, #d07217, #c47222, #b9722e, #834c17, #c47222, #e8b27d, #c48022, #b9722e, #c46522);
 }
 .c-rank__item--2 {
-  counter-increment: rank 4;
+  counter-increment: rank 5;
 }
 .c-rank__item--3 {
-  counter-increment: rank 7;
+  counter-increment: rank 9;
 }
 .c-rank__item .c-rank__number::before {
   content: counter(rank);
