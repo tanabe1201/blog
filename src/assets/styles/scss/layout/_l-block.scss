@@ -61,7 +61,7 @@
   width: 100%;
   z-index: 9999;
   background-color: rgba(243, 243, 243, 0.98);
-  box-shadow: 0 -1px 0 0 #E9E9EA;
+  // box-shadow: 0 -1px 0 0 #E9E9EA;
   display: block;
   @include mq-target(sm) {
     display: none;
