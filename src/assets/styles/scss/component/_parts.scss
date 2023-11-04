@@ -256,7 +256,7 @@
     // font-family: "segoe UI", 'Noto Sans JP', '游ゴシック medium', YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
     overflow: hidden;
     position: relative;
-    padding: 12px 14px;
+    padding: 10px;
     @include mq-target(sm) {
       padding: 12px;
     }

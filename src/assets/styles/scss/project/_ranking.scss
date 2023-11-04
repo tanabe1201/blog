@@ -62,6 +62,10 @@
         margin: auto;
         overflow: visible;
 
+        &__inner {
+            padding: 10px 14px 10px 10px;
+        }
+
         &__container {
             overflow: visible;
         }

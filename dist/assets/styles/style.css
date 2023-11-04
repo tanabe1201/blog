@@ -475,7 +475,7 @@ img {
 .c-sec__inner {
   overflow: hidden;
   position: relative;
-  padding: 12px 14px;
+  padding: 10px;
 }
 @media screen and (min-width: 768px) {
   .c-sec__inner {
@@ -1825,7 +1825,7 @@ img {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0 0 0 12px;
+  padding: 0 0 0 10px;
 }
 @media screen and (min-width: 768px) {
   .p-news__foot {
@@ -2299,6 +2299,9 @@ img {
   width: 100%;
   margin: auto;
   overflow: visible;
+}
+.p-rank-slider__inner {
+  padding: 10px 14px 10px 10px;
 }
 .p-rank-slider__container {
   overflow: visible;

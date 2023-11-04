@@ -86,7 +86,7 @@
         @include flex($justify:space-between);
         flex-direction: column-reverse;
         flex: 1;
-        padding: 0 0 0 12px;
+        padding: 0 0 0 10px;
 
         @include mq-target(sm) {
             flex-direction: column;
