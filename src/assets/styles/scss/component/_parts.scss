@@ -24,7 +24,9 @@
     margin: 2px 0px;
     flex-grow: 1;
     background-color: #ffffff;
-    box-shadow: inset -1px -1px 0px #ffffff, inset 1px 1px 0px 0px #808088, inset -2px -2px 0px #bbc3c4, inset 2px 2px 0px 0px #0c0c0c;
+    @include mq-target(md) {
+      box-shadow: inset -1px -1px 0px #ffffff, inset 1px 1px 0px 0px #808088, inset -2px -2px 0px #bbc3c4, inset 2px 2px 0px 0px #0c0c0c;
+    }
   }
 
 }
@@ -129,7 +131,7 @@
         display: block;
         font-weight: 700;
         color: $color-white;
-        font-size: min(vwsp(14px), 18px);
+        font-size: min(vwsp(15px), 18px);
 
         @include mq-target(sm) {
           font-size: min(vwtb(54px), 16px);
@@ -545,7 +547,7 @@
         @include mq-target(sm) {
           top: 1px;
           left: calc(0.2em + 2px);
-          font-size: min(vwpc(12px),14px);
+          font-size: min(vwpc(11px),13px);
         }
     }
     }

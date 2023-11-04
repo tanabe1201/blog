@@ -30,19 +30,10 @@
 
     &__inner {
         padding: 0;
-        // padding: 8px;
-
-        // background-color: #F5FAFF;
     }
 
     &__header {
         padding-left: 0;
-    }
-
-    &__list {
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
     }
 
     &__item {
@@ -66,11 +57,23 @@
         }
     }
 
-    &-cont {
-        &__img {
-            // aspect-ratio: auto 290 / 90;
-            // aspect-ratio: 16 / 8;
-            // aspect-ratio: auto 290 / 160;
+    &-slider {
+        width: 100%;
+        margin: auto;
+        overflow: visible;
+
+        &__container {
+            overflow: visible;
+        }
+
+        &__item {
+            width: 100%;
+            margin: auto;
+            margin-right: 2%;
+    
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 
@@ -105,26 +108,8 @@
                 }
             }
         }
-
-        &__data {
-            // position: absolute;
-            // top: 0;
-            // right: 0;
-            // opacity: 0.9;
-            margin: 6px 0 0;
-            display: flex;
-            justify-content: space-between;
-            display: none;
-
-            & .c-cont-tag__list {
-                margin: 0;
-            }
-        }
     }
 
-    &__btn {
-        padding: 12px 0 0;
-    }
 }
 
 

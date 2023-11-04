@@ -21,10 +21,9 @@ if (elmIndexSwiper.length > 0) {
     elmIndexPage[i].className += i;
     var swiper = new Swiper('.js-index-slider' + i, {
       slidesPerView: 'auto',
-      // loop: "true",
       paginationClickable: false,
       grabCursor: true,
-      freeMode: true,
+      // freeMode: true,
       touchEventsTarget: true,
       pagination: {
         el: '.js-slider-pagination' + i,
