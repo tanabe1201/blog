@@ -374,7 +374,7 @@ img {
   display: block;
   font-weight: 700;
   color: #fff;
-  font-size: min(4vw, 18px);
+  font-size: min(4.2666666667vw, 18px);
 }
 @media screen and (min-width: 768px) {
   .c-pagePath ul li a {
@@ -2167,7 +2167,7 @@ img {
   }
 }
 .p-pickup__ttl span {
-  font-size: min(3.2vw, 16px);
+  font-size: min(3.4666666667vw, 16px);
   line-height: 1.3;
   color: #fff;
   display: -webkit-box;
