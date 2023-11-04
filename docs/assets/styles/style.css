@@ -312,7 +312,7 @@ img {
   width: 100%;
   min-height: min(8vw, 34px);
   position: relative;
-  padding: 5px 6px 5px 14px;
+  padding: 4px 6px 4px 14px;
 }
 @media screen and (min-width: 768px) {
   .c-pagePath {
@@ -525,7 +525,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0 16px;
   font-size: min(3.7333333333vw, 18px);
-  height: min(10.1333333333vw, 42px);
+  height: min(9.6vw, 38px);
   color: #fff;
 }
 @media screen and (min-width: 768px) {
