@@ -513,7 +513,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0 16px;
   font-size: min(3.7333333333vw, 18px);
-  height: min(9.0666666667vw, 42px);
+  height: min(9.6vw, 42px);
   color: #fff;
 }
 @media screen and (min-width: 768px) {
