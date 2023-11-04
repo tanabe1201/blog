@@ -1572,8 +1572,7 @@ img {
   justify-content: space-around;
 }
 .l-menu__item {
-  min-width: 50px;
-  max-width: 50px;
+  width: 25%;
   padding: 8px 0;
 }
 .l-menu__item:last-child {

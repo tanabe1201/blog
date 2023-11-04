@@ -78,8 +78,9 @@
   }
 
   &__item {
-    min-width: 50px;
-    max-width: 50px;
+    width: 25%;
+    // min-width: 50px;
+    // max-width: 50px;
     padding: 8px 0;
     &:last-child {
       padding-right: 0;
