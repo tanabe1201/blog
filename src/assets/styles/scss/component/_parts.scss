@@ -131,10 +131,11 @@
         display: block;
         font-weight: 700;
         color: $color-white;
-        font-size: min(vwsp(17px), 24px);
+        font-size: min(vwsp(17px), 19px);
 
         @include mq-target(sm) {
-          font-size: min(vwtb(54px), 16px);
+          font-size: 20px;
+          // font-size: min(vwtb(14px), 16px);
         }
         @include mq-target(md) {
           font-size: min(vwpc(13px),15px);

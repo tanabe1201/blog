@@ -67,11 +67,11 @@
     }
 
     &__head {
-        width: min(vwsp(76px), 120px);
+        width: min(vwsp(76px), 100px);
 
         @include mq-target(sm) {
             position: relative;
-            width: min(vwtb(220px), 280px);
+            width: min(vwtb(210px), 280px);
         }
 
         @include mq-target(md) {
