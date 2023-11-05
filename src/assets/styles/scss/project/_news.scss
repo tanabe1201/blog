@@ -7,8 +7,8 @@
         position: relative;
 
         background: #fff;
+        // background: #edebeb;
         @include mq-target(md) {
-            // background: #edebeb;
             // background-image: repeating-linear-gradient(-45deg,transparent,transparent 2px,rgba(0, 0, 0, 0.015) 2px,rgba(0, 0, 0, 0.015) 4px);
             // background: rgba($color: #edebeb, $alpha: 0.25);
         }
@@ -178,7 +178,6 @@
             font-weight: 700;
             font-size: min(vwsp(14px), 18px);
             @include lineclamp(3);
-            color: $color-white;
             color: $color-link;
 
             @include mq-target(sm) {
@@ -190,7 +189,8 @@
             }
 
             @include mq-target(md) {
-                margin-top: min(vwpc(2px), 3px);
+                margin-top: 3px;
+                // margin-top: min(vwpc(2px), 3px);
                 font-size: min(vwpc(16px), 19px);
                 // font-size: min(vwpc(16px), 18px);
             }

@@ -313,6 +313,7 @@ img {
   min-height: min(8vw, 34px);
   position: relative;
   padding: 4px 6px 4px 14px;
+  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
 }
 @media screen and (min-width: 768px) {
   .c-pagePath {
@@ -773,6 +774,26 @@ img {
     left: calc(0.2em + 2px);
     font-size: min(1.1458333333vw, 13px);
   }
+}
+
+.c-select__item {
+  font-family: "segoe UI", "Noto Sans JP", "游ゴシック medium", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif;
+}
+.c-select__item span {
+  display: block;
+  position: relative;
+  top: 1px;
+  font-size: 13px;
+  padding-right: 8px;
+}
+.c-select select {
+  width: 125px;
+  padding: 2px 4px;
+  padding-left: 8px;
+  font-size: 13px;
+}
+.c-select select option {
+  font-size: 13px;
 }
 
 .is-lock {
@@ -1965,7 +1986,6 @@ img {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-  color: #fff;
   color: #0057a8;
 }
 @media screen and (min-width: 768px) {
@@ -1982,7 +2002,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .p-news-cont__ttl {
-    margin-top: min(0.2083333333vw, 3px);
+    margin-top: 3px;
     font-size: min(1.6666666667vw, 19px);
   }
 }
@@ -2317,6 +2337,7 @@ img {
   padding-left: 0;
 }
 .p-rank__item {
+  margin-top: 1px;
   padding: 2px;
   margin-bottom: 0;
 }

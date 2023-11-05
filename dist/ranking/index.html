@@ -744,17 +744,23 @@
                     <div class="c-sec__header">
 
                         <ul class="c-tab__list p-rank-tab__list">
-                            <li style="font-size: 12px;"></li>
-                            <li style="display: flex; align-items: center;">
-                                <span style="display: block; font-size: 13px; padding-right: 10px;">
-                                    並び替え：
+                            <li class="c-select__item" style="display: flex; align-items: center;">
+                                <span>
+                                    ランキング形式：
                                 </span>
-                                <select name="select" onChange="location.href=value;">
-                                    <option value="#">24時間</option>
-                                    <option value="/single">週間</option>
-                                    <option value="bbbbb.html">月間</option>
-                                    <option value="ccccc.html">6ヵ月</option>
-                                </select>
+                           </li>
+                            <li class="c-select__item" style="display: flex; align-items: center;">
+                                <!-- <span>
+                                    ランキング形式：
+                                </span> -->
+                                <div class="c-select">
+                                    <select name="select" onChange="location.href=value;">
+                                        <option value="#">24時間</option>
+                                        <option value="/single">週間</option>
+                                        <option value="bbbbb.html">月間</option>
+                                        <option value="ccccc.html">6ヵ月</option>
+                                    </select>
+                                </div>
                             </li>
                         </ul>
                     </div>
