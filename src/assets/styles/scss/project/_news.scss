@@ -160,11 +160,11 @@
         &__img {
             overflow: hidden;
             outline: 0;
-            aspect-ratio: 16 / 16;
+            aspect-ratio: 16 / 15;
             border-radius: 6px;
-            filter: drop-shadow(0 0 1px #4f4f4f);
-
+            
             @include mq-target(sm) {
+                filter: drop-shadow(0 0 1px #4f4f4f);
                 border-radius: 0px;
                 outline: $color-border-waku;
                 aspect-ratio: 16 / 9;

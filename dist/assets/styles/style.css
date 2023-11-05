@@ -1945,13 +1945,13 @@ img {
 .p-news-cont__img {
   overflow: hidden;
   outline: 0;
-  aspect-ratio: 16/16;
+  aspect-ratio: 16/15;
   border-radius: 6px;
-  -webkit-filter: drop-shadow(0 0 1px #4f4f4f);
-  filter: drop-shadow(0 0 1px #4f4f4f);
 }
 @media screen and (min-width: 768px) {
   .p-news-cont__img {
+    -webkit-filter: drop-shadow(0 0 1px #4f4f4f);
+    filter: drop-shadow(0 0 1px #4f4f4f);
     border-radius: 0px;
     outline: 1px solid #e6e6e7;
     aspect-ratio: 16/9;
@@ -2125,8 +2125,8 @@ img {
   overflow: visible !important;
 }
 .p-pickup-slider__item {
-  width: 42%;
-  margin-right: 6px;
+  width: 40%;
+  margin-right: 8px;
 }
 @media screen and (min-width: 768px) {
   .p-pickup-slider__item {
